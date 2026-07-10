@@ -184,6 +184,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-git:Open Git source control": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -198,12 +199,15 @@
   },
   "active": "8a81649364d2722c",
   "lastOpenFiles": [
+    "desktop.ini",
+    "Nuevo Documento de texto.txt",
+    "Untitled.md",
+    "autors/Appleton, Maggie.md",
     "autors/Matuschack, Andy.md",
     "autors/Ma, Eric.md",
     "autors/Konik, Eleanor.md",
     "autors/Karpathy, Andrej.md",
     "conceptes/Agents_MD.md",
-    "autors/Appleton, Maggie.md",
     "conceptes/skills.md",
     "models/obsidian_wiki.md",
     "Ar9av.md",
@@ -223,8 +227,6 @@
     "autors/Arnav.md",
     "docs_support/plantilla_creacio_wikis_locals_codex_obsidian.md",
     "autors/Tseng, Fei-Ling.md",
-    "autors/Jefferson, Thomas.md",
-    "autors/Hess, Jillian.md",
     "autors/Untitled",
     "Pasted image 20260709092542.png",
     "docs_support",
@@ -234,7 +236,6 @@
     "templates",
     "templates",
     "conceptes",
-    "models",
-    "autors"
+    "models"
   ]
 }

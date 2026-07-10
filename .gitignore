@@ -1,0 +1,23 @@
+# Fitxers temporals del sistema
+.DS_Store
+Thumbs.db
+
+# Paperera i temporals
+.trash/
+*.tmp
+*.temp
+
+# Fitxers grans o exportacions
+exports/
+*.pdf
+*.zip
+*.7z
+
+# Si generes dades locals
+data/raw/
+data/cache/
+.cache/
+
+# Opcional: estat visual d'Obsidian
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
