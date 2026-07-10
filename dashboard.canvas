@@ -1,0 +1,24 @@
+{
+	"nodes":[
+		{"id":"9e57ff1fdb3abd6a","type":"group","x":-780,"y":-1460,"width":960,"height":682,"color":"5","label":"Second_Brain"},
+		{"id":"3757c97530aae0af","type":"text","text":"\n``` dataview\nTABLE WITHOUT ID\nfile.link as \"AUTORS\"\nFROM \"autors\" SORT file.mtime DESC\n```","x":-1900,"y":-1300,"width":357,"height":480},
+		{"id":"aa4f0785fde19d4b","type":"text","text":"# Wiki IA / Notes / LLMs\n","x":-1420,"y":-778,"width":340,"height":80,"color":"6"},
+		{"id":"ceb2e2538f4b95a6","type":"text","text":"\n``` dataview\nTABLE WITHOUT ID\nfile.link as \"MODEL\"\nFROM \"models\" SORT file.mtime DESC\n```","x":-1904,"y":-640,"width":366,"height":520},
+		{"id":"0569be0102382b17","type":"text","text":"``` dataview\nTABLE WITHOUT ID\nfile.link as \"CONCEPTES\"\nFROM \"conceptes\" SORT file.name ASC\n```","x":-1431,"y":-360,"width":351,"height":383},
+		{"id":"7b22a0a4c7ad4a37","type":"text","text":"# Wiki amb LLM\n#wiki \n\n[[llm_wiki]] de [[Karpathy, Andrej]]","x":-720,"y":-1060,"width":257,"height":176,"color":"5"},
+		{"id":"aac4febbf18c8796","type":"text","text":"# Obsidian Wiki\n#wiki \n[[obsidian_wiki]] de [[Arnav]]","x":-213,"y":-1336,"width":250,"height":112,"color":"5"},
+		{"id":"70a0a2015b9c50aa","type":"text","text":"# Obsidian Second Brain\n#wiki \n[[obsidian_second_brain]] de [[Ghelbur, Eugeniu]]\n[[obsidian_architect]] de [[Ghelbur, Eugeniu]]\n","x":-213,"y":-1132,"width":337,"height":232,"color":"5"},
+		{"id":"ae7964edfa49a449","type":"text","text":"``` dataview\nTABLE WITHOUT ID\nfile.link as \"LLIBRES\"\nFROM \"llibres\" SORT file.mtime DESC\n```","x":-894,"y":-640,"width":303,"height":283}
+	],
+	"edges":[
+		{"id":"935f5c9d31aaee74","fromNode":"ceb2e2538f4b95a6","fromSide":"right","toNode":"0569be0102382b17","toSide":"top"},
+		{"id":"0a9d6ccc3a0d4e00","fromNode":"ae7964edfa49a449","fromSide":"left","toNode":"0569be0102382b17","toSide":"top"},
+		{"id":"93e018e02e08e57e","fromNode":"aa4f0785fde19d4b","fromSide":"right","toNode":"ae7964edfa49a449","toSide":"top"},
+		{"id":"369125b511ec6eba","fromNode":"aa4f0785fde19d4b","fromSide":"left","toNode":"ceb2e2538f4b95a6","toSide":"top"},
+		{"id":"2ef32610418e49f2","fromNode":"3757c97530aae0af","fromSide":"right","toNode":"aa4f0785fde19d4b","toSide":"top"},
+		{"id":"84873bb1c099b4db","fromNode":"7b22a0a4c7ad4a37","fromSide":"right","toNode":"aac4febbf18c8796","toSide":"left","color":"5"},
+		{"id":"cedfb33147a314e2","fromNode":"7b22a0a4c7ad4a37","fromSide":"right","toNode":"70a0a2015b9c50aa","toSide":"left","color":"5"},
+		{"id":"9ba1ab9ef297902d","fromNode":"aac4febbf18c8796","fromSide":"bottom","toNode":"70a0a2015b9c50aa","toSide":"top","color":"5"},
+		{"id":"7a754fbe874ad1f2","fromNode":"aa4f0785fde19d4b","fromSide":"right","toNode":"7b22a0a4c7ad4a37","toSide":"left"}
+	]
+}
