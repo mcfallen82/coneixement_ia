@@ -30,7 +30,6 @@
         "sources_registered"
       ],
       "pending": [
-        "model_fiches_review",
         "individual_reading_pages"
       ],
       "ingested_sources": [
@@ -44,7 +43,7 @@
           "path": "0. Raw/0.1. llibres/Taula_Lectures.md",
           "original_name": "Taula_Lectures.xlsx",
           "source_type": "reading_plan",
-          "status": "transcribed"
+          "status": "processed"
         },
         {
           "path": "4. Templates/90.1. templates_fitxes/plantilla_resum_dinamic.md",
@@ -103,6 +102,72 @@
         "empty_readmes_completed",
         "folder_descriptions_normalized",
         "readmes_validated"
+      ]
+    },
+    {
+      "date": "2026-08-07",
+      "type": "reading_plan_to_wiki_foundations",
+      "branch": "agent/reorganitza-wiki-llm",
+      "status": "completed",
+      "source": {
+        "path": "0. Raw/0.1. llibres/Taula_Lectures.md",
+        "original_name": "Taula_Lectures.xlsx",
+        "source_type": "reading_plan"
+      },
+      "scope": [
+        "1. Wiki/1.2. conceptes/",
+        "1. Wiki/1.3. models/"
+      ],
+      "pages_created": [
+        "1. Wiki/1.2. conceptes/xarxes_neuronals.md",
+        "1. Wiki/1.2. conceptes/autodiferenciacio.md",
+        "1. Wiki/1.2. conceptes/backpropagation.md",
+        "1. Wiki/1.2. conceptes/optimitzacio_i_adam.md",
+        "1. Wiki/1.2. conceptes/softmax_i_cross_entropy.md",
+        "1. Wiki/1.2. conceptes/embeddings.md",
+        "1. Wiki/1.2. conceptes/tokenitzacio_i_bpe.md",
+        "1. Wiki/1.2. conceptes/entrenament_validacio_i_overfitting.md",
+        "1. Wiki/1.2. conceptes/activacions_i_inicialitzacio.md",
+        "1. Wiki/1.2. conceptes/batch_normalization.md",
+        "1. Wiki/1.2. conceptes/attention.md",
+        "1. Wiki/1.2. conceptes/raonament_numeric_documental.md",
+        "1. Wiki/1.3. models/transformer.md",
+        "1. Wiki/1.3. models/WaveNet.md",
+        "1. Wiki/1.3. models/GPT.md",
+        "1. Wiki/1.3. models/GPT-2.md",
+        "1. Wiki/1.3. models/nanoGPT.md",
+        "1. Wiki/1.3. models/FinBERT.md"
+      ],
+      "classification": {
+        "models": [
+          "Transformer",
+          "WaveNet",
+          "GPT",
+          "GPT-2",
+          "nanoGPT",
+          "FinBERT"
+        ],
+        "concepts": [
+          "deep learning foundations",
+          "tokenization",
+          "attention",
+          "document numerical reasoning"
+        ],
+        "datasets_and_benchmarks": [
+          "FinQA",
+          "TAT-QA",
+          "DocFinQA",
+          "ConvFinQA",
+          "FinLongDocQA",
+          "FinanceReasoning Benchmark"
+        ]
+      },
+      "checks": [
+        "source_transcribed",
+        "frontmatter_present",
+        "wikilinks_checked",
+        "sources_recorded",
+        "datasets_not_misclassified"
       ]
     }
   ]
