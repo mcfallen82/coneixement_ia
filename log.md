@@ -55,3 +55,6 @@
 - OPERACIONS: afegides wiki-dashboard, wiki-export, wiki-import i wiki-rebuild.
 - ADAPTACIÓ: substituïdes les rutes genèriques de concepts, entities i references per les carpetes d’autors, conceptes i models del projecte.
 - ABAST: no s’han incorporat les skills específiques d’historials d’agents ni de gestió de diversos vaults.
+
+
+- MANTENIMENT: afegides daily-update i vault-skill-factory per completar les skills genèriques aplicables.
