@@ -1,5 +1,7 @@
 ---
 title: Alineament dels LLM
+node_id: "concept:alineament_dels_llm"
+node_type: "concept"
 category: conceptes
 tags:
   - llm
