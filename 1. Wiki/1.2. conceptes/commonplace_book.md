@@ -1,12 +1,7 @@
 ---
-title: "commonplace book"
+title: Commonplace book
 node_id: "concept:commonplace_book"
 node_type: "concept"
----
-
-
----
-title: Commonplace book
 category: conceptes
 tags:
   - gestio-del-coneixement
