@@ -32,6 +32,7 @@ log.md
 hot.md
 .manifest.json
 scripts/wiki_lint.py
+`graph/`, `graph/relations.json` i `scripts/graph_scan.py`
 .github/workflows/wiki-lint.yml
 ```
 
@@ -106,3 +107,13 @@ Abans de donar una tasca per acabada:
 - documenta les advertències i les decisions pendents a l’informe final.
 
 La validació automàtica es reexecuta mitjançant `.github/workflows/wiki-lint.yml`.
+
+## 10. Capa gràfica lleugera
+
+La wiki manté Markdown com a font principal i utilitza la carpeta `graph/` com a representació derivada. Les relacions acceptades es registren a `graph/relations.json`; els wikilinks no tipats només són candidats. Abans d’incorporar una relació cal comprovar-ne la destinació, el tipus, la procedència i la confiança.
+
+La validació inicial s’executa amb:
+
+    python scripts/graph_scan.py --check
+
+No s’introdueix una base de dades gràfica ni GraphRAG en aquesta fase. La capa serveix per fer proves reproduïbles de nodes, arestes, hubs, components i exportació JSON.
