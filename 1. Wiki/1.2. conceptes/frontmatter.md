@@ -9,6 +9,8 @@ tags:
   - metadades
 sources:
   - https://help.obsidian.md/properties
+related_concepts: []
+related_models: []
 status: reviewed
 created: 2026-08-07
 updated: 2026-08-07
