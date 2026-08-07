@@ -1,5 +1,7 @@
 ---
 title: Softmax i entropia creuada
+node_id: "concept:softmax_i_cross_entropy"
+node_type: "concept"
 category: conceptes
 tags:
   - aprenentatge-profund
