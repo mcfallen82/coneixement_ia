@@ -1,5 +1,7 @@
 ---
 title: Activacions i inicialització
+node_id: "concept:activacions_i_inicialitzacio"
+node_type: "concept"
 category: conceptes
 tags:
   - aprenentatge-profund
