@@ -1,4 +1,6 @@
 ---
+node_id: "model:evergreen_notes"
+node_type: "model"
 authors:
   - "[[Matuschak, Andy]]"
 font: https://notes.andymatuschak.org/z5E5QawiXCMbtNtupvxeoEX
