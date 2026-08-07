@@ -10,6 +10,13 @@
 - CORRECCIÓ: normalitzat `Matuschak` i corregida la grafia anterior `Matuschack`.
 - PLANTILLA: afegit el camp `authors` a `plantilla_model.md`.
 
+## 2026-08-07 — README de carpetes
+
+- README: revisats i ampliats els README existents de Raw, Wiki, Skills, Dashboards i Templates.
+- README: creats els README que faltaven a l’arrel, 1. Wiki/ i 4. Templates/.
+- README: completat 0. Raw/0.2./README.md, que només contenia un marcador.
+- VALIDACIÓ: confirmada l’existència i el contingut dels 13 README principals de la branca.
+
 ## 2026-08-07
 
 - REESTRUCTURACIÓ: mantinguda la branca agent/reorganitza-wiki-llm com a branca de treball.
