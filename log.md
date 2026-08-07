@@ -1,5 +1,13 @@
 # Registre de canvis
 
+## 2026-08-07 — Activació de la recerca i ampliació de coneixement
+
+- SKILL: reforçada wiki-research amb tres rondes, jerarquia de fonts, confiança i criteris d’aturada.
+- CONFIGURACIÓ: afegit research-config.md amb temes prioritaris i criteris de qualitat.
+- RECERCA: completades tres rondes sobre ajustament fi, alineament, LoRA i avaluació.
+- FITXES: creades 3 fitxes de conceptes i 1 fitxa de tècnica/model.
+- TRAÇABILITAT: conservat el dossier a 0. Raw/0.2./ i actualitzats índex, hot i manifest.
+
 ## 2026-08-07 — Ajust final del validador
 
 - FALSOS POSITIUS: limitat el control de camps i rutes antigues a fitxes i plantilles auditables; la documentació de governança no es compta com a contingut obsolet.
