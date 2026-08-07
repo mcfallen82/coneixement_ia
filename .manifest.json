@@ -121,6 +121,7 @@
       "pages_created": [
         "1. Wiki/1.2. conceptes/xarxes_neuronals.md",
         "1. Wiki/1.2. conceptes/autodiferenciacio.md",
+        "1. Wiki/1.2. conceptes/micrograd.md",
         "1. Wiki/1.2. conceptes/backpropagation.md",
         "1. Wiki/1.2. conceptes/optimitzacio_i_adam.md",
         "1. Wiki/1.2. conceptes/softmax_i_cross_entropy.md",
@@ -148,7 +149,7 @@
           "FinBERT"
         ],
         "concepts": [
-          "deep learning foundations",
+          "deep learning foundations and micrograd",
           "tokenization",
           "attention",
           "document numerical reasoning"
