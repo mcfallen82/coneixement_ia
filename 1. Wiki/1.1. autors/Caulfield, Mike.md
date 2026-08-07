@@ -1,5 +1,7 @@
 ---
 title: Mike Caulfield
+node_id: "author:caulfield_mike"
+node_type: "author"
 category: autors
 field:
   - alfabetització digital
