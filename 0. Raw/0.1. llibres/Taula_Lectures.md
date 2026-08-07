@@ -96,6 +96,7 @@ Les entrades financeres s’utilitzen com a casos per entendre [[1. Wiki/1.2. co
 
 - [[1. Wiki/1.2. conceptes/xarxes_neuronals]]
 - [[1. Wiki/1.2. conceptes/autodiferenciacio]]
+- [[1. Wiki/1.2. conceptes/micrograd]]
 - [[1. Wiki/1.2. conceptes/backpropagation]]
 - [[1. Wiki/1.2. conceptes/optimitzacio_i_adam]]
 - [[1. Wiki/1.2. conceptes/softmax_i_cross_entropy]]
