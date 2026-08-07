@@ -1,3 +1,12 @@
+## 2026-08-07 — Recerca sobre grafs a obsidian-second-brain
+
+- FONT RAW: creat `0. Raw/0.2./recerca_grafs_obsidian_second_brain_2026-08-07.md`.
+- ABAST: documentat l’escàner determinista de wikilinks, les relacions tipades, la visualització Canvas i la connexió entre dominis.
+- CLASSIFICACIÓ: separats graf d’enllaços, graf semàntic, eina de pensament, GraphRAG i GNN.
+- APLICACIÓ: identificat un patró reutilitzable per a `ia_knowledge`: Markdown → escàner → subgraf → assistència LLM.
+- FITXES PERMANENTS: no se n’han creat, perquè el coneixement conceptual ja està cobert per les fitxes de grafs i la guia de creació de wikis amb grafs.
+- PENDENT: valorar una implementació específica de l’escàner i de les relacions tipades adaptada a les rutes d’`ia_knowledge`.
+
 # Registre de canvis
 
 ## 2026-08-07 — Guia per crear wikis amb grafs
