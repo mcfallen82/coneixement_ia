@@ -2,17 +2,17 @@
 
 ## Entrada ràpida
 
-- [[hot]]
-- [[log]]
-- [[AGENTS]]
-- [[3. Dashboards/dashboard.canvas]]
-- [[2. Skills]]
-- [[4. Templates]]
+- [Hot](hot.md) — prioritats i continguts en curs.
+- [Registre de canvis](log.md).
+- [Governança](AGENTS.md).
+- [Quadres de comandament](3.%20Dashboards/).
+- [Skills](2.%20Skills/).
+- [Plantilles](4.%20Templates/).
 
 ## Fonts
 
-- [[0. Raw/0.1. llibres]] — llibres i materials originals.
-- [[0. Raw/0.2.]] — altres fonts d’aprenentatge d’IA.
+- [0.1. llibres](0.%20Raw/0.1.%20llibres/) — llibres i materials originals.
+- [0.2.](0.%20Raw/0.2./) — altres fonts d’aprenentatge d’IA.
 
 ## Wiki
 
@@ -48,9 +48,9 @@ SORT estat ASC
 
 ## Organització
 
-- [[2. Skills]] — procediments reutilitzables.
-- [[3. Dashboards]] — vistes i consultes d’Obsidian.
-- [[4. Templates/90.1. templates_fitxes]] — plantilles de fitxes.
-- [[4. Templates/90.2. docs_support]] — documents de suport.
+- [2. Skills](2.%20Skills/) — procediments reutilitzables.
+- [3. Dashboards](3.%20Dashboards/) — vistes i consultes d’Obsidian.
+- [90.1. templates_fitxes](4.%20Templates/90.1.%20templates_fitxes/) — plantilles de fitxes.
+- [90.2. docs_support](4.%20Templates/90.2.%20docs_support/) — documents de suport.
 
 La wiki tracta l’aprenentatge general d’intel·ligència artificial. Les finances i l’economia no en constitueixen l’àmbit principal.
