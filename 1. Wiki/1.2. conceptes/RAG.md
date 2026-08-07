@@ -48,6 +48,12 @@ Davant la pregunta «Què és el context engineering?», el sistema pot recupera
 - [[QMD]]
 - [[second_brain]]
 - [[frontmatter]]
+- [[grafs_i_models_de_llenguatge]]
+- [[GraphRAG]]
+
+## Relació amb GraphRAG
+
+GraphRAG amplia la RAG amb una representació gràfica de les entitats, les relacions i les comunitats del corpus. La RAG vectorial continua sent útil quan la pregunta depèn sobretot de fragments locals i no requereix seguir relacions explícites.
 
 ## Aplicacions
 
