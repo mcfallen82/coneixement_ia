@@ -11,10 +11,10 @@ sources:
   - https://arxiv.org/abs/2009.03300
   - https://platform.openai.com/docs/api-reference/evals
 related_concepts:
-  - [[1. Wiki/1.2. conceptes/alineament_dels_llm]]
-  - [[1. Wiki/1.2. conceptes/raonament_numeric_documental]]
+  - "[[1. Wiki/1.2. conceptes/alineament_dels_llm]]"
+  - "[[1. Wiki/1.2. conceptes/raonament_numeric_documental]]"
 related_models:
-  - [[1. Wiki/1.3. models/GPT]]
+  - "[[1. Wiki/1.3. models/GPT]]"
 status: reviewed
 created: 2026-08-07
 updated: 2026-08-07
