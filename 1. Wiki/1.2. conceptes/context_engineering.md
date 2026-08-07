@@ -9,6 +9,8 @@ tags:
   - agents
 sources:
   - https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
+related_concepts: []
+related_models: []
 status: reviewed
 created: 2026-08-07
 updated: 2026-08-07
