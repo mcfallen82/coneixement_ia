@@ -1,12 +1,7 @@
 ---
-title: "prompting"
+title: Prompting
 node_id: "concept:prompting"
 node_type: "concept"
----
-
-
----
-title: Prompting
 category: conceptes
 tags:
   - inteligencia-artificial
