@@ -1,4 +1,3 @@
-
 ---
 title: Evergreen notes
 category: conceptes
@@ -18,7 +17,7 @@ updated: 2026-08-07
 
 Són notes d’idees que es mantenen útils, clares i connectades al llarg del temps.
 
-## Per què són importants?
+## Per què és important?
 
 Transformen la presa de notes en una activitat acumulativa. Cada idea pot ser revisada, millorada i reutilitzada.
 
