@@ -1,4 +1,6 @@
 ---
+node_id: "model:obsidian_second_brain_karpathy_rebuilt"
+node_type: "model"
 authors:
   - "[[Ghelbur, Eugeniu]]"
 font: https://theaioperator.io/p/i-rebuilt-karpathys-llm-wiki-heres
