@@ -1,5 +1,7 @@
 ---
 title: Thomas Jefferson
+node_id: "author:jefferson_thomas"
+node_type: "author"
 category: autors
 field:
   - història intel·lectual
