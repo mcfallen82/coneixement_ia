@@ -8,4 +8,4 @@ Plantilles per crear fitxes permanents d’autors, conceptes, models, fonts i re
 - [[4. Templates/90.1. templates_fitxes/plantilla_font]]
 - [[4. Templates/90.1. templates_fitxes/plantilla_resum_dinamic]]
 
-Les plantilles orienten la redacció; no substitueixen AGENTS.md ni les skills.
+La plantilla és un punt de partida. Cal completar-la amb informació verificada, exemples, limitacions i relacions. No substitueix [[AGENTS]] ni les skills.
