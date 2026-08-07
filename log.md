@@ -1,5 +1,13 @@
 # Registre de canvis
 
+## 2026-08-07 — Autors i relacions
+
+- AUTORS: creades 9 fitxes a `1. Wiki/1.1. autors/` a partir dels autors indicats en les fitxes de `1. Wiki/1.3. models/`.
+- ENLLAÇOS: afegides relacions bidireccionals entre autors, models i conceptes.
+- NORMALITZACIÓ: substituït el camp antic `autor` per `authors` en les fitxes de models.
+- CORRECCIÓ: normalitzat `Matuschak` i corregida la grafia anterior `Matuschack`.
+- PLANTILLA: afegit el camp `authors` a `plantilla_model.md`.
+
 ## 2026-08-07
 
 - REESTRUCTURACIÓ: mantinguda la branca agent/reorganitza-wiki-llm com a branca de treball.
