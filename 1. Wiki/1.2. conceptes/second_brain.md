@@ -9,6 +9,8 @@ tags:
   - inteligencia-artificial
 sources:
   - https://fortelabs.com/blog/basboverview/
+related_concepts: []
+related_models: []
 status: reviewed
 created: 2026-08-07
 updated: 2026-08-07
