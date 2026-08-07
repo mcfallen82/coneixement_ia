@@ -1,120 +1,69 @@
+
 ---
+title: Enginyeria de prompts
+category: conceptes
 tags:
-  - concepte
-estat: ok
+  - inteligencia-artificial
+  - models-de-llenguatge
+  - evaluacio
+sources:
+  - https://platform.openai.com/docs/guides/prompt-engineering
+status: reviewed
+created: 2026-08-07
+updated: 2026-08-07
 ---
-# 🛠️ Prompt Engineering
 
-## Resum sintètic
+# Enginyeria de prompts
 
-El **prompt engineering**, o **enginyeria de prompts**, és el procés sistemàtic de dissenyar, provar, avaluar i millorar instruccions perquè produeixin resultats útils de manera consistent.
+## Definició
 
-Parteix d’un primer prompt i utilitza criteris d’èxit i proves repetibles per identificar errors, comparar versions i introduir millores.
+És el procés sistemàtic de dissenyar, provar, avaluar i millorar instruccions perquè produeixin resultats útils i consistents.
 
-**Pregunta principal:**
+## Per què és important?
 
-> Com dissenyo, provo i milloro una instrucció?
+Una petició que funciona una vegada pot fallar en altres casos. L’enginyeria introdueix criteris, proves i control de versions.
 
----
-## 💡 Idea central
+## Intuïció
 
-L’enginyeria de prompts transforma una instrucció inicial en un sistema més fiable i reutilitzable.
+S’assembla a millorar un model d’anàlisi: cal definir el resultat esperat, provar-lo amb diversos casos i corregir els errors observats.
 
-El procés combina:
+## Funcionament
 
-```
-Dissenyar
-   ↓
-Provar
-   ↓
-Avaluar
-   ↓
-Detectar errors
-   ↓
-Modificar
-   ↓
-Comparar
-```
+1. Defineix l’objectiu.
+2. Escriu una primera versió.
+3. Prepara casos de prova.
+4. Estableix una rúbrica.
+5. Compara els resultats.
+6. Modifica una variable cada vegada.
+7. Conserva la versió útil.
 
-La millora necessita tres punts de partida:
+## Exemple
 
-- un objectiu clar;
-- criteris que defineixin l’èxit;
-- una manera de provar els resultats.
+Una rúbrica d’extracció pot valorar exactitud, fidelitat a la font, separació entre fets i inferències, format i consistència.
 
----
-## 🧩 Elements principals
+## Relacions
 
-|Element|Funció|
-|---|---|
-|**Rol**|Orienta el tipus d’anàlisi|
-|**Objectiu**|Defineix la tasca|
-|**Font autoritzada**|Delimita les dades utilitzables|
-|**Estructura**|Organitza la resposta|
-|**Restriccions**|Redueixen desviacions|
-|**Criteris**|Defineixen una bona resposta|
-|**Format**|Facilita reutilitzar el resultat|
+- [[prompt]]
+- [[prompting]]
+- [[context_engineering]]
+- [[LLM]]
 
-L’enginyeria afegeix una capa de **disseny, experimentació i control de qualitat**.
+## Aplicacions
 
----
-## 🔄 Procés de millora
+- plantilles d’extracció;
+- assistents de codi;
+- síntesi de fonts;
+- classificació;
+- automatització.
 
-Una pràctica habitual és:
+## Limitacions i errors habituals
 
-1. Crear una primera versió.
-2. Provar-la amb diversos casos.
-3. Comparar els resultats amb els criteris definits.
-4. Identificar errors i inconsistències.
-5. Modificar una part concreta.
-6. Tornar a executar les proves.
+- provar amb un únic cas;
+- canviar moltes coses alhora;
+- no mesurar omissions;
+- afegir instruccions redundants;
+- confondre una resposta brillant amb un sistema fiable.
 
-El valor apareix en la comparació sistemàtica entre versions.
+## Fonts
 
----
-## 🧪 Fase 2 - Prompt Engineering
-
-Aprèn:
-
-- plantilles reutilitzables;
-- variables;
-- exemples de resposta;
-- criteris d’avaluació;
-- conjunts de proves;
-- control de versions.
-
-Les plantilles i les variables permeten reutilitzar una mateixa estructura amb dades diferents. Les eines d’avaluació faciliten comparar resultats i detectar regressions.
-
----
-## ⚠️ Errors habituals
-
-- modificar moltes instruccions alhora;
-- provar el prompt amb un únic exemple;
-- valorar les respostes sense criteris definits;
-- confondre una resposta bona amb un sistema fiable;
-- perdre l’historial de versions;
-- afegir complexitat sense comprovar que millora el resultat.
-
-Cada modificació hauria de respondre a un error observat o a un objectiu mesurable.
-
----
-## 🗺️ Lectura pràctica
-
-Exemple aplicat a un extractor SEC:
-
-> Convertir l’extractor en un sistema amb deu documents de prova i una rúbrica comuna.
-
-La rúbrica podria valorar:
-
-- exactitud de les dades;
-- fidelitat a les fonts;
-- separació entre fets i inferències;
-- compliment del format;
-- consistència entre documents.
-
-Aquesta pràctica permet comparar versions i comprovar si una modificació produeix una millora real.
-
----
-## 🧭 Frase resum
-
-> El *Prompt Engineering* converteix la millora d’un [[prompt]] en un procés sistemàtic de disseny, prova, avaluació i control de versions.
+- [OpenAI — Prompt engineering guide](https://platform.openai.com/docs/guides/prompt-engineering).
