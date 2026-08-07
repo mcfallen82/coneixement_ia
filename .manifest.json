@@ -28,10 +28,15 @@
         "executable_lint_added",
         "github_actions_added",
         "dashboard_normalized",
-        "manifest_and_log_updated"
+        "manifest_and_log_updated",
+        "initial_workflow_run_completed",
+        "baseline_debt_identified",
+        "validator_mode_adjusted"
       ],
       "pending": [
-        "first_github_actions_run_on_branch"
+        "gradual_frontmatter_normalization",
+        "gradual_wikilink_migration",
+        "strict_lint_pass"
       ]
     },
     {
