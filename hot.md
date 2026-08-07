@@ -1,3 +1,7 @@
+## Frontmatter de conceptes normalitzat
+
+S’han revisat les 39 fitxes conceptuals. Els camps de relació ara tenen un format YAML homogeni i el validador detecta estructures imbricades incorrectes.
+
 ## Prova activa: metadades gràfiques de la wiki
 
 Les fitxes de `1. Wiki/` ja incorporen `node_id` i `node_type`. Executa `python scripts/graph_scan.py --check` i `--stats` abans i després d’afegir coneixement nou. Les relacions semàntiques acceptades continuen al registre `graph/relations.json`.
