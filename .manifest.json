@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "repository": "mcfallen82/ia_knowledge",
+  "purpose": "wiki d'aprenentatge general d'intel·ligència artificial",
+  "scope_exclusions": [
+    "sistema d'aprenentatge de documents financers",
+    "sistema d'aprenentatge de finances",
+    "sistema d'aprenentatge d'economia"
+  ],
+  "sources": [],
+  "operations": [
+    {
+      "date": "2026-08-07",
+      "type": "restructure",
+      "branch": "agent/reorganitza-wiki-llm",
+      "status": "in_progress"
+    }
+  ]
+}
