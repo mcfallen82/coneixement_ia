@@ -1,7 +1,9 @@
 # 90.2. docs_support
 
-Documents de suport per a la utilització i manteniment de la wiki.
+Documents de suport per utilitzar, mantenir i ampliar la wiki d’aprenentatge d’IA.
 
 - [[4. Templates/90.2. docs_support/resum_ar9av_obsidian_wiki_ia_knowledge]] — adaptació general d’Ar9av i Karpathy.
 - [[4. Templates/90.2. docs_support/resum_ar9av_obsidian_wiki_beagle_ai]] — referència històrica orientada a Beagle AI.
-- [[4. Templates/90.2. docs_support/ruta-zero-to-hero-ia]] — síntesi de la ruta d’aprenentatge del tutorial.
+- [[4. Templates/90.2. docs_support/ruta-zero-to-hero-ia]] — síntesi de la ruta d’aprenentatge.
+
+Aquests documents expliquen arquitectura i fluxos. No substitueixen [[AGENTS]]. Les idees generalitzables s’han d’incorporar a fitxes de 1. Wiki/ conservant-ne la referència.
