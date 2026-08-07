@@ -1,5 +1,7 @@
 ---
 title: Jillian Hess
+node_id: "author:hess_jillian"
+node_type: "author"
 category: autors
 field:
   - història intel·lectual
