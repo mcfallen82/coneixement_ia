@@ -1,5 +1,7 @@
 ---
 title: Entrenament, validació i sobreajustament
+node_id: "concept:entrenament_validacio_i_overfitting"
+node_type: "concept"
 category: conceptes
 tags:
   - aprenentatge-automatic
