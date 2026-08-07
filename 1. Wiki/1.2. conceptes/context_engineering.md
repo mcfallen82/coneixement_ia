@@ -47,7 +47,9 @@ En una wiki, això implica conservar fonts, consultar l’índex, recuperar fitx
 Per analitzar un concepte nou, un agent pot rebre la font original, la fitxa existent, les instruccions d’AGENTS.md i una plantilla. No necessita rebre tota la wiki.
 
 ## Relacions
-\n- [[scaffold]]\n
+
+- [[scaffold]]
+
 - [[prompting]]
 - [[prompt_engineering]]
 - [[RAG]]
