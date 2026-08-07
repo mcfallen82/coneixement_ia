@@ -9,7 +9,8 @@ tags:
   - inteligencia-artificial
 sources:
   - https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills
-related_concepts: []
+related_concepts:
+  - "[[scaffold]]"
 related_models: []
 status: reviewed
 created: 2026-08-07
@@ -39,7 +40,7 @@ Una skill ben definida especifica objectiu, quan s’ha d’utilitzar, requisits
 Una skill de wiki-ingest pot llegir una font, detectar conceptes, comparar-los amb fitxes existents, actualitzar pàgines i registrar el canvi.
 
 ## Relacions
-
+\n- [[scaffold]]\n
 - [[context_engineering]]
 - [[second_brain]]
 - [[LLM]]
