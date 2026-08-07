@@ -68,7 +68,8 @@
         "author_pages_created",
         "author_model_links_added",
         "author_frontmatter_normalized",
-        "matuschak_spelling_corrected"
+        "matuschak_spelling_corrected",
+        "mentioned_authors_registered"
       ],
       "authors_created": [
         "1. Wiki/1.1. autors/Appleton, Maggie.md",
@@ -79,7 +80,9 @@
         "1. Wiki/1.1. autors/Ma, Eric.md",
         "1. Wiki/1.1. autors/Arnav.md",
         "1. Wiki/1.1. autors/Jefferson, Thomas.md",
-        "1. Wiki/1.1. autors/Hess, Jillian.md"
+        "1. Wiki/1.1. autors/Hess, Jillian.md",
+        "1. Wiki/1.1. autors/Caulfield, Mike.md",
+        "1. Wiki/1.1. autors/Sloan, Robin.md"
       ]
     }
   ]
