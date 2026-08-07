@@ -13,13 +13,73 @@
       "type": "wiki_architecture_and_ingestion",
       "branch": "agent/reorganitza-wiki-llm",
       "status": "completed",
-      "scope": ["AGENTS.md", "index.md", "2. Skills/", "3. Dashboards/", "4. Templates/", "0. Raw/"],
-      "checks": ["governance_updated", "ingestion_flow_defined", "templates_created", "dashboards_created", "index_queries_normalized", "sources_registered"],
-      "pending": ["model_fiches_review", "individual_reading_pages"],
+      "scope": [
+        "AGENTS.md",
+        "index.md",
+        "2. Skills/",
+        "3. Dashboards/",
+        "4. Templates/",
+        "0. Raw/"
+      ],
+      "checks": [
+        "governance_updated",
+        "ingestion_flow_defined",
+        "templates_created",
+        "dashboards_created",
+        "index_queries_normalized",
+        "sources_registered"
+      ],
+      "pending": [
+        "model_fiches_review",
+        "individual_reading_pages"
+      ],
       "ingested_sources": [
-        {"path": "0. Raw/0.1. llibres/Tutorial_Zero_to_Hero_LLMs.md", "original_name": "Tutorial_Zero_to_Hero_LLMs_Finances.md", "source_type": "tutorial", "status": "raw_ingested"},
-        {"path": "0. Raw/0.1. llibres/Taula_Lectures.md", "original_name": "Taula_Lectures.xlsx", "source_type": "reading_plan", "status": "transcribed"},
-        {"path": "4. Templates/90.1. templates_fitxes/plantilla_resum_dinamic.md", "original_name": "plantilla_resum_dinamic_actualitzada.md", "source_type": "template", "status": "adapted"}
+        {
+          "path": "0. Raw/0.1. llibres/Tutorial_Zero_to_Hero_LLMs.md",
+          "original_name": "Tutorial_Zero_to_Hero_LLMs_Finances.md",
+          "source_type": "tutorial",
+          "status": "raw_ingested"
+        },
+        {
+          "path": "0. Raw/0.1. llibres/Taula_Lectures.md",
+          "original_name": "Taula_Lectures.xlsx",
+          "source_type": "reading_plan",
+          "status": "transcribed"
+        },
+        {
+          "path": "4. Templates/90.1. templates_fitxes/plantilla_resum_dinamic.md",
+          "original_name": "plantilla_resum_dinamic_actualitzada.md",
+          "source_type": "template",
+          "status": "adapted"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-07",
+      "type": "authors_and_model_links",
+      "branch": "agent/reorganitza-wiki-llm",
+      "status": "completed",
+      "scope": [
+        "1. Wiki/1.1. autors/",
+        "1. Wiki/1.3. models/",
+        "4. Templates/90.1. templates_fitxes/plantilla_model.md"
+      ],
+      "checks": [
+        "author_pages_created",
+        "author_model_links_added",
+        "author_frontmatter_normalized",
+        "matuschak_spelling_corrected"
+      ],
+      "authors_created": [
+        "1. Wiki/1.1. autors/Appleton, Maggie.md",
+        "1. Wiki/1.1. autors/Tseng, Fei-Ling.md",
+        "1. Wiki/1.1. autors/Matuschak, Andy.md",
+        "1. Wiki/1.1. autors/Ghelbur, Eugeniu.md",
+        "1. Wiki/1.1. autors/Karpathy, Andrej.md",
+        "1. Wiki/1.1. autors/Ma, Eric.md",
+        "1. Wiki/1.1. autors/Arnav.md",
+        "1. Wiki/1.1. autors/Jefferson, Thomas.md",
+        "1. Wiki/1.1. autors/Hess, Jillian.md"
       ]
     }
   ]
