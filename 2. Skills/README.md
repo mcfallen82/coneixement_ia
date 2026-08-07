@@ -12,7 +12,7 @@ Per a una operació amb escriptura, llegeix i aplica:
 4. [[2. Skills/impl-validator]] — comprovació de l’objectiu;
 5. [[2. Skills/wiki-lint]] — validació final.
 
-Per a una operació només de lectura, utilitza [[2. Skills/wiki-query]] i, si cal, [[2. Skills/wiki-context-pack]]. Per a manteniment, utilitza [[2. Skills/daily-update]] i [[2. Skills/wiki-status]].
+Per a una operació només de lectura, utilitza [[2. Skills/wiki-query]] i, si cal, [[2. Skills/wiki-context-pack]]. Per a una recerca externa, aplica [[2. Skills/wiki-research]] i consulta [[4. Templates/90.2. docs_support/research-config]]. Per a manteniment, utilitza [[2. Skills/daily-update]] i [[2. Skills/wiki-status]].
 
 ## Skills per funció
 
@@ -22,7 +22,7 @@ Per a una operació només de lectura, utilitza [[2. Skills/wiki-query]] i, si c
 - [[2. Skills/wiki-ingest]]
 - [[2. Skills/wiki-update]]
 - [[2. Skills/wiki-capture]]
-- [[2. Skills/wiki-research]]
+- [[2. Skills/wiki-research]] — recerca en tres rondes i integració de fonts.
 
 ### Consulta i qualitat
 
