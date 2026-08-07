@@ -19,32 +19,38 @@ Des de l’arrel del repositori:
 python scripts/wiki_lint.py
 ```
 
-La comprovació és només de lectura i retorna codi 0 amb `PASS` o codi 1 amb `FAIL`. En entorns sense PyYAML:
+La comprovació és només de lectura. Retorna codi 0 amb `PASS` quan no hi ha errors estructurals, encara que pugui informar deute de normalització com a advertiment.
+
+Per exigir la normalització completa:
+
+```bash
+python scripts/wiki_lint.py --strict
+```
+
+En mode estricte, les fitxes antigues sense frontmatter complet, els wikilinks pendents i els camps obsolets passen a ser errors bloquejants. En entorns sense PyYAML:
 
 ```bash
 python -m pip install pyyaml
 ```
 
-## Comprovacions bloquejants
+## Errors bloquejants
 
-1. Existeixen les carpetes i fitxers de control obligatoris.
-2. Cada fitxa permanent té frontmatter YAML vàlid.
-3. Cada fitxa té `title`, `category`, `tags`, `sources`, `status`, `created` i `updated`.
-4. `category` coincideix amb la carpeta i els models tenen `model_family` i `architecture`.
-5. Els wikilinks apunten a fitxers reals.
-6. `.manifest.json` és JSON vàlid i les rutes registrades existeixen.
-7. No hi ha camps o rutes obsolets: `estat:`, `autor:`, `concepts/`, `entities/` o `references/`.
-8. No hi ha títols duplicats dins de la mateixa categoria.
+1. Falta una carpeta o fitxer de control obligatori.
+2. El frontmatter existent és YAML invàlid o no és un mapa.
+3. Hi ha una categoria explícita que no coincideix amb la carpeta.
+4. Hi ha títols duplicats dins de la mateixa categoria.
+5. `.manifest.json` és invàlid o apunta a rutes inexistents.
 
-## Advertències
+## Advertències de normalització
 
-- fitxes amb `status: draft`;
-- fitxes sense fonts;
-- fonts no processades;
-- fitxes sense relacions;
-- README o dashboards sense resultats verificables.
+- fitxes sense frontmatter;
+- camps obligatoris absents;
+- models sense `model_family` o `architecture`;
+- fitxes sense fonts o en estat `draft`;
+- wikilinks que encara utilitzen noms antics;
+- camps o rutes obsolets.
 
-Les advertències no bloquegen, però s’han d’incloure a l’informe.
+Aquestes advertències són el deute tècnic pendent de la migració. No s’han d’ignorar: s’han d’incorporar progressivament a `hot.md` o al registre.
 
 ## Informe
 
@@ -52,11 +58,17 @@ L’script produeix una sortida llegible:
 
 ```text
 WIKI LINT — YYYY-MM-DD
-Errors: n
-Advertiments: n
+Fitxes amb frontmatter revisades: n
+Errors bloquejants: n
+Advertiments de normalització: n
 PASS | FAIL
 ```
 
 ## Protocol de correcció
 
-Corregeix només errors mecànics i reversibles automàticament. Les fusions, eliminacions i correccions de significat requereixen revisió humana. Després de qualsevol correcció, torna a executar l’script i revisa manualment les advertències.
+Corregeix automàticament només errors mecànics i reversibles. Les fusions, eliminacions i correccions de significat requereixen revisió humana. Després de qualsevol correcció:
+
+1. executa el mode normal;
+2. revisa les advertències;
+3. executa `--strict` quan la migració estigui preparada;
+4. actualitza `log.md` i `.manifest.json`.
