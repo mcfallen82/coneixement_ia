@@ -1,5 +1,11 @@
 # Registre de canvis
 
+## 2026-08-07 — Ajust final del validador
+
+- FALSOS POSITIUS: limitat el control de camps i rutes antigues a fitxes i plantilles auditables; la documentació de governança no es compta com a contingut obsolet.
+- MODE NORMAL: manté els errors estructurals bloquejants i informa la resta com a advertiments.
+- MODE ESTRICTE: continua disponible per convertir el deute de normalització en errors.
+
 ## 2026-08-07 — Robustesa operativa i auditoria executable
 
 - GOVERNANÇA: reforçat AGENTS.md amb contractes d’entrada, sortida, validació i criteris de seguretat.
