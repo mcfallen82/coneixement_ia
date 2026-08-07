@@ -1,5 +1,7 @@
 ---
 title: nanoGPT
+node_id: "model:nanogpt"
+node_type: "model"
 category: models
 model_family: transformer implementation
 architecture: decoder-only
