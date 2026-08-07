@@ -28,5 +28,7 @@ Procediments reutilitzables per estudiar, mantenir, consultar i exportar la wiki
 - [[2. Skills/wiki-import]] — importa un graf o un paquet OKF.
 - [[2. Skills/wiki-rebuild]] — arxiva, reconstrueix o restaura la wiki.
 - [[2. Skills/impl-validator]] — valida que una implementació compleixi l’objectiu.
+- [[2. Skills/daily-update]] — executa el manteniment periòdic de la wiki.
+- [[2. Skills/vault-skill-factory]] — converteix coneixement madur en una skill reutilitzable.
 
 Les skills descriuen procediments operatius; la governança continua definida exclusivament a [[AGENTS]]. Les skills específiques d’historials d’agents i de gestió de diversos vaults queden fora de l’abast d’aquest repositori.
