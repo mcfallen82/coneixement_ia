@@ -1,5 +1,6 @@
 ---
-autor: "[[Ghelbur, Eugeniu]]"
+authors:
+  - "[[Ghelbur, Eugeniu]]"
 font: https://theaioperator.io/p/huge-update-on-obsidian-second-brain
 data: 2026-07-08
 tags:
