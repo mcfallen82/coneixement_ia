@@ -1,18 +1,9 @@
-
 # 1.2. conceptes
 
-Fitxes permanents sobre conceptes d’intel·ligència artificial, aprenentatge automàtic, aprenentatge profund, models de llenguatge i sistemes de coneixement.
+Fitxes permanents sobre intel·ligència artificial, aprenentatge automàtic, aprenentatge profund, models de llenguatge i sistemes de coneixement.
 
-## Estructura obligatòria d’una fitxa
+## Estructura
 
-1. **Definició** — què és el concepte.
-2. **Importància** — quin problema ajuda a entendre o resoldre.
-3. **Intuïció** — explicació en llenguatge planer.
-4. **Funcionament** — procés o mecanisme, primer simplificat i després tècnic quan calgui.
-5. **Exemple** — cas petit o aplicació pràctica.
-6. **Relacions** — enllaços a conceptes i models relacionats.
-7. **Aplicacions** — usos reals.
-8. **Limitacions i errors habituals** — què no explica o quan pot fallar.
-9. **Fonts** — referències verificables.
+Cada fitxa ha d’incloure definició, importància, intuïció, funcionament, exemple, relacions, aplicacions, limitacions i fonts. La profunditat s’ha d’adaptar al concepte.
 
-Les fitxes noves han d’utilitzar frontmatter YAML amb title, category, tags, sources, status, created i updated. El contingut ha de distingir els fets documentats de les interpretacions i mantenir els wikilinks compatibles amb Obsidian.
+Les fitxes noves utilitzen title, category, tags, sources, status, created i updated. La plantilla és [[4. Templates/90.1. templates_fitxes/plantilla_concepte]]. Comprova sinònims i fitxes existents abans de crear-ne una altra.
