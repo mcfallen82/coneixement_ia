@@ -68,6 +68,9 @@ def read_frontmatter(path: Path, audit: Audit):
     if not match:
         audit.error(f"{rel}: frontmatter no tancat")
         return None, text
+    if re.search(r"\n---\n\s*---\n", text[match.end():]):
+        audit.error(f"{rel}: frontmatter duplicat o bloc YAML addicional")
+
     try:
         data = yaml.safe_load(match.group(1)) or {}
     except yaml.YAMLError as exc:
