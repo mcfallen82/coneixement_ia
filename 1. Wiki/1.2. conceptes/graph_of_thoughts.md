@@ -74,7 +74,7 @@ Per analitzar un informe:
 - [[grafs_i_models_de_llenguatge]]
 - [[RAG]]
 - [[GraphRAG]]
-- [[enginyeria_de_prompts]]
+- [[prompt_engineering]]
 - [[LLM]]
 - [[avaluacio_de_models]]
 
