@@ -1,12 +1,7 @@
 ---
-title: "zettelkasten"
+title: Zettelkasten
 node_id: "concept:zettelkasten"
 node_type: "concept"
----
-
-
----
-title: Zettelkasten
 category: conceptes
 tags:
   - gestio-del-coneixement
