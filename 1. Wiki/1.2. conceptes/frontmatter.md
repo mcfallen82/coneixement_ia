@@ -40,7 +40,7 @@ Una consulta Dataview pot mostrar totes les fitxes de category: conceptes i orde
 
 ## Relacions
 
-- [[README]]
+- [[wiki]]
 - [[RAG]]
 - [[second_brain]]
 - [[context_engineering]]
