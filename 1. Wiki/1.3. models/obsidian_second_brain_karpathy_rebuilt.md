@@ -1,5 +1,5 @@
 ---
-autor:
+authors:
   - "[[Ghelbur, Eugeniu]]"
 font: https://theaioperator.io/p/i-rebuilt-karpathys-llm-wiki-heres
 data: 2026-07-09
