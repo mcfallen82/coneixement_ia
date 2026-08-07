@@ -1,3 +1,7 @@
+## Nou concepte: Scaffold
+
+La fitxa de [Scaffold](1.%20Wiki/1.2.%20conceptes/scaffold.md) explica l’arquitectura que envolta un LLM perquè actuï dins d’un procés controlat. La prioritat de prova és comparar quins components —context, eines, validació, memòria o delegació— aporten valor real.
+
 ## Frontmatter de conceptes normalitzat
 
 S’han revisat les 39 fitxes conceptuals. Els camps de relació ara tenen un format YAML homogeni i el validador detecta estructures imbricades incorrectes.
