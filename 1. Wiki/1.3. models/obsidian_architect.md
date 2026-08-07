@@ -1,4 +1,6 @@
 ---
+node_id: "model:obsidian_architect"
+node_type: "model"
 authors:
   - "[[Ghelbur, Eugeniu]]"
 font: https://theaioperator.io/p/huge-update-on-obsidian-second-brain
