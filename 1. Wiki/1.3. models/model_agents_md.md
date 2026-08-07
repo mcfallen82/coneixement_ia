@@ -1,4 +1,6 @@
 ---
+node_id: "model:model_agents_md"
+node_type: "model"
 authors:
   - "[[Ghelbur, Eugeniu]]"
 font: https://github.com/eugeniughelbur/agents-md
