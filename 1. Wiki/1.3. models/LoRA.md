@@ -1,5 +1,7 @@
 ---
 title: LoRA
+node_id: "model:lora"
+node_type: "model"
 category: models
 model_family: tècnica d’adaptació de Transformers
 architecture: actualització de baix rang sobre capes lineals
