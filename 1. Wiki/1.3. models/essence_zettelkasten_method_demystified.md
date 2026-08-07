@@ -1,5 +1,5 @@
 ---
-autor:
+authors:
   - "[[Tseng, Fei-Ling]]"
 font: https://substack.com/home/post/p-48707291
 data: 2026-07-09
