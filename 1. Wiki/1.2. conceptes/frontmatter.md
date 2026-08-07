@@ -1,12 +1,7 @@
 ---
-title: "frontmatter"
+title: Frontmatter
 node_id: "concept:frontmatter"
 node_type: "concept"
----
-
-
----
-title: Frontmatter
 category: conceptes
 tags:
   - markdown
