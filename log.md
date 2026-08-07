@@ -1,3 +1,12 @@
+## 2026-08-07 — Recerca i processament del concepte scaffold
+
+- RECERCA: creat el dossier `0. Raw/0.2./recerca_scaffold_2026-08-07.md` amb fonts d’Anthropic, OpenAI, arXiv i Oxford University Press.
+- CONCEPTE: creada la fitxa `1. Wiki/1.2. conceptes/scaffold.md`.
+- DISTINCIÓ: separats els sentits d’agent scaffold/harness i scaffolding pedagògic.
+- CONNEXIONS: afegits enllaços amb enginyeria del context, skills, avaluació de models i enginyeria de prompts.
+- GRAF: incorporades tres relacions acceptades a `graph/relations.json`.
+- PENDENT: comparar experimentalment scaffolds simples i complexos en tasques de la wiki.
+
 ## 2026-08-07 — Auditoria del frontmatter de conceptes
 
 - AUDITORIA: revisades les 39 fitxes de `1. Wiki/1.2. conceptes/`.
