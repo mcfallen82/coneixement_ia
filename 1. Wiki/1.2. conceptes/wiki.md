@@ -8,6 +8,8 @@ tags:
   - representacio-del-coneixement
 sources:
   - https://www.pcmag.com/how-to/what-is-a-wiki
+related_concepts: []
+related_models: []
 status: reviewed
 created: 2026-08-07
 updated: 2026-08-07
