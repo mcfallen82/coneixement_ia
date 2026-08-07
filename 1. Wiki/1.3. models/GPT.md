@@ -1,5 +1,7 @@
 ---
 title: GPT
+node_id: "model:gpt"
+node_type: "model"
 category: models
 model_family: transformer
 architecture: decoder-only
