@@ -57,6 +57,7 @@ SORT updated DESC
 - [Graph of Thoughts](1.%20Wiki/1.2.%20conceptes/graph_of_thoughts.md) — orquestració del raonament.
 - [Xarxes neuronals de graf](1.%20Wiki/1.2.%20conceptes/xarxes_neuronals_de_graf.md) — GNN.
 - [G-Retriever](1.%20Wiki/1.3.%20models/G-Retriever.md) — marc de GraphQA.
+- [Guia per crear wikis amb grafs](4.%20Templates/90.2.%20docs_support/guia_creacio_wikis_amb_grafs.md) — nodes, arestes, procedència i assistència amb agents.
 
 ## Recerca incorporada
 
