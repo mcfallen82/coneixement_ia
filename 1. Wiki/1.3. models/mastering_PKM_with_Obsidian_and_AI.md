@@ -1,5 +1,6 @@
 ---
-autor: "[[Ma, Eric]]"
+authors:
+  - "[[Ma, Eric]]"
 font: https://ericmjl.github.io/blog/2026/3/6/mastering-personal-knowledge-management-with-obsidian-and-ai
 data: 2026-07-07
 tags:
