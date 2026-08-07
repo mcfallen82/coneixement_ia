@@ -1,5 +1,7 @@
 ---
 title: Wiki
+node_id: "concept:wiki"
+node_type: "concept"
 category: conceptes
 tags:
   - gestio-del-coneixement
