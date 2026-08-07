@@ -1,5 +1,14 @@
 # Registre de canvis
 
+## 2026-08-07 — Processament de la taula de lectures
+
+- FONT: completada la transcripció de `Taula_Lectures.xlsx` a `0. Raw/0.1. llibres/Taula_Lectures.md`, amb els cinc blocs originals i el tractament assignat a cada entrada.
+- CONCEPTES: creades 12 fitxes de fonaments de deep learning, tokenització, atenció i raonament numèric documental.
+- MODELS: creades 6 fitxes per a Transformer, WaveNet, GPT, GPT-2, nanoGPT i FinBERT.
+- CLASSIFICACIÓ: FinQA, TAT-QA, DocFinQA i els recursos d’avaluació s’han registrat com a datasets, benchmarks o casos d’aplicació; no s’han etiquetat incorrectament com a models.
+- ENLLAÇOS: afegides relacions entre la font bruta, les fitxes creades i les fitxes existents de LLM i RAG.
+- VALIDACIÓ: revisats frontmatter, rutes de wikilinks i fonts de les 18 fitxes noves.
+
 ## 2026-08-07 — Autors i relacions
 
 - REFERÈNCIES: afegides les fitxes de Mike Caulfield i Robin Sloan, citats dins del cos de les fitxes de models.
