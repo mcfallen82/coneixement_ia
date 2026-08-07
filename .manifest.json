@@ -10,6 +10,45 @@
   "operations": [
     {
       "date": "2026-08-07",
+      "type": "raw_research_graph_usage",
+      "branch": "agent/reorganitza-wiki-llm",
+      "status": "processed",
+      "source_repository": "eugeniughelbur/obsidian-second-brain",
+      "source_commit": "ec7a0e851323ba17c7d6d8f072c647b7098a8621",
+      "raw_sources": [
+        "0. Raw/0.2./recerca_grafs_obsidian_second_brain_2026-08-07.md"
+      ],
+      "documentation_reviewed": [
+        "scripts/link_graph.py",
+        "commands/obsidian-visualize.md",
+        "commands/obsidian-connect.md",
+        "SKILL.md",
+        "architecture.md"
+      ],
+      "contents": [
+        "deterministic_link_graph",
+        "typed_relations",
+        "canvas_visualization",
+        "centrality_hubs_orphans_bridges",
+        "cross_domain_graph_connection",
+        "ia_knowledge_adaptation_pattern"
+      ],
+      "permanent_pages_created": [],
+      "checks": [
+        "source_preserved_as_raw",
+        "index_updated",
+        "log_updated",
+        "hot_updated",
+        "manifest_traceability"
+      ],
+      "pending": [
+        "adapt_scanner_to_ia_knowledge",
+        "define_relation_vocabulary",
+        "evaluate_graph_export"
+      ]
+    },
+    {
+      "date": "2026-08-07",
       "type": "graph_wiki_support_document",
       "branch": "agent/reorganitza-wiki-llm",
       "status": "completed",
