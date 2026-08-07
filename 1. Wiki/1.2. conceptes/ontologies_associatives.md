@@ -1,5 +1,7 @@
 ---
 title: Ontologies associatives
+node_id: "concept:ontologies_associatives"
+node_type: "concept"
 category: conceptes
 tags:
   - gestio-del-coneixement
