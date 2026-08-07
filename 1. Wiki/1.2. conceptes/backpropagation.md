@@ -1,5 +1,7 @@
 ---
 title: Retropropagació
+node_id: "concept:backpropagation"
+node_type: "concept"
 category: conceptes
 tags:
   - aprenentatge-profund
