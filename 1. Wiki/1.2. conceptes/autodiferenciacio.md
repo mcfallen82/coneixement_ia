@@ -32,7 +32,7 @@ Durant el *forward pass*, el sistema registra les operacions que produeixen la p
 
 ## Exemple
 
-[[micrograd]] és una implementació didàctica mínima: mostra que l’autodiferenciació no és màgia de PyTorch, sinó una successió de derivades locals.
+[[1. Wiki/1.2. conceptes/micrograd]] és una implementació didàctica mínima: mostra que l’autodiferenciació no és màgia de PyTorch, sinó una successió de derivades locals.
 
 ## Relacions
 
