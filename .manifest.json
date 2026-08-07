@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "repository": "mcfallen82/ia_knowledge",
   "purpose": "wiki d'aprenentatge general d'intel·ligència artificial",
   "scope_exclusions": [
@@ -7,29 +7,19 @@
     "sistema d'aprenentatge de finances",
     "sistema d'aprenentatge d'economia"
   ],
-  "sources": [
-    "Anthropic context engineering",
-    "OpenAI prompt engineering",
-    "Obsidian Properties",
-    "Zettelkasten.de",
-    "Andy Matuschak Evergreen notes"
-  ],
   "operations": [
     {
       "date": "2026-08-07",
-      "type": "concepts_review",
+      "type": "wiki_architecture_and_ingestion",
       "branch": "agent/reorganitza-wiki-llm",
       "status": "completed",
-      "scope": "1. Wiki/1.2. conceptes",
-      "checks": [
-        "structure_normalized",
-        "frontmatter_normalized",
-        "internal_links_reviewed",
-        "external_sources_added",
-        "obsolete_filename_corrected"
-      ],
-      "pending": [
-        "review_models_folder"
+      "scope": ["AGENTS.md", "index.md", "2. Skills/", "3. Dashboards/", "4. Templates/", "0. Raw/"],
+      "checks": ["governance_updated", "ingestion_flow_defined", "templates_created", "dashboards_created", "index_queries_normalized", "sources_registered"],
+      "pending": ["model_fiches_review", "individual_reading_pages"],
+      "ingested_sources": [
+        {"path": "0. Raw/0.1. llibres/Tutorial_Zero_to_Hero_LLMs.md", "original_name": "Tutorial_Zero_to_Hero_LLMs_Finances.md", "source_type": "tutorial", "status": "raw_ingested"},
+        {"path": "0. Raw/0.1. llibres/Taula_Lectures.md", "original_name": "Taula_Lectures.xlsx", "source_type": "reading_plan", "status": "transcribed"},
+        {"path": "4. Templates/90.1. templates_fitxes/plantilla_resum_dinamic.md", "original_name": "plantilla_resum_dinamic_actualitzada.md", "source_type": "template", "status": "adapted"}
       ]
     }
   ]
