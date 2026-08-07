@@ -1,5 +1,7 @@
 ---
 title: QMD
+node_id: "concept:qmd"
+node_type: "concept"
 category: conceptes
 tags:
   - recuperacio
