@@ -49,6 +49,10 @@ WHERE file.name != "README"
 SORT updated DESC
 ~~~
 
+## Recerca incorporada
+
+- [Dossier de recerca: fonaments operatius dels LLM](0.%20Raw/0.2./recerca_fonaments_operatius_2026-08-07.md) — ajustament, alineament, LoRA i avaluació.
+
 ## Organització
 
 - [2. Skills](2.%20Skills/) — procediments reutilitzables.
