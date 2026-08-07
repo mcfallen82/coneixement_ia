@@ -7,27 +7,29 @@
     "sistema d'aprenentatge de finances",
     "sistema d'aprenentatge d'economia"
   ],
-  "sources": [],
+  "sources": [
+    "Anthropic context engineering",
+    "OpenAI prompt engineering",
+    "Obsidian Properties",
+    "Zettelkasten.de",
+    "Andy Matuschak Evergreen notes"
+  ],
   "operations": [
     {
       "date": "2026-08-07",
-      "type": "restructure",
+      "type": "concepts_review",
       "branch": "agent/reorganitza-wiki-llm",
-      "status": "validated_with_pending_filesystem_check",
-      "files_checked": [
-        "AGENTS.md",
-        "index.md",
-        "log.md",
-        "hot.md",
-        ".manifest.json"
-      ],
+      "status": "completed",
+      "scope": "1. Wiki/1.2. conceptes",
       "checks": [
-        "navigation_links_reviewed",
-        "dataview_paths_reviewed",
-        "governance_scope_reviewed"
+        "structure_normalized",
+        "frontmatter_normalized",
+        "internal_links_reviewed",
+        "external_sources_added",
+        "obsolete_filename_corrected"
       ],
       "pending": [
-        "recursive_repository_tree_validation"
+        "review_models_folder"
       ]
     }
   ]
