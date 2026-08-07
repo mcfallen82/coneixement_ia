@@ -1,3 +1,11 @@
+## 2026-08-07 — Posada en marxa de la capa gràfica lleugera
+
+- IMPLEMENTACIÓ: creats `graph/relations.json`, `graph/relation-vocabulary.yaml` i `scripts/graph_scan.py`.
+- MODEL: nodes derivats de les fitxes Markdown; relacions acceptades separades dels wikilinks candidats.
+- INTEGRACIÓ: afegits `graph-layer.md`, el dashboard `3. Dashboards/graf.md` i documentació de governança.
+- VALIDACIÓ: preparat el control de destinacions, vocabulari, procedència, confiança i enllaços trencats.
+- ABAST: no s’introdueixen base de dades gràfica ni GraphRAG; la sortida JSON és una instantània reconstruïble per a proves.
+
 ## 2026-08-07 — Recerca sobre grafs a obsidian-second-brain
 
 - FONT RAW: creat `0. Raw/0.2./recerca_grafs_obsidian_second_brain_2026-08-07.md`.
