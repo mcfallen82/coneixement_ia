@@ -2,28 +2,43 @@
 
 ## Finalitat
 
-Actualitzar una fitxa existent quan una font nova hi aporta informació, precisió, exemple o correcció.
+Sincronitzar informació nova amb les fitxes permanents de la wiki, tant si prové d’una font com d’un projecte.
 
-## Regles
+## Protocol
 
-- Busca primer el mateix concepte, sinònims en català i anglès i fitxes relacionades.
-- Conserva el contingut vàlid i les fonts anteriors.
-- Afegeix la informació nova dins una secció identificable.
-- Actualitza updated i mantén created.
-- Registra contradiccions com a qüestions obertes.
-- Crea una fitxa nova només si hi ha una unitat de coneixement clarament separada.
-- Revisa els wikilinks de doble sentit quan la relació sigui important.
+1. Llegeix AGENTS.md, la fitxa objectiu, les fitxes relacionades i log.md.
+2. Compara el contingut nou amb el contingut existent.
+3. Separa dades noves, precisions, correccions, exemples, relacions causals, contradiccions i informació obsoleta.
+4. Conserva el text vàlid, les fonts i la data created.
+5. Incorpora la informació nova en la secció adequada i actualitza updated.
+6. Afegeix la font al frontmatter i a la secció Fonts.
+7. Revisa els enllaços cap a autors, conceptes i models.
 
 ## Criteri de decisió
 
 ~~~text
 mateix concepte → actualitzar
-sinònim → enllaçar o fusionar
+sinònim o grafia alternativa → enllaçar o redirigir
 subconcepte autònom → crear fitxa
-font contradictòria → conservar les evidències i explicar la diferència
+font contradictòria → conservar les dues evidències i explicar la diferència
 exemple nou → afegir-lo a la fitxa existent
+informació irrellevant → no incorporar-la
 ~~~
 
-## Validació
+## Actualització d’un projecte
 
-Comprova YAML, fonts, data d’actualització, categoria, enllaços i aparició a les consultes de l’índex.
+Quan el contingut prové d’un repositori:
+
+- revisa README, estructura, dependències, decisions i historial de canvis;
+- extreu patrons, alternatives, errors i solucions;
+- evita copiar llistats de codi o detalls efímers;
+- desa el resultat enllaçat amb el projecte o la font corresponent;
+- registra l’últim commit sincronitzat al manifest quan sigui possible.
+
+## Relacions bidireccionals
+
+Si una fitxa de model cita un concepte, el model ha d’enllaçar-lo i el concepte ha d’incloure el model a related_models. Aplica el mateix criteri a autors i obres.
+
+## Validació final
+
+Executa wiki-lint, comprova que la fitxa apareix a les consultes de index.md i actualitza log.md, hot.md i .manifest.json.
