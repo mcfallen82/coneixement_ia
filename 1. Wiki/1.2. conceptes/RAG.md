@@ -1,3 +1,9 @@
+---
+title: "RAG"
+node_id: "concept:rag"
+node_type: "concept"
+---
+
 
 ---
 title: Generació augmentada amb recuperació
