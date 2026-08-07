@@ -2,33 +2,47 @@
 
 Procediments reutilitzables per estudiar, mantenir, consultar i exportar la wiki d’aprenentatge d’IA.
 
-## Flux principal
+## Ordre d’activació
 
-- [[2. Skills/llm-wiki]] — arquitectura, esquema de fitxes i principis de la wiki.
-- [[2. Skills/wiki-ingest]] — incorpora fonts i les transforma en coneixement.
-- [[2. Skills/wiki-update]] — actualitza fitxes i sincronitza projectes.
-- [[2. Skills/wiki-lint]] — audita estructura, YAML, fonts i enllaços.
+Per a una operació amb escriptura, llegeix i aplica:
 
-## Consulta i anàlisi
+1. [[2. Skills/llm-wiki]] — arquitectura i principis;
+2. [[2. Skills/wiki-ingest]] o [[2. Skills/wiki-update]] — transformació;
+3. [[2. Skills/wiki-dedup]] i [[2. Skills/cross-linker]] — coherència;
+4. [[2. Skills/impl-validator]] — comprovació de l’objectiu;
+5. [[2. Skills/wiki-lint]] — validació final.
 
-- [[2. Skills/wiki-query]] — respon preguntes a partir de la wiki.
-- [[2. Skills/wiki-context-pack]] — prepara un context acotat i traçable.
-- [[2. Skills/wiki-status]] — mostra fonts pendents, canvis i estat general.
-- [[2. Skills/wiki-dedup]] — detecta i resol fitxes duplicades.
-- [[2. Skills/cross-linker]] — proposa i afegeix connexions internes.
-- [[2. Skills/tag-taxonomy]] — manté una taxonomia controlada d’etiquetes.
-- [[2. Skills/wiki-synthesize]] — detecta oportunitats de síntesi entre fitxes.
-- [[2. Skills/wiki-research]] — estructura una recerca externa en fonts i fitxes.
-- [[2. Skills/wiki-capture]] — converteix converses en coneixement permanent.
+Per a una operació només de lectura, utilitza [[2. Skills/wiki-query]] i, si cal, [[2. Skills/wiki-context-pack]]. Per a manteniment, utilitza [[2. Skills/daily-update]] i [[2. Skills/wiki-status]].
 
-## Visualització i intercanvi
+## Skills per funció
 
-- [[2. Skills/wiki-dashboard]] — crea vistes Dataview o Bases.
-- [[2. Skills/wiki-export]] — exporta el graf de coneixement.
-- [[2. Skills/wiki-import]] — importa un graf o un paquet OKF.
-- [[2. Skills/wiki-rebuild]] — arxiva, reconstrueix o restaura la wiki.
-- [[2. Skills/impl-validator]] — valida que una implementació compleixi l’objectiu.
-- [[2. Skills/daily-update]] — executa el manteniment periòdic de la wiki.
-- [[2. Skills/vault-skill-factory]] — converteix coneixement madur en una skill reutilitzable.
+### Arquitectura i ingesta
 
-Les skills descriuen procediments operatius; la governança continua definida exclusivament a [[AGENTS]]. Les skills específiques d’historials d’agents i de gestió de diversos vaults queden fora de l’abast d’aquest repositori.
+- [[2. Skills/llm-wiki]]
+- [[2. Skills/wiki-ingest]]
+- [[2. Skills/wiki-update]]
+- [[2. Skills/wiki-capture]]
+- [[2. Skills/wiki-research]]
+
+### Consulta i qualitat
+
+- [[2. Skills/wiki-query]]
+- [[2. Skills/wiki-context-pack]]
+- [[2. Skills/wiki-status]]
+- [[2. Skills/wiki-dedup]]
+- [[2. Skills/cross-linker]]
+- [[2. Skills/tag-taxonomy]]
+- [[2. Skills/impl-validator]]
+- [[2. Skills/wiki-lint]]
+
+### Operacions i sortides
+
+- [[2. Skills/wiki-dashboard]]
+- [[2. Skills/wiki-synthesize]]
+- [[2. Skills/wiki-export]]
+- [[2. Skills/wiki-import]]
+- [[2. Skills/wiki-rebuild]]
+- [[2. Skills/daily-update]]
+- [[2. Skills/vault-skill-factory]]
+
+Les skills descriuen procediments operatius; la governança continua definida exclusivament a [[AGENTS]]. Qualsevol skill que escrigui fitxers ha d’indicar entrades, sortides, validació i criteris d’aturada.
