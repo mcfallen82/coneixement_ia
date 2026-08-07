@@ -1,5 +1,7 @@
 ---
 title: Arnav
+node_id: "author:arnav"
+node_type: "author"
 category: autors
 field:
   - wikis amb LLM
