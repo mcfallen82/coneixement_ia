@@ -2,6 +2,8 @@
 
 ## 2026-08-07 — Autors i relacions
 
+- REFERÈNCIES: afegides les fitxes de Mike Caulfield i Robin Sloan, citats dins del cos de les fitxes de models.
+
 - AUTORS: creades 9 fitxes a `1. Wiki/1.1. autors/` a partir dels autors indicats en les fitxes de `1. Wiki/1.3. models/`.
 - ENLLAÇOS: afegides relacions bidireccionals entre autors, models i conceptes.
 - NORMALITZACIÓ: substituït el camp antic `autor` per `authors` en les fitxes de models.
