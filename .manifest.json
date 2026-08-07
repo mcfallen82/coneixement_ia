@@ -84,6 +84,26 @@
         "1. Wiki/1.1. autors/Caulfield, Mike.md",
         "1. Wiki/1.1. autors/Sloan, Robin.md"
       ]
+    },
+    {
+      "date": "2026-08-07",
+      "type": "readme_audit",
+      "branch": "agent/reorganitza-wiki-llm",
+      "status": "completed",
+      "scope": [
+        "README.md",
+        "0. Raw/",
+        "1. Wiki/",
+        "2. Skills/",
+        "3. Dashboards/",
+        "4. Templates/"
+      ],
+      "checks": [
+        "missing_readmes_added",
+        "empty_readmes_completed",
+        "folder_descriptions_normalized",
+        "readmes_validated"
+      ]
     }
   ]
 }
