@@ -1,4 +1,6 @@
 ---
+node_id: "model:digital_gardens"
+node_type: "model"
 authors:
   - "[[Appleton, Maggie]]"
 font: https://maggieappleton.com/garden-history
