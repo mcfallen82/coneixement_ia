@@ -1,5 +1,7 @@
 ---
 title: Eric Ma
+node_id: "author:ma_eric"
+node_type: "author"
 category: autors
 field:
   - gestió del coneixement personal
