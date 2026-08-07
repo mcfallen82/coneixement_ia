@@ -1,5 +1,13 @@
 # Registre de canvis
 
+## 2026-08-07 — Guia per crear wikis amb grafs
+
+- DOCUMENT DE SUPORT: creat `4. Templates/90.2. docs_support/guia_creacio_wikis_amb_grafs.md`.
+- ABAST: documentats nodes, arestes tipades, direcció, procedència, confiança i nivells de maduresa del graf.
+- ASSISTÈNCIA: definida una sortida revisable perquè els agents proposin relacions sense convertir inferències en fets.
+- GRAPH-RAG: establerts criteris per diferenciar una wiki connectada, un graf consultable i un sistema GraphRAG.
+- AUDITORIA: afegides comprovacions específiques per a nodes orfes, arestes trencades, relacions vagues, duplicats i components aïllats.
+
 ## 2026-08-07 — Recerca i processament de grafs aplicats als models de llenguatge
 
 - FONT RAW: creat `0. Raw/0.2./recerca_grafs_models_llm_2026-08-07.md` amb tres rondes de recerca i 11 fonts primàries o oficials.
