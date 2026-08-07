@@ -1,3 +1,9 @@
+---
+title: "zettelkasten"
+node_id: "concept:zettelkasten"
+node_type: "concept"
+---
+
 
 ---
 title: Zettelkasten
