@@ -59,6 +59,8 @@ SORT updated DESC
 - [G-Retriever](1.%20Wiki/1.3.%20models/G-Retriever.md) — marc de GraphQA.
 - [Guia per crear wikis amb grafs](4.%20Templates/90.2.%20docs_support/guia_creacio_wikis_amb_grafs.md) — nodes, arestes, procedència i assistència amb agents.
 
+- [Ús de grafs a obsidian-second-brain](0.%20Raw/0.2./recerca_grafs_obsidian_second_brain_2026-08-07.md) — dossier brut sobre escàner de grafs, relacions tipades, canvas i connexió entre dominis.
+
 ## Recerca incorporada
 
 - [Dossier de recerca: fonaments operatius dels LLM](0.%20Raw/0.2./recerca_fonaments_operatius_2026-08-07.md) — ajustament, alineament, LoRA i avaluació.
