@@ -13,7 +13,22 @@
       "date": "2026-08-07",
       "type": "restructure",
       "branch": "agent/reorganitza-wiki-llm",
-      "status": "in_progress"
+      "status": "validated_with_pending_filesystem_check",
+      "files_checked": [
+        "AGENTS.md",
+        "index.md",
+        "log.md",
+        "hot.md",
+        ".manifest.json"
+      ],
+      "checks": [
+        "navigation_links_reviewed",
+        "dataview_paths_reviewed",
+        "governance_scope_reviewed"
+      ],
+      "pending": [
+        "recursive_repository_tree_validation"
+      ]
     }
   ]
 }
