@@ -2,58 +2,61 @@
 
 ## Finalitat
 
-Auditar la salut estructural i semàntica de la wiki abans de donar per acabada una ingesta o reorganització.
+Auditar la salut estructural, sintàctica i semàntica de la wiki abans de donar per acabada una ingesta, reorganització o actualització.
 
-## Comprovacions
+## Entrades
 
-### Estructura
+- arrel del repositori;
+- fitxes de `1. Wiki/`;
+- `index.md`, `log.md`, `hot.md` i `.manifest.json`;
+- skills, dashboards i plantilles.
 
-- existeixen 0. Raw/, 1. Wiki/, 2. Skills/, 3. Dashboards/ i 4. Templates/;
-- els README descriuen el contingut real;
-- les rutes de l’índex i de les skills són actuals.
+## Execució
 
-### Fitxes i YAML
+Des de l’arrel del repositori:
 
-- cada fitxa permanent té frontmatter vàlid;
-- conté title, category, tags, sources, status, created i updated;
-- category coincideix amb la carpeta;
-- no hi ha camps antics com estat si es poden normalitzar;
-- els models incorporen model_family i architecture quan són aplicables.
+```bash
+python scripts/wiki_lint.py
+```
 
-### Xarxa de coneixement
+La comprovació és només de lectura i retorna codi 0 amb `PASS` o codi 1 amb `FAIL`. En entorns sense PyYAML:
 
-- wikilinks cap a fitxers reals;
-- cap enllaç a rutes antigues;
-- autors, conceptes i models relacionats;
-- detecció de fitxes orfes i possibles duplicats.
+```bash
+python -m pip install pyyaml
+```
 
-### Traçabilitat
+## Comprovacions bloquejants
 
-- fitxes madures amb fonts verificables;
-- log.md, hot.md i .manifest.json actualitzats;
-- les fonts indiquen fitxes creades o modificades;
-- no es confonen dades documentades amb interpretacions.
+1. Existeixen les carpetes i fitxers de control obligatoris.
+2. Cada fitxa permanent té frontmatter YAML vàlid.
+3. Cada fitxa té `title`, `category`, `tags`, `sources`, `status`, `created` i `updated`.
+4. `category` coincideix amb la carpeta i els models tenen `model_family` i `architecture`.
+5. Els wikilinks apunten a fitxers reals.
+6. `.manifest.json` és JSON vàlid i les rutes registrades existeixen.
+7. No hi ha camps o rutes obsolets: `estat:`, `autor:`, `concepts/`, `entities/` o `references/`.
+8. No hi ha títols duplicats dins de la mateixa categoria.
 
-## Auditoria manual
+## Advertències
 
-~~~bash
-rg -n "estat:|autor:|concepts/|entities/|references/" .
-rg -n "^title:|^category:|^tags:|^sources:|^status:|^created:|^updated:" "1. Wiki"
-rg -n "\[\[.*\]\]" "1. Wiki" "2. Skills" "4. Templates"
-~~~
+- fitxes amb `status: draft`;
+- fitxes sense fonts;
+- fonts no processades;
+- fitxes sense relacions;
+- README o dashboards sense resultats verificables.
 
-Per validar YAML, utilitza un analitzador disponible o revisa manualment les capçaleres. Les cerques són senyals, no una prova suficient.
+Les advertències no bloquegen, però s’han d’incloure a l’informe.
 
 ## Informe
 
-~~~text
-# Informe wiki-lint — YYYY-MM-DD
-## Errors bloquejants
-## Advertiments
-## Fitxes orfes
-## Duplicats o sinònims
-## Enllaços proposats
-## Accions recomanades
-~~~
+L’script produeix una sortida llegible:
 
-Corregeix automàticament només errors mecànics i reversibles. Les fusions, eliminacions i canvis de significat requereixen revisió humana.
+```text
+WIKI LINT — YYYY-MM-DD
+Errors: n
+Advertiments: n
+PASS | FAIL
+```
+
+## Protocol de correcció
+
+Corregeix només errors mecànics i reversibles automàticament. Les fusions, eliminacions i correccions de significat requereixen revisió humana. Després de qualsevol correcció, torna a executar l’script i revisa manualment les advertències.
