@@ -1,34 +1,24 @@
 # AGENTS.md — Governança de la wiki d’aprenentatge d’IA
 
-## 1. Objectiu
+## 1. Objectiu i abast
 
-Aquest repositori és una wiki d’aprenentatge assistida per models de llenguatge. El seu objectiu és ajudar a estudiar, ordenar, relacionar i revisar coneixement sobre:
+Aquest repositori és una wiki d’aprenentatge acumulatiu sobre intel·ligència artificial. Serveix per estudiar, ordenar, relacionar i revisar coneixement sobre:
 
-- intel·ligència artificial;
-- aprenentatge automàtic;
-- aprenentatge profund;
-- models de llenguatge;
-- models generatius;
-- enginyeria de context;
-- sistemes de coneixement;
-- programació i automatització relacionades amb la IA;
-- eines i fluxos de treball per aprendre i construir aplicacions amb IA.
+- intel·ligència artificial, aprenentatge automàtic i aprenentatge profund;
+- models de llenguatge, models generatius i sistemes multimodals;
+- enginyeria de prompts i del context;
+- sistemes de coneixement, Obsidian, PKM i automatització;
+- programació, dades i eines necessàries per construir aplicacions amb IA.
 
-La wiki és un sistema d’aprenentatge general sobre IA. No és una wiki d’aprenentatge de documents financers, ni un sistema d’aprenentatge de finances o economia. Les aplicacions financeres només es poden incloure quan serveixin com a exemple d’un concepte d’IA i no com a àrea principal de coneixement.
+No és un sistema d’aprenentatge de documents financers, ni una wiki de finances o economia. Les finances només es poden utilitzar com a exemple pràctic quan ajudin a entendre un concepte d’IA.
 
-## 2. Font única de governança
+## 2. Governança
 
-Aquest fitxer és l’únic document de governança del repositori.
-
-Qualsevol agent o model de llenguatge que treballi en aquest repositori ha de llegir-lo abans d’actuar i ha de respectar-lo. No s’han de crear fitxers alternatius de governança, com ara `CLAUDE.md`, `GEMINI.md` o altres documents equivalents, llevat que Joan ho demani explícitament.
-
-Els fitxers d’instruccions tècniques de GitHub, Obsidian o altres eines poden conservar-se perquè formen part de la configuració de l’entorn, però no substitueixen aquest document.
+Aquest és l’únic document principal de governança. S’ha de llegir abans d’actuar. No es crearan fitxers alternatius com CLAUDE.md o GEMINI.md, llevat que Joan ho demani explícitament.
 
 ## 3. Estructura obligatòria
 
-La wiki utilitza aquesta estructura:
-
-```text
+~~~text
 .obsidian/
 0. Raw/
 ├── 0.1. llibres/
@@ -46,122 +36,99 @@ index.md
 log.md
 hot.md
 .manifest.json
-```
+~~~
 
-Les carpetes numerades formen part de l’organització visible del vault d’Obsidian. Els noms amb espais s’han de conservar exactament.
+- 0. Raw/ conserva fonts originals o còpies de treball.
+- 1. Wiki/ conté fitxes permanents d’autors, conceptes i models.
+- 2. Skills/ conté procediments reutilitzables.
+- 3. Dashboards/ conté consultes i vistes d’Obsidian.
+- 4. Templates/ conté plantilles i documents de suport.
 
-## 4. Trasllat de contingut
+## 4. Fitxes permanents
 
-El contingut existent s’ha de reorganitzar així:
+Les fitxes de 1. Wiki/ utilitzen frontmatter YAML:
 
-| Ubicació actual | Ubicació nova |
-|---|---|
-| `autors/` | `1. Wiki/1.1. autors/` |
-| `conceptes/` | `1. Wiki/1.2. conceptes/` |
-| `models/` | `1. Wiki/1.3. models/` |
-| `llibres/` | `0. Raw/0.1. llibres/` |
-| `docs_support/` | `4. Templates/90.2. docs_support/` |
-| `templates/` | `4. Templates/90.1. templates_fitxes/` |
-
-El trasllat ha de preservar el contingut i l’historial sempre que la tecnologia emprada ho permeti. No s’han de duplicar pàgines sense una raó documentada.
-
-Els altres documents d’arrel s’han de mantenir, especialment:
-
-- configuració d’Obsidian;
-- configuració de GitHub;
-- fitxers de projecte;
-- documentació general;
-- fitxers de configuració i automatització.
-
-## 5. Tipus de contingut
-
-- `0. Raw/`: materials d’origen i fonts d’aprenentatge. No s’ha de modificar una font original per convertir-la en una síntesi.
-- `1. Wiki/`: fitxes permanents sobre autors, conceptes i models d’IA.
-- `2. Skills/`: procediments reutilitzables per treballar amb la wiki i estudiar IA.
-- `3. Dashboards/`: vistes, consultes i quadres de comandament d’Obsidian.
-- `4. Templates/`: plantilles de fitxes i documents de suport.
-- `index.md`: mapa de navegació principal.
-- `log.md`: registre cronològic dels canvis.
-- `hot.md`: continguts prioritaris o en curs.
-- `.manifest.json`: registre estructurat de fonts i operacions d’ingestió.
-
-## 6. Treball amb models de llenguatge
-
-Abans de crear una fitxa nova, cal:
-
-1. llegir `index.md` i `hot.md`;
-2. localitzar fitxes relacionades;
-3. comprovar si el concepte ja existeix amb un altre nom;
-4. decidir si cal crear, actualitzar o enllaçar una pàgina;
-5. mantenir la procedència de la informació;
-6. actualitzar l’índex i el registre quan el canvi afecti l’estructura o el coneixement permanent.
-
-La wiki ha d’acumular coneixement. Les actualitzacions han de reduir duplicacions i millorar les connexions entre fitxes.
-
-## 7. Fitxes de la wiki
-
-Les fitxes permanents han d’utilitzar frontmatter YAML quan el format del contingut ho permeti:
-
-```yaml
+~~~yaml
 ---
 title: Nom de la fitxa
 category: conceptes
 tags:
   - inteligencia-artificial
 sources: []
+related_concepts: []
+related_models: []
 status: draft
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
 ---
-```
+~~~
 
-La categoria ha de correspondre a una carpeta de `1. Wiki/`. Les fonts han d’identificar documents, enllaços o altres fitxes que sustenten el contingut.
+La categoria ha de correspondre a la carpeta. Les fonts han de ser verificables. Cada fitxa ha de començar per una definició i, segons la complexitat, incloure intuïció, funcionament, exemple, aplicacions, limitacions, relacions i fonts. Cal separar dades documentades, interpretació i qüestions obertes quan hi hagi risc de confusió.
 
-Una fitxa ha de distingir, quan sigui necessari:
+## 5. Flux d’ingesta
 
-- definició;
-- intuïció;
-- funcionament;
-- exemple;
-- aplicacions;
-- limitacions;
-- relacions amb altres conceptes;
-- fonts i qüestions obertes.
+Cada font nova segueix aquest procés:
 
-## 8. Estil
+~~~text
+font a 0. Raw/
+    ↓
+lectura i classificació
+    ↓
+extracció de conceptes, autors i models
+    ↓
+comprovació de duplicats i sinònims
+    ↓
+actualització o creació de fitxes
+    ↓
+wikilinks i fonts
+    ↓
+actualització de l’índex
+    ↓
+registre a log.md
+    ↓
+actualització de .manifest.json
+~~~
 
-La redacció principal és en català, amb terminologia tècnica explicada en llenguatge planer. Es poden conservar els noms propis, els noms de models i les expressions tècniques en anglès quan siguin l’estàndard del sector.
+Abans de crear una fitxa cal comprovar si ja existeix el mateix concepte, un sinònim, una fitxa d’entitat relacionada o una pàgina que només necessita actualització. La wiki compila coneixement persistent; no és només un repositori per recuperar fragments en el moment de respondre.
 
-Les explicacions han de construir criteri: primer intuïció, després detall tècnic, exemple pràctic i limitacions. No s’han de presentar hipòtesis com si fossin fets demostrats.
+## 6. Skills operatives
 
-## 9. Obsidian i enllaços
+Les skills de 2. Skills/ descriuen procediments, no governança:
 
-Els enllaços interns han de ser compatibles amb Obsidian i han de reflectir la ubicació real de la fitxa. Les consultes Dataview han d’utilitzar les carpetes noves i s’han de revisar després d’un trasllat.
+- wiki-ingest.md: processar fonts d’aprenentatge;
+- wiki-update.md: actualitzar fitxes i resoldre duplicats;
+- wiki-lint.md: auditar estructura, YAML, fonts i enllaços.
 
-No s’han de modificar automàticament les carpetes `.obsidian/` ni els fitxers de configuració de GitHub si el canvi no és necessari per a aquesta reorganització.
+Quan una skill contradigui aquest document, preval AGENTS.md.
 
-## 10. Registre dels canvis
+## 7. Enllaços i Obsidian
 
-Qualsevol canvi estructural o ingesta significativa ha d’afegir una entrada a `log.md` amb:
+Els wikilinks han d’apuntar a fitxes reals i conservar el nom de carpeta quan sigui necessari:
 
-- data;
-- operació;
-- carpetes o fitxers afectats;
-- resultat;
-- incidències pendents.
+~~~markdown
+[[1. Wiki/1.2. conceptes/embeddings]]
+[[1. Wiki/1.3. models/transformer]]
+~~~
 
-Quan es processi una font, també s’ha d’actualitzar `.manifest.json`.
+Les consultes Dataview han d’utilitzar les rutes actuals i camps coherents, especialment title, status, sources i updated. No s’han de modificar automàticament .obsidian/ ni configuracions de GitHub sense necessitat.
 
-## 11. Validació abans de publicar
+## 8. Estil i fonts
 
-Abans de donar una feina per acabada cal comprovar:
+La redacció principal és en català. Primer s’explica la intuïció i després el detall tècnic. Els termes anglesos es mantenen només quan són l’estàndard, i s’expliquen en català.
 
-- que les carpetes obligatòries existeixen;
-- que no s’han perdut fitxers en els trasllats;
-- que l’índex apunta a les ubicacions noves;
-- que no hi ha enllaços interns evidents cap a les rutes antigues;
-- que el YAML és vàlid en les fitxes modificades;
-- que `log.md` i `.manifest.json` descriuen l’operació;
-- que els fitxers d’Obsidian i GitHub no s’han eliminat.
+Les fonts es conserven al frontmatter i en una secció final. Les afirmacions documentades, les interpretacions pedagògiques i les hipòtesis no s’han de barrejar.
 
-Qualsevol incidència no resolta s’ha d’explicar al registre i a la proposta de canvi.
+## 9. Registre i manifest
+
+Cada canvi estructural o ingesta significativa s’ha d’afegir a log.md amb data, operació, fitxers afectats, resultat i incidències. Quan es processa una font, .manifest.json ha d’indicar-ne la ruta, tipus, estat i fitxes creades o actualitzades.
+
+## 10. Validació
+
+Abans de publicar cal comprovar:
+
+- carpetes obligatòries i fitxers esperats;
+- absència de rutes antigues en enllaços i consultes;
+- YAML vàlid en fitxes modificades;
+- fonts i wikilinks plausibles;
+- índex, log i manifest actualitzats;
+- preservació dels fitxers d’Obsidian i GitHub.
