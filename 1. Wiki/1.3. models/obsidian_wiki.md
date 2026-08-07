@@ -1,4 +1,6 @@
 ---
+node_id: "model:obsidian_wiki"
+node_type: "model"
 authors:
   - "[[Arnav]]"
 font: https://github.com/Ar9av/obsidian-wiki/tree/main
