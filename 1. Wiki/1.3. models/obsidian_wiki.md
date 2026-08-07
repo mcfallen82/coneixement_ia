@@ -1,5 +1,6 @@
 ---
-autor: "[[Arnav]]"
+authors:
+  - "[[Arnav]]"
 font: https://github.com/Ar9av/obsidian-wiki/tree/main
 data: 2026-06-30
 tags:
