@@ -9,7 +9,8 @@ tags:
   - evaluacio
 sources:
   - https://platform.openai.com/docs/guides/prompt-engineering
-related_concepts: []
+related_concepts:
+  - "[[scaffold]]"
 related_models: []
 status: reviewed
 created: 2026-08-07
@@ -45,7 +46,7 @@ S’assembla a millorar un model d’anàlisi: cal definir el resultat esperat, 
 Una rúbrica d’extracció pot valorar exactitud, fidelitat a la font, separació entre fets i inferències, format i consistència.
 
 ## Relacions
-
+\n- [[scaffold]]\n
 - [[prompt]]
 - [[prompting]]
 - [[context_engineering]]
