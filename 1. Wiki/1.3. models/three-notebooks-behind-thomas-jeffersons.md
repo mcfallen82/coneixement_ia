@@ -1,4 +1,6 @@
 ---
+node_id: "model:three_notebooks_behind_thomas_jeffersons"
+node_type: "model"
 authors:
   - "[[Jefferson, Thomas]]"
   - "[[Hess, Jillian]]"

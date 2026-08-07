@@ -1,5 +1,7 @@
 ---
 title: Autodiferenciació
+node_id: "concept:autodiferenciacio"
+node_type: "concept"
 category: conceptes
 tags:
   - aprenentatge-profund

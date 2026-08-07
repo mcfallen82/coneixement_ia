@@ -1,6 +1,8 @@
 ---
 title: Nom de l’autor
 category: autors
+node_id: "author:nom_autor"
+node_type: author
 field:
 affiliation:
 sources: []

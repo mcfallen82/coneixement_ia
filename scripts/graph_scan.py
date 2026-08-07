@@ -33,7 +33,7 @@ def node_type(path: Path) -> str:
         "1.1. autors": "author",
         "1.2. conceptes": "concept",
         "1.3. models": "model",
-    }.get(path.parent.name, "unknown")
+    }.get(path.parent.name, "source" if "1. Wiki/llibres" in relpath(path) else "unknown")
 
 
 def node_id(path: Path, text: str) -> str:
@@ -53,6 +53,16 @@ def collect_nodes() -> tuple[dict[str, dict], dict[str, str]]:
             continue
         text = path.read_text(encoding="utf-8")
         identifier = node_id(path, text)
+        expected_type = node_type(path)
+        metadata_line = next((line for line in text.splitlines() if line.startswith("node_type:")), None)
+        if metadata_line is None:
+            raise ValueError(f"metadades gràfiques absents: {relpath(path)}")
+        metadata_type = metadata_line.split(":", 1)[1].strip().strip("'").strip('"')
+        if metadata_type != expected_type:
+            raise ValueError(
+                f"node_type incoherent a {relpath(path)}: "
+                f"{metadata_type} != {expected_type}"
+            )
         if identifier in nodes:
             raise ValueError(f"node_id duplicat: {identifier}")
         nodes[identifier] = {
@@ -66,7 +76,14 @@ def collect_nodes() -> tuple[dict[str, dict], dict[str, str]]:
 
 
 def resolve_link(raw: str, path_to_id: dict[str, str]) -> str | None:
-    raw = raw.strip().replace("%20", " ")
+    """Resol un wikilink amb la mateixa tolerància que Obsidian.
+
+    Primer prova la ruta canònica i després compara el nom de fitxa sense
+    distingir majúscules, accents d'espai o extensions. Això evita que la
+    capa gràfica confongui una diferència de representació amb un enllaç
+    trencat.
+    """
+    raw = raw.strip().replace("%20", " ").replace("\\", "/")
     candidates = [raw, raw[:-3] if raw.endswith(".md") else raw + ".md"]
     if "/" not in raw:
         candidates.extend([
@@ -77,6 +94,12 @@ def resolve_link(raw: str, path_to_id: dict[str, str]) -> str | None:
     for candidate in candidates:
         if candidate in path_to_id:
             return path_to_id[candidate]
+
+    wanted = raw.removesuffix(".md").split("/")[-1].casefold()
+    for path, identifier in path_to_id.items():
+        stem = Path(path).stem.casefold()
+        if stem == wanted:
+            return identifier
     return None
 
 

@@ -1,6 +1,7 @@
-
 ---
 title: Jardins digitals
+node_id: "concept:jardins_digitals"
+node_type: "concept"
 category: conceptes
 tags:
   - gestio-del-coneixement

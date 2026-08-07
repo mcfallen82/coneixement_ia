@@ -1,4 +1,6 @@
 ---
+node_id: "model:essence_zettelkasten_method_demystified"
+node_type: "model"
 authors:
   - "[[Tseng, Fei-Ling]]"
 font: https://substack.com/home/post/p-48707291

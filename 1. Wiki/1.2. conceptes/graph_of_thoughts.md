@@ -1,5 +1,7 @@
 ---
 title: Graph of Thoughts
+node_id: "concept:graph_of_thoughts"
+node_type: "concept"
 category: conceptes
 tags:
   - grafs
@@ -72,7 +74,7 @@ Per analitzar un informe:
 - [[grafs_i_models_de_llenguatge]]
 - [[RAG]]
 - [[GraphRAG]]
-- [[enginyeria_de_prompts]]
+- [[prompt_engineering]]
 - [[LLM]]
 - [[avaluacio_de_models]]
 

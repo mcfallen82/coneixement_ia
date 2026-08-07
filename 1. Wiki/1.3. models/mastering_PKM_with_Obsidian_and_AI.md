@@ -1,4 +1,6 @@
 ---
+node_id: "model:mastering_pkm_with_obsidian_and_ai"
+node_type: "model"
 authors:
   - "[[Ma, Eric]]"
 font: https://ericmjl.github.io/blog/2026/3/6/mastering-personal-knowledge-management-with-obsidian-and-ai

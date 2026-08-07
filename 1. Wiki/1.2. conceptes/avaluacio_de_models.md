@@ -1,5 +1,7 @@
 ---
 title: Avaluació de models
+node_id: "concept:avaluacio_de_models"
+node_type: "concept"
 category: conceptes
 tags:
   - llm

@@ -1,6 +1,7 @@
-
 ---
 title: Gestió personal del coneixement
+node_id: "concept:pkm"
+node_type: "concept"
 category: conceptes
 tags:
   - gestio-del-coneixement

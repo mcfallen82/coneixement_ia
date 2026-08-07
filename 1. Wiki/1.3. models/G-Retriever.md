@@ -1,5 +1,7 @@
 ---
 title: G-Retriever
+node_id: "model:g_retriever"
+node_type: "model"
 category: models
 model_family: GraphRAG
 architecture: graph_retrieval_plus_GNN_plus_LLM

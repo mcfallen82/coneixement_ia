@@ -1,5 +1,7 @@
 ---
 title: Optimització, descens del gradient i Adam
+node_id: "concept:optimitzacio_i_adam"
+node_type: "concept"
 category: conceptes
 tags:
   - aprenentatge-profund

@@ -1,5 +1,7 @@
 ---
 title: GraphRAG
+node_id: "concept:graphrag"
+node_type: "concept"
 category: conceptes
 tags:
   - GraphRAG

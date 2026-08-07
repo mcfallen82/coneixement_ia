@@ -1,5 +1,7 @@
 ---
 title: FinBERT
+node_id: "model:finbert"
+node_type: "model"
 category: models
 model_family: BERT
 architecture: encoder-only transformer

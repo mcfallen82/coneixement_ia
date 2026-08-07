@@ -1,5 +1,7 @@
 ---
 title: Grafs aplicats als models de llenguatge
+node_id: "concept:grafs_i_models_de_llenguatge"
+node_type: "concept"
 category: conceptes
 tags:
   - grafs

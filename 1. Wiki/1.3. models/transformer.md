@@ -1,5 +1,7 @@
 ---
 title: Transformer
+node_id: "model:transformer"
+node_type: "model"
 category: models
 model_family: transformer
 architecture: encoder-decoder

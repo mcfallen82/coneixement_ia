@@ -1,6 +1,7 @@
-
 ---
 title: Prompt
+node_id: "concept:prompt"
+node_type: "concept"
 category: conceptes
 tags:
   - inteligencia-artificial

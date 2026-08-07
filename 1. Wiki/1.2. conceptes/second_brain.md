@@ -1,6 +1,7 @@
-
 ---
 title: Segon cervell
+node_id: "concept:second_brain"
+node_type: "concept"
 category: conceptes
 tags:
   - gestio-del-coneixement

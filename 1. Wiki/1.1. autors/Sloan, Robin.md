@@ -1,5 +1,7 @@
 ---
 title: Robin Sloan
+node_id: "author:sloan_robin"
+node_type: "author"
 category: autors
 field:
   - escriptura

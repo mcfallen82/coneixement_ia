@@ -1,4 +1,6 @@
 ---
+node_id: "model:gpt_image_cookbook"
+node_type: "model"
 authors:
   - "[[Ghelbur, Eugeniu]]"
 font: https://github.com/eugeniughelbur/gpt-image-cookbook

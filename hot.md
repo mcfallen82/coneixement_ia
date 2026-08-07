@@ -1,3 +1,7 @@
+## Prova activa: metadades gràfiques de la wiki
+
+Les fitxes de `1. Wiki/` ja incorporen `node_id` i `node_type`. Executa `python scripts/graph_scan.py --check` i `--stats` abans i després d’afegir coneixement nou. Les relacions semàntiques acceptades continuen al registre `graph/relations.json`.
+
 # Hot
 
 ## Activitat recent

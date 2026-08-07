@@ -1,5 +1,7 @@
 ---
 title: Raonament numèric sobre documents
+node_id: "concept:raonament_numeric_documental"
+node_type: "concept"
 category: conceptes
 tags:
   - document-qa

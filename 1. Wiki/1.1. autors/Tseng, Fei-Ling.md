@@ -1,5 +1,7 @@
 ---
 title: Fei-Ling Tseng
+node_id: "author:tseng_fei_ling"
+node_type: "author"
 category: autors
 field:
   - Zettelkasten

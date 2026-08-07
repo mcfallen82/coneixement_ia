@@ -1,4 +1,6 @@
 ---
+node_id: "model:konik_method"
+node_type: "model"
 authors:
   - "[[Ghelbur, Eugeniu]]"
 font: https://github.com/eugeniughelbur/gpt-image-cookbook

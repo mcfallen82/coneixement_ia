@@ -1,4 +1,6 @@
 ---
+node_id: "model:obsidian_second_brain_karpathy_rebuilt"
+node_type: "model"
 authors:
   - "[[Ghelbur, Eugeniu]]"
 font: https://theaioperator.io/p/i-rebuilt-karpathys-llm-wiki-heres
@@ -39,7 +41,7 @@ El manteniment de **Karpathy** funciona quan li dius. És a dir, mai.
 Solució: Un procés intermitent que funciona cada nit a la recerca d'errors. Un procés setmanal que fa un checking sanitari. No has de posar en marxa cap ordre manualment.
 ## 5. Notes escrites per la IA, no pels humans
 
-El major punt en contra. Totes les [[PKM]] ([[zettelkasten]], [[second_brain]], [[models/evergreen_notes|evergreen_notes]]) optimitzen fitxer per lectura humana. La Wiki de Karpathy està pensada pels humans.
+El major punt en contra. Totes les [[PKM]] ([[zettelkasten]], [[second_brain]], [[evergreen_notes]]) optimitzen fitxer per lectura humana. La Wiki de Karpathy està pensada pels humans.
 
 Alternativa: Principi AI-First Vault
 

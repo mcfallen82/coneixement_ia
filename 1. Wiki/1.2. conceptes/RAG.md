@@ -1,6 +1,7 @@
-
 ---
 title: Generació augmentada amb recuperació
+node_id: "concept:rag"
+node_type: "concept"
 category: conceptes
 tags:
   - inteligencia-artificial

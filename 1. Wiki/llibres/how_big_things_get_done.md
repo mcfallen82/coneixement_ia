@@ -1,4 +1,6 @@
 ---
+node_id: "source:how_big_things_get_done"
+node_type: "source"
 titol: How Big Things Get Done
 autor:
   - "[[Flyvbjerg, Bent]]"

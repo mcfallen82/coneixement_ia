@@ -1,5 +1,7 @@
 ---
 title: AI-first vault
+node_id: "concept:ai_first_vault"
+node_type: "concept"
 category: conceptes
 tags:
   - inteligencia-artificial

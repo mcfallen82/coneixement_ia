@@ -1,5 +1,7 @@
 ---
 title: micrograd
+node_id: "concept:micrograd"
+node_type: "concept"
 category: conceptes
 tags:
   - autodiferenciacio

@@ -1,6 +1,8 @@
 ---
 title: Nom del concepte
 category: conceptes
+node_id: "concept:nom_concepte"
+node_type: concept
 tags:
   - inteligencia-artificial
 sources: []

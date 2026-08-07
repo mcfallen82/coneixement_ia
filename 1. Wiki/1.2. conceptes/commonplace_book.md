@@ -1,6 +1,7 @@
-
 ---
 title: Commonplace book
+node_id: "concept:commonplace_book"
+node_type: "concept"
 category: conceptes
 tags:
   - gestio-del-coneixement

@@ -10,7 +10,7 @@ No és una wiki financera ni un sistema d’anàlisi d’empreses.
 
 Aquest és l’únic document principal de governança. S’ha de llegir abans d’actuar. Quan una skill contradigui aquest document, preval AGENTS.md.
 
-La branca de treball actual és `agent/reorganitza-wiki-llm`. Les modificacions d’aquesta tasca no han d’afectar `main`.
+El repositori principal és `main`. Les modificacions es fan en branques `agent/...` i s’integren mitjançant pull request.
 
 ## 3. Estructura obligatòria
 
@@ -114,7 +114,7 @@ La validació automàtica es reexecuta mitjançant `.github/workflows/wiki-lint.
 
 ## 10. Capa gràfica lleugera
 
-La wiki manté Markdown com a font principal i utilitza la carpeta `graph/` com a representació derivada. Les relacions acceptades es registren a `graph/relations.json`; els wikilinks no tipats només són candidats. Abans d’incorporar una relació cal comprovar-ne la destinació, el tipus, la procedència i la confiança.
+La wiki manté Markdown com a font principal i utilitza la carpeta `graph/` com a representació derivada. Les fitxes permanents de `1. Wiki/` han d’incloure `node_id` estable i `node_type` coherent amb la seva carpeta. Les relacions acceptades es registren a `graph/relations.json`; els wikilinks no tipats només són candidats. Abans d’incorporar una relació cal comprovar-ne la destinació, el tipus, la procedència i la confiança.
 
 La validació inicial s’executa amb:
 

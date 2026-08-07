@@ -31,3 +31,14 @@ Atura l’operació si una destinació no existeix, el tipus no forma part del v
 La capa permet provar recompte de nodes i arestes, detecció d’enllaços trencats, hubs per grau, components connexos, exportació JSON i comparació entre relacions acceptades i wikilinks candidats.
 
 Aquesta skill no autoritza encara la construcció de GraphRAG.
+
+## Contracte de les fitxes
+
+Cada fitxa Markdown de `1. Wiki/` que formi part del graf ha d’incloure al frontmatter:
+
+~~~yaml
+node_id: "concept:nom_estable"
+node_type: "concept"
+~~~
+
+Els tipus inicials són `author`, `concept`, `model` i `source`. L’identificador es deriva del nom canònic de la fitxa, però no s’ha de canviar quan es modifiqui el títol visible. Les relacions semàntiques no es dupliquen dins de cada fitxa: es mantenen a `graph/relations.json`, mentre que els wikilinks continuen sent arestes candidates.

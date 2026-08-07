@@ -1,6 +1,7 @@
-
 ---
 title: Enginyeria de prompts
+node_id: "concept:prompt_engineering"
+node_type: "concept"
 category: conceptes
 tags:
   - inteligencia-artificial
