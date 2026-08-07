@@ -58,6 +58,7 @@ SORT updated DESC
 - [Xarxes neuronals de graf](1.%20Wiki/1.2.%20conceptes/xarxes_neuronals_de_graf.md) — GNN.
 - [G-Retriever](1.%20Wiki/1.3.%20models/G-Retriever.md) — marc de GraphQA.
 - [Guia per crear wikis amb grafs](4.%20Templates/90.2.%20docs_support/guia_creacio_wikis_amb_grafs.md) — nodes, arestes, procedència i assistència amb agents.
+- [Capa gràfica lleugera](3.%20Dashboards/graf.md) — comprovacions, estadístiques i proves del graf.
 
 - [Ús de grafs a obsidian-second-brain](0.%20Raw/0.2./recerca_grafs_obsidian_second_brain_2026-08-07.md) — dossier brut sobre escàner de grafs, relacions tipades, canvas i connexió entre dominis.
 
