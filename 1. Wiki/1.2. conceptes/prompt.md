@@ -1,3 +1,9 @@
+---
+title: "prompt"
+node_id: "concept:prompt"
+node_type: "concept"
+---
+
 
 ---
 title: Prompt
