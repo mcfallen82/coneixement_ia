@@ -1,6 +1,8 @@
 ---
 title: Nom del model
 category: models
+node_id: "model:nom_model"
+node_type: model
 model_family: transformer
 architecture:
 modalities: []
