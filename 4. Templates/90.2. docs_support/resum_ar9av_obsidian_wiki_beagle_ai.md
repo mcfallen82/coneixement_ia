@@ -1,3 +1,7 @@
+> **Document històric.** Aquest document conserva l’anàlisi original orientada a Beagle AI i documents financers. La versió aplicable a aquesta wiki general és [[4. Templates/90.2. docs_support/resum_ar9av_obsidian_wiki_ia_knowledge]].
+
+---
+
 # Ar9av/obsidian-wiki i aplicació a Beagle AI
 
 ## 1. Objectiu del document
