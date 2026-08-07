@@ -11,6 +11,8 @@ tags:
 sources:
   - https://arxiv.org/abs/2308.09687
   - https://github.com/spcl/graph-of-thoughts
+related_concepts: []
+related_models: []
 status: reviewed
 created: 2026-08-07
 updated: 2026-08-07
