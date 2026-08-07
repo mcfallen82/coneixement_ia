@@ -201,7 +201,9 @@
         "wiki-export",
         "wiki-import",
         "wiki-rebuild",
-        "impl-validator"
+        "impl-validator",
+        "daily-update",
+        "vault-skill-factory"
       ],
       "exclusions": [
         "agent history ingestion",
@@ -212,7 +214,8 @@
         "skills_index_updated",
         "paths_adapted",
         "governance_scope_preserved",
-        "manifest_updated"
+        "manifest_updated",
+        "maintenance_skills_added"
       ]
     }
   ]
