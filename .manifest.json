@@ -10,6 +10,52 @@
   "operations": [
     {
       "date": "2026-08-07",
+      "type": "research_and_concept_ingestion",
+      "branch": "agent/processa-scaffold",
+      "status": "completed",
+      "source": {
+        "path": "0. Raw/0.2./recerca_scaffold_2026-08-07.md",
+        "source_type": "research_dossier",
+        "status": "processed"
+      },
+      "scope": [
+        "1. Wiki/1.2. conceptes/scaffold.md",
+        "graph/relations.json"
+      ],
+      "pages_created": [
+        "1. Wiki/1.2. conceptes/scaffold.md"
+      ],
+      "pages_updated": [
+        "1. Wiki/1.2. conceptes/context_engineering.md",
+        "1. Wiki/1.2. conceptes/skills.md",
+        "1. Wiki/1.2. conceptes/avaluacio_de_models.md",
+        "1. Wiki/1.2. conceptes/prompt_engineering.md",
+        "index.md",
+        "log.md",
+        "hot.md",
+        "graph/relations.json"
+      ],
+      "sources": [
+        "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
+        "https://www.anthropic.com/engineering/building-effective-agents",
+        "https://openai.github.io/openai-agents-python/agents/",
+        "https://openai.github.io/openai-agents-python/tools/",
+        "https://arxiv.org/abs/2604.03515",
+        "https://arxiv.org/abs/2605.05716",
+        "https://academic.oup.com/book/58946/chapter/493003498"
+      ],
+      "checks": [
+        "three_research_rounds",
+        "source_hierarchy",
+        "frontmatter",
+        "wikilinks",
+        "typed_graph_relations",
+        "wiki_lint",
+        "graph_scan"
+      ]
+    },
+    {
+      "date": "2026-08-07",
       "type": "frontmatter_audit",
       "branch": "agent/audita-frontmatter-conceptes",
       "status": "completed",
