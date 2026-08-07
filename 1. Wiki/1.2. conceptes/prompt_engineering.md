@@ -1,3 +1,9 @@
+---
+title: "prompt engineering"
+node_id: "concept:prompt_engineering"
+node_type: "concept"
+---
+
 
 ---
 title: Enginyeria de prompts
