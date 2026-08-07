@@ -1,3 +1,11 @@
+## 2026-08-07 — Activació de la capa gràfica a `1. Wiki`
+
+- MIGRACIÓ: afegits `node_id` estable i `node_type` explícit a les 72 fitxes de `1. Wiki/`.
+- TIPUS: `author`, `concept`, `model` i `source` segons la ubicació de la fitxa.
+- VALIDACIÓ: `graph_scan.py --check` passa a exigir aquestes metadades i detecta incoherències.
+- GOVERNANÇA: actualitzats `AGENTS.md`, `graph-layer.md` i les plantilles de fitxes.
+- ABAST: Markdown continua sent la font principal; no s’introdueixen base de dades gràfica ni GraphRAG.
+
 ## 2026-08-07 — Posada en marxa de la capa gràfica lleugera
 
 - IMPLEMENTACIÓ: creats `graph/relations.json`, `graph/relation-vocabulary.yaml` i `scripts/graph_scan.py`.
