@@ -31,7 +31,8 @@
         "manifest_and_log_updated",
         "initial_workflow_run_completed",
         "baseline_debt_identified",
-        "validator_mode_adjusted"
+        "validator_mode_adjusted",
+        "false_positive_scope_reduced"
       ],
       "pending": [
         "gradual_frontmatter_normalization",
