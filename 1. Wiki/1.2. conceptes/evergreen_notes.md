@@ -1,5 +1,7 @@
 ---
 title: Evergreen notes
+node_id: "concept:evergreen_notes"
+node_type: "concept"
 category: conceptes
 tags:
   - gestio-del-coneixement
