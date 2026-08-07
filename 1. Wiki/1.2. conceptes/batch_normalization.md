@@ -1,5 +1,7 @@
 ---
 title: Normalització per lots
+node_id: "concept:batch_normalization"
+node_type: "concept"
 category: conceptes
 tags:
   - aprenentatge-profund
