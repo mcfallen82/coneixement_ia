@@ -1,3 +1,9 @@
+---
+title: "prompting"
+node_id: "concept:prompting"
+node_type: "concept"
+---
+
 
 ---
 title: Prompting
