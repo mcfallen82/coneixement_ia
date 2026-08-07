@@ -15,10 +15,10 @@ release_date: 2021
 sources:
   - https://arxiv.org/abs/2106.09685
 related_concepts:
-  - [[1. Wiki/1.2. conceptes/ajust_fi]]
-  - [[1. Wiki/1.2. conceptes/backpropagation]]
+  - "[[1. Wiki/1.2. conceptes/ajust_fi]]"
+  - "[[1. Wiki/1.2. conceptes/backpropagation]]"
 related_models:
-  - [[1. Wiki/1.3. models/transformer]]
+  - "[[1. Wiki/1.3. models/transformer]]"
 status: reviewed
 created: 2026-08-07
 updated: 2026-08-07

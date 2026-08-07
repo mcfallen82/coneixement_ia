@@ -11,10 +11,10 @@ sources:
   - https://arxiv.org/abs/2106.09685
   - https://arxiv.org/abs/2203.02155
 related_concepts:
-  - [[1. Wiki/1.2. conceptes/backpropagation]]
-  - [[1. Wiki/1.2. conceptes/alineament_dels_llm]]
+  - "[[1. Wiki/1.2. conceptes/backpropagation]]"
+  - "[[1. Wiki/1.2. conceptes/alineament_dels_llm]]"
 related_models:
-  - [[1. Wiki/1.3. models/transformer]]
+  - "[[1. Wiki/1.3. models/transformer]]"
 status: reviewed
 created: 2026-08-07
 updated: 2026-08-07

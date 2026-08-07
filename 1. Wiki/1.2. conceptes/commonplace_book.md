@@ -8,6 +8,8 @@ tags:
   - presa-de-notes
 sources:
   - https://publicdomainreview.org/essay/commonplace-books/
+related_concepts: []
+related_models: []
 status: reviewed
 created: 2026-08-07
 updated: 2026-08-07

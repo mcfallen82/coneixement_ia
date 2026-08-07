@@ -9,6 +9,8 @@ tags:
   - evaluacio
 sources:
   - https://platform.openai.com/docs/guides/prompt-engineering
+related_concepts: []
+related_models: []
 status: reviewed
 created: 2026-08-07
 updated: 2026-08-07

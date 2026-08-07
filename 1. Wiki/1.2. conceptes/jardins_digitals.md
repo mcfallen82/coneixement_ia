@@ -8,6 +8,8 @@ tags:
   - publicacio
 sources:
   - https://maggieappleton.com/garden-history
+related_concepts: []
+related_models: []
 status: reviewed
 created: 2026-08-07
 updated: 2026-08-07

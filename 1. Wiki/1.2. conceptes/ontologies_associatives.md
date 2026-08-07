@@ -9,6 +9,8 @@ tags:
   - representacio-del-coneixement
 sources:
   - https://www.w3.org/standards/semanticweb/ontology
+related_concepts: []
+related_models: []
 status: reviewed
 created: 2026-08-07
 updated: 2026-08-07

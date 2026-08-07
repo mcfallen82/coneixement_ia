@@ -9,6 +9,8 @@ tags:
   - gestio-del-coneixement
 sources:
   - https://github.com/tobi/qmd
+related_concepts: []
+related_models: []
 status: reviewed
 created: 2026-08-07
 updated: 2026-08-07

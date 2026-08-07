@@ -12,6 +12,8 @@ sources:
   - https://arxiv.org/abs/2501.13958
   - https://www.ijcai.org/proceedings/2024/0898.pdf
   - https://microsoft.github.io/graphrag/
+related_concepts: []
+related_models: []
 status: reviewed
 created: 2026-08-07
 updated: 2026-08-07

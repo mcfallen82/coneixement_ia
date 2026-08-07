@@ -14,10 +14,10 @@ sources:
   - https://arxiv.org/abs/2402.07630
   - https://arxiv.org/html/2402.07630
 related_concepts:
-  - [[grafs_i_models_de_llenguatge]]
-  - [[RAG]]
-  - [[xarxes_neuronals_de_graf]]
-  - [[GraphRAG]]
+  - "[[grafs_i_models_de_llenguatge]]"
+  - "[[RAG]]"
+  - "[[xarxes_neuronals_de_graf]]"
+  - "[[GraphRAG]]"
 related_models: []
 status: reviewed
 created: 2026-08-07

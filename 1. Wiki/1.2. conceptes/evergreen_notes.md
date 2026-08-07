@@ -8,6 +8,8 @@ tags:
   - presa-de-notes
 sources:
   - https://notes.andymatuschak.org/Evergreen_notes
+related_concepts: []
+related_models: []
 status: reviewed
 created: 2026-08-07
 updated: 2026-08-07

@@ -1,3 +1,11 @@
+## 2026-08-07 — Auditoria del frontmatter de conceptes
+
+- AUDITORIA: revisades les 39 fitxes de `1. Wiki/1.2. conceptes/`.
+- CORRECCIÓ: afegits `related_concepts: []` i `related_models: []` quan faltaven.
+- CORRECCIÓ: normalitzats els wikilinks YAML perquè siguin cadenes i no llistes imbricades.
+- VALIDACIÓ: `wiki_lint.py` comprova ara que aquests camps siguin llistes de cadenes.
+- ABAST: no s’ha modificat el contingut pedagògic de les fitxes.
+
 ## 2026-08-07 — Activació de la capa gràfica a `1. Wiki`
 
 - MIGRACIÓ: afegits `node_id` estable i `node_type` explícit a les 72 fitxes de `1. Wiki/`.

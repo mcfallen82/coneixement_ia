@@ -11,10 +11,10 @@ sources:
   - https://arxiv.org/abs/2203.02155
   - https://arxiv.org/abs/2212.10560
 related_concepts:
-  - [[1. Wiki/1.2. conceptes/ajust_fi]]
-  - [[1. Wiki/1.2. conceptes/avaluacio_de_models]]
+  - "[[1. Wiki/1.2. conceptes/ajust_fi]]"
+  - "[[1. Wiki/1.2. conceptes/avaluacio_de_models]]"
 related_models:
-  - [[1. Wiki/1.3. models/GPT]]
+  - "[[1. Wiki/1.3. models/GPT]]"
 status: reviewed
 created: 2026-08-07
 updated: 2026-08-07

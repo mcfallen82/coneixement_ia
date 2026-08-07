@@ -10,6 +10,50 @@
   "operations": [
     {
       "date": "2026-08-07",
+      "type": "frontmatter_audit",
+      "branch": "agent/audita-frontmatter-conceptes",
+      "status": "completed",
+      "scope": [
+        "1. Wiki/1.2. conceptes/",
+        "scripts/wiki_lint.py"
+      ],
+      "pages_updated": [
+        "1. Wiki/1.2. conceptes/AGENTS_MD.md",
+        "1. Wiki/1.2. conceptes/GraphRAG.md",
+        "1. Wiki/1.2. conceptes/LLM.md",
+        "1. Wiki/1.2. conceptes/PKM.md",
+        "1. Wiki/1.2. conceptes/QMD.md",
+        "1. Wiki/1.2. conceptes/RAG.md",
+        "1. Wiki/1.2. conceptes/ai_first_vault.md",
+        "1. Wiki/1.2. conceptes/ajust_fi.md",
+        "1. Wiki/1.2. conceptes/alineament_dels_llm.md",
+        "1. Wiki/1.2. conceptes/avaluacio_de_models.md",
+        "1. Wiki/1.2. conceptes/commonplace_book.md",
+        "1. Wiki/1.2. conceptes/context_engineering.md",
+        "1. Wiki/1.2. conceptes/evergreen_notes.md",
+        "1. Wiki/1.2. conceptes/frontmatter.md",
+        "1. Wiki/1.2. conceptes/grafs_i_models_de_llenguatge.md",
+        "1. Wiki/1.2. conceptes/graph_of_thoughts.md",
+        "1. Wiki/1.2. conceptes/jardins_digitals.md",
+        "1. Wiki/1.2. conceptes/ontologies_associatives.md",
+        "1. Wiki/1.2. conceptes/prompt.md",
+        "1. Wiki/1.2. conceptes/prompt_engineering.md",
+        "1. Wiki/1.2. conceptes/prompting.md",
+        "1. Wiki/1.2. conceptes/second_brain.md",
+        "1. Wiki/1.2. conceptes/skills.md",
+        "1. Wiki/1.2. conceptes/wiki.md",
+        "1. Wiki/1.2. conceptes/xarxes_neuronals_de_graf.md",
+        "1. Wiki/1.2. conceptes/zettelkasten.md"
+      ],
+      "checks": [
+        "yaml_frontmatter",
+        "relation_fields_are_string_lists",
+        "wiki_lint"
+      ],
+      "pages_reviewed": 39
+    },
+    {
+      "date": "2026-08-07",
       "type": "graph_metadata_migration",
       "branch": "agent/activa-graph-layer-wiki",
       "status": "completed",
