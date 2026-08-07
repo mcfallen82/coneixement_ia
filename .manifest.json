@@ -10,6 +10,39 @@
   "operations": [
     {
       "date": "2026-08-07",
+      "type": "frontmatter_audit",
+      "branch": "agent/audita-frontmatter-conceptes",
+      "status": "completed",
+      "scope": [
+        "1. Wiki/1.2. conceptes/",
+        "scripts/wiki_lint.py"
+      ],
+      "pages_updated": [
+        "1. Wiki/1.2. conceptes/activacions_i_inicialitzacio.md",
+        "1. Wiki/1.2. conceptes/ajust_fi.md",
+        "1. Wiki/1.2. conceptes/alineament_dels_llm.md",
+        "1. Wiki/1.2. conceptes/attention.md",
+        "1. Wiki/1.2. conceptes/autodiferenciacio.md",
+        "1. Wiki/1.2. conceptes/avaluacio_de_models.md",
+        "1. Wiki/1.2. conceptes/backpropagation.md",
+        "1. Wiki/1.2. conceptes/batch_normalization.md",
+        "1. Wiki/1.2. conceptes/embeddings.md",
+        "1. Wiki/1.2. conceptes/entrenament_validacio_i_overfitting.md",
+        "1. Wiki/1.2. conceptes/micrograd.md",
+        "1. Wiki/1.2. conceptes/optimitzacio_i_adam.md",
+        "1. Wiki/1.2. conceptes/raonament_numeric_documental.md",
+        "1. Wiki/1.2. conceptes/softmax_i_cross_entropy.md",
+        "1. Wiki/1.2. conceptes/tokenitzacio_i_bpe.md",
+        "1. Wiki/1.2. conceptes/xarxes_neuronals.md"
+      ],
+      "checks": [
+        "yaml_frontmatter",
+        "relation_fields_are_string_lists",
+        "wiki_lint"
+      ]
+    },
+    {
+      "date": "2026-08-07",
       "type": "graph_metadata_migration",
       "branch": "agent/activa-graph-layer-wiki",
       "status": "completed",
