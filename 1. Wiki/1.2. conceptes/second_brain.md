@@ -1,3 +1,9 @@
+---
+title: "second brain"
+node_id: "concept:second_brain"
+node_type: "concept"
+---
+
 
 ---
 title: Segon cervell
