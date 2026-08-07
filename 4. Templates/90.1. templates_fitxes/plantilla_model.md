@@ -5,6 +5,7 @@ model_family: transformer
 architecture:
 modalities: []
 training_objective:
+authors: []
 developer:
 release_date:
 sources: []
