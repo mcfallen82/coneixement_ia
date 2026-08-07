@@ -1,5 +1,7 @@
 ---
 title: Maggie Appleton
+node_id: "author:appleton_maggie"
+node_type: "author"
 category: autors
 field:
   - jardins digitals
