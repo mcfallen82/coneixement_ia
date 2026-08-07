@@ -43,3 +43,15 @@
 
 - AUDITORIA: revisada la carpeta 1. Wiki/1.2. conceptes.
 - NORMALITZACIÓ: les fitxes revisades utilitzen title, category, tags, sources, status, created i updated.
+
+
+## 2026-08-07 — Adaptació de skills d’obsidian-wiki
+
+- ARQUITECTURA: adaptat el model de tres capes Raw → Wiki → Esquema a l’estructura de ia_knowledge.
+- SKILLS BASE: ampliades wiki-ingest, wiki-update i wiki-lint.
+- CONSULTA: afegides wiki-query, wiki-context-pack i wiki-status.
+- QUALITAT: afegides wiki-dedup, cross-linker, tag-taxonomy i impl-validator.
+- APRENENTATGE: afegides wiki-research, wiki-capture i wiki-synthesize.
+- OPERACIONS: afegides wiki-dashboard, wiki-export, wiki-import i wiki-rebuild.
+- ADAPTACIÓ: substituïdes les rutes genèriques de concepts, entities i references per les carpetes d’autors, conceptes i models del projecte.
+- ABAST: no s’han incorporat les skills específiques d’historials d’agents ni de gestió de diversos vaults.
