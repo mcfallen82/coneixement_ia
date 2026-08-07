@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "description": "Relacions tipades revisades manualment per a les primeres proves.",
+  "edges": [
+    {
+      "source": "1. Wiki/1.2. conceptes/GraphRAG.md",
+      "target": "1. Wiki/1.2. conceptes/RAG.md",
+      "relation": "amplia",
+      "status": "accepted",
+      "claim_type": "documented",
+      "confidence": "high",
+      "evidence": ["https://microsoft.github.io/graphrag/"],
+      "note": "GraphRAG amplia la recuperació augmentada amb informació gràfica."
+    },
+    {
+      "source": "1. Wiki/1.2. conceptes/GraphRAG.md",
+      "target": "1. Wiki/1.2. conceptes/grafs_i_models_de_llenguatge.md",
+      "relation": "exemple_de",
+      "status": "accepted",
+      "claim_type": "structural",
+      "confidence": "high",
+      "evidence": ["4. Templates/90.2. docs_support/guia_creacio_wikis_amb_grafs.md"]
+    },
+    {
+      "source": "1. Wiki/1.2. conceptes/GraphRAG.md",
+      "target": "1. Wiki/1.3. models/G-Retriever.md",
+      "relation": "contrasta_amb",
+      "status": "accepted",
+      "claim_type": "documented",
+      "confidence": "medium",
+      "evidence": ["1. Wiki/1.3. models/G-Retriever.md"]
+    },
+    {
+      "source": "1. Wiki/1.2. conceptes/graph_of_thoughts.md",
+      "target": "1. Wiki/1.2. conceptes/grafs_i_models_de_llenguatge.md",
+      "relation": "exemple_de",
+      "status": "accepted",
+      "claim_type": "structural",
+      "confidence": "high",
+      "evidence": ["4. Templates/90.2. docs_support/guia_creacio_wikis_amb_grafs.md"]
+    },
+    {
+      "source": "1. Wiki/1.2. conceptes/xarxes_neuronals_de_graf.md",
+      "target": "1. Wiki/1.2. conceptes/grafs_i_models_de_llenguatge.md",
+      "relation": "exemple_de",
+      "status": "accepted",
+      "claim_type": "structural",
+      "confidence": "high",
+      "evidence": ["4. Templates/90.2. docs_support/guia_creacio_wikis_amb_grafs.md"]
+    },
+    {
+      "source": "1. Wiki/1.3. models/G-Retriever.md",
+      "target": "1. Wiki/1.2. conceptes/GraphRAG.md",
+      "relation": "utilitza",
+      "status": "accepted",
+      "claim_type": "documented",
+      "confidence": "medium",
+      "evidence": ["1. Wiki/1.3. models/G-Retriever.md"]
+    }
+  ]
+}
