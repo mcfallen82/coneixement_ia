@@ -38,7 +38,7 @@ Implementa blocs Transformer amb embeddings, atenció causal, MLP, residuals i n
 
 ## Cas d’ús
 
-És una bona següent etapa després de [[micrograd]] i del curs Zero to Hero: permet entendre PyTorch sense començar per un sistema de producció complex.
+És una bona següent etapa després de [[1. Wiki/1.2. conceptes/micrograd]] i del curs Zero to Hero: permet entendre PyTorch sense començar per un sistema de producció complex.
 
 ## Limitacions
 
