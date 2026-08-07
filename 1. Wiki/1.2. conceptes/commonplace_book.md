@@ -1,3 +1,9 @@
+---
+title: "commonplace book"
+node_id: "concept:commonplace_book"
+node_type: "concept"
+---
+
 
 ---
 title: Commonplace book
