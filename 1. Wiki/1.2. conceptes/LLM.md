@@ -1,12 +1,7 @@
 ---
-title: "LLM"
+title: Models de llenguatge de gran escala
 node_id: "concept:llm"
 node_type: "concept"
----
-
-
----
-title: Models de llenguatge de gran escala
 category: conceptes
 tags:
   - inteligencia-artificial
