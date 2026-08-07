@@ -2,28 +2,58 @@
 
 ## Finalitat
 
-Auditar la coherència mínima de la wiki abans de publicar canvis.
+Auditar la salut estructural i semàntica de la wiki abans de donar per acabada una ingesta o reorganització.
 
 ## Comprovacions
 
-1. Carpetes obligatòries i fitxers operatius.
-2. Frontmatter YAML a les fitxes permanents.
-3. Camps coherents: title, category, tags, sources, status, created i updated.
-4. Absència dels camps antics estat quan es pugui normalitzar.
-5. Wikilinks cap a rutes reals i absència de rutes antigues.
-6. Fonts no buides en fitxes madures.
-7. Categories compatibles amb la carpeta.
-8. Models amb família, arquitectura i modalitats quan siguin aplicables.
-9. Fitxes orfes, duplicats i sinònims.
-10. Consultes Dataview actualitzades.
-11. Entrades del manifest amb estat i pàgines relacionades.
+### Estructura
 
-## Procediment manual inicial
+- existeixen 0. Raw/, 1. Wiki/, 2. Skills/, 3. Dashboards/ i 4. Templates/;
+- els README descriuen el contingut real;
+- les rutes de l’índex i de les skills són actuals.
+
+### Fitxes i YAML
+
+- cada fitxa permanent té frontmatter vàlid;
+- conté title, category, tags, sources, status, created i updated;
+- category coincideix amb la carpeta;
+- no hi ha camps antics com estat si es poden normalitzar;
+- els models incorporen model_family i architecture quan són aplicables.
+
+### Xarxa de coneixement
+
+- wikilinks cap a fitxers reals;
+- cap enllaç a rutes antigues;
+- autors, conceptes i models relacionats;
+- detecció de fitxes orfes i possibles duplicats.
+
+### Traçabilitat
+
+- fitxes madures amb fonts verificables;
+- log.md, hot.md i .manifest.json actualitzats;
+- les fonts indiquen fitxes creades o modificades;
+- no es confonen dades documentades amb interpretacions.
+
+## Auditoria manual
 
 ~~~bash
-rg -n "autors/|conceptes/|models/|llibres/|docs_support/|templates/" .
-rg -n "^---$|^title:|^category:|^sources:|^status:|^updated:" "1. Wiki"
-rg -n "\[\[.*\]\]" "1. Wiki" "4. Templates"
+rg -n "estat:|autor:|concepts/|entities/|references/" .
+rg -n "^title:|^category:|^tags:|^sources:|^status:|^created:|^updated:" "1. Wiki"
+rg -n "\[\[.*\]\]" "1. Wiki" "2. Skills" "4. Templates"
 ~~~
 
-Les cerques són una primera auditoria; la revisió humana continua sent necessària.
+Per validar YAML, utilitza un analitzador disponible o revisa manualment les capçaleres. Les cerques són senyals, no una prova suficient.
+
+## Informe
+
+~~~text
+# Informe wiki-lint — YYYY-MM-DD
+## Errors bloquejants
+## Advertiments
+## Fitxes orfes
+## Duplicats o sinònims
+## Enllaços proposats
+## Accions recomanades
+~~~
+
+Corregeix automàticament només errors mecànics i reversibles. Les fusions, eliminacions i canvis de significat requereixen revisió humana.
