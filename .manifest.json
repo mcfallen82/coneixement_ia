@@ -1,0 +1,386 @@
+{
+  "version": 3,
+  "repository": "mcfallen82/ia_knowledge",
+  "purpose": "wiki d'aprenentatge general d'intel·ligència artificial",
+  "scope_exclusions": [
+    "sistema d’aprenentatge de documents financers",
+    "sistema d’aprenentatge de finances",
+    "sistema d’aprenentatge d’economia"
+  ],
+  "operations": [
+    {
+      "date": "2026-08-07",
+      "type": "lightweight_graph_layer",
+      "branch": "agent/reorganitza-wiki-llm",
+      "status": "completed",
+      "scope": [
+        "graph/README.md",
+        "graph/relation-vocabulary.yaml",
+        "graph/relations.json",
+        "scripts/graph_scan.py",
+        "2. Skills/graph-layer.md",
+        "3. Dashboards/graf.md"
+      ],
+      "checks": [
+        "markdown_remains_source_of_truth",
+        "typed_edges_registry_created",
+        "candidate_wikilinks_preserved",
+        "graph_scan_added",
+        "github_action_extended"
+      ],
+      "pending": [
+        "review_candidate_edges",
+        "stable_node_id_frontmatter_migration",
+        "subgraph_query_experiments",
+        "graph_vs_vector_rag_comparison"
+      ]
+    },
+    {
+      "date": "2026-08-07",
+      "type": "raw_research_graph_usage",
+      "branch": "agent/reorganitza-wiki-llm",
+      "status": "processed",
+      "source_repository": "eugeniughelbur/obsidian-second-brain",
+      "source_commit": "ec7a0e851323ba17c7d6d8f072c647b7098a8621",
+      "raw_sources": [
+        "0. Raw/0.2./recerca_grafs_obsidian_second_brain_2026-08-07.md"
+      ],
+      "documentation_reviewed": [
+        "scripts/link_graph.py",
+        "commands/obsidian-visualize.md",
+        "commands/obsidian-connect.md",
+        "SKILL.md",
+        "architecture.md"
+      ],
+      "contents": [
+        "deterministic_link_graph",
+        "typed_relations",
+        "canvas_visualization",
+        "centrality_hubs_orphans_bridges",
+        "cross_domain_graph_connection",
+        "ia_knowledge_adaptation_pattern"
+      ],
+      "permanent_pages_created": [],
+      "checks": [
+        "source_preserved_as_raw",
+        "index_updated",
+        "log_updated",
+        "hot_updated",
+        "manifest_traceability"
+      ],
+      "pending": [
+        "adapt_scanner_to_ia_knowledge",
+        "define_relation_vocabulary",
+        "evaluate_graph_export"
+      ]
+    },
+    {
+      "date": "2026-08-07",
+      "type": "graph_wiki_support_document",
+      "branch": "agent/reorganitza-wiki-llm",
+      "status": "completed",
+      "scope": [
+        "4. Templates/90.2. docs_support/guia_creacio_wikis_amb_grafs.md",
+        "index.md",
+        "log.md",
+        "4. Templates/90.2. docs_support/README.md"
+      ],
+      "based_on": [
+        "1. Wiki/1.2. conceptes/grafs_i_models_de_llenguatge.md",
+        "1. Wiki/1.2. conceptes/GraphRAG.md",
+        "1. Wiki/1.2. conceptes/graph_of_thoughts.md",
+        "1. Wiki/1.2. conceptes/xarxes_neuronals_de_graf.md",
+        "1. Wiki/1.2. conceptes/ontologies_associatives.md"
+      ],
+      "contents": [
+        "graph_wiki_maturity_levels",
+        "typed_directed_edges",
+        "provenance_and_confidence",
+        "agent_assistance_contract",
+        "graph_audit_checklist",
+        "graph_rag_readiness_criteria"
+      ],
+      "checks": [
+        "support_document_created",
+        "docs_support_index_updated",
+        "project_index_updated",
+        "log_updated",
+        "manifest_traceability"
+      ]
+    },
+    {
+      "date": "2026-08-07",
+      "type": "research_and_knowledge_expansion",
+      "branch": "agent/reorganitza-wiki-llm",
+      "topic": "grafs aplicats als models de llenguatge",
+      "rounds_completed": 3,
+      "sources_fetched": 11,
+      "pages_created": [
+        "1. Wiki/1.2. conceptes/grafs_i_models_de_llenguatge.md",
+        "1. Wiki/1.2. conceptes/GraphRAG.md",
+        "1. Wiki/1.2. conceptes/graph_of_thoughts.md",
+        "1. Wiki/1.2. conceptes/xarxes_neuronals_de_graf.md",
+        "1. Wiki/1.3. models/G-Retriever.md"
+      ],
+      "pages_updated": [
+        "1. Wiki/1.2. conceptes/RAG.md",
+        "1. Wiki/1.2. conceptes/ontologies_associatives.md",
+        "index.md",
+        "hot.md",
+        "log.md"
+      ],
+      "raw_sources": [
+        "0. Raw/0.2./recerca_grafs_models_llm_2026-08-07.md"
+      ],
+      "checks": [
+        "three_round_research",
+        "primary_sources_prioritized",
+        "concept_model_distinction",
+        "cross_links_added",
+        "manifest_traceability"
+      ],
+      "pending": [
+        "formal_graph_export",
+        "relation_provenance_and_confidence",
+        "GraphRAG_vs_vector_RAG_evaluation"
+      ]
+    },
+    {
+      "date": "2026-08-07",
+      "type": "research_and_knowledge_expansion",
+      "branch": "agent/reorganitza-wiki-llm",
+      "topic": "fonaments operatius dels LLM",
+      "rounds_completed": 3,
+      "sources_fetched": 8,
+      "pages_created": [
+        "1. Wiki/1.2. conceptes/ajust_fi.md",
+        "1. Wiki/1.2. conceptes/alineament_dels_llm.md",
+        "1. Wiki/1.2. conceptes/avaluacio_de_models.md",
+        "1. Wiki/1.3. models/LoRA.md"
+      ],
+      "pages_updated": [
+        "2. Skills/wiki-research.md",
+        "2. Skills/README.md",
+        "4. Templates/90.2. docs_support/research-config.md",
+        "index.md",
+        "hot.md",
+        "log.md"
+      ],
+      "raw_sources": [
+        "0. Raw/0.2./recerca_fonaments_operatius_2026-08-07.md"
+      ],
+      "checks": [
+        "three_round_research",
+        "primary_sources_prioritized",
+        "concept_model_distinction",
+        "cross_links_added",
+        "manifest_traceability"
+      ],
+      "pending": [
+        "quantitzacio_i_inferencia_eficient",
+        "metriques_RAG",
+        "SFT_RLHF_DPO"
+      ]
+    },
+    {
+      "date": "2026-08-07",
+      "type": "wiki_robustness_and_automated_audit",
+      "branch": "agent/reorganitza-wiki-llm",
+      "status": "completed",
+      "scope": [
+        "AGENTS.md",
+        "2. Skills/",
+        "scripts/wiki_lint.py",
+        ".github/workflows/wiki-lint.yml",
+        "3. Dashboards/dashboard_auditoria.md",
+        "log.md",
+        ".manifest.json"
+      ],
+      "checks": [
+        "governance_contracts_defined",
+        "skill_activation_order_defined",
+        "executable_lint_added",
+        "github_actions_added",
+        "dashboard_normalized",
+        "manifest_and_log_updated",
+        "initial_workflow_run_completed",
+        "baseline_debt_identified",
+        "validator_mode_adjusted",
+        "false_positive_scope_reduced"
+      ],
+      "pending": [
+        "gradual_frontmatter_normalization",
+        "gradual_wikilink_migration",
+        "strict_lint_pass"
+      ]
+    },
+    {
+      "date": "2026-08-07",
+      "type": "obsidian_wiki_skills_adaptation",
+      "branch": "agent/reorganitza-wiki-llm",
+      "status": "completed",
+      "source": {
+        "repository": "Ar9av/obsidian-wiki",
+        "scope": ".skills/"
+      },
+      "scope": [
+        "2. Skills/"
+      ],
+      "skills_added_or_updated": [
+        "llm-wiki",
+        "wiki-ingest",
+        "wiki-update",
+        "wiki-lint",
+        "wiki-query",
+        "wiki-context-pack",
+        "wiki-status",
+        "wiki-dedup",
+        "cross-linker",
+        "tag-taxonomy",
+        "wiki-dashboard",
+        "wiki-synthesize",
+        "wiki-research",
+        "wiki-capture",
+        "wiki-export",
+        "wiki-import",
+        "wiki-rebuild",
+        "impl-validator",
+        "daily-update",
+        "vault-skill-factory"
+      ],
+      "exclusions": [
+        "agent history ingestion",
+        "multi-vault configuration",
+        "agent-specific skills"
+      ],
+      "checks": [
+        "skills_index_updated",
+        "paths_adapted",
+        "governance_scope_preserved",
+        "maintenance_skills_added"
+      ]
+    },
+    {
+      "date": "2026-08-07",
+      "type": "reading_plan_to_wiki_foundations",
+      "branch": "agent/reorganitza-wiki-llm",
+      "status": "completed",
+      "source": {
+        "path": "0. Raw/0.1. llibres/Taula_Lectures.md",
+        "original_name": "Taula_Lectures.xlsx",
+        "source_type": "reading_plan"
+      },
+      "scope": [
+        "1. Wiki/1.2. conceptes/",
+        "1. Wiki/1.3. models/"
+      ],
+      "pages_created": [
+        "1. Wiki/1.2. conceptes/xarxes_neuronals.md",
+        "1. Wiki/1.2. conceptes/autodiferenciacio.md",
+        "1. Wiki/1.2. conceptes/micrograd.md",
+        "1. Wiki/1.2. conceptes/backpropagation.md",
+        "1. Wiki/1.2. conceptes/optimitzacio_i_adam.md",
+        "1. Wiki/1.2. conceptes/softmax_i_cross_entropy.md",
+        "1. Wiki/1.2. conceptes/embeddings.md",
+        "1. Wiki/1.2. conceptes/tokenitzacio_i_bpe.md",
+        "1. Wiki/1.2. conceptes/entrenament_validacio_i_overfitting.md",
+        "1. Wiki/1.2. conceptes/activacions_i_inicialitzacio.md",
+        "1. Wiki/1.2. conceptes/batch_normalization.md",
+        "1. Wiki/1.2. conceptes/attention.md",
+        "1. Wiki/1.2. conceptes/raonament_numeric_documental.md",
+        "1. Wiki/1.3. models/transformer.md",
+        "1. Wiki/1.3. models/WaveNet.md",
+        "1. Wiki/1.3. models/GPT.md",
+        "1. Wiki/1.3. models/GPT-2.md",
+        "1. Wiki/1.3. models/nanoGPT.md",
+        "1. Wiki/1.3. models/FinBERT.md"
+      ],
+      "checks": [
+        "source_transcribed",
+        "frontmatter_present",
+        "wikilinks_checked",
+        "sources_recorded",
+        "datasets_not_misclassified"
+      ]
+    },
+    {
+      "date": "2026-08-07",
+      "type": "authors_and_model_links",
+      "branch": "agent/reorganitza-wiki-llm",
+      "status": "completed",
+      "scope": [
+        "1. Wiki/1.1. autors/",
+        "1. Wiki/1.3. models/",
+        "4. Templates/90.1. templates_fitxes/plantilla_model.md"
+      ],
+      "checks": [
+        "author_pages_created",
+        "author_model_links_added",
+        "author_frontmatter_normalized",
+        "matuschak_spelling_corrected",
+        "mentioned_authors_registered"
+      ]
+    },
+    {
+      "date": "2026-08-07",
+      "type": "readme_audit",
+      "branch": "agent/reorganitza-wiki-llm",
+      "status": "completed",
+      "scope": [
+        "README.md",
+        "0. Raw/",
+        "1. Wiki/",
+        "2. Skills/",
+        "3. Dashboards/",
+        "4. Templates/"
+      ],
+      "checks": [
+        "missing_readmes_added",
+        "empty_readmes_completed",
+        "folder_descriptions_normalized"
+      ]
+    },
+    {
+      "date": "2026-08-07",
+      "type": "wiki_architecture_and_ingestion",
+      "branch": "agent/reorganitza-wiki-llm",
+      "status": "completed",
+      "scope": [
+        "AGENTS.md",
+        "index.md",
+        "2. Skills/",
+        "3. Dashboards/",
+        "4. Templates/",
+        "0. Raw/"
+      ],
+      "ingested_sources": [
+        {
+          "path": "0. Raw/0.1. llibres/Tutorial_Zero_to_Hero_LLMs.md",
+          "original_name": "Tutorial_Zero_to_Hero_LLMs_Finances.md",
+          "source_type": "tutorial",
+          "status": "raw_ingested"
+        },
+        {
+          "path": "0. Raw/0.1. llibres/Taula_Lectures.md",
+          "original_name": "Taula_Lectures.xlsx",
+          "source_type": "reading_plan",
+          "status": "processed"
+        },
+        {
+          "path": "4. Templates/90.1. templates_fitxes/plantilla_resum_dinamic.md",
+          "original_name": "plantilla_resum_dinamic_actualitzada.md",
+          "source_type": "template",
+          "status": "adapted"
+        }
+      ],
+      "checks": [
+        "governance_updated",
+        "ingestion_flow_defined",
+        "templates_created",
+        "dashboards_created",
+        "index_queries_normalized",
+        "sources_registered"
+      ]
+    }
+  ]
+}
