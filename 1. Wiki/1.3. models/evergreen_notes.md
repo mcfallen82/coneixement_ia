@@ -1,5 +1,6 @@
 ---
-autor: "[[Matuschack, Andy]]"
+authors:
+  - "[[Matuschak, Andy]]"
 font: https://notes.andymatuschak.org/z5E5QawiXCMbtNtupvxeoEX
 data: 2026-07-07
 tags:
