@@ -1,3 +1,9 @@
+---
+title: "skills"
+node_id: "concept:skills"
+node_type: "concept"
+---
+
 
 ---
 title: Skills
