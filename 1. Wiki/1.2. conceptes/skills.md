@@ -1,12 +1,7 @@
 ---
-title: "skills"
+title: Skills
 node_id: "concept:skills"
 node_type: "concept"
----
-
-
----
-title: Skills
 category: conceptes
 tags:
   - agents
