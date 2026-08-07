@@ -1,5 +1,14 @@
 # Registre de canvis
 
+## 2026-08-07 — Recerca i processament de grafs aplicats als models de llenguatge
+
+- FONT RAW: creat `0. Raw/0.2./recerca_grafs_models_llm_2026-08-07.md` amb tres rondes de recerca i 11 fonts primàries o oficials.
+- CONCEPTES: creades les fitxes sobre grafs i LLM, GraphRAG, Graph of Thoughts i xarxes neuronals de graf.
+- MODEL/MARC: creada la fitxa de G-Retriever, classificat com a marc de GraphQA que combina recuperació, GNN i LLM.
+- RELACIONS: ampliades les fitxes RAG i ontologies associatives.
+- TRAÇABILITAT: actualitzats l’índex, hot i manifest.
+- PENDENTS: tipus de relació, procedència i confiança de les arestes; exportació del vault a un graf formal; comparació amb RAG vectorial.
+
 ## 2026-08-07 — Activació de la recerca i ampliació de coneixement
 
 - SKILL: reforçada wiki-research amb tres rondes, jerarquia de fonts, confiança i criteris d’aturada.
