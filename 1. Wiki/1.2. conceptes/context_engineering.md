@@ -1,12 +1,7 @@
 ---
-title: "context engineering"
+title: Enginyeria del context
 node_id: "concept:context_engineering"
 node_type: "concept"
----
-
-
----
-title: Enginyeria del context
 category: conceptes
 tags:
   - inteligencia-artificial
