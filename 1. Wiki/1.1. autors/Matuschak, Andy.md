@@ -1,5 +1,7 @@
 ---
 title: Andy Matuschak
+node_id: "author:matuschak_andy"
+node_type: "author"
 category: autors
 field:
   - presa de notes
