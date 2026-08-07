@@ -10,6 +10,40 @@
   "operations": [
     {
       "date": "2026-08-07",
+      "type": "graph_wiki_support_document",
+      "branch": "agent/reorganitza-wiki-llm",
+      "status": "completed",
+      "scope": [
+        "4. Templates/90.2. docs_support/guia_creacio_wikis_amb_grafs.md",
+        "index.md",
+        "log.md",
+        "4. Templates/90.2. docs_support/README.md"
+      ],
+      "based_on": [
+        "1. Wiki/1.2. conceptes/grafs_i_models_de_llenguatge.md",
+        "1. Wiki/1.2. conceptes/GraphRAG.md",
+        "1. Wiki/1.2. conceptes/graph_of_thoughts.md",
+        "1. Wiki/1.2. conceptes/xarxes_neuronals_de_graf.md",
+        "1. Wiki/1.2. conceptes/ontologies_associatives.md"
+      ],
+      "contents": [
+        "graph_wiki_maturity_levels",
+        "typed_directed_edges",
+        "provenance_and_confidence",
+        "agent_assistance_contract",
+        "graph_audit_checklist",
+        "graph_rag_readiness_criteria"
+      ],
+      "checks": [
+        "support_document_created",
+        "docs_support_index_updated",
+        "project_index_updated",
+        "log_updated",
+        "manifest_traceability"
+      ]
+    },
+    {
+      "date": "2026-08-07",
       "type": "research_and_knowledge_expansion",
       "branch": "agent/reorganitza-wiki-llm",
       "topic": "grafs aplicats als models de llenguatge",
