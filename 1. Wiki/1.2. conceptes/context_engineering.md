@@ -1,3 +1,9 @@
+---
+title: "context engineering"
+node_id: "concept:context_engineering"
+node_type: "concept"
+---
+
 
 ---
 title: Enginyeria del context
