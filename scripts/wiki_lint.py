@@ -146,6 +146,13 @@ def main() -> int:
                 audit.warning(f"{rel}: sources ha de ser una llista")
             if "tags" in data and not isinstance(data.get("tags"), list):
                 audit.warning(f"{rel}: tags ha de ser una llista")
+            for relation_field in ("related_concepts", "related_models"):
+                if relation_field in data and not isinstance(data.get(relation_field), list):
+                    audit.error(f"{rel}: {relation_field} ha de ser una llista")
+                elif relation_field in data:
+                    invalid = [item for item in data[relation_field] if not isinstance(item, str)]
+                    if invalid:
+                        audit.error(f"{rel}: {relation_field} ha de contenir cadenes, no estructures YAML imbricades")
             if path.parent.name == "1.3. models":
                 for field in ("model_family", "architecture"):
                     if field not in data:
