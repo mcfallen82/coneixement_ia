@@ -13,6 +13,7 @@ sources:
 related_concepts:
   - "[[1. Wiki/1.2. conceptes/alineament_dels_llm]]"
   - "[[1. Wiki/1.2. conceptes/raonament_numeric_documental]]"
+  - "[[scaffold]]"
 related_models:
   - "[[1. Wiki/1.3. models/GPT]]"
 status: reviewed
@@ -61,7 +62,7 @@ Un conjunt de prova pot incloure fragments de memòries anuals amb una resposta 
 - no registrar la versió del model, el prompt i les dades.
 
 ## Relacions
-
+\n- [[scaffold]]\n
 L’avaluació ha d’acompanyar [[1. Wiki/1.2. conceptes/ajust_fi]], [[1. Wiki/1.2. conceptes/alineament_dels_llm]] i els sistemes de [[1. Wiki/1.2. conceptes/raonament_numeric_documental]].
 
 ## Fonts
