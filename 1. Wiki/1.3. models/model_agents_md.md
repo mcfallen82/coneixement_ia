@@ -1,5 +1,6 @@
 ---
-autor: "[[Ghelbur, Eugeniu]]"
+authors:
+  - "[[Ghelbur, Eugeniu]]"
 font: https://github.com/eugeniughelbur/agents-md
 data: 2026-05-30
 tags:
