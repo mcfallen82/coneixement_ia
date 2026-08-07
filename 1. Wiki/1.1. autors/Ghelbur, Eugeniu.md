@@ -1,5 +1,7 @@
 ---
 title: Eugeniu Ghelbur
+node_id: "author:ghelbur_eugeniu"
+node_type: "author"
 category: autors
 field:
   - eines per a agents
