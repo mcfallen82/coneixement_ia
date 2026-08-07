@@ -1,5 +1,5 @@
 ---
-autor:
+authors:
   - "[[Appleton, Maggie]]"
 font: https://maggieappleton.com/garden-history
 data: 2026-07-09
