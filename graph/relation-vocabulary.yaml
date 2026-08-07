@@ -1,0 +1,43 @@
+version: 1
+description: Vocabulari inicial de la capa gràfica lleugera.
+relations:
+  - id: es_un
+    inverse: te_com_a_tipus
+  - id: part_de
+    inverse: conte
+  - id: utilitza
+    inverse: utilitzat_per
+  - id: amplia
+    inverse: ampliat_per
+  - id: depen_de
+    inverse: necessari_per
+  - id: creat_per
+    inverse: ha_creat
+  - id: explica
+    inverse: explicat_per
+  - id: avalua
+    inverse: es_avaluat_per
+  - id: aplicat_a
+    inverse: te_aplicacio
+  - id: contrasta_amb
+    inverse: contrasta_amb
+  - id: exemple_de
+    inverse: te_com_a_exemple
+rules:
+  accepted_edges_require:
+    - source
+    - target
+    - relation
+    - claim_type
+    - confidence
+  allowed_status:
+    - accepted
+    - candidate
+  allowed_claim_type:
+    - documented
+    - inferred
+    - structural
+  allowed_confidence:
+    - high
+    - medium
+    - low
