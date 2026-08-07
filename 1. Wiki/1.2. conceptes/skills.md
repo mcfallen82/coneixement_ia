@@ -40,7 +40,9 @@ Una skill ben definida especifica objectiu, quan s’ha d’utilitzar, requisits
 Una skill de wiki-ingest pot llegir una font, detectar conceptes, comparar-los amb fitxes existents, actualitzar pàgines i registrar el canvi.
 
 ## Relacions
-\n- [[scaffold]]\n
+
+- [[scaffold]]
+
 - [[context_engineering]]
 - [[second_brain]]
 - [[LLM]]
