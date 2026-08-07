@@ -32,7 +32,11 @@ log.md
 hot.md
 .manifest.json
 scripts/wiki_lint.py
-`graph/`, `graph/relations.json` i `scripts/graph_scan.py`
+graph/
+├── README.md
+├── relation-vocabulary.yaml
+└── relations.json
+scripts/graph_scan.py
 .github/workflows/wiki-lint.yml
 ```
 
