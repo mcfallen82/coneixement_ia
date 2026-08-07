@@ -165,9 +165,11 @@ def main() -> int:
             if len(paths) > 1:
                 audit.error(f"títol duplicat a {category}: {title} ({', '.join(paths)})")
 
-    for path in ROOT.rglob("*.md"):
-        if ".git" in path.parts:
-            continue
+    legacy_scope = list(permanent)
+    template_dir = ROOT / "4. Templates/90.1. templates_fitxes"
+    if template_dir.is_dir():
+        legacy_scope.extend(path for path in template_dir.glob("*.md"))
+    for path in legacy_scope:
         text = path.read_text(encoding="utf-8")
         for pattern, label in LEGACY_PATTERNS:
             if pattern.search(text):
