@@ -24,6 +24,10 @@ Per a una operació només de lectura, utilitza [[2. Skills/wiki-query]] i, si c
 - [[2. Skills/wiki-capture]]
 - [[2. Skills/wiki-research]] — recerca en tres rondes i integració de fonts.
 
+### Grafs i relacions
+
+- [[2. Skills/graph-layer]] — capa gràfica lleugera sobre Markdown.
+
 ### Consulta i qualitat
 
 - [[2. Skills/wiki-query]]
