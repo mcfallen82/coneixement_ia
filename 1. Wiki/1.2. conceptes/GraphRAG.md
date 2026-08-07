@@ -14,6 +14,8 @@ sources:
   - https://www.microsoft.com/en-us/research/publication/from-local-to-global-a-graph-rag-approach-to-query-focused-summarization/
   - https://arxiv.org/abs/2404.16130
   - https://arxiv.org/abs/2501.13958
+related_concepts: []
+related_models: []
 status: reviewed
 created: 2026-08-07
 updated: 2026-08-07
