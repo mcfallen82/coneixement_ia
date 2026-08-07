@@ -1,5 +1,5 @@
 ---
-autor:
+authors:
   - "[[Jefferson, Thomas]]"
   - "[[Hess, Jillian]]"
 font: https://jillianhess.substack.com/p/three-notebooks-behind-thomas-jeffersons
