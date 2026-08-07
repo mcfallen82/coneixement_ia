@@ -31,6 +31,8 @@ SORT updated DESC
 
 Fitxes sobre conceptes, tècniques i processos.
 
+- [Scaffold](1.%20Wiki/1.2.%20conceptes/scaffold.md) — arquitectura de suport per a agents i models de llenguatge.
+
 ~~~dataview
 TABLE title, status, length(sources) AS fonts, updated
 FROM "1. Wiki/1.2. conceptes"
