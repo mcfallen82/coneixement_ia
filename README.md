@@ -110,6 +110,12 @@ També hi ha documentació general sobre el funcionament de la wiki, les rutes d
 
 Una plantilla no pretén limitar l’explicació. Serveix com a punt de partida perquè les fitxes comparteixin una estructura mínima i siguin més fàcils de consultar.
 
+### 🕸️ `graph/` — capa gràfica lleugera
+
+La wiki conserva Markdown com a font principal i construeix una representació derivada dels nodes i les relacions. El registre `graph/relations.json` conté només les relacions tipades revisades; els wikilinks encara no classificats es marquen com a candidats. L’escàner permet comptar nodes, detectar enllaços trencats, trobar hubs i exportar una instantània JSON per a proves futures.
+
+Aquesta capa és deliberadament petita: no introdueix cap base de dades ni GraphRAG. Consulta el [dashboard del graf](3.%20Dashboards/graf.md) i la [skill graph-layer](2.%20Skills/graph-layer.md) per començar.
+
 ### 🧪 `scripts/` — comprovacions automàtiques
 
 El projecte inclou eines per revisar-ne l’estat tècnic. El validador principal comprova aspectes com:
