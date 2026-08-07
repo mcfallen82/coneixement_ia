@@ -1,26 +1,62 @@
+
 ---
+title: Prompt
+category: conceptes
 tags:
-  - concepte
-estat: ok
+  - inteligencia-artificial
+  - models-de-llenguatge
+sources:
+  - https://platform.openai.com/docs/guides/prompt-engineering
+status: reviewed
+created: 2026-08-07
+updated: 2026-08-07
 ---
-# PROMPT
+
+# Prompt
+
 ## Definició
 
-Instrucció, pregunta o conjunt d’indicacions a un model d’intel·ligència artificial.
+Un prompt és el missatge, la pregunta o el conjunt d’instruccions que rep un model d’intel·ligència artificial.
 
-Per a millorar la creació de *prompts* hi ha dos tipus de tècniques:
+## Per què és important?
 
----
-## Prompting
+Converteix una intenció humana en una tasca que el model pot executar. La qualitat afecta l’abast, el format i la verificabilitat del resultat.
 
-El **prompting** és l’acte de donar una instrucció, pregunta o conjunt d’indicacions a un model d’intel·ligència artificial.
+## Intuïció
 
-**Pregunta principal:**
+És comparable a un encàrrec professional: «fes una anàlisi» és ambigu; «compara aquestes alternatives amb tres criteris i presenta una taula» defineix millor la feina.
 
-> Què li demano al model?
+## Funcionament
 
----
-## Similars i evolucions
+Un prompt pot incloure objectiu, context, dades, tasca, format de sortida, criteris, restriccions i exemples.
 
-[[prompt_engineering]]
-[[context_engineering]]
+## Exemple
+
+> Explica el RAG en català per a una persona amb coneixements bàsics de Python. Inclou definició, exemple, limitacions i tres conceptes relacionats.
+
+## Relacions
+
+- [[prompting]]
+- [[prompt_engineering]]
+- [[context_engineering]]
+- [[LLM]]
+
+## Aplicacions
+
+- tutorització;
+- extracció;
+- classificació;
+- generació de codi;
+- transformació de documents.
+
+## Limitacions i errors habituals
+
+- confondre longitud amb precisió;
+- no indicar el format;
+- donar informació contradictòria;
+- demanar moltes tasques alhora;
+- no revisar el resultat.
+
+## Fonts
+
+- [OpenAI — Prompt engineering guide](https://platform.openai.com/docs/guides/prompt-engineering).
