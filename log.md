@@ -16,6 +16,7 @@
 - SKILLS: actualitzat `2. Skills/README.md` i reforçat `wiki-lint.md` amb modes normal i estricte.
 - AUDITORIA INICIAL: el workflow va detectar 296 incidències, principalment fitxes antigues sense frontmatter complet i enllaços de l’estructura anterior.
 - CORRECCIÓ DE PROCÉS: el validador ara separa errors estructurals bloquejants del deute de normalització; `--strict` permet exigir la migració completa.
+- WORKFLOW: execució final completada correctament (run 22), amb 0 errors bloquejants i 245 advertiments de normalització.
 - PENDENT: normalitzar progressivament les fitxes antigues i executar `python scripts/wiki_lint.py --strict` fins obtenir zero advertències.
 
 ## 2026-08-07 — Processament de la taula de lectures
