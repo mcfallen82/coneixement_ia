@@ -1,5 +1,7 @@
 ---
 title: WaveNet
+node_id: "model:wavenet"
+node_type: "model"
 category: models
 model_family: convolutional autoregressive model
 architecture: dilated causal convolutions
