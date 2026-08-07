@@ -1,3 +1,9 @@
+---
+title: "PKM"
+node_id: "concept:pkm"
+node_type: "concept"
+---
+
 
 ---
 title: Gestió personal del coneixement
