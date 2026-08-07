@@ -170,6 +170,50 @@
         "sources_recorded",
         "datasets_not_misclassified"
       ]
+    },
+    {
+      "date": "2026-08-07",
+      "type": "obsidian_wiki_skills_adaptation",
+      "branch": "agent/reorganitza-wiki-llm",
+      "status": "completed",
+      "source": {
+        "repository": "Ar9av/obsidian-wiki",
+        "scope": ".skills/"
+      },
+      "scope": [
+        "2. Skills/"
+      ],
+      "skills_added_or_updated": [
+        "llm-wiki",
+        "wiki-ingest",
+        "wiki-update",
+        "wiki-lint",
+        "wiki-query",
+        "wiki-context-pack",
+        "wiki-status",
+        "wiki-dedup",
+        "cross-linker",
+        "tag-taxonomy",
+        "wiki-dashboard",
+        "wiki-synthesize",
+        "wiki-research",
+        "wiki-capture",
+        "wiki-export",
+        "wiki-import",
+        "wiki-rebuild",
+        "impl-validator"
+      ],
+      "exclusions": [
+        "agent history ingestion",
+        "multi-vault configuration",
+        "agent-specific skills"
+      ],
+      "checks": [
+        "skills_index_updated",
+        "paths_adapted",
+        "governance_scope_preserved",
+        "manifest_updated"
+      ]
     }
   ]
 }
