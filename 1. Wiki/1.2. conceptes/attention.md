@@ -1,5 +1,7 @@
 ---
 title: Mecanisme d'atenció
+node_id: "concept:attention"
+node_type: "concept"
 category: conceptes
 tags:
   - transformer
