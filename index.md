@@ -33,6 +33,7 @@ Fitxes sobre conceptes, tècniques i àrees de la IA.
 ```dataview
 TABLE tags, status, updated
 FROM "1. Wiki/1.2. conceptes"
+WHERE file.name != "README"
 SORT file.name ASC
 ```
 
@@ -41,9 +42,10 @@ SORT file.name ASC
 Fitxes sobre arquitectures i models d’intel·ligència artificial.
 
 ```dataview
-TABLE autor, descripcio, estat
+TABLE autor, descripcio, coalesce(status, estat) AS estat
 FROM "1. Wiki/1.3. models"
-SORT estat ASC
+WHERE file.name != "README"
+SORT coalesce(status, estat) ASC
 ```
 
 ## Organització
