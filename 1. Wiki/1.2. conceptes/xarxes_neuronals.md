@@ -1,5 +1,7 @@
 ---
 title: Xarxes neuronals
+node_id: "concept:xarxes_neuronals"
+node_type: "concept"
 category: conceptes
 tags:
   - aprenentatge-profund
