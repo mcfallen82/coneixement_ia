@@ -1,5 +1,7 @@
 ---
 title: Xarxes neuronals de graf
+node_id: "concept:xarxes_neuronals_de_graf"
+node_type: "concept"
 category: conceptes
 tags:
   - grafs
