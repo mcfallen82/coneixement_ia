@@ -1,3 +1,9 @@
+---
+title: "LLM"
+node_id: "concept:llm"
+node_type: "concept"
+---
+
 
 ---
 title: Models de llenguatge de gran escala
