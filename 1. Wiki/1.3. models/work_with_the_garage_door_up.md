@@ -1,4 +1,6 @@
 ---
+node_id: "model:work_with_the_garage_door_up"
+node_type: "model"
 authors:
   - "[[Matuschak, Andy]]"
 font: https://notes.andymatuschak.org/zCMhncA1iSE74MKKYQS5PBZ
