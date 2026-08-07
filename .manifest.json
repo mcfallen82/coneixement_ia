@@ -10,6 +10,33 @@
   "operations": [
     {
       "date": "2026-08-07",
+      "type": "lightweight_graph_layer",
+      "branch": "agent/reorganitza-wiki-llm",
+      "status": "completed",
+      "scope": [
+        "graph/README.md",
+        "graph/relation-vocabulary.yaml",
+        "graph/relations.json",
+        "scripts/graph_scan.py",
+        "2. Skills/graph-layer.md",
+        "3. Dashboards/graf.md"
+      ],
+      "checks": [
+        "markdown_remains_source_of_truth",
+        "typed_edges_registry_created",
+        "candidate_wikilinks_preserved",
+        "graph_scan_added",
+        "github_action_extended"
+      ],
+      "pending": [
+        "review_candidate_edges",
+        "stable_node_id_frontmatter_migration",
+        "subgraph_query_experiments",
+        "graph_vs_vector_rag_comparison"
+      ]
+    },
+    {
+      "date": "2026-08-07",
       "type": "raw_research_graph_usage",
       "branch": "agent/reorganitza-wiki-llm",
       "status": "processed",
