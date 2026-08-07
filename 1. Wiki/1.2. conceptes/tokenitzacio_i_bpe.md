@@ -1,5 +1,7 @@
 ---
 title: Tokenització i BPE
+node_id: "concept:tokenitzacio_i_bpe"
+node_type: "concept"
 category: conceptes
 tags:
   - models-de-llenguatge
