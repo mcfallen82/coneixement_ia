@@ -9,6 +9,7 @@
 ## Prioritats actuals
 
 - Definir tipus, direcció, procedència i confiança de les relacions de la wiki.
+- Estudiar l’adaptació del patró d’obsidian-second-brain: escàner determinista, relacions tipades, subgrafs i visualització.
 - Estudiar una futura exportació de les fitxes a un graf formal.
 - Comparar GraphRAG amb una RAG vectorial en un corpus petit.
 
