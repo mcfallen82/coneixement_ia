@@ -1,5 +1,7 @@
 ---
 title: Graph of Thoughts
+node_id: "concept:graph_of_thoughts"
+node_type: "concept"
 category: conceptes
 tags:
   - grafs
