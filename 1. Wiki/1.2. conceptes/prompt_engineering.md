@@ -46,7 +46,9 @@ S’assembla a millorar un model d’anàlisi: cal definir el resultat esperat, 
 Una rúbrica d’extracció pot valorar exactitud, fidelitat a la font, separació entre fets i inferències, format i consistència.
 
 ## Relacions
-\n- [[scaffold]]\n
+
+- [[scaffold]]
+
 - [[prompt]]
 - [[prompting]]
 - [[context_engineering]]
