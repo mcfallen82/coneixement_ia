@@ -1,5 +1,7 @@
 ---
 title: Ajustament fi
+node_id: "concept:ajust_fi"
+node_type: "concept"
 category: conceptes
 tags:
   - llm
