@@ -49,6 +49,15 @@ WHERE file.name != "README"
 SORT updated DESC
 ~~~
 
+## Grafs aplicats als models de llenguatge
+
+- [Recerca sobre grafs aplicats als LLM](0.%20Raw/0.2./recerca_grafs_models_llm_2026-08-07.md) — dossier brut processat.
+- [Grafs aplicats als models de llenguatge](1.%20Wiki/1.2.%20conceptes/grafs_i_models_de_llenguatge.md) — mapa general.
+- [GraphRAG](1.%20Wiki/1.2.%20conceptes/GraphRAG.md) — recuperació augmentada amb grafs.
+- [Graph of Thoughts](1.%20Wiki/1.2.%20conceptes/graph_of_thoughts.md) — orquestració del raonament.
+- [Xarxes neuronals de graf](1.%20Wiki/1.2.%20conceptes/xarxes_neuronals_de_graf.md) — GNN.
+- [G-Retriever](1.%20Wiki/1.3.%20models/G-Retriever.md) — marc de GraphQA.
+
 ## Recerca incorporada
 
 - [Dossier de recerca: fonaments operatius dels LLM](0.%20Raw/0.2./recerca_fonaments_operatius_2026-08-07.md) — ajustament, alineament, LoRA i avaluació.
