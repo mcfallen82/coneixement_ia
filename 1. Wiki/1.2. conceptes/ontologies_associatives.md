@@ -41,6 +41,12 @@ Cal identificar entitats, tipus de relació i regles mínimes. Les relacions pod
 - [[second_brain]]
 - [[frontmatter]]
 - [[RAG]]
+- [[grafs_i_models_de_llenguatge]]
+- [[GraphRAG]]
+
+## Relació amb els grafs aplicats als LLM
+
+Una ontologia pot servir com a esquema per construir un graf de coneixement. GraphRAG pot utilitzar aquesta estructura per recuperar entitats, relacions i comunitats. La wiki actual és una xarxa de coneixement lleugera: els wikilinks indiquen connexions, però encara no descriuen formalment el tipus, la direcció o la procedència de cada aresta.
 
 ## Aplicacions
 
