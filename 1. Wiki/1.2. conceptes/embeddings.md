@@ -1,5 +1,7 @@
 ---
 title: Embeddings
+node_id: "concept:embeddings"
+node_type: "concept"
 category: conceptes
 tags:
   - representacions-vectorials
