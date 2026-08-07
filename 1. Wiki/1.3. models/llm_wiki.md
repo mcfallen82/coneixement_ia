@@ -1,4 +1,6 @@
 ---
+node_id: "model:llm_wiki"
+node_type: "model"
 authors:
   - "[[Karpathy, Andrej]]"
 font: https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
