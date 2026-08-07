@@ -1,5 +1,7 @@
 ---
 title: AGENTS.md
+node_id: "concept:agents_md"
+node_type: "concept"
 category: conceptes
 tags:
   - agents
