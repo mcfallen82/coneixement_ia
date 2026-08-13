@@ -1,16 +1,21 @@
 ---
+title: Three Notebooks Behind Thomas Jefferson's Legacy
+category: models
 node_id: "model:three_notebooks_behind_thomas_jeffersons"
 node_type: "model"
+model_family: knowledge_management
+architecture: commonplace_book_method
 authors:
   - "[[Jefferson, Thomas]]"
   - "[[Hess, Jillian]]"
-font: https://jillianhess.substack.com/p/three-notebooks-behind-thomas-jeffersons
-data: 2026-07-08
 tags:
   - model
   - notes
-descripcio: Els quaderns de Thomas Jefferson com a sistema de lectura, condensació i formació intel·lectual
-estat: pendent millora
+sources:
+  - https://jillianhess.substack.com/p/three-notebooks-behind-thomas-jeffersons
+status: active
+created: 2026-07-08
+updated: 2026-08-13
 ---
 # Three Notebooks Behind Thomas Jefferson’s Legacy
 

@@ -3,6 +3,8 @@ title: Thomas Jefferson
 node_id: "author:jefferson_thomas"
 node_type: "author"
 category: autors
+tags:
+  - autor
 field:
   - història intel·lectual
   - dret

@@ -1,15 +1,20 @@
 ---
+title: LLM Wiki
+category: models
 node_id: "model:llm_wiki"
 node_type: "model"
+model_family: knowledge_management
+architecture: llm_assisted_wiki
 authors:
   - "[[Karpathy, Andrej]]"
-font: https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
-data: 2026-04-30
 tags:
   - model
   - wiki
-descripcio: Construir una base de coneixement personal en format 'wiki' amb LLM
-estat: ok
+sources:
+  - https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
+status: active
+created: 2026-04-30
+updated: 2026-08-13
 ---
 # LLM WIKI
 
@@ -27,7 +32,7 @@ L’arquitectura bàsica consta de tres capes principals:
 
 1. **FONTS BRUTES (*raw*):** articles, llibres, informes, notes, imatges o documents originals, que no s’han de modificar i actuen com a font principal.
 2. **WIKI**: Col·lecció de pàgines *Markdown* amb resums, pàgines de conceptes, entitats, comparacions, síntesis i enllaços interns. 
-3. **INSTRUCCIONS**: Fitxer de instruccions com [[conceptes/Agents_MD|Agents_MD]] o `CLAUDE.md` que explica al model com ha d’organitzar, actualitzar i mantenir la *wiki*.
+3. **INSTRUCCIONS**: Fitxer de instruccions com [[1. Wiki/1.2. conceptes/AGENTS_MD|Agents_MD]] o `CLAUDE.md` que explica al model com ha d’organitzar, actualitzar i mantenir la *wiki*.
 
 ---
 ## Flux de treball
@@ -61,7 +66,7 @@ El problema d’una base de coneixement és guardar informació, mantenir-la con
 ---
 ## Documents de suport
 
-**[[plantilla_creacio_wikis_locals_codex_obsidian|Plantilla Creació Wikis]]** - Plantilla per a la creació d'un fitxer inicial `AGENTS.md` mitjançant **ChatGPT**.
+**[Plantilla Creació Wikis](../../4.%20Templates/90.2.%20docs_support/plantilla_creacio_wikis_locals_codex_obsidian.md)** - Plantilla per a la creació d'un fitxer inicial `AGENTS.md` mitjançant **ChatGPT**.
 
 ---
 ## Referències
@@ -69,4 +74,4 @@ El problema d’una base de coneixement és guardar informació, mantenir-la con
 Models derivats o inspirats en **Wiki LLM**.
 
 **[[obsidian_wiki|Obsidian Wiki]]**
-**[[obsidian_second_brain|Obsidian Second Brain]]**
+**[[1. Wiki/1.3. models/obsidian_second_brain_karpathy_rebuilt|Obsidian Second Brain]]**

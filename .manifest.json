@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "repository": "mcfallen82/ia_knowledge",
+  "repository": "mcfallen82/coneixement_ia",
   "purpose": "wiki d'aprenentatge general d'intel·ligència artificial",
   "scope_exclusions": [
     "sistema d’aprenentatge de documents financers",
@@ -8,6 +8,391 @@
     "sistema d’aprenentatge d’economia"
   ],
   "operations": [
+    {
+      "date": "2026-08-13",
+      "type": "raw_article_graph_engineering_ghelbur",
+      "status": "processed",
+      "source": {
+        "path": "0. Raw/graph_engineering_decoded_two_definitions_2026-08-11.md",
+        "url": "https://theaioperator.io/p/graph-engineering-decoded-two-definitions",
+        "title": "Graph Engineering Decoded: Two Definitions, One Test",
+        "author": "Eugeniu Ghelbur",
+        "publication_date": "2026-08-11",
+        "source_type": "article"
+      },
+      "assessment": "aporta informacio nova sobre la doble definicio de graph engineering: graf de coneixement i graf de topologia d'agents",
+      "pages_created": [
+        "0. Raw/graph_engineering_decoded_two_definitions_2026-08-11.md",
+        "1. Wiki/1.2. conceptes/graph_engineering.md"
+      ],
+      "pages_updated": [
+        "1. Wiki/1.1. autors/Ghelbur, Eugeniu.md",
+        "1. Wiki/1.2. conceptes/grafs_i_models_de_llenguatge.md",
+        "index.md",
+        "3. Dashboards/dashboard_fonts.md",
+        "log.md",
+        "hot.md",
+        ".manifest.json"
+      ],
+      "checks": [
+        "source_preserved_as_raw",
+        "author_attributed",
+        "new_information_assessed",
+        "concept_page_created",
+        "wiki_lint",
+        "graph_scan_check"
+      ]
+    },
+    {
+      "date": "2026-08-13",
+      "type": "raw_flat_frontmatter_reorganization",
+      "status": "completed",
+      "scope": [
+        "0. Raw/",
+        "AGENTS.md",
+        "index.md",
+        "3. Dashboards/dashboard_fonts.md",
+        "scripts/wiki_lint.py",
+        "log.md",
+        "hot.md",
+        ".manifest.json"
+      ],
+      "pages_created": [
+        "0. Raw/Taula_Lectures.md",
+        "0. Raw/Tutorial_Zero_to_Hero_LLMs.md",
+        "0. Raw/recerca_how_big_things_get_done_2026-08-13.md",
+        "0. Raw/recerca_fonaments_operatius_2026-08-07.md",
+        "0. Raw/recerca_grafs_models_llm_2026-08-07.md",
+        "0. Raw/recerca_grafs_obsidian_second_brain_2026-08-07.md"
+      ],
+      "pages_updated": [
+        "0. Raw/README.md",
+        "AGENTS.md",
+        "index.md",
+        "3. Dashboards/dashboard_fonts.md",
+        "2. Skills/wiki-ingest/wiki-ingest.md",
+        "2. Skills/wiki-research/wiki-research.md",
+        "4. Templates/90.2. docs_support/research-config.md",
+        "4. Templates/90.2. docs_support/ruta-zero-to-hero-ia.md",
+        "scripts/wiki_lint.py",
+        "log.md",
+        "hot.md",
+        ".manifest.json"
+      ],
+      "pages_removed": [
+        "0. Raw/0.1. llibres/README.md",
+        "0. Raw/0.1. llibres/Taula_Lectures.md",
+        "0. Raw/0.1. llibres/Tutorial_Zero_to_Hero_LLMs.md",
+        "0. Raw/0.2/README.md",
+        "0. Raw/0.2/recerca_how_big_things_get_done_2026-08-13.md",
+        "0. Raw/0.2. altres fonts/README.md",
+        "0. Raw/0.2. altres fonts/recerca_fonaments_operatius_2026-08-07.md",
+        "0. Raw/0.2. altres fonts/recerca_grafs_models_llm_2026-08-07.md",
+        "0. Raw/0.2. altres fonts/recerca_grafs_obsidian_second_brain_2026-08-07.md"
+      ],
+      "checks": [
+        "raw_documents_moved_to_base_folder",
+        "raw_frontmatter_contract_added",
+        "old_raw_paths_updated_except_previous_path",
+        "wiki_lint",
+        "graph_scan_check"
+      ]
+    },
+    {
+      "date": "2026-08-13",
+      "type": "visual_audit_and_frequent_index_review",
+      "status": "completed",
+      "scope": [
+        "index.md",
+        "scripts/wiki_lint.py",
+        "hot.md",
+        "log.md",
+        ".manifest.json",
+        "0. Raw/README.md",
+        "0. Raw/README.md",
+        "0. Raw/README.md",
+        "4. Templates/90.2. docs_support/README.md"
+      ],
+      "pages_updated": [
+        "index.md",
+        "scripts/wiki_lint.py",
+        "hot.md",
+        "log.md",
+        ".manifest.json",
+        "0. Raw/README.md",
+        "0. Raw/README.md",
+        "0. Raw/README.md",
+        "4. Templates/90.2. docs_support/README.md"
+      ],
+      "checks": [
+        "visual_encoding_artifacts_removed",
+        "visual_artifact_check_added_to_wiki_lint",
+        "index_frequent_review_section_added",
+        "wiki_lint",
+        "graph_scan_check"
+      ]
+    },
+    {
+      "date": "2026-08-13",
+      "type": "project_governance_audit",
+      "status": "completed",
+      "scope": [
+        "AGENTS.md",
+        "scripts/wiki_lint.py",
+        "2. Skills/",
+        "1. Wiki/1.4. llibres/",
+        "0. Raw/",
+        "log.md",
+        "hot.md",
+        ".manifest.json"
+      ],
+      "pages_updated": [
+        "AGENTS.md",
+        "scripts/wiki_lint.py",
+        "log.md",
+        "hot.md",
+        ".manifest.json"
+      ],
+      "checks": [
+        "governance_matches_current_structure",
+        "books_folder_included_in_lint",
+        "skills_folder_contract_enforced",
+        "wiki_lint",
+        "graph_scan_check"
+      ]
+    },
+    {
+      "date": "2026-08-13",
+      "type": "skills_compact_readme_procedure_split",
+      "status": "completed",
+      "scope": [
+        "2. Skills/"
+      ],
+      "pages_updated": [
+        "2. Skills/README.md",
+        "2. Skills/"
+      ],
+      "checks": [
+        "readme_is_compact_summary",
+        "procedure_kept_in_skill_named_file",
+        "wiki_lint",
+        "graph_scan_check"
+      ]
+    },
+    {
+      "date": "2026-08-13",
+      "type": "skills_folder_readme_reorganization",
+      "status": "completed",
+      "scope": [
+        "2. Skills/",
+        "scripts/wiki_lint.py",
+        "log.md",
+        "hot.md",
+        ".manifest.json"
+      ],
+      "pages_updated": [
+        "2. Skills/",
+        "2. Skills/README.md",
+        "scripts/wiki_lint.py",
+        "log.md",
+        "hot.md",
+        ".manifest.json"
+      ],
+      "checks": [
+        "each_skill_has_own_folder",
+        "each_skill_has_readme",
+        "skill_index_links_updated",
+        "wiki_lint"
+      ]
+    },
+    {
+      "date": "2026-08-13",
+      "type": "lint_and_graph_warning_cleanup",
+      "status": "completed",
+      "scope": [
+        "scripts/wiki_lint.py",
+        "1. Wiki/1.1. autors/",
+        "1. Wiki/1.3. models/",
+        "hot.md",
+        "log.md",
+        ".manifest.json"
+      ],
+      "pages_updated": [
+        "scripts/wiki_lint.py",
+        "1. Wiki/1.1. autors/Appleton, Maggie.md",
+        "1. Wiki/1.1. autors/Arnav.md",
+        "1. Wiki/1.1. autors/Caulfield, Mike.md",
+        "1. Wiki/1.1. autors/Ghelbur, Eugeniu.md",
+        "1. Wiki/1.1. autors/Hess, Jillian.md",
+        "1. Wiki/1.1. autors/Jefferson, Thomas.md",
+        "1. Wiki/1.1. autors/Karpathy, Andrej.md",
+        "1. Wiki/1.1. autors/Ma, Eric.md",
+        "1. Wiki/1.1. autors/Matuschak, Andy.md",
+        "1. Wiki/1.1. autors/Sloan, Robin.md",
+        "1. Wiki/1.1. autors/Tseng, Fei-Ling.md",
+        "1. Wiki/1.3. models/digital_gardens.md",
+        "1. Wiki/1.3. models/essence_zettelkasten_method_demystified.md",
+        "1. Wiki/1.3. models/evergreen_notes.md",
+        "1. Wiki/1.3. models/FinBERT.md",
+        "1. Wiki/1.3. models/G-Retriever.md",
+        "1. Wiki/1.3. models/GPT-2.md",
+        "1. Wiki/1.3. models/GPT.md",
+        "1. Wiki/1.3. models/gpt_image_cookbook.md",
+        "1. Wiki/1.3. models/konik_method.md",
+        "1. Wiki/1.3. models/llm_wiki.md",
+        "1. Wiki/1.3. models/LoRA.md",
+        "1. Wiki/1.3. models/mastering_PKM_with_Obsidian_and_AI.md",
+        "1. Wiki/1.3. models/model_agents_md.md",
+        "1. Wiki/1.3. models/nanoGPT.md",
+        "1. Wiki/1.3. models/obsidian_architect.md",
+        "1. Wiki/1.3. models/obsidian_second_brain_karpathy_rebuilt.md",
+        "1. Wiki/1.3. models/obsidian_wiki.md",
+        "1. Wiki/1.3. models/three-notebooks-behind-thomas-jeffersons.md",
+        "1. Wiki/1.3. models/transformer.md",
+        "1. Wiki/1.3. models/WaveNet.md",
+        "1. Wiki/1.3. models/work_with_the_garage_door_up.md",
+        "hot.md",
+        "log.md",
+        ".manifest.json"
+      ],
+      "checks": [
+        "wiki_lint_zero_warnings",
+        "graph_scan_zero_broken_wikilinks",
+        "legacy_frontmatter_removed",
+        "short_wikilinks_resolved",
+        "template_links_not_graph_nodes"
+      ]
+    },
+    {
+      "date": "2026-08-13",
+      "type": "dashboard_tracking_sync",
+      "status": "completed",
+      "scope": [
+        "3. Dashboards/",
+        "hot.md",
+        "log.md",
+        ".manifest.json"
+      ],
+      "pages_updated": [
+        "3. Dashboards/README.md",
+        "3. Dashboards/dashboard_aprenentatge.md",
+        "3. Dashboards/dashboard_auditoria.md",
+        "3. Dashboards/dashboard_fonts.md",
+        "3. Dashboards/graf.md",
+        "hot.md",
+        "log.md",
+        ".manifest.json"
+      ],
+      "checks": [
+        "dashboards_link_to_dashboard_wiki",
+        "books_folder_included",
+        "raw_sources_summarized",
+        "tracking_files_updated",
+        "dataview_not_required",
+        "wiki_lint",
+        "graph_scan_check"
+      ]
+    },
+    {
+      "date": "2026-08-13",
+      "type": "wiki_dashboard_entrypoint",
+      "status": "completed",
+      "scope": [
+        "3. Dashboards/",
+        "1. Wiki/"
+      ],
+      "pages_created": [
+        "3. Dashboards/dashboard_wiki.md"
+      ],
+      "pages_updated": [
+        "3. Dashboards/README.md",
+        "3. Dashboards/dashboard_aprenentatge.md",
+        "index.md",
+        "log.md",
+        ".manifest.json"
+      ],
+      "checks": [
+        "static_markdown_dashboard",
+        "authors_concepts_models_books_linked",
+        "readme_contract_aligned",
+        "wiki_lint",
+        "graph_scan_check"
+      ]
+    },
+    {
+      "date": "2026-08-13",
+      "type": "book_research_expansion",
+      "status": "processed",
+      "topic": "How Big Things Get Done",
+      "raw_sources": [
+        "0. Raw/recerca_how_big_things_get_done_2026-08-13.md"
+      ],
+      "sources_fetched": [
+        "https://www.penguinrandomhouse.com/books/672118/how-big-things-get-done-by-bent-flyvbjerg-and-dan-gardner/",
+        "https://dangardner.ca/publication/how-big-things-get-done",
+        "https://en.itu.dk/Research/DIIP-hidden-from-menu/Flyvbjerg",
+        "https://www.uottawa.ca/faculty-social-sciences/public-international-affairs/about-school/senior-fellows/dan-gardner",
+        "https://www.pmi.org/learning/library/2019/07/26/00/27/what-you-should-know-megaprojects-11656",
+        "https://www.pmi.org/learning/library/nobel-prize-project-management-risks-2545",
+        "https://ideas.repec.org/p/arx/papers/2101.11104.html"
+      ],
+      "pages_created": [
+        "0. Raw/recerca_how_big_things_get_done_2026-08-13.md",
+        "1. Wiki/1.1. autors/Flyvbjerg, Bent.md",
+        "1. Wiki/1.1. autors/Gardner, Dan.md"
+      ],
+      "pages_updated": [
+        "1. Wiki/1.4. llibres/how_big_things_get_done.md",
+        "scripts/graph_scan.py",
+        "index.md",
+        "hot.md",
+        "log.md",
+        ".manifest.json"
+      ],
+      "checks": [
+        "source_preserved_as_raw",
+        "book_authorship_corrected",
+        "author_pages_created",
+        "wikilinks_point_to_existing_files",
+        "wiki_lint",
+        "graph_scan_check"
+      ]
+    },
+    {
+      "date": "2026-08-13",
+      "type": "plugin_independent_dashboard_cleanup",
+      "status": "completed",
+      "scope": [
+        "AGENTS.md",
+        "index.md",
+        "2. Skills/wiki-dashboard/README.md",
+        "3. Dashboards/",
+        "dashboard.canvas",
+        "kanban.md",
+        ".manifest.json"
+      ],
+      "pages_updated": [
+        "AGENTS.md",
+        "index.md",
+        "2. Skills/wiki-dashboard/README.md",
+        "3. Dashboards/README.md",
+        "3. Dashboards/dashboard_aprenentatge.md",
+        "3. Dashboards/dashboard_auditoria.md",
+        "3. Dashboards/graf.md"
+      ],
+      "pages_removed": [
+        "dashboard.canvas",
+        "kanban.md"
+      ],
+      "checks": [
+        "dataview_blocks_removed",
+        "dashboards_are_static_markdown",
+        "obsidian_plugins_not_required",
+        "repository_name_updated",
+        "wiki_lint",
+        "graph_scan_check"
+      ]
+    },
     {
       "date": "2026-08-07",
       "type": "frontmatter_audit",
@@ -60,7 +445,7 @@
       "scope": [
         "1. Wiki/",
         "scripts/graph_scan.py",
-        "2. Skills/graph-layer.md",
+        "2. Skills/graph-layer/README.md",
         "AGENTS.md",
         "4. Templates/90.1. templates_fitxes/"
       ],
@@ -136,7 +521,7 @@
         "1. Wiki/1.3. models/three-notebooks-behind-thomas-jeffersons.md",
         "1. Wiki/1.3. models/transformer.md",
         "1. Wiki/1.3. models/work_with_the_garage_door_up.md",
-        "1. Wiki/llibres/how_big_things_get_done.md"
+        "1. Wiki/1.4. llibres/how_big_things_get_done.md"
       ],
       "checks": [
         "stable_node_id_added",
@@ -161,7 +546,7 @@
         "graph/relation-vocabulary.yaml",
         "graph/relations.json",
         "scripts/graph_scan.py",
-        "2. Skills/graph-layer.md",
+        "2. Skills/graph-layer/README.md",
         "3. Dashboards/graf.md"
       ],
       "checks": [
@@ -186,7 +571,7 @@
       "source_repository": "eugeniughelbur/obsidian-second-brain",
       "source_commit": "ec7a0e851323ba17c7d6d8f072c647b7098a8621",
       "raw_sources": [
-        "0. Raw/0.2./recerca_grafs_obsidian_second_brain_2026-08-07.md"
+        "0. Raw/recerca_grafs_obsidian_second_brain_2026-08-07.md"
       ],
       "documentation_reviewed": [
         "scripts/link_graph.py",
@@ -273,7 +658,7 @@
         "log.md"
       ],
       "raw_sources": [
-        "0. Raw/0.2./recerca_grafs_models_llm_2026-08-07.md"
+        "0. Raw/recerca_grafs_models_llm_2026-08-07.md"
       ],
       "checks": [
         "three_round_research",
@@ -302,7 +687,7 @@
         "1. Wiki/1.3. models/LoRA.md"
       ],
       "pages_updated": [
-        "2. Skills/wiki-research.md",
+        "2. Skills/wiki-research/README.md",
         "2. Skills/README.md",
         "4. Templates/90.2. docs_support/research-config.md",
         "index.md",
@@ -310,7 +695,7 @@
         "log.md"
       ],
       "raw_sources": [
-        "0. Raw/0.2./recerca_fonaments_operatius_2026-08-07.md"
+        "0. Raw/recerca_fonaments_operatius_2026-08-07.md"
       ],
       "checks": [
         "three_round_research",
@@ -409,7 +794,7 @@
       "branch": "agent/reorganitza-wiki-llm",
       "status": "completed",
       "source": {
-        "path": "0. Raw/0.1. llibres/Taula_Lectures.md",
+        "path": "0. Raw/Taula_Lectures.md",
         "original_name": "Taula_Lectures.xlsx",
         "source_type": "reading_plan"
       },
@@ -498,13 +883,13 @@
       ],
       "ingested_sources": [
         {
-          "path": "0. Raw/0.1. llibres/Tutorial_Zero_to_Hero_LLMs.md",
+          "path": "0. Raw/Tutorial_Zero_to_Hero_LLMs.md",
           "original_name": "Tutorial_Zero_to_Hero_LLMs_Finances.md",
           "source_type": "tutorial",
           "status": "raw_ingested"
         },
         {
-          "path": "0. Raw/0.1. llibres/Taula_Lectures.md",
+          "path": "0. Raw/Taula_Lectures.md",
           "original_name": "Taula_Lectures.xlsx",
           "source_type": "reading_plan",
           "status": "processed"

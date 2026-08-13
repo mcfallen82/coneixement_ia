@@ -1,15 +1,20 @@
 ---
+title: Konik Method
+category: models
 node_id: "model:konik_method"
 node_type: "model"
+model_family: image_generation_workflow
+architecture: cookbook_method
 authors:
   - "[[Ghelbur, Eugeniu]]"
-font: https://github.com/eugeniughelbur/gpt-image-cookbook
-data: 2026-05-30
 tags:
   - model
   - imatge
-descripcio: Caixa d’eines per generar imatges amb IA de manera estructurada
-estat: pendent millora
+sources:
+  - https://github.com/eugeniughelbur/gpt-image-cookbook
+status: active
+created: 2026-05-30
+updated: 2026-08-13
 ---
 # GPT IMAGE COOKBOOK
 

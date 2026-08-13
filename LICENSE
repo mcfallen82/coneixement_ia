@@ -1,0 +1,94 @@
+Dual License Notice
+===================
+
+This repository contains learning notes, wiki pages, templates, scripts, and
+configuration files. Different parts of the repository are licensed differently.
+
+1. Original Markdown Content: CC0 1.0
+------------------------------------
+
+Unless otherwise stated, original Markdown content created specifically for this
+repository is dedicated to the public domain under the Creative Commons CC0 1.0
+Universal Public Domain Dedication.
+
+This includes, when original to this repository:
+
+- wiki notes in `1. Wiki/`
+- project documentation
+- dashboards written as Markdown
+- templates written as Markdown
+- procedural notes in `2. Skills/`
+
+CC0 1.0 summary:
+
+To the extent possible under law, the author waives all copyright and related or
+neighboring rights to this original Markdown content.
+
+Full license text:
+https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+2. Original Code: MIT
+---------------------
+
+Unless otherwise stated, original code created specifically for this repository
+is licensed under the MIT License.
+
+This includes, when original to this repository:
+
+- scripts in `scripts/`
+- GitHub Actions workflow files in `.github/workflows/`
+- small configuration files written for the repository itself
+
+MIT License
+
+Copyright (c) 2026 Rakel
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+3. Exclusions
+-------------
+
+The licenses above do not apply to third-party materials or external sources.
+Those materials remain under their original licenses, terms, or copyright
+status.
+
+Explicitly excluded from this dual license:
+
+- `0. Raw/`
+- `.obsidian/plugins/`
+- third-party materials
+- quotations
+- external links
+- external sources
+- copied, transcribed, summarized, or adapted material whose rights belong to
+  another author or organization
+
+The presence of a third-party source, citation, quotation, link, plugin, paper,
+book, article, repository, video, dataset, or documentation reference in this
+repository does not imply that it is relicensed under CC0 or MIT.
+
+4. Practical Interpretation
+---------------------------
+
+You may freely reuse the original Markdown content of this repository under CC0
+1.0 and the original code under MIT.
+
+Before reusing material from `0. Raw/`, `.obsidian/plugins/`, citations,
+external links, or referenced sources, check the original source and its
+applicable license or terms.

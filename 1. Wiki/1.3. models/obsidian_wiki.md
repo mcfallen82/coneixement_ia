@@ -1,15 +1,20 @@
 ---
+title: Obsidian Wiki
+category: models
 node_id: "model:obsidian_wiki"
 node_type: "model"
+model_family: knowledge_management
+architecture: obsidian_agent_wiki
 authors:
   - "[[Arnav]]"
-font: https://github.com/Ar9av/obsidian-wiki/tree/main
-data: 2026-06-30
 tags:
   - model
   - wiki
-descripcio: Implementació operativa i productitzada de la idea de Karpathy
-estat: ok
+sources:
+  - https://github.com/Ar9av/obsidian-wiki/tree/main
+status: active
+created: 2026-06-30
+updated: 2026-08-13
 ---
 # OBSIDIAN WIKI
 
@@ -29,7 +34,7 @@ La diferència principal amb el model conceptual de **Karpathy** és que aquí h
 
 El sistema pot inicialitzar l’estructura de la *vault*, crear índexs, mantenir registres, detectar canvis, revisar enllaços trencats i consultar el contingut.
 
-També és compatible amb molts entorns d’agents ([[conceptes/Agents_MD|`AGENTS.md`]]) — **Claude Code**, **Cursor**, **Windsurf**, **Codex**, **Gemini CLI**, **Kiro** i altres— cadascun amb els seus fitxers de context o directoris d’habilitats.
+També és compatible amb molts entorns d’agents ([[1. Wiki/1.2. conceptes/AGENTS_MD|`AGENTS.md`]]) — **Claude Code**, **Cursor**, **Windsurf**, **Codex**, **Gemini CLI**, **Kiro** i altres— cadascun amb els seus fitxers de context o directoris d’habilitats.
 
 ---
 ## 🌊 Flux de treball
@@ -78,12 +83,12 @@ La part més sofisticada —agents, ordres, manifest, sincronització, cerca sem
 ---
 ## 📖 Documents de suport
 
-**[[plantilla_wiki_neutra_replicable|Plantilla Wiki Obsidian Neutra]]** - Plantilla per a la creació de *wikis* neutres per a qualsevol tipus de **[[LLM]]**
-**[[resum_ar9av_obsidian_wiki_beagle_ai|Plantilla Wiki Obsidian Beagle AI]]** - Plantilla per a la posada en marxa del projecte **Beagle AI**.
+**[Plantilla Wiki Obsidian Neutra](../../4.%20Templates/90.2.%20docs_support/plantilla_wiki_neutra_replicable.md)** - Plantilla per a la creació de *wikis* neutres per a qualsevol tipus de **[[LLM]]**
+**[Plantilla Wiki Obsidian Beagle AI](../../4.%20Templates/90.2.%20docs_support/resum_ar9av_obsidian_wiki_beagle_ai.md)** - Plantilla per a la posada en marxa del projecte **Beagle AI**.
 
 ---
 ## Referències
 
 Models derivats o inspirats en **Obsidian Wiki**
 
-**[[obsidian_second_brain|Obsidian Second Brain]]**
+**[[1. Wiki/1.3. models/obsidian_second_brain_karpathy_rebuilt|Obsidian Second Brain]]**

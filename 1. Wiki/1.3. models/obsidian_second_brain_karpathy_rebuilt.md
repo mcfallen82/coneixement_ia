@@ -1,17 +1,22 @@
 ---
+title: Obsidian Second Brain Karpathy Rebuilt
+category: models
 node_id: "model:obsidian_second_brain_karpathy_rebuilt"
 node_type: "model"
+model_family: knowledge_management
+architecture: ai_first_obsidian_vault
 authors:
   - "[[Ghelbur, Eugeniu]]"
-font: https://theaioperator.io/p/i-rebuilt-karpathys-llm-wiki-heres
-data: 2026-07-09
 tags:
   - model
   - wiki
-descripcio: Elements de millora del LLM Wiki de Karpathy
-estat: pendent millora
-conceptes:
+sources:
+  - https://theaioperator.io/p/i-rebuilt-karpathys-llm-wiki-heres
+related_concepts:
   - "[[PKM]]"
+status: active
+created: 2026-07-09
+updated: 2026-08-13
 ---
 # 🤔 I rebuilt Karpathy's LLM Wiki gist: what's missing
 
@@ -60,6 +65,6 @@ The inversion is uncomfortable for anyone who has invested in a beautiful Obsidi
 
 ## 📒Documents derivats i referències
 
-**[[obsidian_second_brain|Obsidian Second Brain]]** - Projecte principal de [[Ghelbur, Eugeniu]]
+**[[1. Wiki/1.3. models/obsidian_second_brain_karpathy_rebuilt|Obsidian Second Brain]]** - Projecte principal de [[Ghelbur, Eugeniu]]
 **[[llm_wiki|LLM Wiki]]** - Model de jardí digital on les idees creixen i es connecten mitjançant models [[LLM]].
 **[[wiki|Wiki]]** - Com a sistema viu de coneixement

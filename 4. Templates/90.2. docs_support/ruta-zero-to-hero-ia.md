@@ -2,7 +2,7 @@
 
 ## Objectiu
 
-El tutorial incorporat a 0. Raw/0.1. llibres/Tutorial_Zero_to_Hero_LLMs.md ofereix una ruta progressiva per entendre com un model de llenguatge passa d’operacions bàsiques a una arquitectura GPT.
+El tutorial incorporat a 0. Raw/Tutorial_Zero_to_Hero_LLMs.md ofereix una ruta progressiva per entendre com un model de llenguatge passa d’operacions bàsiques a una arquitectura GPT.
 
 ## Seqüència conceptual
 

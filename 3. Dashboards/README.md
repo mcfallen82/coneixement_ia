@@ -1,11 +1,13 @@
 # 3. Dashboards
 
-Quadres de comandament i consultes per explorar la wiki amb Obsidian i Dataview.
+Quadres de comandament i guies de revisio per explorar la wiki sense dependre de plugins d'Obsidian.
 
-Mostren fitxes recents, continguts pendents, fonts no processades, pàgines sense fonts i incidències d’auditoria. Les consultes assumeixen camps normalitzats com title, category, status, sources i updated.
+El punt d'entrada principal es `dashboard_wiki.md`. La resta de dashboards donen suport a l'aprenentatge, l'auditoria, el seguiment de fonts i la capa grafica. Les revisions assumeixen camps normalitzats com `title`, `category`, `status`, `sources`, `updated`, `node_id` i `node_type`.
 
+- [[3. Dashboards/dashboard_wiki]]
 - [[3. Dashboards/dashboard_aprenentatge]]
 - [[3. Dashboards/dashboard_auditoria]]
 - [[3. Dashboards/dashboard_fonts]]
+- [[3. Dashboards/graf]]
 
-Els dashboards són eines de consulta i no substitueixen [[AGENTS]].
+Els dashboards son eines de consulta i no substitueixen [[AGENTS]].

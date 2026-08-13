@@ -3,6 +3,8 @@ title: Andrej Karpathy
 node_id: "author:karpathy_andrej"
 node_type: "author"
 category: autors
+tags:
+  - autor
 field:
   - aprenentatge profund
   - models de llenguatge

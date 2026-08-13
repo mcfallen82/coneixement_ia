@@ -1,19 +1,24 @@
 ---
+title: Model AGENTS.md
+category: models
 node_id: "model:model_agents_md"
 node_type: "model"
+model_family: agent_context
+architecture: agents_md_generator
 authors:
   - "[[Ghelbur, Eugeniu]]"
-font: https://github.com/eugeniughelbur/agents-md
-data: 2026-05-30
 tags:
   - model
   - agents
-descripcio: Eina per generar i mantenir fitxers "AGENTS.md" dins d'un repositori
-estat: pendent millora
+sources:
+  - https://github.com/eugeniughelbur/agents-md
+status: active
+created: 2026-05-30
+updated: 2026-08-13
 ---
 # MODEL AGENTS.MD
 
-Eina per generar i mantenir fitxers [[conceptes/Agents_MD|`AGENTS.md`]]  dins d’un repositori. 
+Eina per generar i mantenir fitxers [[1. Wiki/1.2. conceptes/AGENTS_MD|`AGENTS.md`]]  dins d’un repositori. 
 
 La proposta del repositori és evitar dos problemes típics: començar un `AGENTS.md` des de zero i, sobretot, que l’agent inventi informació. L’eina escaneja el repositori, detecta allò que pot saber —estructura, scripts, ordres, fitxers de configuració— i genera o refresca un `AGENTS.md`. Quan no pot inferir una cosa amb seguretat, deixa un espai pendent perquè l’usuari l’ompli. 
 

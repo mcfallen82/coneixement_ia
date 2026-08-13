@@ -1,21 +1,26 @@
 ---
+title: Digital Gardens
+category: models
 node_id: "model:digital_gardens"
 node_type: "model"
+model_family: knowledge_management
+architecture: digital_garden
 authors:
   - "[[Appleton, Maggie]]"
-font: https://maggieappleton.com/garden-history
-data: 2026-07-09
 tags:
   - model
   - notes
-descripcio: Origen i filosofia dels jardins digitals
-estat: ok
+sources:
+  - https://maggieappleton.com/garden-history
+status: active
+created: 2026-07-09
+updated: 2026-08-13
 ---
 # 🌱 Digital Gardens
 
 ## Resum sintètic
 
-Els [[jardins digitals]] són espais personals de coneixement construïts com una **xarxa d’idees en creixement**. **Maggie Appleton** els presenta com una alternativa al model cronològic dels blogs i les xarxes socials: les notes evolucionen, es connecten i guanyen valor a mesura que es revisen.
+Els [[1. Wiki/1.2. conceptes/jardins_digitals|jardins digitals]] són espais personals de coneixement construïts com una **xarxa d’idees en creixement**. **Maggie Appleton** els presenta com una alternativa al model cronològic dels blogs i les xarxes socials: les notes evolucionen, es connecten i guanyen valor a mesura que es revisen.
 
 La filosofia del jardí digital encaixa especialment bé amb eines com **Obsidian**, perquè combina fitxers Markdown, enllaços bidireccionals, navegació no lineal i propietat directa sobre les dades.
 

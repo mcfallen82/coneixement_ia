@@ -18,9 +18,9 @@ except ImportError:
 
 ROOT = Path(__file__).resolve().parents[1]
 REQUIRED_DIRS = [
-    "0. Raw", "0. Raw/0.1. llibres", "0. Raw/0.2.",
+    "0. Raw",
     "1. Wiki", "1. Wiki/1.1. autors", "1. Wiki/1.2. conceptes",
-    "1. Wiki/1.3. models", "2. Skills", "3. Dashboards",
+    "1. Wiki/1.3. models", "1. Wiki/1.4. llibres", "2. Skills", "3. Dashboards",
     "4. Templates", "4. Templates/90.1. templates_fitxes",
     "4. Templates/90.2. docs_support",
 ]
@@ -32,14 +32,23 @@ CATEGORY_BY_DIR = {
     "1.1. autors": "autors",
     "1.2. conceptes": "conceptes",
     "1.3. models": "models",
+    "1.4. llibres": "llibres",
 }
 COMMON_FIELDS = {"title", "category", "tags", "sources", "status", "created", "updated"}
+RAW_FIELDS = {"title", "raw_type", "source_type", "processing_status", "status", "created", "updated"}
+RAW_PROCESSING_STATUS = {"raw_ingested", "reviewed", "processed", "archived"}
 LEGACY_PATTERNS = [
     (re.compile(r"^autor\s*:", re.MULTILINE), "camp antic autor:"),
     (re.compile(r"^estat\s*:", re.MULTILINE), "camp antic estat:"),
     (re.compile(r"concepts/|entities/|references/"), "ruta antiga"),
 ]
 WIKILINK_RE = re.compile(r"\[\[([^\]|#]+)(?:#[^\]|]+)?(?:\|[^\]]+)?\]\]")
+VISUAL_ARTIFACTS = {
+    chr(0x00C3): "possible mojibake U+00C3",
+    chr(0x00C2): "possible mojibake U+00C2",
+    chr(0x00E2): "possible mojibake U+00E2",
+    chr(0xFFFD): "caracter de substitucio Unicode",
+}
 
 
 class Audit:
@@ -88,12 +97,39 @@ def target_candidates(raw: str):
         return []
     candidates = [raw, raw[:-3] if raw.endswith(".md") else raw + ".md"]
     if "/" not in raw:
-        candidates.extend([
-            f"1. Wiki/1.1. autors/{raw}", f"1. Wiki/1.2. conceptes/{raw}",
-            f"1. Wiki/1.3. models/{raw}", f"2. Skills/{raw}",
-            f"3. Dashboards/{raw}", f"4. Templates/{raw}",
-        ])
+        for folder in (
+            "1. Wiki/1.1. autors", "1. Wiki/1.2. conceptes",
+            "1. Wiki/1.3. models", "1. Wiki/1.4. llibres",
+            "2. Skills", "3. Dashboards", "4. Templates",
+            "4. Templates/90.2. docs_support",
+        ):
+            candidates.extend([f"{folder}/{raw}", f"{folder}/{raw}.md"])
+        candidates.append(f"2. Skills/{raw}/README.md")
     return candidates
+
+
+def validate_raw_documents(audit: Audit) -> None:
+    raw_dir = ROOT / "0. Raw"
+    if not raw_dir.is_dir():
+        return
+    for path in sorted(raw_dir.rglob("*.md")):
+        if path.name == "README.md":
+            continue
+        if path.parent != raw_dir:
+            audit.error(f"{path.relative_to(ROOT)}: document Raw fora de la carpeta base")
+            continue
+        data, _ = read_frontmatter(path, audit)
+        if data is None:
+            continue
+        rel = str(path.relative_to(ROOT)).replace("\\", "/")
+        missing = RAW_FIELDS - set(data)
+        for field in sorted(missing):
+            audit.error(f"{rel}: falta camp Raw {field}")
+        if "processing_status" in data and data.get("processing_status") not in RAW_PROCESSING_STATUS:
+            audit.error(f"{rel}: processing_status no permes: {data.get('processing_status')!r}")
+        for list_field in ("processed_into", "sources", "tags"):
+            if list_field in data and not isinstance(data.get(list_field), list):
+                audit.error(f"{rel}: {list_field} ha de ser una llista")
 
 
 def validate_links(path: Path, audit: Audit, all_files: set[str]) -> None:
@@ -102,6 +138,23 @@ def validate_links(path: Path, audit: Audit, all_files: set[str]) -> None:
         candidates = target_candidates(raw)
         if candidates and not any(candidate in all_files for candidate in candidates):
             audit.warning(f"{path.relative_to(ROOT)}: wikilink sense destinació: [[{raw}]]")
+
+
+def validate_visual_artifacts(audit: Audit) -> None:
+    suffixes = {".md", ".py", ".json", ".yml", ".yaml"}
+    for path in sorted(ROOT.rglob("*")):
+        if not path.is_file() or ".git" in path.parts or ".obsidian" in path.parts:
+            continue
+        if path.suffix.lower() not in suffixes:
+            continue
+        try:
+            text = path.read_text(encoding="utf-8-sig")
+        except UnicodeDecodeError:
+            audit.error(f"{path.relative_to(ROOT)}: no es pot llegir com a UTF-8")
+            continue
+        found = sorted(label for marker, label in VISUAL_ARTIFACTS.items() if marker in text)
+        if found:
+            audit.error(f"{path.relative_to(ROOT)}: error visual de codificacio ({', '.join(found)})")
 
 
 def main() -> int:
@@ -117,6 +170,22 @@ def main() -> int:
     for filename in REQUIRED_FILES:
         if not (ROOT / filename).is_file():
             audit.error(f"falta fitxer obligatori: {filename}")
+
+    skills_dir = ROOT / "2. Skills"
+    if skills_dir.is_dir():
+        for path in skills_dir.glob("*.md"):
+            if path.name != "README.md":
+                audit.error(f"skill fora de carpeta propia: {path.relative_to(ROOT)}")
+        for skill_dir in sorted(path for path in skills_dir.iterdir() if path.is_dir()):
+            readme = skill_dir / "README.md"
+            procedure = skill_dir / f"{skill_dir.name}.md"
+            if not readme.is_file():
+                audit.error(f"{skill_dir.relative_to(ROOT)}: falta README.md")
+            if not procedure.is_file():
+                audit.error(f"{skill_dir.relative_to(ROOT)}: falta procediment {skill_dir.name}.md")
+
+    validate_visual_artifacts(audit)
+    validate_raw_documents(audit)
 
     markdown_files = {
         str(path.relative_to(ROOT)).replace("\\", "/")

@@ -31,7 +31,7 @@ Una font és especialment valuosa si:
 
 ## Format de conservació
 
-Cada dossier de recerca a `0. Raw/0.2./` ha d’incloure:
+Cada dossier de recerca a `0. Raw/` ha d’incloure:
 
 - data de consulta;
 - pregunta;

@@ -1,21 +1,26 @@
 ---
+title: Obsidian Architect
+category: models
 node_id: "model:obsidian_architect"
 node_type: "model"
+model_family: knowledge_management
+architecture: obsidian_architecture_agent
 authors:
   - "[[Ghelbur, Eugeniu]]"
-font: https://theaioperator.io/p/huge-update-on-obsidian-second-brain
-data: 2026-07-08
 tags:
   - model
   - wiki
-descripcio: Funció de The Architect en el projecte "Obsidian Second Brain"
-estat: pendent millora
+sources:
+  - https://theaioperator.io/p/huge-update-on-obsidian-second-brain
+status: active
+created: 2026-07-08
+updated: 2026-08-13
 ---
 # 🧠 HUGE UPDATE ON OBSIDIAN SECOND BRAIN
 
 ## Resum sintètic
 
-Actualització del projecte [[obsidian_second_brain]], un sistema que converteix **Obsidian** en un espai de coneixement assistit per agents d’IA. La novetat principal és **The Architect**, una funció pensada per integrar també el codi i l’arquitectura dels projectes dins del *vault*.
+Actualització del projecte [[1. Wiki/1.3. models/obsidian_second_brain_karpathy_rebuilt|obsidian_second_brain]], un sistema que converteix **Obsidian** en un espai de coneixement assistit per agents d’IA. La novetat principal és **The Architect**, una funció pensada per integrar també el codi i l’arquitectura dels projectes dins del *vault*.
 
 ## 💡 Idea central
 

@@ -3,6 +3,8 @@ title: Mike Caulfield
 node_id: "author:caulfield_mike"
 node_type: "author"
 category: autors
+tags:
+  - autor
 field:
   - alfabetització digital
   - jardins digitals

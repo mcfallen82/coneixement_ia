@@ -3,6 +3,8 @@ title: FinBERT
 node_id: "model:finbert"
 node_type: "model"
 category: models
+tags:
+  - model
 model_family: BERT
 architecture: encoder-only transformer
 modalities:

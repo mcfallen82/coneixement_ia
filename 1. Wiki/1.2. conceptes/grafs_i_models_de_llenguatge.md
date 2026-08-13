@@ -12,11 +12,12 @@ sources:
   - https://arxiv.org/abs/2501.13958
   - https://www.ijcai.org/proceedings/2024/0898.pdf
   - https://microsoft.github.io/graphrag/
+  - https://theaioperator.io/p/graph-engineering-decoded-two-definitions
 related_concepts: []
 related_models: []
 status: reviewed
 created: 2026-08-07
-updated: 2026-08-07
+updated: 2026-08-13
 ---
 
 # Grafs aplicats als models de llenguatge
@@ -32,6 +33,7 @@ La paraula «grafs» descriu diverses aplicacions relacionades però diferents:
 - Graph of Thoughts: organitza les operacions de raonament d’un LLM;
 - GNN: processa representacions gràfiques amb una xarxa neuronal;
 - GraphQA: respon preguntes sobre dades en forma de graf.
+- graph engineering: decideix si el graf ha de modelar coneixement o topologia d'agents segons el tipus de fallada.
 
 ## Per què és important?
 
@@ -72,6 +74,7 @@ Aquestes connexions poden ajudar a respondre preguntes que requereixen seguir un
 | Graph of Thoughts | Passos i dependències del raonament | Orquestrar prompts i operacions |
 | GNN | Nodes i arestes com a dades d’entrada | Aprendre representacions gràfiques |
 | GraphQA | Preguntes i subgrafs | Respondre sobre dades relacionals |
+| Graph engineering | Coneixement o topologia d'agents | Triar quin graf resol la fallada real |
 
 ## Exemple aplicat a anàlisi documental
 
@@ -95,6 +98,7 @@ Una pregunta com «Quins riscos relacionats amb el producte X apareixen en docum
 - [[G-Retriever]]
 - [[LLM]]
 - [[embeddings]]
+- [[graph_engineering]]
 
 ## Aplicacions
 

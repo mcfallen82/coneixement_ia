@@ -1,3 +1,76 @@
+## 2026-08-13 - Ingesta Raw: graph engineering segons Eugeniu Ghelbur
+
+- FONT RAW: incorporat `0. Raw/graph_engineering_decoded_two_definitions_2026-08-11.md`, atribuit a Eugeniu Ghelbur i publicat a The AI Operator.
+- AVALUACIO: la font aporta informacio nova; diferencia graph engineering com a graf de coneixement i com a topologia d'agents.
+- FITXA: creada `1. Wiki/1.2. conceptes/graph_engineering.md`.
+- ENLLACOS: actualitzades les fitxes `Ghelbur, Eugeniu.md` i `grafs_i_models_de_llenguatge.md`, a mes de `index.md` i `dashboard_fonts.md`.
+- VALIDACIO: `wiki_lint.py` i `graph_scan.py --check` passen amb 0 errors.
+
+## 2026-08-13 - Integracio plana de `0. Raw`
+
+- ESTRUCTURA: integrats els documents de `0. Raw/` a la carpeta base i retirat el criteri actiu per subcarpetes.
+- FRONTMATTER: afegits o normalitzats `raw_type`, `source_type`, `processing_status`, `status`, `created`, `updated`, `previous_path` i `processed_into` quan correspon.
+- GOVERNANCA: actualitzats `AGENTS.md`, `0. Raw/README.md`, `index.md` i el dashboard de fonts per descriure el nou criteri.
+- VALIDACIO: `wiki_lint.py` comprova ara que els documents Raw siguin a la carpeta base i tinguin frontmatter minim.
+
+## 2026-08-13 - Revisio visual i index frequent
+
+- AUDITORIA VISUAL: revisats errors visibles de codificacio en fitxers Markdown, Python, JSON i YAML fora de `.git` i `.obsidian`.
+- CORRECCIO: normalitzats fitxers de seguiment i README amb restes de mojibake.
+- INDEX: actualitzat `index.md` amb una seccio de revisio frequent segons el flux d'`AGENTS.md`.
+- VALIDACIO: `wiki_lint.py` ara detecta errors visuals de codificacio i continua passant amb 0 errors; `graph_scan.py --check` passa amb 0 errors.
+
+## 2026-08-13 - Auditoria de governanca del projecte
+
+- AUDITORIA: revisada la coherencia entre l'estructura real del projecte, `AGENTS.md`, `wiki_lint.py` i `graph_scan.py`.
+- GOVERNANCA: actualitzat `AGENTS.md` per incloure `1. Wiki/1.4. llibres/`, `0. Raw/` i la convencio interna de `2. Skills/<skill>/README.md` + `<skill>.md`.
+- VALIDACIO: `wiki_lint.py` comprova ara les fitxes de llibres i l'estructura interna de skills.
+- RESULTAT: `wiki_lint.py` passa amb 0 errors i 0 advertiments; `graph_scan.py --check` passa amb 0 errors i 0 wikilinks trencats.
+
+## 2026-08-13 - Neteja compacta de `2. Skills`
+
+- ESTRUCTURA: cada carpeta de skill conserva un `README.md` breu i un fitxer `<skill>.md` amb el procediment complet.
+- ABAST: canvi limitat a la documentacio operativa de `2. Skills/`.
+- VALIDACIO: `wiki_lint.py` i `graph_scan.py --check` passen amb 0 errors.
+
+## 2026-08-13 - Reorganitzacio de `2. Skills`
+
+- ESTRUCTURA: cada skill de `2. Skills/` s'ha mogut a una carpeta propia amb document `README.md`.
+- NAVEGACIO: actualitzat `2. Skills/README.md` per apuntar als nous README de cada skill.
+- VALIDACIO: `scripts/wiki_lint.py` ara resol tambe els enllacos curts cap a `2. Skills/<skill>/README.md`.
+- TRACABILITAT: actualitzats `log.md`, `hot.md` i `.manifest.json`.
+## 2026-08-13 — Normalització d'advertiments i wikilinks trencats
+
+- VALIDACIÓ: corregida la resolució de wikilinks curts a `scripts/wiki_lint.py`.
+- GRAF: corregits els 13 wikilinks trencats detectats en fitxes de models; els enllaços a plantilles s'han convertit a enllaços Markdown normals quan no havien de ser nodes del graf.
+- FRONTMATTER: normalitzades fitxes de models amb camps antics `font`, `data`, `descripcio`, `estat` i `conceptes`.
+- TAGS: afegit `tags` a fitxes d'autors i models que no en tenien.
+- SEGUIMENT: actualitzats `hot.md`, `log.md` i `.manifest.json`.
+- RESULTAT: `wiki_lint.py` passa amb 0 errors i 0 advertiments; `graph_scan.py --check` passa amb 0 errors i 0 wikilinks trencats.
+
+## 2026-08-13 — Actualització integral de dashboards i seguiment
+
+- DASHBOARDS: actualitzats `3. Dashboards/README.md`, `dashboard_aprenentatge.md`, `dashboard_auditoria.md`, `dashboard_fonts.md` i `graf.md`.
+- COBERTURA: afegides referències explícites a `dashboard_wiki.md`, `1. Wiki/1.4. llibres/`, fonts brutes principals i fitxers de seguiment.
+- SEGUIMENT: actualitzat `hot.md` per substituir la referència a consultes Dataview per dashboards Markdown estàtics.
+- MANIFEST: registrada l'operació de sincronització de dashboards.
+- VALIDACIÓ: executats `wiki_lint.py` i `graph_scan.py --check`; queden advertiments preexistents de normalització i wikilinks antics.
+
+## 2026-08-13 — Dashboard d'entrada a `1. Wiki`
+
+- DASHBOARD: creat `3. Dashboards/dashboard_wiki.md` com a entrada estàtica a autors, conceptes, models i llibres.
+- NAVEGACIÓ: actualitzats `3. Dashboards/README.md`, `3. Dashboards/dashboard_aprenentatge.md` i `index.md`.
+- ABAST: no s'ha introduït dependència de plugins d'Obsidian; el dashboard és Markdown estàtic.
+
+## 2026-08-13 — Ampliació de *How Big Things Get Done*
+
+- FONT RAW: creat `0. Raw/recerca_how_big_things_get_done_2026-08-13.md` amb fonts editorials, institucionals i acadèmiques consultades.
+- LLIBRE: ampliada i estructurada la fitxa `1. Wiki/1.4. llibres/how_big_things_get_done.md`.
+- AUTORS: creades les fitxes `1. Wiki/1.1. autors/Flyvbjerg, Bent.md` i `1. Wiki/1.1. autors/Gardner, Dan.md`.
+- GRAF: adaptat `scripts/graph_scan.py` perquè la carpeta `1. Wiki/1.4. llibres/` es classifiqui com a font.
+- TRAÇABILITAT: actualitzats `index.md`, `hot.md` i `.manifest.json`.
+- VALIDACIÓ: executats `wiki_lint.py` i `graph_scan.py --check`; queden advertiments de normalització preexistents.
+
 ## 2026-08-07 — Auditoria del frontmatter de conceptes
 
 - AUDITORIA: revisades les 39 fitxes de `1. Wiki/1.2. conceptes/`.
@@ -24,7 +97,7 @@
 
 ## 2026-08-07 — Recerca sobre grafs a obsidian-second-brain
 
-- FONT RAW: creat `0. Raw/0.2./recerca_grafs_obsidian_second_brain_2026-08-07.md`.
+- FONT RAW: creat `0. Raw/recerca_grafs_obsidian_second_brain_2026-08-07.md`.
 - ABAST: documentat l’escàner determinista de wikilinks, les relacions tipades, la visualització Canvas i la connexió entre dominis.
 - CLASSIFICACIÓ: separats graf d’enllaços, graf semàntic, eina de pensament, GraphRAG i GNN.
 - APLICACIÓ: identificat un patró reutilitzable per a `ia_knowledge`: Markdown → escàner → subgraf → assistència LLM.
@@ -43,7 +116,7 @@
 
 ## 2026-08-07 — Recerca i processament de grafs aplicats als models de llenguatge
 
-- FONT RAW: creat `0. Raw/0.2./recerca_grafs_models_llm_2026-08-07.md` amb tres rondes de recerca i 11 fonts primàries o oficials.
+- FONT RAW: creat `0. Raw/recerca_grafs_models_llm_2026-08-07.md` amb tres rondes de recerca i 11 fonts primàries o oficials.
 - CONCEPTES: creades les fitxes sobre grafs i LLM, GraphRAG, Graph of Thoughts i xarxes neuronals de graf.
 - MODEL/MARC: creada la fitxa de G-Retriever, classificat com a marc de GraphQA que combina recuperació, GNN i LLM.
 - RELACIONS: ampliades les fitxes RAG i ontologies associatives.
@@ -56,7 +129,7 @@
 - CONFIGURACIÓ: afegit research-config.md amb temes prioritaris i criteris de qualitat.
 - RECERCA: completades tres rondes sobre ajustament fi, alineament, LoRA i avaluació.
 - FITXES: creades 3 fitxes de conceptes i 1 fitxa de tècnica/model.
-- TRAÇABILITAT: conservat el dossier a 0. Raw/0.2./ i actualitzats índex, hot i manifest.
+- TRAÇABILITAT: conservat el dossier a 0. Raw/ i actualitzats índex, hot i manifest.
 
 ## 2026-08-07 — Ajust final del validador
 
@@ -79,7 +152,7 @@
 
 ## 2026-08-07 — Processament de la taula de lectures
 
-- FONT: completada la transcripció de `Taula_Lectures.xlsx` a `0. Raw/0.1. llibres/Taula_Lectures.md`, amb els cinc blocs originals i el tractament assignat a cada entrada.
+- FONT: completada la transcripció de `Taula_Lectures.xlsx` a `0. Raw/Taula_Lectures.md`, amb els cinc blocs originals i el tractament assignat a cada entrada.
 - CONCEPTES: creades 13 fitxes de fonaments de deep learning, tokenització, atenció i raonament numèric documental.
 - MODELS: creades 6 fitxes per a Transformer, WaveNet, GPT, GPT-2, nanoGPT i FinBERT.
 - CLASSIFICACIÓ: FinQA, TAT-QA, DocFinQA i els recursos d’avaluació s’han registrat com a datasets, benchmarks o casos d’aplicació.
@@ -91,3 +164,10 @@
 - README: revisats i creats els README de les carpetes principals.
 - SKILLS: adaptades les operatives d’ingesta, actualització, consulta, context, deduplicació, enllaços, taxonomia, dashboards, síntesi, recerca, captura, exportació, importació, reconstrucció, validació i manteniment.
 - ADAPTACIÓ: substituïdes les rutes genèriques de `concepts`, `entities` i `references` per les carpetes pròpies del projecte.
+## 2026-08-13 - Dashboards sense plugins
+
+- GOVERNANCA: actualitzat `AGENTS.md` per indicar que els dashboards han de funcionar com a Markdown estatic i no poden dependre de Dataview, Canva, Kanban ni plugins equivalents.
+- DASHBOARDS: retirats els blocs Dataview de `index.md`, `3. Dashboards/dashboard_aprenentatge.md`, `3. Dashboards/dashboard_auditoria.md`, `3. Dashboards/graf.md` i `2. Skills/wiki-dashboard/README.md`.
+- NETEJA: eliminats `dashboard.canvas` i `kanban.md` del projecte.
+- MANIFEST: actualitzat el nom del repositori a `mcfallen82/coneixement_ia` i registrada l'operacio de neteja.
+- VALIDACIO: `wiki_lint.py` i `graph_scan.py --check` passen amb 0 errors bloquejants.

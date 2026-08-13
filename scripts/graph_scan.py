@@ -33,6 +33,7 @@ def node_type(path: Path) -> str:
         "1.1. autors": "author",
         "1.2. conceptes": "concept",
         "1.3. models": "model",
+        "1.4. llibres": "source",
     }.get(path.parent.name, "source" if "1. Wiki/llibres" in relpath(path) else "unknown")
 
 

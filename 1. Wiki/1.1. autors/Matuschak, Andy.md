@@ -3,6 +3,8 @@ title: Andy Matuschak
 node_id: "author:matuschak_andy"
 node_type: "author"
 category: autors
+tags:
+  - autor
 field:
   - presa de notes
   - sistemes de coneixement

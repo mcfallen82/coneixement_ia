@@ -1,15 +1,20 @@
 ---
+title: Evergreen Notes
+category: models
 node_id: "model:evergreen_notes"
 node_type: "model"
+model_family: knowledge_management
+architecture: evergreen_note_method
 authors:
   - "[[Matuschak, Andy]]"
-font: https://notes.andymatuschak.org/z5E5QawiXCMbtNtupvxeoEX
-data: 2026-07-07
 tags:
   - model
   - notes
-descripcio: Com prendre notes perquè les idees evolucionin, s'acumulin i siguin reutilitzables
-estat: ok
+sources:
+  - https://notes.andymatuschak.org/z5E5QawiXCMbtNtupvxeoEX
+status: active
+created: 2026-07-07
+updated: 2026-08-13
 ---
 # 🌲 Evergreen Notes
 
@@ -95,7 +100,7 @@ Aquest enfocament converteix la *vault* en una xarxa explorable i permet que l�
 
 ## 🧩 Conceptes destacats
 
-- **Evergreen note:** nota permanent que evoluciona i acumula valor amb el temps. Forma part dels denominats [[jardins digitals]]
+- **Evergreen note:** nota permanent que evoluciona i acumula valor amb el temps. Forma part dels denominats [[1. Wiki/1.2. conceptes/jardins_digitals|jardins digitals]]
     
 - **Nota atòmica:** nota centrada en una idea amb significat propi.
     
@@ -133,13 +138,13 @@ Una nota de lectura conserva el context de la font. Una evergreen note desenvolu
 Per exemple, l’article de Matuschak podria originar notes independents com:
 
 ```markdown
-[[Les notes permanents permeten acumular pensament]]
+Les notes permanents permeten acumular pensament
 
-[[Les idees són una unitat de coneixement més reutilitzable que les fonts]]
+Les idees són una unitat de coneixement més reutilitzable que les fonts
 
-[[Els enllaços contextuals converteixen una col·lecció en una xarxa]]
+Els enllaços contextuals converteixen una col·lecció en una xarxa
 
-[[Les ontologies associatives emergeixen de les connexions entre idees]]
+Les ontologies associatives emergeixen de les connexions entre idees
 ```
 
 Aquest model encaixa amb el projecte actual perquè permet combinar:

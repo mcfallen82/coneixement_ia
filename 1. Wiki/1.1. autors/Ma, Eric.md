@@ -3,6 +3,8 @@ title: Eric Ma
 node_id: "author:ma_eric"
 node_type: "author"
 category: autors
+tags:
+  - autor
 field:
   - gestió del coneixement personal
   - Obsidian

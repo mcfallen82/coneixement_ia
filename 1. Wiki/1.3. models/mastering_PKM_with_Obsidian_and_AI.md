@@ -1,17 +1,22 @@
 ---
+title: Mastering PKM with Obsidian and AI
+category: models
 node_id: "model:mastering_pkm_with_obsidian_and_ai"
 node_type: "model"
+model_family: knowledge_management
+architecture: obsidian_ai_pkm_workflow
 authors:
   - "[[Ma, Eric]]"
-font: https://ericmjl.github.io/blog/2026/3/6/mastering-personal-knowledge-management-with-obsidian-and-ai
-data: 2026-07-07
 tags:
   - model
   - wiki
-descripcio: Com convertir Obsidian en un sistema de gestió del coneixement personal per treballar millor en un entorn professional complex
-estat: pendent millora
-conceptes:
+sources:
+  - https://ericmjl.github.io/blog/2026/3/6/mastering-personal-knowledge-management-with-obsidian-and-ai
+related_concepts:
   - "[[PKM]]"
+status: active
+created: 2026-07-07
+updated: 2026-08-13
 ---
 # MASTERING PERSONAL KNOWLEDGE MANAGEMENT (PKM) WITH OBSIDIAN AND AI
 

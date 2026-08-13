@@ -1,15 +1,20 @@
 ---
+title: Work With the Garage Door Up
+category: models
 node_id: "model:work_with_the_garage_door_up"
 node_type: "model"
+model_family: knowledge_work_practice
+architecture: public_working_method
 authors:
   - "[[Matuschak, Andy]]"
-font: https://notes.andymatuschak.org/zCMhncA1iSE74MKKYQS5PBZ
-data: 2026-07-07
 tags:
   - model
   - notes
-descripcio: Mostra el procés mentre treballes, no només el resultat final
-estat: pendent millora
+sources:
+  - https://notes.andymatuschak.org/zCMhncA1iSE74MKKYQS5PBZ
+status: active
+created: 2026-07-07
+updated: 2026-08-13
 ---
 # WORK WITH THE GARAGE DOOR UP
 

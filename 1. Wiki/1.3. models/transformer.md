@@ -3,6 +3,8 @@ title: Transformer
 node_id: "model:transformer"
 node_type: "model"
 category: models
+tags:
+  - model
 model_family: transformer
 architecture: encoder-decoder
 modalities:

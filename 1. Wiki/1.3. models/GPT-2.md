@@ -3,6 +3,8 @@ title: GPT-2
 node_id: "model:gpt_2"
 node_type: "model"
 category: models
+tags:
+  - model
 model_family: transformer
 architecture: decoder-only
 modalities:

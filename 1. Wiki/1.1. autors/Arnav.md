@@ -3,6 +3,8 @@ title: Arnav
 node_id: "author:arnav"
 node_type: "author"
 category: autors
+tags:
+  - autor
 field:
   - wikis amb LLM
   - Obsidian

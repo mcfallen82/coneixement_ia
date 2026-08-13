@@ -3,6 +3,8 @@ title: Eugeniu Ghelbur
 node_id: "author:ghelbur_eugeniu"
 node_type: "author"
 category: autors
+tags:
+  - autor
 field:
   - eines per a agents
   - Obsidian
@@ -14,6 +16,7 @@ sources:
   - https://github.com/eugeniughelbur/agents-md
   - https://theaioperator.io/p/huge-update-on-obsidian-second-brain
   - https://theaioperator.io/p/i-rebuilt-karpathys-llm-wiki-heres
+  - https://theaioperator.io/p/graph-engineering-decoded-two-definitions
 works:
   - "[[1. Wiki/1.3. models/gpt_image_cookbook]]"
   - "[[1. Wiki/1.3. models/konik_method]]"
@@ -24,9 +27,10 @@ related_concepts:
   - "[[1. Wiki/1.2. conceptes/PKM]]"
   - "[[1. Wiki/1.2. conceptes/second_brain]]"
   - "[[1. Wiki/1.2. conceptes/skills]]"
+  - "[[1. Wiki/1.2. conceptes/graph_engineering]]"
 status: active
 created: 2026-08-07
-updated: 2026-08-07
+updated: 2026-08-13
 ---
 
 # Eugeniu Ghelbur
@@ -41,6 +45,7 @@ La seva activitat registrada en aquesta wiki combina interfícies de línia d’
 
 ## Obres i contribucions
 
+- **Graph engineering**, distincio operativa entre grafs de coneixement i grafs de topologia d'agents en sistemes amb LLM.
 - **GPT Image Cookbook**, una caixa d’eines per sistematitzar la generació i edició d’imatges.
 - **agents-md**, eina per generar i mantenir instruccions de repositori.
 - Desenvolupament d’idees com **The Architect** i la reconstrucció del LLM Wiki de Karpathy en un sistema de coneixement més operatiu.

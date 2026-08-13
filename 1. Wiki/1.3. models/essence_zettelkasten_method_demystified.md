@@ -1,15 +1,20 @@
 ---
+title: The Essence of the Zettelkasten Method, Demystified
+category: models
 node_id: "model:essence_zettelkasten_method_demystified"
 node_type: "model"
+model_family: knowledge_management
+architecture: zettelkasten_method
 authors:
   - "[[Tseng, Fei-Ling]]"
-font: https://substack.com/home/post/p-48707291
-data: 2026-07-09
 tags:
   - model
   - notes
-descripcio: Descripció del mètode Zettelkasten per pensar, escriure i connectar idees
-estat: ok
+sources:
+  - https://substack.com/home/post/p-48707291
+status: active
+created: 2026-07-09
+updated: 2026-08-13
 ---
 # 🧭 The Essence of the Zettelkasten Method, Demystified
 

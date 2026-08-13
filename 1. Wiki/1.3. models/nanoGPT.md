@@ -3,6 +3,8 @@ title: nanoGPT
 node_id: "model:nanogpt"
 node_type: "model"
 category: models
+tags:
+  - model
 model_family: transformer implementation
 architecture: decoder-only
 modalities:

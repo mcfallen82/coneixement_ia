@@ -3,6 +3,8 @@ title: Robin Sloan
 node_id: "author:sloan_robin"
 node_type: "author"
 category: autors
+tags:
+  - autor
 field:
   - escriptura
   - processos creatius

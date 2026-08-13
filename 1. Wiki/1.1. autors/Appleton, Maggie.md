@@ -3,6 +3,8 @@ title: Maggie Appleton
 node_id: "author:appleton_maggie"
 node_type: "author"
 category: autors
+tags:
+  - autor
 field:
   - jardins digitals
   - disseny d’informació
