@@ -1,3 +1,12 @@
+## 2026-08-31 — Consolidació de la documentació d’Ar9av
+
+- AUDITORIA: comparats els documents `resum_ar9av_obsidian_wiki_beagle_ai.md` i `resum_ar9av_obsidian_wiki_ia_knowledge.md`.
+- DOCUMENTACIÓ: consolidats en una única versió canònica els conceptes generalitzables sobre Karpathy, Ar9av, Obsidian, agents, skills, ingesta, traçabilitat i deduplicació.
+- NETEJA: eliminades les seccions específiques de Beagle AI, empreses, documents SEC i decisions financeres.
+- ELIMINACIÓ: suprimit el document redundant `4. Templates/90.2. docs_support/resum_ar9av_obsidian_wiki_beagle_ai.md`.
+- REFERÈNCIES: actualitzat `4. Templates/90.2. docs_support/README.md` i corregits els enllaços de la wiki al document canònic.
+- RESULTAT: el document vigent és `4. Templates/90.2. docs_support/resum_ar9av_obsidian_wiki_ia_knowledge.md`; no hi ha referències actives a Beagle AI en la documentació revisada.
+
 ## 2026-08-13 - Ingesta Raw: graph engineering segons Eugeniu Ghelbur
 
 - FONT RAW: incorporat `0. Raw/graph_engineering_decoded_two_definitions_2026-08-11.md`, atribuit a Eugeniu Ghelbur i publicat a The AI Operator.
