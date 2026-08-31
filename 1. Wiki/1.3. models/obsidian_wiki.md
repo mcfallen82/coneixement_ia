@@ -84,7 +84,7 @@ La part més sofisticada —agents, ordres, manifest, sincronització, cerca sem
 ## 📖 Documents de suport
 
 **[Plantilla Wiki Obsidian Neutra](../../4.%20Templates/90.2.%20docs_support/plantilla_wiki_neutra_replicable.md)** - Plantilla per a la creació de *wikis* neutres per a qualsevol tipus de **[[LLM]]**
-**[Plantilla Wiki Obsidian Beagle AI](../../4.%20Templates/90.2.%20docs_support/resum_ar9av_obsidian_wiki_beagle_ai.md)** - Plantilla per a la posada en marxa del projecte **Beagle AI**.
+**[Plantilla canònica per crear una wiki local](../../4.%20Templates/90.2.%20docs_support/plantilla_wiki_neutra_replicable.md)** - Guia general per estructurar una wiki amb Obsidian i agents.
 
 ---
 ## Referències
