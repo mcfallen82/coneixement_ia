@@ -2,7 +2,7 @@
 
 ## Objectiu
 
-Aquest document adapta les idees de Karpathy i Ar9av a una wiki general d’aprenentatge d’intel·ligència artificial. No és una arquitectura per a Beagle AI ni per a l’anàlisi de documents financers.
+Aquest document adapta les idees de Karpathy i Ar9av a una wiki general d’aprenentatge d’intel·ligència artificial. Complementa la plantilla canònica de creació de wikis, però no la substitueix.
 
 ## Idea central
 
