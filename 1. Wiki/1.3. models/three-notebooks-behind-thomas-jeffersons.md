@@ -66,7 +66,7 @@ La lliçó pràctica és molt aplicable a una wiki personal o a un sistema d’O
 
 Una bona wiki no ha de ser només un magatzem, sinó una eina per formar criteri. Cada fitxa hauria d’ajudar a passar de “he llegit això” a “això em serveix per pensar millor”. 
 
-Aplicat a Beagle AI o a una wiki d’aprenentatge amb LLMs, el paral·lel és molt clar: el model pot ajudar a resumir i connectar, però el valor real és decidir quins principis val la pena conservar i com s’han d’organitzar. 
+Aplicat a una wiki d’aprenentatge amb LLMs, el paral·lel és molt clar: el model pot ajudar a resumir i connectar, però el valor real és decidir quins principis val la pena conservar i com s’han d’organitzar. 
 ## Frase resum 
 
 > Aquest contingut defensa que les grans idees públiques neixen sovint d’un procés privat de lectura, condensació i classificació, sobretot quan les notes no només acumulen informació, sinó que transformen lectures disperses en criteri propi.
