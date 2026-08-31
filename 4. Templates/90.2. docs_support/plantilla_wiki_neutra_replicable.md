@@ -1,4 +1,6 @@
-# Plantilla neutra per crear una wiki local amb Obsidian + agents
+# Plantilla canònica per crear una wiki local amb Obsidian i agents
+
+> **Document canònic.** Aquesta és la plantilla general de referència per dissenyar una wiki local. Les guies específiques han d’ampliar-la o adaptar-la sense duplicar-ne l’arquitectura.
 
 > Punt de partida replicable per construir una wiki markdown mantinguda amb ajuda d'un LLM, Codex IDE o qualsevol agent capaç de llegir i modificar fitxers.
 
