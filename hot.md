@@ -1,3 +1,12 @@
+# Hot
+
+## Documentació canònica consolidada
+
+- 2026-08-31: consolidat el resum d’Ar9av i la wiki d’aprenentatge d’IA a `4. Templates/90.2. docs_support/resum_ar9av_obsidian_wiki_ia_knowledge.md`.
+- Eliminat el document redundant específic d’un projecte anterior.
+- La versió canònica integra arquitectura, ingesta, skills, traçabilitat i criteris de deduplicació.
+- El README de `90.2. docs_support` i les referències de la wiki apunten ara al document vigent.
+
 ## Frontmatter de conceptes normalitzat
 
 S’han revisat les 39 fitxes conceptuals. Els camps de relació ara tenen un format YAML homogeni i el validador detecta estructures imbricades incorrectes.
