@@ -9,6 +9,29 @@
   ],
   "operations": [
     {
+      "date": "2026-08-31",
+      "type": "canonical_documentation_consolidation",
+      "status": "completed",
+      "summary": "Consolidació de la plantilla de wiki i del resum documental canònic; eliminació de documentació redundant i referències a un projecte anterior.",
+      "pages_created": [],
+      "pages_updated": [
+        "4. Templates/90.2. docs_support/README.md",
+        "4. Templates/90.2. docs_support/plantilla_wiki_neutra_replicable.md",
+        "4. Templates/90.2. docs_support/resum_ar9av_obsidian_wiki_ia_knowledge.md",
+        "hot.md",
+        "log.md",
+        ".manifest.json"
+      ],
+      "pages_removed": [
+        "4. Templates/90.2. docs_support/resum_ar9av_obsidian_wiki_beagle_ai.md"
+      ],
+      "notes": [
+        "La plantilla_wiki_neutra_replicable.md és la plantilla canònica.",
+        "El resum_ar9av_obsidian_wiki_ia_knowledge.md és el document canònic de suport.",
+        "No queden referències actives a Beagle AI en la documentació revisada."
+      ]
+    },
+    {
       "date": "2026-08-13",
       "type": "raw_article_graph_engineering_ghelbur",
       "status": "processed",
@@ -169,8 +192,7 @@
         "2. Skills/"
       ],
       "pages_updated": [
-        "2. Skills/README.md",
-        "2. Skills/"
+        "2. Skills/README.md"
       ],
       "checks": [
         "readme_is_compact_summary",
@@ -191,7 +213,6 @@
         ".manifest.json"
       ],
       "pages_updated": [
-        "2. Skills/",
         "2. Skills/README.md",
         "scripts/wiki_lint.py",
         "log.md",
