@@ -1,0 +1,50 @@
+{
+  "version": 4,
+  "repository": "mcfallen82/coneixement_ia",
+  "purpose": "wiki d'aprenentatge general d'intel·ligència artificial",
+  "source_policy": {
+    "storage": "external_references_only",
+    "description": "Les fonts originals no s'emmagatzemen al repositori públic. La traçabilitat es conserva amb URLs, referències bibliogràfiques i camps sources.",
+    "preferred_sources": [
+      "papers originals",
+      "documentació oficial",
+      "repositoris oficials",
+      "llibres i editorials",
+      "cursos o tutorials d'autor"
+    ]
+  },
+  "operations": [
+    {
+      "date": "2026-09-03",
+      "type": "public_source_model_migration",
+      "status": "completed",
+      "summary": "Migració del projecte públic a un model de fonts externes verificables i eliminació dels materials bruts locals.",
+      "pages_updated": [
+        "README.md",
+        "AGENTS.md",
+        "index.md",
+        "hot.md",
+        "log.md",
+        "3. Dashboards/dashboard_fonts.md",
+        "2. Skills/wiki-ingest/wiki-ingest.md",
+        "2. Skills/wiki-research/wiki-research.md",
+        "4. Templates/90.2. docs_support/research-config.md",
+        "4. Templates/90.2. docs_support/ruta-zero-to-hero-ia.md",
+        "scripts/wiki_lint.py",
+        ".manifest.json"
+      ],
+      "external_sources_highlighted": [
+        "https://karpathy.ai/zero-to-hero.html",
+        "https://github.com/karpathy/nn-zero-to-hero",
+        "https://github.com/karpathy/nanoGPT",
+        "https://theaioperator.io/p/graph-engineering-decoded-two-definitions"
+      ],
+      "checks": [
+        "raw_material_removed_from_public_repo",
+        "governance_uses_external_sources",
+        "ingest_and_research_skills_updated",
+        "lint_no_longer_requires_raw_folder"
+      ]
+    }
+  ]
+}

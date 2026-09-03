@@ -1,0 +1,13 @@
+# CODEOWNERS
+#
+# Contracte de revisió del projecte.
+# Tota contribució ha de passar per Pull Request i ser revisada
+# pel mantenidor abans d'incorporar-se a la branca main.
+
+# El mantenidor és propietari de tot el repositori.
+* @mcfallen82
+
+# Governança i configuració de GitHub: es declaren també explícitament.
+/AGENTS.md @mcfallen82
+/CONTRIBUTING.md @mcfallen82
+/.github/ @mcfallen82

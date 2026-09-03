@@ -1,0 +1,25 @@
+# Fitxers temporals del sistema
+.DS_Store
+Thumbs.db
+
+# Paperera i temporals
+.trash/
+*.tmp
+*.temp
+
+# Fitxers grans o exportacions
+exports/
+*.pdf
+*.zip
+*.7z
+
+# Dades locals i materials de treball no públics
+0. Raw/
+data/raw/
+data/cache/
+.cache/
+
+# Configuracions locals d'editors i gestors de coneixement
+.obsidian/
+.vscode/
+.idea/

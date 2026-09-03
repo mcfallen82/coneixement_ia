@@ -1,0 +1,122 @@
+Dual License Notice
+===================
+
+This repository contains an open knowledge wiki, documentation, templates,
+skills, scripts, workflows, and other materials created for the project.
+Different parts of the repository are licensed differently, as described below.
+
+1. Original Knowledge and Documentation: CC0 1.0
+-------------------------------------------------
+
+Unless otherwise stated, original Markdown content created specifically for this
+repository is dedicated to the public domain under the Creative Commons CC0 1.0
+Universal Public Domain Dedication.
+
+This includes, when original to this repository:
+
+- wiki pages in `1. Wiki/`;
+- project documentation;
+- dashboards written as Markdown;
+- templates written as Markdown;
+- procedural documentation and skills in `2. Skills/`;
+- indexes, guides, and other original explanatory material.
+
+CC0 1.0 summary:
+
+To the extent possible under law, the author or contributor waives all copyright
+and related or neighboring rights to this original content.
+
+Full license text:
+https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+2. Original Code: MIT
+---------------------
+
+Unless otherwise stated, original code created specifically for this repository
+is licensed under the MIT License.
+
+This includes, when original to this repository:
+
+- scripts in `scripts/`;
+- GitHub Actions workflow files in `.github/workflows/`;
+- code contained in skills or templates;
+- small configuration files created specifically for the public repository.
+
+MIT License
+
+Copyright (c) 2026 mcfallen82 and contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+3. Third-Party Materials and External Sources
+---------------------------------------------
+
+The licenses above apply only to material for which the project authors or
+contributors have the right to grant those permissions.
+
+They do not relicense third-party materials, external sources, quotations,
+trademarks, datasets, images, papers, books, articles, repositories, videos,
+documentation, or other material owned by third parties.
+
+External sources are referenced through URLs, citations, bibliographic
+references, and metadata such as the `sources` field. Their inclusion or mention
+in this repository does not change their original copyright, license, or terms
+of use.
+
+Short quotations or other third-party material included for reference remain
+subject to the rights and legal conditions applicable to their original source.
+Contributors are responsible for ensuring that material they submit can legally
+be included in the repository.
+
+4. Contributions
+----------------
+
+By submitting a contribution to this repository, including through a Pull
+Request, the contributor represents that they have the right to submit the
+contribution and agrees that their original contribution may be distributed
+under the license applicable to the part of the project being modified:
+
+- original knowledge, documentation, Markdown, and similar explanatory content
+  under CC0 1.0;
+- original software code and code-like files under the MIT License.
+
+A contribution must not contain third-party material that the contributor does
+not have the right to submit under the applicable terms.
+
+Submitting a contribution does not guarantee its incorporation into the
+project. Contributions are governed by `CONTRIBUTING.md`, `AGENTS.md`, and the
+repository review process. Only contributions reviewed and approved by the
+maintainer may be incorporated into `main`.
+
+5. Practical Interpretation
+---------------------------
+
+In practical terms:
+
+- you may freely reuse original knowledge and documentation created for this
+  project under CC0 1.0;
+- you may freely use, modify, and redistribute original project code under the
+  MIT License;
+- you must check the original license or copyright status before reusing any
+  cited, quoted, linked, or otherwise referenced third-party material;
+- nothing in this repository grants rights over external sources merely because
+  they are cited or discussed here.
+
+When a specific file contains an explicit license or attribution notice, that
+notice takes precedence for that file.
