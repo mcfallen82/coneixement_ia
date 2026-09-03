@@ -13,11 +13,12 @@ exports/
 *.zip
 *.7z
 
-# Si generes dades locals
+# Dades locals
 data/raw/
 data/cache/
 .cache/
 
-# Opcional: estat visual d'Obsidian
-.obsidian/workspace.json
-.obsidian/workspace-mobile.json
+# Configuracions locals d'editors i gestors de coneixement
+.obsidian/
+.vscode/
+.idea/
