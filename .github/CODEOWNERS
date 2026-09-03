@@ -1,26 +1,13 @@
 # CODEOWNERS
 #
-# Política del projecte: totes les contribucions han de ser revisades
+# Contracte de revisió del projecte.
+# Tota contribució ha de passar per Pull Request i ser revisada
 # pel mantenidor abans d'incorporar-se a la branca main.
 
-# Tot el repositori és responsabilitat del mantenidor.
+# El mantenidor és propietari de tot el repositori.
 * @mcfallen82
 
-# Fitxers de governança i contribució.
+# Governança i configuració de GitHub: es declaren també explícitament.
 /AGENTS.md @mcfallen82
 /CONTRIBUTING.md @mcfallen82
-/.github/CODEOWNERS @mcfallen82
-/.github/workflows/ @mcfallen82
-
-# Automatització, scripts i estructura del projecte.
-/scripts/ @mcfallen82
-/2. Skills/ @mcfallen82
-/4. Templates/ @mcfallen82
-/.manifest.json @mcfallen82
-
-# Contingut principal de la wiki i índexs.
-/1. Wiki/ @mcfallen82
-/3. Dashboards/ @mcfallen82
-/index.md @mcfallen82
-/log.md @mcfallen82
-/hot.md @mcfallen82
+/.github/ @mcfallen82
