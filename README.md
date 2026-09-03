@@ -4,7 +4,9 @@
 
 **ia_knowledge** és un projecte d’aprenentatge i organització del coneixement sobre intel·ligència artificial. L’objectiu és entendre millor com funcionen la IA, l’aprenentatge automàtic, el *deep learning*, els models de llenguatge i els sistemes de coneixement, i conservar aquest aprenentatge d’una manera ordenada i reutilitzable.
 
-El projecte està pensat per treballar amb **Obsidian**, però els documents públics són fitxers Markdown normals i es poden consultar o editar amb qualsevol editor de text.
+El projecte utilitza **Markdown estàndard** com a format principal. Els documents es poden consultar i editar amb qualsevol editor de text, editor Markdown, IDE o eina de gestió del coneixement compatible.
+
+La configuració personal dels editors i de les eines locals no forma part del repositori públic.
 
 ## 🎯 Què permet fer el projecte?
 
@@ -44,11 +46,11 @@ Conté les fitxes estructurades d’autors, conceptes, models i llibres. Cada fi
 
 ### ⚙️ `2. Skills/` — procediments de treball
 
-Descriu com investigar, ingerir, actualitzar, relacionar i validar coneixement. Els procediments han de treballar amb fonts externes i no han de requerir una carpeta pública de materials bruts.
+Descriu com investigar, ingerir, actualitzar, relacionar i validar coneixement. Els procediments han de treballar amb fonts externes i no han de requerir carpetes locals privades ni configuracions específiques d’un editor.
 
 ### 📊 `3. Dashboards/` — visió general
 
-Pàgines de consulta i seguiment de la wiki.
+Pàgines Markdown de consulta i seguiment de la wiki, dissenyades per continuar sent útils sense dependre d’un programa concret.
 
 ### 🧩 `4. Templates/` — plantilles i documentació de suport
 
@@ -77,7 +79,13 @@ La regla principal és mantenir la traçabilitat: qualsevol afirmació rellevant
 
 ## 🔗 Una xarxa d’idees, no un arxiu de documents
 
-El valor del projecte apareix quan les fitxes es connecten entre si. La wiki compila coneixement i en conserva la procedència, però evita convertir el repositori en un magatzem de còpies de fonts.
+El valor del projecte apareix quan les fitxes es connecten entre si. La wiki compila coneixement i en conserva la procedència, però evita convertir el repositori en un magatzem de còpies de fonts o configuracions personals.
+
+## 🧰 Eines locals
+
+Cada persona pot utilitzar l’editor, IDE o gestor de coneixement que prefereixi. Aquestes eines són una capa local i substituïble: **el repositori només defineix el contingut, l’estructura Markdown i les regles compartides del projecte**.
+
+Les carpetes de configuració específiques d’un programa s’han de mantenir fora del control de versions.
 
 ## ✅ Governança i manteniment
 
