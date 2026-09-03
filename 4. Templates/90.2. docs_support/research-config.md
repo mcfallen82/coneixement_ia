@@ -27,19 +27,19 @@ Una font és especialment valuosa si:
 - explica el mecanisme, no només el resultat;
 - documenta limitacions;
 - permet connectar teoria i implementació;
-- és prou estable per conservar-la a la wiki.
+- té una referència estable i verificable.
 
 ## Format de conservació
 
-Cada dossier de recerca a `0. Raw/` ha d’incloure:
+La recerca es conserva a través de les fitxes permanents, el manifest i les referències externes. Per a cada font rellevant cal registrar:
 
 - data de consulta;
-- pregunta;
-- angles;
-- fonts amb URL;
-- afirmacions i confiança;
+- pregunta o angle que ajuda a respondre;
+- URL o referència bibliogràfica;
+- autor o organisme;
+- afirmacions incorporades i nivell de confiança;
 - fitxes afectades;
 - buits i contradiccions;
 - decisió d’incorporació.
 
-Les URLs no substitueixen el contingut: la wiki ha de conservar una síntesi pròpia i traçable.
+El repositori públic no ha de conservar còpies locals de les fonts originals ni dossiers privats de treball. La wiki ha de conservar una síntesi pròpia, traçable i connectada amb les fonts externes.
