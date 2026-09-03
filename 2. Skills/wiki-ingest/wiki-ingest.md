@@ -2,11 +2,11 @@
 
 ## Finalitat
 
-Convertir una font d’aprenentatge en coneixement permanent, traçable i connectat dins de ia_knowledge.
+Convertir una font d'aprenentatge en coneixement permanent, traçable i connectat dins de `coneixement_ia`.
 
 ## Abans de començar
 
-1. Llegeix AGENTS.md, index.md, hot.md i aquesta skill.
+1. Llegeix `AGENTS.md`, `index.md`, `hot.md` i aquesta skill.
 2. Identifica la font: article, llibre, tutorial, paper, vídeo, documentació, repositori, conversa o dades estructurades.
 3. Registra la font externa: títol, autor o organisme, URL o referència bibliogràfica, data, tipus i estat de processament.
 4. No copiïs al repositori públic el material original ni notes privades de treball.
@@ -15,8 +15,8 @@ Convertir una font d’aprenentatge en coneixement permanent, traçable i connec
 
 - **Referència externa:** registrar una font sense transformar-la encara en fitxa.
 - **Ingesta normal:** extreure i crear o actualitzar fitxes.
-- **Reingesta:** processar només els canvis d’una font ja registrada.
-- **Ingesta de projecte:** resumir decisions, arquitectura i aprenentatges d’un repositori, no copiar-ne el codi.
+- **Reingesta:** processar només els canvis d'una font ja registrada.
+- **Ingesta de projecte:** resumir decisions, arquitectura i aprenentatges d'un repositori, no copiar-ne el codi.
 
 ## Flux operatiu
 
@@ -33,8 +33,8 @@ Convertir una font d’aprenentatge en coneixement permanent, traçable i connec
 6. Redacta amb intuïció abans del detall tècnic.
 7. Afegeix `sources` al frontmatter i una secció final de fonts quan sigui útil.
 8. Connecta la fitxa amb wikilinks reals.
-9. Actualitza index.md, log.md, hot.md i .manifest.json quan el canvi sigui significatiu.
-10. Executa wiki-lint i revisa manualment les pàgines creades.
+9. Actualitza `index.md`, `log.md`, `hot.md` i `.manifest.json` quan el canvi sigui significatiu.
+10. Executa `wiki-lint` i revisa manualment les pàgines creades.
 
 ## Regla de no-duplicació
 

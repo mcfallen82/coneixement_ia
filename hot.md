@@ -1,5 +1,15 @@
 # Hot
 
+## Documentació pública de les skills
+
+- 2026-09-03: revisada tota la carpeta `2. Skills/` per a ús públic.
+- Els README de cada skill expliquen ara **què resol, quan utilitzar-la, què fa i quin resultat produeix** abans d'enllaçar al procediment complet.
+- `2. Skills/README.md` funciona com a mapa d'entrada amb una taula **necessitat → skill** i enllaços Markdown navegables des de GitHub.
+- Eliminades dependències operatives de `0. Raw/` a les skills d'arquitectura, manteniment, consulta, estat, importació i exportació.
+- L'arquitectura compartida passa a ser **fonts externes verificables → Wiki → governança i esquema**.
+- Les skills afectades utilitzen `coneixement_ia` com a nom actual del projecte, en lloc de `ia_knowledge`.
+- `vault-skill-factory` conserva el nom de carpeta històric, però queda explícit que no depèn d'Obsidian ni d'un vault.
+
 ## Conversió a projecte públic
 
 - 2026-09-03: eliminada la carpeta pública de materials bruts.

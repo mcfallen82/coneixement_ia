@@ -2,11 +2,11 @@
 
 ## Finalitat
 
-Activar una recerca externa en diverses rondes i convertir-ne els resultats en coneixement permanent de ia_knowledge. La recerca ha d’identificar buits, contrastar afirmacions i produir fitxes connectades amb fonts verificables.
+Activar una recerca externa en diverses rondes i convertir-ne els resultats en coneixement permanent de `coneixement_ia`. La recerca ha d'identificar buits, contrastar afirmacions i produir fitxes connectades amb fonts verificables.
 
-## Quan s’activa
+## Quan s'activa
 
-S’activa quan l’usuari demana investigar, ampliar, contrastar o incorporar coneixement sobre un tema, o quan una fitxa té fonts insuficients.
+S'activa quan l'usuari demana investigar, ampliar, contrastar o incorporar coneixement sobre un tema, o quan una fitxa té fonts insuficients.
 
 ## Abast i entrades
 
@@ -20,7 +20,7 @@ Defineix:
 - buits que es volen cobrir;
 - nivell de profunditat i data de tall.
 
-Les fonts consultades es registren com a **fonts externes** mitjançant URL o referència bibliogràfica. No s’emmagatzemen còpies locals al repositori públic.
+Les fonts consultades es registren com a **fonts externes** mitjançant URL o referència bibliogràfica. No s'emmagatzemen còpies locals al repositori públic.
 
 ## Jerarquia de fonts
 
@@ -29,11 +29,11 @@ Prioritza:
 1. paper original o especificació primària;
 2. documentació oficial;
 3. repositori oficial;
-4. curs universitari o tutorial de l’autor;
+4. curs universitari o tutorial de l'autor;
 5. revisió acadèmica o font pedagògica autoritzada;
 6. articles divulgatius, només per completar context.
 
-Registra sempre l’URL, el títol, l’autor o organisme, la data de consulta i el paper que ha tingut en la síntesi.
+Registra sempre l'URL, el títol, l'autor o organisme, la data de consulta i el paper que ha tingut en la síntesi.
 
 ## Ronda 1 — mapa general
 
@@ -49,7 +49,7 @@ Busca contradiccions, limitacions, afirmacions amb una sola font i diferències 
 |---|---|
 | idea diferenciada | crear o actualitzar fitxa de `conceptes` |
 | arquitectura o model | crear o actualitzar fitxa de `models` |
-| persona o organisme rellevant | crear o actualitzar fitxa d’`autors` |
+| persona o organisme rellevant | crear o actualitzar fitxa d'`autors` |
 | llibre rellevant | crear o actualitzar fitxa de `llibres` |
 | font útil però no substantiva | conservar URL o referència al manifest i a `sources` |
 | connexió entre fitxes | afegir wikilinks i relacions |
@@ -75,4 +75,4 @@ La fitxa permanent ha de separar fets documentats, explicació pedagògica, infe
 
 ## Informe de recerca
 
-L’informe final ha d’indicar pregunta i abast, rondes completades, fonts principals, fitxes creades o actualitzades, contradiccions, buits pendents, confiança i resultat del `wiki-lint`.
+L'informe final ha d'indicar pregunta i abast, rondes completades, fonts principals, fitxes creades o actualitzades, contradiccions, buits pendents, confiança i resultat del `wiki-lint`.
