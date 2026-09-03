@@ -1,6 +1,6 @@
 # 1. Wiki
 
-Coneixement permanent derivat de les fonts de 0. Raw/.
+Coneixement permanent derivat de fonts externes.
 
 ## Categories
 
