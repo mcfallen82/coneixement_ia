@@ -2,7 +2,13 @@
 
 ## Objectiu
 
-El tutorial incorporat a 0. Raw/Tutorial_Zero_to_Hero_LLMs.md ofereix una ruta progressiva per entendre com un model de llenguatge passa d’operacions bàsiques a una arquitectura GPT.
+Aquesta ruta segueix la sèrie **Neural Networks: Zero to Hero** d’Andrej Karpathy i altres materials externs per entendre com un model de llenguatge passa d’operacions bàsiques a una arquitectura GPT.
+
+Fonts externes principals:
+
+- https://karpathy.ai/zero-to-hero.html
+- https://github.com/karpathy/nn-zero-to-hero
+- https://github.com/karpathy/nanoGPT
 
 ## Seqüència conceptual
 
@@ -24,9 +30,9 @@ El tutorial incorporat a 0. Raw/Tutorial_Zero_to_Hero_LLMs.md ofereix una ruta p
 
 - [[1. Wiki/1.2. conceptes/embeddings]]
 - [[1. Wiki/1.2. conceptes/backpropagation]]
-- [[1. Wiki/1.2. conceptes/transformer]]
-- [[1. Wiki/1.2. conceptes/tokenització]]
-- [[1. Wiki/1.3. models/gpt]]
+- [[1. Wiki/1.3. models/transformer]]
+- [[1. Wiki/1.2. conceptes/tokenitzacio_i_bpe]]
+- [[1. Wiki/1.3. models/GPT]]
 
 ## Com estudiar-la
 
@@ -34,4 +40,4 @@ Primer cal entendre la intuïció i després reproduir petits experiments en Pyt
 
 ## Aplicació pràctica
 
-La ruta prepara el lector per entendre embeddings, recuperació de documents, RAG, fine-tuning i avaluació de models. Els documents financers poden servir com a cas d’estudi, però no defineixen l’abast de la wiki.
+La ruta prepara el lector per entendre embeddings, recuperació de documents, RAG, ajustament i avaluació de models. Els documents financers poden servir com a cas d’estudi, però no defineixen l’abast de la wiki.
