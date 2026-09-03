@@ -36,6 +36,7 @@ scripts/graph_scan.py
 - `3. Dashboards/` conté consultes i vistes.
 - `4. Templates/` conté plantilles i documents de suport.
 - Les fonts originals es mantenen fora del repositori públic i es referencien mitjançant URLs, bibliografia i el camp `sources`.
+- Les configuracions personals d'editors, IDE o gestors de coneixement també es mantenen fora del repositori públic.
 - `scripts/wiki_lint.py` és la validació executable; no substitueix la revisió humana.
 
 ## 4. Contracte de les fitxes
@@ -69,6 +70,15 @@ Cada font utilitzada per crear o actualitzar coneixement ha de registrar, quan s
 
 No s'han de pujar al repositori públic còpies locals de papers, articles, llibres, transcripcions, dossiers de recerca o notes privades de treball. Si una font no té URL pública, es pot conservar una referència bibliogràfica suficient per identificar-la.
 
+## 4.2. Independència de l'eina local
+
+Markdown és el format canònic compartit. El projecte no depèn d'un editor, IDE, gestor de notes ni plugin concret.
+
+- No es versionen carpetes de configuració específiques d'aplicacions.
+- No es pressuposa que els col·laboradors utilitzin la mateixa eina local.
+- Les funcionalitats essencials han de continuar disponibles mitjançant Markdown, scripts del repositori o estàndards oberts.
+- Els enllaços interns han de ser comprensibles i validables sense requerir configuració privada d'un editor.
+
 ## 5. Flux operatiu únic
 
 ```text
@@ -92,11 +102,12 @@ Una operació d'escriptura només es considera completa quan:
 - No sobreescriguis fitxes existents sense comparar-les.
 - No inventis autors, models, dates, arquitectures ni fonts.
 - No copiïs al repositori públic materials originals que només siguin necessaris com a font de treball.
+- No incorporis configuracions personals d'aplicacions al control de versions.
 - Les operacions massives han de començar amb una validació en mode només lectura.
 
-## 7. Enllaços i Obsidian
+## 7. Enllaços i compatibilitat Markdown
 
-Els wikilinks han d'apuntar a fitxers reals o a una destinació externa explícita. Els dashboards han de funcionar com a Markdown estàtic i/o com a guies per executar `scripts/wiki_lint.py` i `scripts/graph_scan.py`; no han de dependre de plugins d'Obsidian. No es modifica `.obsidian/` automàticament.
+Els wikilinks han d'apuntar a fitxers reals o a una destinació externa explícita. Els dashboards han de funcionar com a Markdown estàtic i/o com a guies per executar `scripts/wiki_lint.py` i `scripts/graph_scan.py`; no han de dependre de plugins o extensions privades d'un programa concret.
 
 ## 8. Registre i manifest
 
