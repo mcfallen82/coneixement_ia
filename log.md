@@ -1,5 +1,25 @@
 # Log del projecte
 
+## 2026-09-03 — Documentació pública de `2. Skills/`
+
+### Operació
+
+S'ha revisat la carpeta `2. Skills/` per eliminar dependències operatives del model antic basat en `0. Raw/` i fer que cada skill sigui comprensible per a lectors externs que arriben al repositori des de GitHub.
+
+### Canvis principals
+
+- Reescrit `2. Skills/README.md` com a mapa funcional amb una taula **necessitat → skill**, flux recomanat i enllaços Markdown navegables des de GitHub.
+- Ampliats els README de totes les carpetes de skills amb finalitat, moment d'ús, funcions, resultat esperat i accés al procediment complet.
+- Eliminades referències operatives a `0. Raw/` de `llm-wiki`, `daily-update`, `wiki-query`, `wiki-status`, `wiki-import` i `wiki-export`.
+- Substituïda l'arquitectura antiga `Raw → Wiki → Esquema` per `Fonts externes → Wiki → Governança i esquema`.
+- Substituït el nom intern `ia_knowledge` per `coneixement_ia` als procediments afectats.
+- Aclarit que `vault-skill-factory` conserva un nom històric però no depèn d'Obsidian ni d'un vault.
+- Els imports temporals es mantenen fora del repositori públic o en ubicacions locals ignorades per Git; els exports inclouen per defecte coneixement propi de la wiki, no còpies de materials externs.
+
+### Objectiu
+
+Fer que les skills funcionin com una documentació pública autosuficient: una persona externa ha de poder entendre què resol cada procediment abans d'obrir-ne la implementació detallada.
+
 ## 2026-09-03 — Conversió a projecte públic basat en fonts externes i Markdown neutre
 
 ### Operació
