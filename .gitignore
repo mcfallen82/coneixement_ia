@@ -13,7 +13,8 @@ exports/
 *.zip
 *.7z
 
-# Dades locals
+# Dades locals i materials de treball no públics
+0. Raw/
 data/raw/
 data/cache/
 .cache/
