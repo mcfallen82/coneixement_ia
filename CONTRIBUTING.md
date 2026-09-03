@@ -32,4 +32,6 @@ No s’accepten:
 
 Això significa que una contribució proposada no s’incorpora automàticament al projecte. El mantenidor pot demanar correccions, canvis de format, fonts addicionals o ajustos abans d’aprovar-la.
 
+El fitxer `.github/CODEOWNERS` identifica `@mcfallen82` com a propietari de tot el repositori. Per fer obligatòria aquesta revisió, la branca `main` s’ha de protegir amb la regla de GitHub **Require review from Code Owners**.
+
 Aquest és el contracte social del projecte.
