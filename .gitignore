@@ -1,6 +1,7 @@
 # Fitxers temporals del sistema
 .DS_Store
 Thumbs.db
+desktop.ini
 
 # Paperera i temporals
 .trash/
