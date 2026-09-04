@@ -1,43 +1,41 @@
 # 4. Templates
 
-Aquesta carpeta agrupa les **estructures reutilitzables** i la **documentació de suport** que ajuden a crear, mantenir i ampliar `coneixement_ia` amb criteris comuns.
+Aquesta carpeta agrupa les **estructures reutilitzables** del projecte. Té dues funcions diferenciades: ajudar a crear peces de coneixement homogènies i conservar documents base per dissenyar noves bases de coneixement assistides per IA.
 
-El contingut de `4. Templates/` no és coneixement permanent de la wiki. La seva funció és definir **com s'ha de representar, resumir o organitzar el coneixement** i oferir guies replicables per treballar amb el projecte.
+El contingut de `4. Templates/` no és coneixement temàtic permanent de la wiki. La seva funció és definir **com representar coneixement** i **com construir el sistema que el contindrà**.
 
 ## Què hi trobaràs?
 
 | Carpeta | Funció | Quan utilitzar-la |
 |---|---|---|
-| [`90.1. templates_fitxes/`](90.1.%20templates_fitxes/) | Plantilles per crear fitxes homogènies de conceptes, models, autors, fonts i resums. | Quan crees una fitxa nova o vols normalitzar l'estructura d'una fitxa existent. |
-| [`90.2. docs_support/`](90.2.%20docs_support/) | Guies d'arquitectura, recerca, grafs de coneixement i aprenentatge. | Quan necessites entendre o replicar els processos i decisions de disseny del sistema. |
+| [`90.1. templates_fitxes/`](90.1.%20templates_fitxes/) | Plantilles per crear fitxes homogènies de conceptes, models, autors, fonts i resums. | Quan crees o normalitzes peces de coneixement dins d'una wiki. |
+| [`90.2. docs_support/`](90.2.%20docs_support/) | Biblioteca de documents base per dissenyar i crear noves bases de coneixement vinculades a una IA sobre qualsevol domini. | Quan vols definir l'arquitectura, governança, recerca, relacions, validació i fluxos d'una wiki nova. |
 
-## Com s'utilitzen
-
-El flux habitual és:
+## Dues capes complementàries
 
 ```text
-Necessitat de documentar o investigar
-            ↓
-Consulta de la guia o skill corresponent
-            ↓
-Selecció d'una plantilla adequada
-            ↓
-Creació o actualització de la fitxa
-            ↓
-Fonts, relacions i validació
+90.2. docs_support
+Dissenya la base de coneixement
+        ↓
+90.1. templates_fitxes
+Defineix com s'escriuen les peces de coneixement
+        ↓
+Wiki específica del nou domini
 ```
 
-Les plantilles són **punts de partida**, no formularis rígids. Es poden adaptar a la complexitat del tema, però s'han de conservar els camps i seccions que aporten traçabilitat, coherència i utilitat per a la resta de la wiki.
+`90.2` treballa a nivell de **sistema**. Els seus documents han de ser reutilitzables per crear una wiki nova sobre IA, finances, història, dret, ciència o qualsevol altra matèria.
+
+`90.1` treballa a nivell de **document**. Les seves plantilles ajuden a mantenir una estructura coherent un cop la base de coneixement ja té definida la seva arquitectura.
 
 ## Relació amb la resta del projecte
 
-- [`1. Wiki/`](../1.%20Wiki/) conté el coneixement permanent creat a partir d'aquestes estructures.
+- [`1. Wiki/`](../1.%20Wiki/) conté el coneixement permanent d'aquest projecte concret.
 - [`2. Skills/`](../2.%20Skills/) descriu els procediments operatius per investigar, ingerir, actualitzar i validar contingut.
-- [`AGENTS.md`](../AGENTS.md) defineix la governança i les regles generals del repositori.
-- [`3. Dashboards/`](../3.%20Dashboards/) permet revisar l'estat del coneixement generat.
+- [`90.2. docs_support/`](90.2.%20docs_support/) extreu els patrons generalitzables del projecte perquè puguin servir de base a altres wikis.
+- [`AGENTS.md`](../AGENTS.md) defineix la governança del repositori actual.
 
 ## Principi general
 
-**Les plantilles aporten estructura; les fonts aporten evidència; les skills aporten procés.**
+**Les plantilles defineixen la forma de les peces; `docs_support` defineix el patró del sistema.**
 
-Cap plantilla substitueix la verificació de les fonts ni les regles d'`AGENTS.md`.
+Els documents de `90.2` han de tendir a ser independents del tema i de l'eina local, comprensibles per una persona i útils com a context estructural per a una IA o agent.
