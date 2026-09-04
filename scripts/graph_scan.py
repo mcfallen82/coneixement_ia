@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Construeix i valida la capa gràfica lleugera de ia_knowledge."""
+"""Construeix i valida la capa gràfica lleugera de coneixement_ia."""
 
 from __future__ import annotations
 
@@ -77,12 +77,11 @@ def collect_nodes() -> tuple[dict[str, dict], dict[str, str]]:
 
 
 def resolve_link(raw: str, path_to_id: dict[str, str]) -> str | None:
-    """Resol un wikilink amb la mateixa tolerància que Obsidian.
+    """Resol un wikilink amb tolerància a variants habituals de representació.
 
     Primer prova la ruta canònica i després compara el nom de fitxa sense
-    distingir majúscules, accents d'espai o extensions. Això evita que la
-    capa gràfica confongui una diferència de representació amb un enllaç
-    trencat.
+    distingir majúscules o extensió. Això evita que la capa gràfica confongui
+    una diferència de representació amb un enllaç trencat.
     """
     raw = raw.strip().replace("%20", " ").replace("\\", "/")
     candidates = [raw, raw[:-3] if raw.endswith(".md") else raw + ".md"]
