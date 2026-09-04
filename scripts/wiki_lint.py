@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Auditoria determinista de l’arquitectura i les fitxes de ia_knowledge."""
+"""Auditoria determinista de l'arquitectura i les fitxes de coneixement_ia."""
 
 from __future__ import annotations
 
@@ -18,14 +18,28 @@ except ImportError:
 
 ROOT = Path(__file__).resolve().parents[1]
 REQUIRED_DIRS = [
-    "1. Wiki", "1. Wiki/1.1. autors", "1. Wiki/1.2. conceptes",
-    "1. Wiki/1.3. models", "1. Wiki/1.4. llibres", "2. Skills", "3. Dashboards",
-    "4. Templates", "4. Templates/90.1. templates_fitxes",
+    "1. Wiki",
+    "1. Wiki/1.1. autors",
+    "1. Wiki/1.2. conceptes",
+    "1. Wiki/1.3. models",
+    "1. Wiki/1.4. llibres",
+    "2. Skills",
+    "3. Dashboards",
+    "4. Templates",
+    "4. Templates/90.1. templates_fitxes",
     "4. Templates/90.2. docs_support",
 ]
 REQUIRED_FILES = [
-    "AGENTS.md", "README.md", "index.md", "log.md", "hot.md",
-    ".manifest.json", "2. Skills/README.md", "scripts/wiki_lint.py",
+    "AGENTS.md",
+    "README.md",
+    "index.md",
+    "log.md",
+    "hot.md",
+    ".manifest.json",
+    "2. Skills/README.md",
+    "4. Templates/README.md",
+    "4. Templates/90.2. docs_support/README.md",
+    "scripts/wiki_lint.py",
 ]
 CATEGORY_BY_DIR = {
     "1.1. autors": "autors",
@@ -47,15 +61,19 @@ VISUAL_ARTIFACTS = {
     chr(0xFFFD): "caracter de substitucio Unicode",
 }
 
+
 class Audit:
     def __init__(self, strict: bool) -> None:
         self.strict = strict
         self.errors: list[str] = []
         self.warnings: list[str] = []
+
     def error(self, message: str) -> None:
         self.errors.append(message)
+
     def warning(self, message: str) -> None:
         (self.errors if self.strict else self.warnings).append(message)
+
 
 def read_frontmatter(path: Path, audit: Audit):
     text = path.read_text(encoding="utf-8")
@@ -77,6 +95,7 @@ def read_frontmatter(path: Path, audit: Audit):
         return None, text
     return data, text
 
+
 def target_candidates(raw: str):
     raw = raw.strip().replace("%20", " ")
     if raw.startswith(("http://", "https://")):
@@ -84,13 +103,19 @@ def target_candidates(raw: str):
     candidates = [raw, raw[:-3] if raw.endswith(".md") else raw + ".md"]
     if "/" not in raw:
         for folder in (
-            "1. Wiki/1.1. autors", "1. Wiki/1.2. conceptes", "1. Wiki/1.3. models",
-            "1. Wiki/1.4. llibres", "2. Skills", "3. Dashboards", "4. Templates",
+            "1. Wiki/1.1. autors",
+            "1. Wiki/1.2. conceptes",
+            "1. Wiki/1.3. models",
+            "1. Wiki/1.4. llibres",
+            "2. Skills",
+            "3. Dashboards",
+            "4. Templates",
             "4. Templates/90.2. docs_support",
         ):
             candidates.extend([f"{folder}/{raw}", f"{folder}/{raw}.md"])
         candidates.append(f"2. Skills/{raw}/README.md")
     return candidates
+
 
 def validate_links(path: Path, audit: Audit, all_files: set[str]) -> None:
     text = path.read_text(encoding="utf-8")
@@ -98,6 +123,7 @@ def validate_links(path: Path, audit: Audit, all_files: set[str]) -> None:
         candidates = target_candidates(raw)
         if candidates and not any(candidate in all_files for candidate in candidates):
             audit.warning(f"{path.relative_to(ROOT)}: wikilink sense destinació: [[{raw}]]")
+
 
 def validate_visual_artifacts(audit: Audit) -> None:
     suffixes = {".md", ".py", ".json", ".yml", ".yaml"}
@@ -113,7 +139,35 @@ def validate_visual_artifacts(audit: Audit) -> None:
             continue
         found = sorted(label for marker, label in VISUAL_ARTIFACTS.items() if marker in text)
         if found:
-            audit.error(f"{path.relative_to(ROOT)}: error visual de codificacio ({', '.join(found)})")
+            audit.error(f"{path.relative_to(ROOT)}: error visual de codificació ({', '.join(found)})")
+
+
+def validate_manifest_paths(manifest: dict, audit: Audit) -> None:
+    operations = manifest.get("operations", [])
+    if operations is None:
+        return
+    if not isinstance(operations, list):
+        audit.error(".manifest.json: operations ha de ser una llista")
+        return
+
+    for index, operation in enumerate(operations):
+        if not isinstance(operation, dict):
+            audit.error(f".manifest.json: operations[{index}] no és un objecte")
+            continue
+        for field in ("pages_created", "pages_updated"):
+            paths = operation.get(field, [])
+            if paths is None:
+                continue
+            if not isinstance(paths, list):
+                audit.error(f".manifest.json: operations[{index}].{field} ha de ser una llista")
+                continue
+            for raw_path in paths:
+                if not isinstance(raw_path, str):
+                    audit.error(f".manifest.json: operations[{index}].{field} conté una ruta no textual")
+                    continue
+                if not (ROOT / raw_path).exists():
+                    audit.error(f".manifest.json: ruta inexistent a {field}: {raw_path}")
+
 
 def main() -> int:
     parser = argparse.ArgumentParser()
@@ -132,7 +186,7 @@ def main() -> int:
     if skills_dir.is_dir():
         for path in skills_dir.glob("*.md"):
             if path.name != "README.md":
-                audit.error(f"skill fora de carpeta propia: {path.relative_to(ROOT)}")
+                audit.error(f"skill fora de carpeta pròpia: {path.relative_to(ROOT)}")
         for skill_dir in sorted(path for path in skills_dir.iterdir() if path.is_dir()):
             if not (skill_dir / "README.md").is_file():
                 audit.error(f"{skill_dir.relative_to(ROOT)}: falta README.md")
@@ -140,7 +194,11 @@ def main() -> int:
                 audit.error(f"{skill_dir.relative_to(ROOT)}: falta procediment {skill_dir.name}.md")
 
     validate_visual_artifacts(audit)
-    markdown_files = {str(path.relative_to(ROOT)).replace("\\", "/") for path in ROOT.rglob("*.md") if ".git" not in path.parts}
+    markdown_files = {
+        str(path.relative_to(ROOT)).replace("\\", "/")
+        for path in ROOT.rglob("*.md")
+        if ".git" not in path.parts
+    }
     permanent = []
     titles: defaultdict[str, list[str]] = defaultdict(list)
 
@@ -193,7 +251,9 @@ def main() -> int:
             audit.error(f".manifest.json: JSON invàlid ({exc})")
             manifest = {}
         if not isinstance(manifest, dict):
-            audit.error(".manifest.json: l’arrel ha de ser un objecte")
+            audit.error(".manifest.json: l'arrel ha de ser un objecte")
+        else:
+            validate_manifest_paths(manifest, audit)
 
     print(f"WIKI LINT — {date.today().isoformat()}")
     print(f"Fitxes amb frontmatter revisades: {len(permanent)}")
@@ -205,6 +265,7 @@ def main() -> int:
         print(f"WARN: {item}")
     print("FAIL" if audit.errors else "PASS")
     return 1 if audit.errors else 0
+
 
 if __name__ == "__main__":
     raise SystemExit(main())
