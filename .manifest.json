@@ -1,49 +1,67 @@
 {
-  "version": 4,
+  "version": 5,
   "repository": "mcfallen82/coneixement_ia",
-  "purpose": "wiki d'aprenentatge general d'intel·ligència artificial",
+  "purpose": "wiki oberta d'aprenentatge d'intel·ligència artificial i laboratori de patrons per a bases de coneixement assistides per IA",
   "source_policy": {
     "storage": "external_references_only",
     "description": "Les fonts originals no s'emmagatzemen al repositori públic. La traçabilitat es conserva amb URLs, referències bibliogràfiques i camps sources.",
     "preferred_sources": [
-      "papers originals",
+      "fonts primàries",
       "documentació oficial",
       "repositoris oficials",
-      "llibres i editorials",
-      "cursos o tutorials d'autor"
+      "papers i literatura acadèmica",
+      "llibres i manuals de referència"
+    ]
+  },
+  "docs_support_policy": {
+    "path": "4. Templates/90.2. docs_support",
+    "purpose": "patrons reutilitzables per crear noves bases de coneixement assistides per IA sobre qualsevol domini",
+    "requirements": [
+      "replicable entre dominis",
+      "independent de l'eina local",
+      "comprensible per persones i agents",
+      "orientat a arquitectura, governança, recerca, validació o grafs"
     ]
   },
   "operations": [
     {
+      "date": "2026-09-04",
+      "type": "repository_public_audit",
+      "status": "completed",
+      "summary": "Auditoria estructural del projecte i redefinició de docs_support com a biblioteca de patrons replicables per crear noves bases de coneixement assistides per IA.",
+      "pages_updated": [
+        "AGENTS.md",
+        "index.md",
+        "log.md",
+        "hot.md",
+        ".gitignore",
+        ".github/workflows/wiki-lint.yml",
+        "scripts/wiki_lint.py",
+        "4. Templates/README.md",
+        "4. Templates/90.2. docs_support/README.md",
+        "4. Templates/90.2. docs_support/plantilla_wiki_neutra_replicable.md",
+        "4. Templates/90.2. docs_support/patro_wiki_agents_replicable.md",
+        "4. Templates/90.2. docs_support/research-config.md",
+        "4. Templates/90.2. docs_support/guia_creacio_wikis_amb_grafs.md"
+      ],
+      "checks": [
+        "docs_support_generalized",
+        "raw_dependency_removed_from_canonical_templates",
+        "obsolete_ci_branch_removed",
+        "manifest_paths_validated",
+        "local_system_files_ignored"
+      ]
+    },
+    {
       "date": "2026-09-03",
       "type": "public_source_model_migration",
       "status": "completed",
-      "summary": "Migració del projecte públic a un model de fonts externes verificables i eliminació dels materials bruts locals.",
-      "pages_updated": [
-        "README.md",
-        "AGENTS.md",
-        "index.md",
-        "hot.md",
-        "log.md",
-        "3. Dashboards/dashboard_fonts.md",
-        "2. Skills/wiki-ingest/wiki-ingest.md",
-        "2. Skills/wiki-research/wiki-research.md",
-        "4. Templates/90.2. docs_support/research-config.md",
-        "4. Templates/90.2. docs_support/ruta-zero-to-hero-ia.md",
-        "scripts/wiki_lint.py",
-        ".manifest.json"
-      ],
-      "external_sources_highlighted": [
-        "https://karpathy.ai/zero-to-hero.html",
-        "https://github.com/karpathy/nn-zero-to-hero",
-        "https://github.com/karpathy/nanoGPT",
-        "https://theaioperator.io/p/graph-engineering-decoded-two-definitions"
-      ],
+      "summary": "Migració del projecte públic a un model de fonts externes verificables i Markdown independent de l'eina local.",
       "checks": [
-        "raw_material_removed_from_public_repo",
+        "raw_material_removed_from_current_tree",
+        "local_editor_configuration_removed",
         "governance_uses_external_sources",
-        "ingest_and_research_skills_updated",
-        "lint_no_longer_requires_raw_folder"
+        "skills_updated_for_public_model"
       ]
     }
   ]

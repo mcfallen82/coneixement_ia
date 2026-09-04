@@ -1,377 +1,281 @@
-# Guia per crear wikis amb grafs de coneixement
+# Guia per crear bases de coneixement amb grafs
 
 ## Objectiu
 
-Aquesta guia explica com convertir una wiki de Markdown, com 'ia_knowledge', en una xarxa de coneixement útil per a la navegació, la consulta assistida per LLM i, eventualment, un sistema GraphRAG.
+Aquesta guia explica com evolucionar una base de coneixement en Markdown cap a una xarxa de coneixement útil per a la navegació, la consulta assistida per LLM i, eventualment, sistemes de recuperació com GraphRAG.
 
-El punt de partida és una col·lecció de fitxes amb frontmatter, fonts i wikilinks. El resultat esperat és una estructura en què els nodes, les relacions i la procedència de cada afirmació siguin prou clars perquè una persona o un agent puguin explorar-la, validar-la i ampliar-la.
+El punt de partida és una col·lecció de fitxes amb metadades, fonts i enllaços interns. El resultat esperat és una estructura on els nodes, les relacions i la procedència siguin prou clars perquè una persona o un agent puguin explorar-la, validar-la i ampliar-la.
 
-La guia complementa [[AGENTS]]. No substitueix la governança del repositori ni converteix automàticament tots els wikilinks existents en relacions semàntiques.
+La guia és independent del domini i de l'editor utilitzat.
 
 ## Idea central
 
-Una wiki té tres capes relacionades:
-
-~~~text
-Documents i fonts
+```text
+Fonts verificables
       ↓
 Fitxes permanents
       ↓
 Graf de coneixement
       ↓
-Recuperació i assistència amb LLM
-~~~
+Recuperació i assistència amb IA
+```
 
-- La font conserva el material d’origen.
-- La fitxa explica una unitat de coneixement.
-- El graf explicita com es relacionen les fitxes.
-- El LLM utilitza el graf i les fonts per respondre o proposar noves connexions.
+- la font conserva l'origen de l'evidència;
+- la fitxa explica una unitat de coneixement;
+- el graf explicita com es relacionen les fitxes;
+- la IA utilitza fitxes, relacions i fonts per recuperar context.
 
-Un enllaç entre dues notes és un indici de relació. Es converteix en una aresta útil quan en coneixem el significat, la direcció, l’origen i, si és necessari, la confiança.
-
-## Conceptes previs
-
-Aquesta guia parteix de les fitxes següents:
-
-- [[grafs_i_models_de_llenguatge]]
-- [[GraphRAG]]
-- [[graph_of_thoughts]]
-- [[xarxes_neuronals_de_graf]]
-- [[ontologies_associatives]]
-- [[RAG]]
-- [[frontmatter]]
-- [[LLM]]
-
-Cal mantenir separades quatre idees:
-
-| Idea | Funció |
-|---|---|
-| Graf de coneixement | Representa entitats, conceptes, fets i relacions |
-| GraphRAG | Utilitza un graf per recuperar i organitzar context per a un LLM |
-| Graph of Thoughts | Organitza passos de treball o raonament d’un LLM |
-| GNN | Aprèn representacions sobre nodes i arestes amb una xarxa neuronal |
-
-Una wiki amb grafs utilitza principalment la primera idea. Pot preparar el terreny per a GraphRAG, però no és GraphRAG per defecte.
+Un enllaç intern és un indici de relació. Es converteix en una aresta útil quan en coneixem el significat, la direcció, la procedència i, quan cal, el nivell de confiança.
 
 ## Nivells de maduresa
 
-No cal construir un graf formal des del primer dia. És més segur avançar per nivells:
-
 | Nivell | Característiques | Resultat |
 |---|---|---|
-| 0. Col·lecció | Documents sense estructura comuna | Arxiu de fonts |
-| 1. Wiki connectada | Fitxes amb frontmatter i wikilinks | Navegació bàsica |
-| 2. Graf tipat | Relacions amb tipus i direcció | Mapa semàntic lleuger |
-| 3. Graf traçable | Arestes amb font, data i confiança | Coneixement auditable |
-| 4. Graf consultable | Exportació, índex i recuperació de subgrafs | Assistència amb LLM |
-| 5. GraphRAG | Graf, comunitats, recuperació i avaluació | Sistema de preguntes sobre corpus |
+| 0. Col·lecció | documents sense estructura comuna | arxiu de materials |
+| 1. Wiki connectada | fitxes amb metadades i enllaços | navegació bàsica |
+| 2. Graf tipat | relacions amb tipus i direcció | mapa semàntic |
+| 3. Graf traçable | arestes amb font i confiança | coneixement auditable |
+| 4. Graf consultable | recuperació de nodes i subgrafs | assistència estructurada amb IA |
+| 5. GraphRAG | graf + recuperació + avaluació | sistema de preguntes sobre corpus |
 
-Per a 'ia_knowledge', l’objectiu immediat és consolidar els nivells 2 i 3 abans d’introduir una infraestructura GraphRAG completa.
+No cal arribar al nivell 5. La complexitat s'ha d'afegir només quan resolgui un problema real.
 
 ## Què és un node?
 
-Un node és una unitat identificable del coneixement. En aquesta wiki, els nodes principals són:
+Un node és una unitat identificable del coneixement. Segons el domini pot representar:
 
-- un autor;
-- un concepte;
-- un model o una arquitectura;
-- una font;
-- una tècnica;
-- una aplicació;
-- una pregunta oberta;
-- una afirmació que cal verificar.
+- persona;
+- organització;
+- concepte;
+- model;
+- producte;
+- lloc;
+- esdeveniment;
+- font;
+- decisió;
+- pregunta oberta.
 
-Cada node hauria de tenir un identificador estable. En una wiki Markdown, el camí relatiu o el nom del fitxer pot actuar com a identificador, però el títol visible no sempre és suficient perquè pot canviar.
-
-Exemple de node:
-
-~~~yaml
-node_id: "1. Wiki/1.2. conceptes/GraphRAG.md"
-node_type: "concept"
-title: "GraphRAG"
-status: "reviewed"
-sources:
-  - "https://microsoft.github.io/graphrag/"
-~~~
-
-## Què és una aresta?
-
-Una aresta és una relació entre dos nodes. Ha de respondre, com a mínim, aquestes preguntes:
-
-1. Quin és el node d’origen?
-2. Quin és el node de destinació?
-3. Quin tipus de relació expressen?
-4. En quina direcció es llegeix?
-5. Quina font la sustenta?
-6. És una dada documentada o una interpretació?
+Cada node ha de tenir un identificador estable.
 
 Exemple:
 
-~~~yaml
-source: "GraphRAG"
-relation: "amplia"
-target: "RAG"
-direction: "directed"
-source_evidence:
-  - "https://microsoft.github.io/graphrag/"
-confidence: "high"
+```yaml
+node_id: "concept:cost_oportunitat"
+node_type: "concept"
+title: "Cost d'oportunitat"
+status: "reviewed"
+sources:
+  - "https://..."
+```
+
+## Què és una aresta?
+
+Una aresta és una relació entre dos nodes. Ha de permetre respondre:
+
+1. quin és l'origen?;
+2. quin és el destí?;
+3. quin tipus de relació expressa?;
+4. és dirigida?;
+5. quina evidència la sustenta?;
+6. és documentada o inferida?
+
+Exemple:
+
+```yaml
+source: "concept:rag"
+relation: "utilitza"
+target: "concept:embeddings"
 claim_type: "documented"
-~~~
+confidence: "high"
+evidence:
+  - "https://..."
+```
 
-La frase resultant és:
+## Vocabulari de relacions
 
-> GraphRAG amplia RAG.
+Comença amb pocs tipus i amplia'ls només quan sigui necessari.
 
-És més informativa que un enllaç genèric entre dues fitxes.
+Exemples genèrics:
 
-## Vocabulari mínim de relacions
+| Relació | Lectura |
+|---|---|
+| `es_un` | A és un tipus de B |
+| `part_de` | A forma part de B |
+| `utilitza` | A fa servir B |
+| `amplia` | A amplia B |
+| `depen_de` | A necessita B |
+| `creat_per` | A s'associa amb el seu creador |
+| `explica` | A explica B |
+| `avalua` | A avalua B |
+| `aplicat_a` | A s'aplica a B |
+| `contrasta_amb` | A contrasta amb B |
+| `exemple_de` | A és un exemple de B |
 
-Cal començar amb un vocabulari petit i estable. Les relacions s’han d’ampliar només quan aparegui una necessitat real.
+Evita `relacionat_amb` quan es pugui expressar una relació més precisa.
 
-| Relació | Lectura | Exemple |
-|---|---|---|
-| 'és_un' | A és una categoria o tipus de B | GPT és un model de llenguatge |
-| 'part_de' | A forma part de B | atenció és part de Transformer |
-| 'utilitza' | A fa servir B | GraphRAG utilitza un graf |
-| 'amplia' | A afegeix capacitats a B | GraphRAG amplia RAG |
-| 'depèn_de' | A necessita B | RAG depèn d’un LLM |
-| 'creat_per' | A s’associa amb el seu autor | GPT creat per OpenAI |
-| 'explicat_per' | Una font o autor explica A | un curs explica embeddings |
-| 'avalua' | A mesura o comprova B | MMLU avalua models |
-| 'aplicat_a' | A s’utilitza en un àmbit | RAG aplicat a wikis |
-| 'contrasta_amb' | A presenta una diferència rellevant respecte de B | GraphRAG contrasta amb RAG vectorial |
-| 'exemple_de' | A il·lustra B | G-Retriever exemple de GraphQA |
-| 'requereix_verificacio' | La relació encara no està confirmada | una afirmació pendent |
+## Enllaços i relacions tipades
 
-S’han d’evitar relacions vagues com 'relacionat_amb' quan sigui possible. Si no es pot especificar millor, es pot utilitzar provisionalment, però cal marcar-la com a relació de baixa precisió.
+Els enllaços interns continuen sent útils per a la navegació humana, però no indiquen necessàriament causalitat, jerarquia o direcció.
 
-## Wikilinks i relacions tipades
+Es poden combinar tres mecanismes:
 
-Els wikilinks continuen sent útils perquè faciliten la navegació a Obsidian:
+1. enllaços dins del text;
+2. camps de metadades per relacions simples;
+3. un registre d'arestes per relacions que necessiten procedència o confiança.
 
-~~~markdown
-[[GraphRAG]]
-~~~
+Exemple:
 
-Però un wikilink no indica necessàriament si la relació és causal, jeràrquica, temporal o simplement bibliogràfica.
-
-Es recomana utilitzar tres mecanismes complementaris:
-
-1. **Wikilinks** dins del text per a la navegació humana.
-2. **Frontmatter** per a relacions simples i filtrables.
-3. **Registre d’arestes** quan calgui procedència, confiança, dates o múltiples relacions.
-
-Exemple de frontmatter lleuger:
-
-~~~yaml
+```yaml
 related_concepts:
-  - "[[RAG]]"
-  - "[[ontologies_associatives]]"
+  - "RAG"
 relations:
-  - target: "[[RAG]]"
+  - target: "RAG"
     type: "amplia"
     confidence: "high"
-~~~
+```
 
-Quan les relacions creixin, convé conservar-les en un fitxer o taula específica. No s’ha d’inflar el frontmatter amb una ontologia completa si la wiki encara no la necessita.
+Quan el nombre de relacions creixi, és millor separar el graf de les fitxes abans d'inflar excessivament el frontmatter.
 
 ## Procedència i confiança
 
 El graf ha de distingir entre:
 
-- una relació explícita en una font;
-- una relació inferida a partir de diverses fonts;
-- una connexió pedagògica creada per facilitar l’aprenentatge;
-- una hipòtesi pendent de verificar.
+- relació explícita en una font;
+- relació inferida a partir de diverses fonts;
+- connexió pedagògica;
+- hipòtesi pendent de verificar.
 
-Es recomana utilitzar els camps següents:
+Exemple:
 
-~~~yaml
+```yaml
 claim_type: "documented"   # documented | inferred | pedagogical | open
 confidence: "high"         # high | medium | low
 evidence:
-  - source: "https://arxiv.org/abs/2404.16130"
-    quote_or_summary: "El mètode organitza el corpus amb un graf i resums de comunitats."
-    accessed: "2026-08-07"
-~~~
+  - source: "https://..."
+    summary: "Resum de l'evidència rellevant"
+    accessed: "YYYY-MM-DD"
+```
 
-La confiança no és una probabilitat matemàtica. És una etiqueta de treball que indica fins a quin punt la relació està ben sustentada i revisada.
+La confiança és una etiqueta operativa, no una probabilitat matemàtica.
 
-## Flux per crear o ampliar una wiki amb graf
+## Flux per crear o ampliar el graf
 
-### 1. Conservar la font
+### 1. Registrar la font
 
-Guardar l’article, paper, tutorial o documentació a '0. Raw/'. Registrar-ne l’origen i evitar que una URL sigui l’única còpia del coneixement.
+Conserva la URL o referència bibliogràfica. Si necessites una còpia local de treball, mantén-la fora del repositori compartit o en una ruta ignorada per Git.
 
 ### 2. Identificar nodes
 
-Extreure autors, conceptes, models, tècniques, fonts i aplicacions. Comparar-los amb les fitxes existents abans de crear-ne cap de nova.
+Extreu les entitats i conceptes rellevants i comprova si ja existeixen.
 
 ### 3. Normalitzar identitats
 
-Unificar variants com «large language model», «LLM» i «model de llenguatge de gran escala» quan designin la mateixa entitat. No fusionar termes que només siguin semblants.
+Unifica sinònims i variants només quan realment designen la mateixa entitat.
 
 ### 4. Proposar relacions
 
-Per a cada relació, especificar origen, tipus, destinació, font i confiança. Les relacions inferides han de quedar marcades com a inferides.
+Per a cada relació especifica origen, tipus, destinació, evidència i confiança.
 
 ### 5. Revisar les arestes
 
-Comprovar que la relació té sentit en tots dos sentits. Si A 'utilitza' B, això no implica automàticament que B 'utilitza' A. Crear la relació inversa només si és útil i correcta.
+No assumeixis que una relació és simètrica. Les relacions inverses només s'han de crear quan siguin correctes i útils.
 
 ### 6. Actualitzar fitxes i índex
 
-Afegir els wikilinks necessaris, actualitzar 'index.md', 'log.md', 'hot.md' i '.manifest.json' quan el canvi sigui significatiu.
+Afegeix els enllaços necessaris i actualitza els registres del projecte quan el canvi sigui significatiu.
 
 ### 7. Validar
 
-Executar 'python scripts/wiki_lint.py' i fer una revisió humana de relacions, fonts, duplicats i enllaços.
+Comprova destinacions, tipus de relació, duplicats, procedència i consistència de les metadades.
 
-## Com pot ajudar un agent?
+## Com pot ajudar una IA o agent?
 
-Un agent pot assistir en cinc funcions:
-
-| Funció | Pregunta que resol |
+| Funció | Pregunta |
 |---|---|
-| Descobriment | Quins nodes nous apareixen a la font? |
+| Descobriment | Quins nodes nous apareixen? |
 | Normalització | Aquest node ja existeix amb un altre nom? |
 | Proposta | Quines relacions sembla que hi ha? |
 | Verificació | Quina font sustenta cada relació? |
-| Manteniment | Quines arestes o fitxes han quedat obsoletes? |
+| Manteniment | Quines relacions han quedat obsoletes? |
 
-L’agent no hauria d’escriure directament una relació inferida com si fos un fet. La sortida recomanada és una proposta revisable:
+L'agent ha de proposar les relacions inferides com a candidates revisables, no escriure-les com a fets consolidats.
 
-~~~yaml
-- source: "[[GraphRAG]]"
-  relation: "amplia"
-  target: "[[RAG]]"
-  evidence:
-    - "https://microsoft.github.io/graphrag/"
-  claim_type: "documented"
-  confidence: "high"
-  action: "accept"
-~~~
+## Plantilla d'instrucció per a un agent
 
-Per a una relació dubtosa:
-
-~~~yaml
-- source: "[[G-Retriever]]"
-  relation: "és_un"
-  target: "[[GraphRAG]]"
-  claim_type: "inferred"
-  confidence: "low"
-  action: "review"
-  reason: "Comparteixen recuperació sobre grafs, però no són necessàriament la mateixa família metodològica."
-~~~
-
-## Plantilla d’assistència
-
-Quan es demani a un agent que ampliï una wiki amb grafs, la instrucció hauria d’incloure:
-
-~~~text
-1. Llegeix AGENTS.md i les fitxes conceptuals relacionades.
-2. Conserva la font a 0. Raw/.
-3. Identifica nodes nous i nodes ja existents.
-4. Proposa relacions tipades, dirigides i amb fonts.
-5. Separa fets, inferències, connexions pedagògiques i dubtes.
-6. No creïs fitxes duplicades.
-7. Actualitza wikilinks, índex, registre i manifest.
-8. Executa wiki_lint i informa dels advertiments.
-9. No modifiquis main.
-~~~
-
-La resposta de l’agent ha d’indicar:
-
-- fitxers creats o actualitzats;
-- nodes identificats;
-- relacions acceptades;
-- relacions pendents de revisió;
-- fonts utilitzades;
-- errors i advertiments de validació.
+```text
+1. Llegeix la governança i les fitxes relacionades.
+2. Registra la procedència de les fonts.
+3. Identifica nodes nous i existents.
+4. Proposa relacions tipades i dirigides.
+5. Separa fets, inferències i dubtes.
+6. No creïs duplicats.
+7. Actualitza índex, registre i manifest quan calgui.
+8. Executa les validacions.
+9. Presenta els canvis perquè puguin ser revisats.
+```
 
 ## Criteris de qualitat
 
-Una wiki amb grafs és més robusta quan:
+Una base de coneixement amb graf és més robusta quan:
 
-- cada node té una identitat clara;
-- les relacions tenen un vocabulari controlat;
+- cada node té identitat clara;
+- les relacions utilitzen vocabulari controlat;
 - les arestes tenen direcció quan correspon;
-- les fonts es poden rastrejar;
+- la procedència és rastrejable;
 - les inferències estan etiquetades;
-- els wikilinks apunten a fitxers reals;
+- els enllaços apunten a destinacions reals;
 - no hi ha duplicats semàntics evidents;
-- la xarxa ajuda a respondre preguntes, no només a generar molts enllaços;
-- les relacions antigues es poden revisar quan canvien les fonts.
+- la xarxa ajuda a recuperar coneixement, no només a generar connexions.
 
-La densitat de connexions no és una mètrica suficient. Una xarxa petita amb relacions precises és més útil que una xarxa gran plena d’enllaços genèrics.
-
-## Consultes i aplicacions
-
-Amb una estructura gràfica mínima es poden construir consultes com:
-
-- quins models utilitzen atenció?;
-- quins conceptes expliquen GraphRAG?;
-- quines fonts sustenten una relació?;
-- quins nodes no tenen fonts?;
-- quins conceptes tenen moltes connexions però cap fitxa pròpia?;
-- quines relacions estan pendents de verificació?;
-- quin camí connecta RAG amb GraphRAG i G-Retriever?
-
-Aquestes consultes es poden implementar inicialment amb Dataview, scripts senzills o cerques de wikilinks. La migració a una base de dades de grafs només és necessària quan la mida o la complexitat ho justifiquin.
+La densitat del graf no és un objectiu en si mateix.
 
 ## Quan cal GraphRAG?
 
-Una wiki no necessita GraphRAG només perquè contingui molts wikilinks. GraphRAG pot ser útil quan:
+GraphRAG pot ser útil quan:
 
-- el corpus és prou gran per fer difícil la navegació manual;
-- les preguntes requereixen seguir diverses relacions;
-- les preguntes globals depenen de comunitats o temes;
-- es necessita recuperar context estructurat i fonts;
-- la qualitat de la recuperació vectorial és insuficient;
-- existeix una política d’avaluació i actualització del graf.
+- el corpus és massa gran per navegar-lo manualment;
+- les preguntes necessiten seguir múltiples relacions;
+- cal recuperar context estructurat;
+- la recuperació vectorial sola és insuficient;
+- existeixen preguntes de prova i criteris d'avaluació.
 
-Abans d’implementar-lo, cal disposar d’un conjunt de preguntes de prova, respostes esperades, fonts de referència i mètriques de qualitat. Un graf mal normalitzat pot fer més costosa la recuperació sense millorar-ne la precisió.
+Abans d'implementar-lo, el graf ha d'estar prou normalitzat i auditable.
 
 ## Auditoria específica del graf
 
-A més de 'wiki_lint', una auditoria gràfica hauria de revisar:
-
 | Comprovació | Pregunta |
 |---|---|
-| Nodes orfes | Hi ha fitxes sense cap relació útil? |
+| Nodes orfes | Hi ha nodes sense relacions útils? |
 | Arestes trencades | Totes les destinacions existeixen? |
-| Relacions vagues | Es pot substituir 'relacionat_amb' per un tipus precís? |
+| Relacions vagues | Es poden fer més precises? |
 | Direcció | La relació es llegeix correctament? |
 | Procedència | Hi ha una font o justificació? |
 | Duplicats | Dues fitxes descriuen el mateix node? |
-| Components aïllats | Hi ha grups sense connexió amb la resta? |
-| Relacions pendents | Quines connexions requereixen revisió humana? |
-| Evolució | La data o la versió de la font encara és vigent? |
-
-Aquestes comprovacions ajuden a decidir si el problema és de contingut, de model de dades o de recuperació.
+| Components aïllats | Hi ha grups desconnectats? |
+| Relacions pendents | Quines requereixen revisió humana? |
+| Evolució | La font o versió continua vigent? |
 
 ## Errors habituals
 
-- confondre molts wikilinks amb un graf semàntic;
-- crear una relació per a cada coaparició de termes;
-- utilitzar noms diferents per al mateix node;
-- inferir causalitat perquè dues idees apareixen juntes;
-- ignorar la direcció de les relacions;
-- barrejar fonts, conceptes, models i aplicacions dins la mateixa categoria;
-- convertir una connexió pedagògica en una afirmació científica;
-- afegir una infraestructura GraphRAG abans de definir preguntes i criteris d’avaluació;
-- deixar que l’agent actualitzi relacions sense una sortida revisable;
-- oblidar la procedència i la data de les afirmacions.
+- confondre molts enllaços amb un graf semàntic;
+- crear una relació per cada coaparició;
+- inferir causalitat sense evidència;
+- ignorar la direcció;
+- barrejar tipus de node incompatibles;
+- convertir una connexió pedagògica en una afirmació factual;
+- construir GraphRAG abans de definir les preguntes que ha de resoldre;
+- deixar que un agent incorpori relacions sense revisió;
+- perdre la procedència de les afirmacions.
 
 ## Resultat esperat
 
-El resultat no és només una visualització atractiva. És una wiki en què:
+El resultat no és només una visualització. És una base de coneixement on:
 
 1. les fitxes expliquen el coneixement;
-2. les relacions expliquen l’estructura;
-3. les fonts expliquen l’origen;
-4. la confiança explica el grau de certesa;
-5. l’agent ajuda a descobrir i mantenir connexions;
-6. l’usuari conserva el control sobre les decisions semàntiques.
+2. les relacions expliquen l'estructura;
+3. les fonts expliquen l'origen;
+4. la confiança explica la certesa;
+5. la IA ajuda a descobrir i recuperar connexions;
+6. la revisió humana conserva el control semàntic.
 
-Aquesta base permet evolucionar gradualment des d’una wiki connectada cap a un graf consultable i, només quan sigui justificat, cap a un sistema GraphRAG.
+Aquesta arquitectura permet evolucionar gradualment des d'una wiki connectada cap a un graf consultable i, només quan sigui justificat, cap a GraphRAG.

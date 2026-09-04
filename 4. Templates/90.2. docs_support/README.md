@@ -1,57 +1,94 @@
 # 90.2. docs_support
 
-Aquesta carpeta conté **documents de suport del sistema**: expliquen com dissenyar, investigar, ampliar i connectar una wiki de coneixement mantinguda amb Markdown, agents i control de versions.
+Aquesta carpeta conté **documents base per crear noves bases de coneixement vinculades a una IA**.
 
-A diferència de `90.1. templates_fitxes/`, aquí no hi ha principalment estructures per omplir, sinó **guies de criteri i arquitectura**. Serveixen per entendre per què el projecte està organitzat d'una determinada manera i per replicar-ne parts en altres projectes.
+No està pensada per conservar contingut temàtic específic de `coneixement_ia`, sinó per reunir **arquitectures, patrons, criteris i guies reutilitzables** que permetin construir una nova wiki sobre qualsevol domini: finances, història, medicina, dret, recerca personal, documentació professional, ciència o qualsevol altre corpus de coneixement.
 
-## Mapa dels documents
+Els documents d'aquesta carpeta es deriven de la documentació, experiència i patrons acumulats al projecte i es reformulen perquè siguin **neutres respecte del tema i replicables**.
 
-| Document | Què explica | Quan és útil |
-|---|---|---|
-| [`plantilla_wiki_neutra_replicable.md`](plantilla_wiki_neutra_replicable.md) | Plantilla general per dissenyar una wiki Markdown mantinguda amb ajuda d'agents: estructura mínima, índex, manifest, skills, plantilles i flux d'ingesta. | Quan vols crear una wiki nova o entendre quins components mínims necessita un sistema de coneixement persistent. |
-| [`resum_ar9av_wiki_ia_knowledge.md`](resum_ar9av_wiki_ia_knowledge.md) | Síntesi canònica del patró aplicat a `coneixement_ia`: fonts externes, fitxes permanents, agents, skills, Git, traçabilitat i revisió humana. | Quan vols entendre ràpidament l'arquitectura conceptual del projecte sense entrar en tots els detalls operatius. |
-| [`research-config.md`](research-config.md) | Configuració de criteris per a la recerca externa: prioritats temàtiques, jerarquia de fonts, qualitat i forma de conservar la procedència. | Quan actives `wiki-research` o vols decidir quines fonts mereixen incorporar-se i amb quin nivell de confiança. |
-| [`guia_creacio_wikis_amb_grafs.md`](guia_creacio_wikis_amb_grafs.md) | Guia per evolucionar des d'una wiki amb frontmatter i wikilinks fins a un graf de coneixement tipat, traçable i eventualment consultable per LLM. | Quan treballes amb nodes, relacions, procedència, `graph/relations.json` o vols entendre el camí cap a GraphRAG. |
-| [`ruta-zero-to-hero-ia.md`](ruta-zero-to-hero-ia.md) | Ruta d'aprenentatge inspirada en *Neural Networks: Zero to Hero* d'Andrej Karpathy, des d'autograd i backpropagation fins a Transformers, GPT i tokenització. | Quan vols seguir una seqüència pedagògica per entendre els fonaments tècnics que apareixen a la wiki. |
+## Funció de la carpeta
 
-## Com es relacionen entre si
-
-Els documents es poden llegir com quatre capes complementàries:
+`docs_support` proporciona el **scaffold inicial** d'una nova base de coneixement:
 
 ```text
-Arquitectura general
-plantilla_wiki_neutra_replicable
-            ↓
-Patró aplicat al projecte
-resum_ar9av_wiki_ia_knowledge
-            ↓
-Procediments especialitzats
-research-config + guia de grafs
-            ↓
-Ruta d'aprenentatge
-ruta-zero-to-hero-ia
+Tema o domini nou
+        ↓
+Documents base de docs_support
+        ↓
+Arquitectura + governança + recerca + relacions
+        ↓
+Nova wiki
+        ↓
+IA o agent que la consulta, manté i amplia
 ```
 
-No cal llegir-los en aquest ordre. La taula anterior permet entrar directament pel problema que vols resoldre.
+Un document pertany aquí quan ajuda a definir:
 
-## Relació amb les skills
+- estructura i categories d'una nova wiki;
+- governança i instruccions per a agents;
+- política de fonts i procedència;
+- processos d'ingesta, actualització i validació;
+- representació de nodes i relacions;
+- estratègies de recuperació amb IA;
+- criteris replicables en dominis diferents.
 
-Aquests documents donen **context i criteri**; les skills defineixen **accions repetibles**.
+## Què no hi ha d'anar
 
-Exemples:
+Aquesta carpeta **no és una biblioteca de contingut temàtic**.
 
-- [`research-config.md`](research-config.md) complementa [`wiki-research`](../../../2.%20Skills/wiki-research/README.md).
-- [`guia_creacio_wikis_amb_grafs.md`](guia_creacio_wikis_amb_grafs.md) complementa [`graph-layer`](../../../2.%20Skills/graph-layer/README.md).
-- [`plantilla_wiki_neutra_replicable.md`](plantilla_wiki_neutra_replicable.md) ajuda a entendre l'arquitectura que després executen skills com `wiki-ingest`, `wiki-update`, `wiki-lint` o `wiki-query`.
+No hi corresponen:
 
-## Què és canònic?
+- rutes d'estudi sobre una tecnologia concreta;
+- resums d'un curs o llibre específic;
+- fitxes de conceptes, autors o models;
+- contingut útil només dins de la wiki actual;
+- còpies de fonts originals o dossiers de treball.
 
-- `plantilla_wiki_neutra_replicable.md` és la referència general per replicar l'arquitectura d'una wiki.
-- `resum_ar9av_wiki_ia_knowledge.md` és la síntesi canònica de com aquest patró s'aplica a `coneixement_ia`.
-- Les guies especialitzades desenvolupen àrees concretes i no han de duplicar la governança definida a [`AGENTS.md`](../../../AGENTS.md).
+Aquest contingut correspon a `1. Wiki/`, a fonts externes o a altres espais específics del projecte.
+
+## Documents actuals
+
+| Document | Funció | Ús en una nova base de coneixement |
+|---|---|---|
+| [`plantilla_wiki_neutra_replicable.md`](plantilla_wiki_neutra_replicable.md) | Defineix l'arquitectura mínima d'una base de coneixement Markdown mantinguda amb IA o agents. | Punt de partida per decidir estructura, governança, manifest, skills, plantilles i flux d'ingesta. |
+| [`patro_wiki_agents_replicable.md`](patro_wiki_agents_replicable.md) | Resumeix el patró general de wiki mantinguda amb agents, fonts verificables, Git i revisió humana. | Document conceptual per entendre com encaixen les peces del sistema abans d'implementar-lo. |
+| [`research-config.md`](research-config.md) | Defineix un patró de recerca per rondes, jerarquia de fonts, procedència i confiança. | Base per adaptar una política de recerca al domini concret de la nova wiki. |
+| [`guia_creacio_wikis_amb_grafs.md`](guia_creacio_wikis_amb_grafs.md) | Explica com evolucionar d'una wiki connectada a un graf de coneixement tipat i traçable. | Referència per incorporar nodes, relacions i recuperació estructurada amb IA o GraphRAG quan sigui necessari. |
+
+## Com utilitzar aquests documents
+
+Quan es crea una nova base de coneixement:
+
+1. defineix el domini, l'objectiu i les preguntes que haurà de resoldre;
+2. utilitza aquests documents com a base arquitectònica;
+3. adapta categories, metadades, fluxos i criteris de fonts;
+4. genera l'estructura inicial de la wiki;
+5. defineix instruccions persistents per a la IA o agent;
+6. crea skills i plantilles específiques del domini;
+7. valida que el sistema sigui comprensible tant per persones com per agents.
+
+Els documents no s'han de copiar mecànicament: són **patrons de disseny que cal especialitzar**.
+
+## Relació amb `90.1. templates_fitxes/`
+
+- [`90.1. templates_fitxes/`](../90.1.%20templates_fitxes/) proporciona **formats per crear peces de coneixement**.
+- `90.2. docs_support/` proporciona **documents per dissenyar el sistema que les contindrà**.
+
+En una nova wiki, `90.2` ajuda a decidir l'arquitectura; `90.1` ajuda a donar forma a les fitxes.
+
+## Criteri de qualitat
+
+Un document de `docs_support` ha de ser:
+
+- **replicable** en més d'un domini;
+- **independent de l'eina local**;
+- **comprensible per una persona** sense conèixer la història del projecte;
+- **útil per a una IA o agent** com a context estructural;
+- **traçable** en les seves decisions de disseny;
+- prou general per servir de base i prou concret per poder-se implementar.
 
 ## Principi general
 
-**La documentació de suport explica el sistema; la Wiki conserva el coneixement; les Skills executen els procediments.**
+**`90.2. docs_support/` és la biblioteca de patrons per crear noves bases de coneixement assistides per IA.**
 
-Markdown és el format canònic compartit. Els documents han de continuar sent útils encara que cada col·laborador utilitzi un editor, IDE o gestor de coneixement diferent.
+La seva unitat de treball no és una fitxa temàtica, sinó una peça d'arquitectura, governança, recerca o disseny reutilitzable.

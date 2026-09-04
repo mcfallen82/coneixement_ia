@@ -8,7 +8,7 @@
 - [Quadres de comandament](3.%20Dashboards/).
 - [Dashboard de la wiki](3.%20Dashboards/dashboard_wiki.md).
 - [Skills](2.%20Skills/).
-- [Plantilles](4.%20Templates/).
+- [Plantilles i patrons reutilitzables](4.%20Templates/).
 
 ## Fonts externes
 
@@ -48,17 +48,17 @@ Criteris:
 - [Graph of Thoughts](1.%20Wiki/1.2.%20conceptes/graph_of_thoughts.md)
 - [Xarxes neuronals de graf](1.%20Wiki/1.2.%20conceptes/xarxes_neuronals_de_graf.md)
 - [G-Retriever](1.%20Wiki/1.3.%20models/G-Retriever.md)
-- [Guia per crear wikis amb grafs](4.%20Templates/90.2.%20docs_support/guia_creacio_wikis_amb_grafs.md)
-- [Capa gràfica lleugera](3.%20Dashboards/graf.md)
+- [Guia replicable per crear bases de coneixement amb grafs](4.%20Templates/90.2.%20docs_support/guia_creacio_wikis_amb_grafs.md)
+- [Capa gràfica lleugera del projecte actual](3.%20Dashboards/graf.md)
 
 Font externa destacada sobre *graph engineering*: https://theaioperator.io/p/graph-engineering-decoded-two-definitions
 
 ## Organització
 
-- [2. Skills](2.%20Skills/): procediments reutilitzables.
+- [2. Skills](2.%20Skills/): procediments reutilitzables del projecte.
 - [3. Dashboards](3.%20Dashboards/): guies de revisió i comprovacions.
-- [90.1. templates_fitxes](4.%20Templates/90.1.%20templates_fitxes/): plantilles.
-- [90.2. docs_support](4.%20Templates/90.2.%20docs_support/): documents de suport.
+- [90.1. templates_fitxes](4.%20Templates/90.1.%20templates_fitxes/): formats reutilitzables per crear peces de coneixement.
+- [90.2. docs_support](4.%20Templates/90.2.%20docs_support/): patrons d'arquitectura, recerca i grafs per crear noves bases de coneixement assistides per IA sobre qualsevol domini.
 
 ## Revisió freqüent
 

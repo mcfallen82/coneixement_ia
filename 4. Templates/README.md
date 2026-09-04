@@ -1,43 +1,46 @@
 # 4. Templates
 
-Aquesta carpeta agrupa les **estructures reutilitzables** i la **documentació de suport** que ajuden a crear, mantenir i ampliar `coneixement_ia` amb criteris comuns.
+Aquesta carpeta agrupa dos tipus de recursos reutilitzables del projecte:
 
-El contingut de `4. Templates/` no és coneixement permanent de la wiki. La seva funció és definir **com s'ha de representar, resumir o organitzar el coneixement** i oferir guies replicables per treballar amb el projecte.
+1. **plantilles per donar forma a les peces de coneixement**;
+2. **documents base per dissenyar noves bases de coneixement assistides per IA**.
+
+El contingut de `4. Templates/` no és coneixement temàtic permanent de la wiki. La seva funció és definir **com representar el coneixement** i **com construir el sistema que el contindrà**.
 
 ## Què hi trobaràs?
 
 | Carpeta | Funció | Quan utilitzar-la |
 |---|---|---|
-| [`90.1. templates_fitxes/`](90.1.%20templates_fitxes/) | Plantilles per crear fitxes homogènies de conceptes, models, autors, fonts i resums. | Quan crees una fitxa nova o vols normalitzar l'estructura d'una fitxa existent. |
-| [`90.2. docs_support/`](90.2.%20docs_support/) | Guies d'arquitectura, recerca, grafs de coneixement i aprenentatge. | Quan necessites entendre o replicar els processos i decisions de disseny del sistema. |
+| [`90.1. templates_fitxes/`](90.1.%20templates_fitxes/) | Plantilles per crear fitxes homogènies de conceptes, models, autors, fonts i resums. | Quan crees una peça nova de coneixement o normalitzes una fitxa existent. |
+| [`90.2. docs_support/`](90.2.%20docs_support/) | Biblioteca de patrons per crear una nova base de coneixement vinculada a una IA o agent. | Quan vols definir arquitectura, governança, recerca, procedència, grafs o fluxos d'una wiki nova sobre qualsevol domini. |
 
-## Com s'utilitzen
-
-El flux habitual és:
+## Diferència entre `90.1` i `90.2`
 
 ```text
-Necessitat de documentar o investigar
-            ↓
-Consulta de la guia o skill corresponent
-            ↓
-Selecció d'una plantilla adequada
-            ↓
-Creació o actualització de la fitxa
-            ↓
-Fonts, relacions i validació
+90.2 docs_support
+      ↓
+defineix el sistema
+      ↓
+90.1 templates_fitxes
+      ↓
+defineix la forma de les peces
+      ↓
+Wiki especialitzada en un domini
 ```
 
-Les plantilles són **punts de partida**, no formularis rígids. Es poden adaptar a la complexitat del tema, però s'han de conservar els camps i seccions que aporten traçabilitat, coherència i utilitat per a la resta de la wiki.
+`90.2` respon preguntes com **“quina arquitectura necessita aquesta nova base de coneixement?”**. `90.1` respon **“quina estructura ha de tenir aquesta fitxa?”**.
 
 ## Relació amb la resta del projecte
 
-- [`1. Wiki/`](../1.%20Wiki/) conté el coneixement permanent creat a partir d'aquestes estructures.
-- [`2. Skills/`](../2.%20Skills/) descriu els procediments operatius per investigar, ingerir, actualitzar i validar contingut.
-- [`AGENTS.md`](../AGENTS.md) defineix la governança i les regles generals del repositori.
-- [`3. Dashboards/`](../3.%20Dashboards/) permet revisar l'estat del coneixement generat.
+- [`1. Wiki/`](../1.%20Wiki/) conté el coneixement permanent del projecte actual.
+- [`2. Skills/`](../2.%20Skills/) descriu procediments operatius reutilitzables.
+- [`AGENTS.md`](../AGENTS.md) defineix la governança del repositori actual.
+- [`3. Dashboards/`](../3.%20Dashboards/) ajuda a revisar l'estat del coneixement generat.
+
+Els documents de `90.2` poden reutilitzar patrons d'aquests components, però s'han de redactar de forma **generalitzable** perquè serveixin per iniciar projectes nous i no només per descriure `coneixement_ia`.
 
 ## Principi general
 
-**Les plantilles aporten estructura; les fonts aporten evidència; les skills aporten procés.**
+**`90.1` dona forma al coneixement; `90.2` dona forma al sistema de coneixement.**
 
-Cap plantilla substitueix la verificació de les fonts ni les regles d'`AGENTS.md`.
+Cap plantilla o document de suport substitueix la verificació de fonts ni la revisió humana.

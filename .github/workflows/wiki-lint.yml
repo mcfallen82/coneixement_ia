@@ -2,9 +2,9 @@ name: Wiki lint
 
 on:
   push:
-    branches: ["main", "agent/reorganitza-wiki-llm"]
+    branches: ["main"]
   pull_request:
-    branches: ["main", "agent/reorganitza-wiki-llm"]
+    branches: ["main"]
 
 permissions:
   contents: read

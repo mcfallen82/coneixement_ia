@@ -1,5 +1,86 @@
 # Log del projecte
 
+## 2026-09-04 — Auditoria estructural i consolidació de `docs_support`
+
+### Objectiu
+
+Auditar el projecte després de la conversió a repositori públic i assegurar que l'arquitectura, la documentació, els scripts i els fitxers de control siguin coherents amb dos principis:
+
+1. `coneixement_ia` és una wiki pública d'aprenentatge d'IA basada en fonts externes verificables;
+2. `4. Templates/90.2. docs_support/` és una biblioteca de patrons reutilitzables per crear **noves bases de coneixement assistides per IA sobre qualsevol domini**.
+
+### Problemes detectats
+
+- `plantilla_wiki_neutra_replicable.md` encara proposava `_raw/`, l'emmagatzematge de fonts originals dins del repositori i una arquitectura específica d'Obsidian.
+- `research-config.md` continuava configurat específicament per a intel·ligència artificial i utilitzava el nom antic `ia_knowledge`.
+- `guia_creacio_wikis_amb_grafs.md` conservava referències operatives a `0. Raw/`, Obsidian i `ia_knowledge`.
+- `.manifest.json` encara apuntava a `ruta-zero-to-hero-ia.md`, eliminat en redefinir `docs_support`.
+- el document canònic `resum_ar9av_wiki_ia_knowledge.md` era específic del projecte actual i no prou general per al nou contracte de `docs_support`.
+- `.github/workflows/wiki-lint.yml` encara escoltava la branca obsoleta `agent/reorganitza-wiki-llm`.
+- `desktop.ini` estava versionat accidentalment.
+- `scripts/wiki_lint.py` validava el JSON del manifest però no comprovava que les rutes declarades a `pages_created` o `pages_updated` existissin.
+- els scripts encara contenien terminologia interna antiga (`ia_knowledge`) i una dependència nominal d'Obsidian en la descripció del resolutor de wikilinks.
+
+### Correccions aplicades
+
+- Reescrita `plantilla_wiki_neutra_replicable.md` com a plantilla canònica independent del domini i de l'eina local.
+- Generalitzat `research-config.md` com a patró de recerca per rondes adaptable a qualsevol àmbit.
+- Generalitzada `guia_creacio_wikis_amb_grafs.md` i eliminades les dependències de `0. Raw/`, Obsidian i del nom intern antic.
+- Creat `patro_wiki_agents_replicable.md` com a síntesi canònica del patró de wiki amb agents.
+- Eliminat `resum_ar9av_wiki_ia_knowledge.md`, substituït pel document replicable anterior.
+- Eliminat `ruta-zero-to-hero-ia.md` de `docs_support` perquè era una ruta d'aprenentatge temàtica.
+- Actualitzats `4. Templates/README.md`, `90.2. docs_support/README.md`, `index.md` i `AGENTS.md` amb el nou contracte de `docs_support`.
+- Actualitzat `.manifest.json` a la versió 5 i eliminades rutes obsoletes.
+- Enfortit `scripts/wiki_lint.py` perquè comprovi les rutes declarades pel manifest.
+- Simplificat el workflow de CI a `main` i Pull Requests cap a `main`.
+- Eliminat `desktop.ini` i afegit al `.gitignore`.
+- Actualitzats els scripts per utilitzar `coneixement_ia` i terminologia neutral respecte de l'editor.
+
+### Resultat arquitectònic
+
+`4. Templates/` queda dividit conceptualment així:
+
+```text
+90.1. templates_fitxes
+        ↓
+forma de les peces de coneixement
+
+90.2. docs_support
+        ↓
+forma del sistema de coneixement
+```
+
+El flux replicable de `docs_support` és:
+
+```text
+domini nou
+    ↓
+patrons de docs_support
+    ↓
+arquitectura + governança + recerca + relacions
+    ↓
+nova base de coneixement
+    ↓
+IA o agent
+```
+
+### Validació
+
+La validació automàtica del projecte continua definida per:
+
+```bash
+python scripts/wiki_lint.py
+python scripts/graph_scan.py --check
+```
+
+El workflow de GitHub Actions executa ambdues comprovacions per als Pull Requests dirigits a `main`.
+
+### Pendents no bloquejants
+
+- continuar normalitzant fitxes antigues que encara generin advertiments de frontmatter o fonts;
+- revisar progressivament les relacions candidates del graf;
+- mantenir els documents de `docs_support` generalitzables quan s'hi incorporin nous patrons.
+
 ## 2026-09-03 — Documentació pública de `2. Skills/`
 
 ### Operació
@@ -33,10 +114,8 @@ S'ha eliminat la dependència d'una carpeta pública de materials bruts i també
 - Actualitzats `README.md`, `AGENTS.md` i `.gitignore` perquè cap editor o gestor de coneixement concret sigui requisit del projecte.
 - Adaptat `3. Dashboards/dashboard_fonts.md`.
 - Adaptades les skills `wiki-ingest` i `wiki-research`.
-- Adaptats `research-config.md` i `ruta-zero-to-hero-ia.md`.
-- Actualitzat `scripts/wiki_lint.py` perquè la carpeta de materials bruts deixi de ser obligatòria.
-- Substituïdes les referències operatives a eines locals per formulacions neutres: editor Markdown, IDE, gestor de coneixement o eina compatible.
-- Substituïdes les referències al tutorial local Zero to Hero per fonts externes oficials d'Andrej Karpathy.
+- Adaptats els documents de suport i `scripts/wiki_lint.py` al model de fonts externes.
+- Substituïdes les referències operatives a eines locals per formulacions neutres.
 
 ### Noves regles
 
@@ -51,4 +130,4 @@ Preparar el repositori per a contribucions públiques sense exposar materials de
 
 ## Historial anterior
 
-El detall exhaustiu de les operacions anteriors s'ha condensat en aquesta conversió estructural. La història del projecte continua representada pels commits i pull requests del repositori.
+El detall exhaustiu de les operacions anteriors s'ha condensat en aquestes fites estructurals. La història completa continua representada pels commits i Pull Requests del repositori.

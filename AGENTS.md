@@ -6,9 +6,9 @@ Aquest repositori és una wiki d'aprenentatge acumulatiu sobre intel·ligència 
 
 ## 2. Governança
 
-Aquest és l'únic document principal de governança. S'ha de llegir abans d'actuar. Quan una skill contradigui aquest document, preval AGENTS.md.
+Aquest és l'únic document principal de governança. S'ha de llegir abans d'actuar. Quan una skill contradigui aquest document, preval `AGENTS.md`.
 
-El repositori principal és `main`. Les modificacions es fan en branques `agent/...` i s'integren mitjançant pull request.
+El repositori principal és `main`. Les modificacions es fan en branques `agent/...` i s'integren mitjançant Pull Request.
 
 ## 3. Estructura obligatòria
 
@@ -21,6 +21,8 @@ El repositori principal és `main`. Les modificacions es fan en branques `agent/
 2. Skills/
 3. Dashboards/
 4. Templates/
+|-- 90.1. templates_fitxes/
+`-- 90.2. docs_support/
 index.md
 log.md
 hot.md
@@ -32,9 +34,10 @@ scripts/graph_scan.py
 ```
 
 - `1. Wiki/` conté fitxes permanents d'autors, conceptes, models i llibres o fonts bibliogràfiques processades.
-- `2. Skills/` conté procediments reutilitzables.
+- `2. Skills/` conté procediments reutilitzables del projecte.
 - `3. Dashboards/` conté consultes i vistes.
-- `4. Templates/` conté plantilles i documents de suport.
+- `4. Templates/90.1. templates_fitxes/` conté formats reutilitzables per crear peces de coneixement.
+- `4. Templates/90.2. docs_support/` conté patrons generals per crear **noves bases de coneixement assistides per IA** sobre qualsevol domini. Els documents d'aquesta carpeta han de ser replicables i no dependre de la temàtica de `coneixement_ia`.
 - Les fonts originals es mantenen fora del repositori públic i es referencien mitjançant URLs, bibliografia i el camp `sources`.
 - Les configuracions personals d'editors, IDE o gestors de coneixement també es mantenen fora del repositori públic.
 - `scripts/wiki_lint.py` és la validació executable; no substitueix la revisió humana.
@@ -79,6 +82,16 @@ Markdown és el format canònic compartit. El projecte no depèn d'un editor, ID
 - Les funcionalitats essencials han de continuar disponibles mitjançant Markdown, scripts del repositori o estàndards oberts.
 - Els enllaços interns han de ser comprensibles i validables sense requerir configuració privada d'un editor.
 
+## 4.3. Contracte de `docs_support`
+
+Un document de `4. Templates/90.2. docs_support/` només es considera canònic si:
+
+- és reutilitzable en més d'un domini;
+- explica arquitectura, governança, recerca, procedència, validació, grafs o integració amb agents;
+- no és una fitxa temàtica ni una ruta d'estudi específica;
+- no pressuposa una eina local concreta;
+- és prou clar perquè pugui servir de context inicial per crear una nova wiki.
+
 ## 5. Flux operatiu únic
 
 ```text
@@ -91,7 +104,7 @@ Una operació d'escriptura només es considera completa quan:
 
 1. la procedència externa queda registrada;
 2. s'han creat o actualitzat les fitxes necessàries;
-3. s'han actualitzat les fonts i els wikilinks;
+3. s'han actualitzat les fonts i els enllaços;
 4. s'han actualitzat `index.md`, `log.md`, `hot.md` i `.manifest.json` quan el canvi és significatiu;
 5. `scripts/wiki_lint.py` retorna `PASS`;
 6. s'han revisat manualment les advertències.
@@ -107,18 +120,20 @@ Una operació d'escriptura només es considera completa quan:
 
 ## 7. Enllaços i compatibilitat Markdown
 
-Els wikilinks han d'apuntar a fitxers reals o a una destinació externa explícita. Els dashboards han de funcionar com a Markdown estàtic i/o com a guies per executar `scripts/wiki_lint.py` i `scripts/graph_scan.py`; no han de dependre de plugins o extensions privades d'un programa concret.
+Els enllaços interns han d'apuntar a fitxers reals o a una destinació externa explícita. Els dashboards han de funcionar com a Markdown estàtic i/o com a guies per executar `scripts/wiki_lint.py` i `scripts/graph_scan.py`; no han de dependre de plugins o extensions privades d'un programa concret.
 
 ## 8. Registre i manifest
 
-Cada canvi estructural o ingesta significativa s'ha d'afegir a `log.md`. `.manifest.json` ha d'indicar la font externa o bibliogràfica, el tipus, l'estat i les fitxes creades o actualitzades.
+Cada canvi estructural o ingesta significativa s'ha d'afegir a `log.md`. `.manifest.json` ha d'indicar les fonts, operacions i fitxers afectats de manera coherent amb l'estat actual del repositori.
+
+Les entrades del manifest no han d'apuntar a fitxers eliminats o rutes obsoletes.
 
 ## 9. Validació obligatòria
 
 Abans de donar una tasca per acabada:
 
 - executa `python scripts/wiki_lint.py`;
-- comprova estructura, README, YAML, categories, wikilinks, manifest, duplicats i estructura interna de skills;
+- comprova estructura, README, YAML, categories, enllaços interns, manifest, duplicats i estructura interna de skills;
 - tracta els errors com a bloquejants;
 - documenta les advertències i decisions pendents.
 
