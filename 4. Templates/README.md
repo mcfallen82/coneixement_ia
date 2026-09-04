@@ -1,41 +1,46 @@
 # 4. Templates
 
-Aquesta carpeta agrupa les **estructures reutilitzables** del projecte. Té dues funcions diferenciades: ajudar a crear peces de coneixement homogènies i conservar documents base per dissenyar noves bases de coneixement assistides per IA.
+Aquesta carpeta agrupa dos tipus de recursos reutilitzables del projecte:
 
-El contingut de `4. Templates/` no és coneixement temàtic permanent de la wiki. La seva funció és definir **com representar coneixement** i **com construir el sistema que el contindrà**.
+1. **plantilles per donar forma a les peces de coneixement**;
+2. **documents base per dissenyar noves bases de coneixement assistides per IA**.
+
+El contingut de `4. Templates/` no és coneixement temàtic permanent de la wiki. La seva funció és definir **com representar el coneixement** i **com construir el sistema que el contindrà**.
 
 ## Què hi trobaràs?
 
 | Carpeta | Funció | Quan utilitzar-la |
 |---|---|---|
-| [`90.1. templates_fitxes/`](90.1.%20templates_fitxes/) | Plantilles per crear fitxes homogènies de conceptes, models, autors, fonts i resums. | Quan crees o normalitzes peces de coneixement dins d'una wiki. |
-| [`90.2. docs_support/`](90.2.%20docs_support/) | Biblioteca de documents base per dissenyar i crear noves bases de coneixement vinculades a una IA sobre qualsevol domini. | Quan vols definir l'arquitectura, governança, recerca, relacions, validació i fluxos d'una wiki nova. |
+| [`90.1. templates_fitxes/`](90.1.%20templates_fitxes/) | Plantilles per crear fitxes homogènies de conceptes, models, autors, fonts i resums. | Quan crees una peça nova de coneixement o normalitzes una fitxa existent. |
+| [`90.2. docs_support/`](90.2.%20docs_support/) | Biblioteca de patrons per crear una nova base de coneixement vinculada a una IA o agent. | Quan vols definir arquitectura, governança, recerca, procedència, grafs o fluxos d'una wiki nova sobre qualsevol domini. |
 
-## Dues capes complementàries
+## Diferència entre `90.1` i `90.2`
 
 ```text
-90.2. docs_support
-Dissenya la base de coneixement
-        ↓
-90.1. templates_fitxes
-Defineix com s'escriuen les peces de coneixement
-        ↓
-Wiki específica del nou domini
+90.2 docs_support
+      ↓
+defineix el sistema
+      ↓
+90.1 templates_fitxes
+      ↓
+defineix la forma de les peces
+      ↓
+Wiki especialitzada en un domini
 ```
 
-`90.2` treballa a nivell de **sistema**. Els seus documents han de ser reutilitzables per crear una wiki nova sobre IA, finances, història, dret, ciència o qualsevol altra matèria.
-
-`90.1` treballa a nivell de **document**. Les seves plantilles ajuden a mantenir una estructura coherent un cop la base de coneixement ja té definida la seva arquitectura.
+`90.2` respon preguntes com **“quina arquitectura necessita aquesta nova base de coneixement?”**. `90.1` respon **“quina estructura ha de tenir aquesta fitxa?”**.
 
 ## Relació amb la resta del projecte
 
-- [`1. Wiki/`](../1.%20Wiki/) conté el coneixement permanent d'aquest projecte concret.
-- [`2. Skills/`](../2.%20Skills/) descriu els procediments operatius per investigar, ingerir, actualitzar i validar contingut.
-- [`90.2. docs_support/`](90.2.%20docs_support/) extreu els patrons generalitzables del projecte perquè puguin servir de base a altres wikis.
+- [`1. Wiki/`](../1.%20Wiki/) conté el coneixement permanent del projecte actual.
+- [`2. Skills/`](../2.%20Skills/) descriu procediments operatius reutilitzables.
 - [`AGENTS.md`](../AGENTS.md) defineix la governança del repositori actual.
+- [`3. Dashboards/`](../3.%20Dashboards/) ajuda a revisar l'estat del coneixement generat.
+
+Els documents de `90.2` poden reutilitzar patrons d'aquests components, però s'han de redactar de forma **generalitzable** perquè serveixin per iniciar projectes nous i no només per descriure `coneixement_ia`.
 
 ## Principi general
 
-**Les plantilles defineixen la forma de les peces; `docs_support` defineix el patró del sistema.**
+**`90.1` dona forma al coneixement; `90.2` dona forma al sistema de coneixement.**
 
-Els documents de `90.2` han de tendir a ser independents del tema i de l'eina local, comprensibles per una persona i útils com a context estructural per a una IA o agent.
+Cap plantilla o document de suport substitueix la verificació de fonts ni la revisió humana.
