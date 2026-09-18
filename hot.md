@@ -1,5 +1,13 @@
 # Hot
 
+## GraphQA i GNN — 2026-09-18
+
+- GraphQA ja té fitxa canònica pròpia i queda definit com una tasca de pregunta-resposta sobre nodes, arestes, camins i subgrafs.
+- La fitxa de GNN incorpora *message passing*, GCN, relació amb embeddings, GraphQA i LLM.
+- G-Retriever queda documentat com a exemple de combinació entre recuperació de subgrafs, GNN i LLM per a GraphQA.
+- La capa gràfica registra relacions acceptades entre GraphQA, GNN i G-Retriever amb fonts externes.
+- Distinció operativa: **GNN aprèn sobre el graf; GraphQA pregunta al graf; GraphRAG recupera context del graf**.
+
 ## Auditoria estructural — 2026-09-04
 
 - `4. Templates/90.2. docs_support/` queda definit com la **biblioteca de patrons per crear noves bases de coneixement assistides per IA sobre qualsevol domini**.
