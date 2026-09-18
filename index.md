@@ -45,6 +45,7 @@ Criteris:
 - [Grafs aplicats als models de llenguatge](1.%20Wiki/1.2.%20conceptes/grafs_i_models_de_llenguatge.md)
 - [Graph engineering](1.%20Wiki/1.2.%20conceptes/graph_engineering.md)
 - [GraphRAG](1.%20Wiki/1.2.%20conceptes/GraphRAG.md)
+- [GraphQA](1.%20Wiki/1.2.%20conceptes/GraphQA.md)
 - [Graph of Thoughts](1.%20Wiki/1.2.%20conceptes/graph_of_thoughts.md)
 - [Xarxes neuronals de graf](1.%20Wiki/1.2.%20conceptes/xarxes_neuronals_de_graf.md)
 - [G-Retriever](1.%20Wiki/1.3.%20models/G-Retriever.md)

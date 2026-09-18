@@ -36,7 +36,7 @@ Un enllaç intern és un indici de relació. Es converteix en una aresta útil q
 | 2. Graf tipat | relacions amb tipus i direcció | mapa semàntic |
 | 3. Graf traçable | arestes amb font i confiança | coneixement auditable |
 | 4. Graf consultable | recuperació de nodes i subgrafs | assistència estructurada amb IA |
-| 5. GraphRAG | graf + recuperació + avaluació | sistema de preguntes sobre corpus |
+| 5. GraphRAG / GraphQA | graf + recuperació + avaluació | sistema de preguntes sobre corpus i relacions |
 
 No cal arribar al nivell 5. La complexitat s'ha d'afegir només quan resolgui un problema real.
 
@@ -229,7 +229,7 @@ Una base de coneixement amb graf és més robusta quan:
 
 La densitat del graf no és un objectiu en si mateix.
 
-## Quan cal GraphRAG?
+## Quan cal GraphRAG o GraphQA?
 
 GraphRAG pot ser útil quan:
 
