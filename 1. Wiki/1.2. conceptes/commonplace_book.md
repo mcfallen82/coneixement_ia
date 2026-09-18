@@ -35,13 +35,13 @@ Combina selecció, transcripció, anotació personal, classificació, recuperaci
 
 ## Exemple
 
-Un fragment sobre atenció pot guardar-se amb una nota pròpia i enllaçar-se amb [[LLM]], [[zettelkasten]] i [[evergreen_notes]].
+Un fragment sobre atenció pot guardar-se amb una nota pròpia i enllaçar-se amb [[LLM]], [[zettelkasten]] i [[1. Wiki/1.2. conceptes/evergreen_notes]].
 
 ## Relacions
 
 - [[PKM]]
 - [[zettelkasten]]
-- [[evergreen_notes]]
+- [[1. Wiki/1.2. conceptes/evergreen_notes]]
 - [[frontmatter]]
 
 ## Aplicacions

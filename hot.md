@@ -1,5 +1,14 @@
 # Hot
 
+## Auditoria de relacions de la wiki — 2026-09-18
+
+- Les relacions acceptades passen de 9 a 40 i cobreixen 38 de les 76 fitxes permanents.
+- La cobertura semàntica incorpora els blocs de grafs, fonaments d'aprenentatge profund, LLM i gestió personal del coneixement.
+- Les 467 aparicions de wikilinks es consoliden en 347 candidates úniques sense perdre'n la procedència.
+- Els wikilinks ambigus a `evergreen_notes` s'han substituït per rutes completes.
+- L'escàner carrega el vocabulari des de YAML, valida evidències i compta els nodes aïllats.
+- La integració contínua executa el mode estricte i cinc proves sobre el graf real.
+
 ## GraphQA i GNN — 2026-09-18
 
 - GraphQA ja té fitxa canònica pròpia i queda definit com una tasca de pregunta-resposta sobre nodes, arestes, camins i subgrafs.
@@ -48,7 +57,8 @@ Després de canvis estructurals o ingestes significatives:
 
 ```bash
 python scripts/wiki_lint.py
-python scripts/graph_scan.py --check
+python scripts/graph_scan.py --check --strict
+python -m unittest discover -s tests -v
 ```
 
 GitHub Actions executa aquestes comprovacions als Pull Requests dirigits a `main`.

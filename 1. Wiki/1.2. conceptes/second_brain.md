@@ -43,7 +43,7 @@ Una wiki d’Obsidian actua com a segon cervell si conserva fonts, crea fitxes, 
 - [[LLM]]
 - [[RAG]]
 - [[zettelkasten]]
-- [[evergreen_notes]]
+- [[1. Wiki/1.2. conceptes/evergreen_notes]]
 - [[context_engineering]]
 
 ## Aplicacions

@@ -40,7 +40,7 @@ Una lectura sobre LLM pot convertir-se en una font a 0. Raw, una fitxa de [[LLM]
 ## Relacions
 
 - [[zettelkasten]]
-- [[evergreen_notes]]
+- [[1. Wiki/1.2. conceptes/evergreen_notes]]
 - [[second_brain]]
 - [[jardins_digitals]]
 
