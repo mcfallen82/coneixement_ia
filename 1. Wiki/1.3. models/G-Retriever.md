@@ -20,10 +20,11 @@ related_concepts:
   - "[[RAG]]"
   - "[[xarxes_neuronals_de_graf]]"
   - "[[GraphRAG]]"
+  - "[[GraphQA]]"
 related_models: []
 status: reviewed
 created: 2026-08-07
-updated: 2026-08-07
+updated: 2026-09-18
 ---
 
 # G-Retriever
@@ -45,7 +46,7 @@ Els grafs textuals poden ser massa grans per introduir-los sencers en el context
 5. Envia el subgraf i el context textual al LLM.
 6. Genera una resposta sobre el graf.
 
-El treball utilitza una formulació basada en el problema de l’arbre de Steiner amb premis per seleccionar una estructura connectada i rellevant.
+El treball utilitza una formulació basada en el problema de l’arbre de Steiner amb premis per seleccionar una estructura connectada i rellevant. El paper també introdueix un **benchmark GraphQA** amb tasques procedents de diversos dominis de grafs textuals.
 
 ## Punts forts
 
@@ -64,6 +65,7 @@ El treball utilitza una formulació basada en el problema de l’arbre de Steine
 ## Relacions
 
 - [[GraphRAG]]
+- [[GraphQA]]
 - [[RAG]]
 - [[xarxes_neuronals_de_graf]]
 - [[grafs_i_models_de_llenguatge]]
