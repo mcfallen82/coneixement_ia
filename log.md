@@ -1,5 +1,41 @@
 # Log del projecte
 
+## 2026-09-18 — Auditoria i ampliació de les relacions de `1. Wiki`
+
+### Diagnòstic
+
+La wiki contenia 76 fitxes, 467 aparicions de wikilinks i cap destinació inexistent. La capa revisada només tenia 9 relacions acceptades sobre 7 nodes. A més, les candidates repetides al frontmatter i al cos inflaven els graus del graf, i sis enllaços curts a `evergreen_notes` eren ambigus perquè existeix una fitxa de concepte i una de model amb el mateix nom.
+
+### Canvis
+
+- ampliades les relacions acceptades a 40 arestes sobre 38 nodes;
+- incorporats els blocs de fonaments d'aprenentatge profund, arquitectura LLM i gestió del coneixement;
+- revisada la relació entre G-Retriever i GraphRAG perquè G-Retriever consti com a exemple documentat;
+- deduplicades les candidates per origen i destinació, conservant `occurrences` i `origins`;
+- separats els wikilinks trencats dels ambigus;
+- substituïts sis enllaços ambigus per la ruta completa de la fitxa conceptual `evergreen_notes`;
+- convertit `relation-vocabulary.yaml` en la font efectiva dels tipus permesos;
+- afegida validació d'evidències internes, relacions duplicades i inverses del vocabulari;
+- corregit el recompte de components perquè inclogui nodes aïllats;
+- afegides cinc proves d'integració sobre la wiki real;
+- activat el mode estricte a GitHub Actions.
+
+### Resultat
+
+```text
+NODES: 76
+ACCEPTED_EDGES: 40
+ACCEPTED_NODES: 38
+ACCEPTED_COVERAGE_PCT: 50.0
+CANDIDATE_EDGES: 347
+CANDIDATE_OCCURRENCES: 467
+BROKEN_WIKILINKS: 0
+AMBIGUOUS_WIKILINKS: 0
+CONNECTED_COMPONENTS: 2
+```
+
+Les comprovacions `wiki_lint --strict`, `graph_scan --check --strict` i les cinc proves d'integració retornen `PASS`.
+
 ## 2026-09-18 — Incorporació de GraphQA i ampliació de GNN
 
 ### Operació

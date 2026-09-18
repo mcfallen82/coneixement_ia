@@ -107,7 +107,8 @@ Una operació d'escriptura només es considera completa quan:
 3. s'han actualitzat les fonts i els enllaços;
 4. s'han actualitzat `index.md`, `log.md`, `hot.md` i `.manifest.json` quan el canvi és significatiu;
 5. `scripts/wiki_lint.py` retorna `PASS`;
-6. s'han revisat manualment les advertències.
+6. `scripts/graph_scan.py --check --strict` retorna `PASS` quan canvien relacions o wikilinks;
+7. s'han revisat manualment les advertències.
 
 ## 6. Regles de seguretat
 
@@ -133,6 +134,8 @@ Les entrades del manifest no han d'apuntar a fitxers eliminats o rutes obsoletes
 Abans de donar una tasca per acabada:
 
 - executa `python scripts/wiki_lint.py`;
+- executa `python scripts/graph_scan.py --check --strict`;
+- executa `python -m unittest discover -s tests -v` quan es modifiquin el graf o l'escàner;
 - comprova estructura, README, YAML, categories, enllaços interns, manifest, duplicats i estructura interna de skills;
 - tracta els errors com a bloquejants;
 - documenta les advertències i decisions pendents.
@@ -140,3 +143,5 @@ Abans de donar una tasca per acabada:
 ## 10. Capa gràfica lleugera
 
 La wiki manté Markdown com a font principal i utilitza la carpeta `graph/` com a representació derivada. Les relacions acceptades es registren a `graph/relations.json` i s'han de poder rastrejar fins a fitxes i fonts verificables.
+
+`graph/relation-vocabulary.yaml` és la font canònica dels tipus de relació. Les candidates es dedupliquen per origen i destinació, però conserven el nombre d'aparicions i la seva procedència. Els wikilinks ambigus s'han d'explicitar amb la ruta completa abans de considerar l'operació acabada.

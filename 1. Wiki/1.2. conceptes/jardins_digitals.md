@@ -39,7 +39,7 @@ Aquesta wiki pot funcionar com un jardí digital si cada fitxa manté la font, m
 
 ## Relacions
 
-- [[evergreen_notes]]
+- [[1. Wiki/1.2. conceptes/evergreen_notes]]
 - [[zettelkasten]]
 - [[second_brain]]
 - [[wiki]]

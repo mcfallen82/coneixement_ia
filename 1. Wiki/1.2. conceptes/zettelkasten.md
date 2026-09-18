@@ -44,7 +44,7 @@ Una nota sobre [[RAG]] pot enllaçar amb [[LLM]], [[context_engineering]] i [[fr
 
 ## Relacions
 
-- [[evergreen_notes]]
+- [[1. Wiki/1.2. conceptes/evergreen_notes]]
 - [[jardins_digitals]]
 - [[second_brain]]
 - [[wiki]]
