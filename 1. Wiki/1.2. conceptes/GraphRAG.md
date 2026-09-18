@@ -14,11 +14,18 @@ sources:
   - https://www.microsoft.com/en-us/research/publication/from-local-to-global-a-graph-rag-approach-to-query-focused-summarization/
   - https://arxiv.org/abs/2404.16130
   - https://arxiv.org/abs/2501.13958
-related_concepts: []
-related_models: []
+related_concepts:
+  - "[[RAG]]"
+  - "[[grafs_i_models_de_llenguatge]]"
+  - "[[GraphQA]]"
+  - "[[xarxes_neuronals_de_graf]]"
+  - "[[ontologies_associatives]]"
+  - "[[embeddings]]"
+related_models:
+  - "[[G-Retriever]]"
 status: reviewed
 created: 2026-08-07
-updated: 2026-08-07
+updated: 2026-09-18
 ---
 
 # GraphRAG
@@ -71,9 +78,17 @@ En una wiki sobre IA, una pregunta sobre «com es relacionen RAG, embeddings i G
 - les fonts originals;
 - un resum de la comunitat de recuperació i sistemes de coneixement.
 
+## Relació amb GraphQA i GNN
+
+GraphRAG és principalment una arquitectura de recuperació i generació sobre informació estructurada en graf. **GraphQA** descriu la tasca de respondre preguntes sobre un graf, mentre que una **GNN** és una família de models que aprèn representacions a partir de la topologia.
+
+Per tant, GraphRAG pot servir per resoldre preguntes de GraphQA sense necessitar necessàriament una GNN. En altres sistemes, com G-Retriever, la recuperació gràfica, les GNN i els LLM es combinen explícitament.
+
 ## Relacions
 
 - [[RAG]]
+- [[GraphQA]]
+- [[xarxes_neuronals_de_graf]]
 - [[grafs_i_models_de_llenguatge]]
 - [[ontologies_associatives]]
 - [[LLM]]
