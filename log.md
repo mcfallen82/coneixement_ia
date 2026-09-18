@@ -1,5 +1,38 @@
 # Log del projecte
 
+## 2026-09-18 — Incorporació de GraphQA i ampliació de GNN
+
+### Operació
+
+S'ha ampliat el bloc de coneixement sobre grafs i models de llenguatge per distingir clarament tres peces: **GraphQA** com a tasca de preguntes sobre grafs, **GNN** com a família de xarxes neuronals que aprèn sobre topologia i **GraphRAG** com a arquitectura de recuperació augmentada sobre informació gràfica.
+
+### Canvis principals
+
+- creada la fitxa `GraphQA.md` amb definició, flux, relació amb KGQA, GraphRAG i GNN, exemple financer, criteris d'avaluació i fonts;
+- ampliada `xarxes_neuronals_de_graf.md` amb *message passing*, GCN, embeddings de graf, limitacions i aplicacions;
+- actualitzat `grafs_i_models_de_llenguatge.md` com a mapa canònic del conjunt;
+- connectats `GraphRAG.md` i `G-Retriever.md` amb GraphQA i GNN;
+- actualitzada la guia replicable de wikis amb grafs;
+- afegides relacions tipades i evidència a `graph/relations.json`;
+- actualitzats índex, hot i manifest.
+
+### Fonts externes principals
+
+- Kipf & Welling — *Semi-Supervised Classification with Graph Convolutional Networks*.
+- Gilmer et al. — *Neural Message Passing for Quantum Chemistry*.
+- He et al. — *G-Retriever: Retrieval-Augmented Generation for Textual Graph Understanding and Question Answering*.
+- Gu et al. — *Beyond I.I.D.: Three Levels of Generalization for Question Answering on Knowledge Bases (GrailQA)*.
+
+### Criteri conceptual
+
+`GNN = model d'aprenentatge sobre grafs`
+
+`GraphQA = tasca de pregunta-resposta sobre grafs`
+
+`GraphRAG = recuperació estructurada per donar context a un LLM`
+
+Aquestes peces es poden combinar, però no són sinònims.
+
 ## 2026-09-04 — Auditoria estructural i consolidació de `docs_support`
 
 ### Objectiu
