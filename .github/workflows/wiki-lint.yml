@@ -25,3 +25,5 @@ jobs:
         run: python scripts/wiki_lint.py
       - name: Run graph check
         run: python scripts/graph_scan.py --check
+      - name: Run graph query tests
+        run: python -m unittest discover -s tests -v

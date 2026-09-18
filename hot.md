@@ -1,5 +1,13 @@
 # Hot
 
+## Motor GraphQA local — 2026-09-18
+
+- `scripts/graph_query.py` converteix la capa gràfica en un motor de consulta local i determinista.
+- Operacions disponibles: veïns, camí dirigit més curt, subgraf per profunditat i explicació d'arestes amb procedència.
+- Les consultes utilitzen per defecte només relacions `accepted`; les candidates requereixen `--include-candidates`.
+- Totes les ordres poden retornar JSON per integrar-les amb altres scripts o agents.
+- GitHub Actions executa les proves unitàries del motor a cada Pull Request cap a `main`.
+
 ## GraphQA i GNN — 2026-09-18
 
 - GraphQA ja té fitxa canònica pròpia i queda definit com una tasca de pregunta-resposta sobre nodes, arestes, camins i subgrafs.
@@ -49,6 +57,7 @@ Després de canvis estructurals o ingestes significatives:
 ```bash
 python scripts/wiki_lint.py
 python scripts/graph_scan.py --check
+python -m unittest discover -s tests -v
 ```
 
 GitHub Actions executa aquestes comprovacions als Pull Requests dirigits a `main`.
@@ -57,5 +66,6 @@ GitHub Actions executa aquestes comprovacions als Pull Requests dirigits a `main
 
 - revisar progressivament fitxes antigues amb frontmatter incomplet o fonts insuficients;
 - revisar relacions candidates abans de convertir-les en acceptades;
+- crear progressivament un banc de preguntes GraphQA amb respostes esperades;
 - mantenir `docs_support` generalitzable quan s'hi incorporin nous patrons;
 - mantenir el manifest i els scripts de validació sincronitzats amb l'arquitectura real.

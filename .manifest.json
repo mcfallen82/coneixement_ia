@@ -1,5 +1,5 @@
 {
-  "version": 6,
+  "version": 7,
   "repository": "mcfallen82/coneixement_ia",
   "purpose": "wiki oberta d'aprenentatge d'intel·ligència artificial i laboratori de patrons per a bases de coneixement assistides per IA",
   "source_policy": {
@@ -24,6 +24,34 @@
     ]
   },
   "operations": [
+    {
+      "date": "2026-09-18",
+      "type": "deterministic_graphqa_engine",
+      "status": "completed",
+      "summary": "Transformació de la capa gràfica en un motor GraphQA local i determinista amb consultes de veïns, camins, subgrafs i procedència.",
+      "pages_created": [
+        "scripts/graph_query.py",
+        "tests/test_graph_query.py"
+      ],
+      "pages_updated": [
+        "graph/README.md",
+        "3. Dashboards/graf.md",
+        ".github/workflows/wiki-lint.yml",
+        "AGENTS.md",
+        "index.md",
+        "log.md",
+        "hot.md",
+        ".manifest.json"
+      ],
+      "checks": [
+        "accepted_edges_default",
+        "candidate_edges_opt_in",
+        "directed_shortest_path",
+        "undirected_neighbourhood_subgraph",
+        "edge_provenance_exposed",
+        "graph_query_unit_tests"
+      ]
+    },
     {
       "date": "2026-09-18",
       "type": "graphqa_gnn_knowledge_update",

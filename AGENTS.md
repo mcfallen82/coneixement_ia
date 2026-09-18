@@ -30,6 +30,8 @@ hot.md
 scripts/wiki_lint.py
 graph/
 scripts/graph_scan.py
+scripts/graph_query.py
+tests/test_graph_query.py
 .github/workflows/wiki-lint.yml
 ```
 
@@ -120,7 +122,7 @@ Una operació d'escriptura només es considera completa quan:
 
 ## 7. Enllaços i compatibilitat Markdown
 
-Els enllaços interns han d'apuntar a fitxers reals o a una destinació externa explícita. Els dashboards han de funcionar com a Markdown estàtic i/o com a guies per executar `scripts/wiki_lint.py` i `scripts/graph_scan.py`; no han de dependre de plugins o extensions privades d'un programa concret.
+Els enllaços interns han d'apuntar a fitxers reals o a una destinació externa explícita. Els dashboards han de funcionar com a Markdown estàtic i/o com a guies per executar `scripts/wiki_lint.py`, `scripts/graph_scan.py` i `scripts/graph_query.py`; no han de dependre de plugins o extensions privades d'un programa concret.
 
 ## 8. Registre i manifest
 
@@ -133,6 +135,8 @@ Les entrades del manifest no han d'apuntar a fitxers eliminats o rutes obsoletes
 Abans de donar una tasca per acabada:
 
 - executa `python scripts/wiki_lint.py`;
+- executa `python scripts/graph_scan.py --check`;
+- executa `python -m unittest discover -s tests -v` quan es modifiquin els scripts del graf;
 - comprova estructura, README, YAML, categories, enllaços interns, manifest, duplicats i estructura interna de skills;
 - tracta els errors com a bloquejants;
 - documenta les advertències i decisions pendents.
@@ -140,3 +144,5 @@ Abans de donar una tasca per acabada:
 ## 10. Capa gràfica lleugera
 
 La wiki manté Markdown com a font principal i utilitza la carpeta `graph/` com a representació derivada. Les relacions acceptades es registren a `graph/relations.json` i s'han de poder rastrejar fins a fitxes i fonts verificables.
+
+`scripts/graph_query.py` ofereix consultes GraphQA deterministes. Per defecte només pot tractar les relacions `accepted` com a coneixement; la inclusió de relacions candidates ha de ser una opció explícita. El motor no ha de modificar Markdown ni `relations.json` durant una consulta.
