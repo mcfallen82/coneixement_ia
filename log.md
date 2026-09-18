@@ -1,5 +1,33 @@
 # Log del projecte
 
+## 2026-09-18 — Primera implementació del motor GraphQA local
+
+### Operació
+
+La capa `graph/` passa de servir només per construir i validar el graf a permetre consultes deterministes sobre el coneixement revisat. Markdown i `graph/relations.json` continuen sent les fonts canòniques; el nou motor treballa en memòria i no modifica cap dada.
+
+### Canvis principals
+
+- creat `scripts/graph_query.py` amb les operacions `neighbors`, `path`, `subgraph` i `explain-edge`;
+- resolució de nodes per `node_id`, títol, fitxer o ruta, amb detecció d'ambigüitats;
+- ús exclusiu de relacions `accepted` per defecte i inclusió opcional de candidates;
+- sortida humana i JSON;
+- proves unitàries per a resolució, direcció, profunditat, procedència i separació entre relacions acceptades i candidates;
+- proves incorporades al workflow de GitHub Actions;
+- actualitzats el README gràfic, el dashboard, l'índex, la governança, `hot.md` i el manifest.
+
+### Criteri arquitectònic
+
+La implementació no incorpora LLM, embeddings, base de dades gràfica ni GNN. Primer valida que el graf pugui respondre preguntes estructurals auditables. Aquesta capa podrà actuar més endavant com a recuperador de subgrafs per a sistemes més complexos.
+
+### Validació
+
+```bash
+python scripts/wiki_lint.py
+python scripts/graph_scan.py --check
+python -m unittest discover -s tests -v
+```
+
 ## 2026-09-18 — Incorporació de GraphQA i ampliació de GNN
 
 ### Operació

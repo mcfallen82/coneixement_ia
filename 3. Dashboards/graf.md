@@ -16,6 +16,19 @@ python scripts/graph_scan.py --check
 python scripts/graph_scan.py --stats
 ```
 
+## Consulta del coneixement
+
+La capa GraphQA determinista permet inspeccionar el graf sense LLM ni base de dades externa:
+
+```bash
+python scripts/graph_query.py neighbors GraphRAG
+python scripts/graph_query.py path G-Retriever RAG --max-depth 3
+python scripts/graph_query.py subgraph RAG --depth 2
+python scripts/graph_query.py explain-edge GraphRAG RAG
+```
+
+Les respostes utilitzen només relacions acceptades, tret que s'afegeixi expressament `--include-candidates`. L'opció `--json` facilita que altres scripts o agents consumeixin el resultat.
+
 ## Lectura de les arestes
 
 - Acceptades: relacions tipades i revisades a `graph/relations.json`.
@@ -47,5 +60,6 @@ Abans d'afegir relacions acceptades:
 3. Revisa els hubs abans d'afegir relacions generiques.
 4. Genera `graph/graph.json` nomes com a instantania de treball.
 5. Compara les respostes d'una consulta basada en wikilinks amb una consulta basada en relacions acceptades.
+6. Executa `python -m unittest discover -s tests -v` després de modificar el motor de consulta.
 
 El dashboard no substitueix les vistes natives de graf d'Obsidian. Afegeix una capa de mesura i revisio que aquestes vistes no proporcionen.

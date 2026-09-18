@@ -51,6 +51,7 @@ Criteris:
 - [G-Retriever](1.%20Wiki/1.3.%20models/G-Retriever.md)
 - [Guia replicable per crear bases de coneixement amb grafs](4.%20Templates/90.2.%20docs_support/guia_creacio_wikis_amb_grafs.md)
 - [Capa gràfica lleugera del projecte actual](3.%20Dashboards/graf.md)
+- [Motor GraphQA local i determinista](graph/README.md#consultes-graphqa)
 
 Font externa destacada sobre *graph engineering*: https://theaioperator.io/p/graph-engineering-decoded-two-definitions
 
@@ -69,3 +70,4 @@ Després de qualsevol ingesta o canvi estructural:
 - revisa `index.md`, `log.md`, `hot.md` i `.manifest.json`;
 - executa `python scripts/wiki_lint.py`;
 - executa `python scripts/graph_scan.py --check`.
+- executa `python -m unittest discover -s tests -v` quan canviï la capa de consulta.
