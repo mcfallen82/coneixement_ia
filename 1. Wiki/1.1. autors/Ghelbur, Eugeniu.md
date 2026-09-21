@@ -17,6 +17,7 @@ sources:
   - https://theaioperator.io/p/huge-update-on-obsidian-second-brain
   - https://theaioperator.io/p/i-rebuilt-karpathys-llm-wiki-heres
   - https://theaioperator.io/p/graph-engineering-decoded-two-definitions
+  - https://substack.com/home/post/p-216615368
 works:
   - "[[1. Wiki/1.3. models/gpt_image_cookbook]]"
   - "[[1. Wiki/1.3. models/konik_method]]"
@@ -28,9 +29,11 @@ related_concepts:
   - "[[1. Wiki/1.2. conceptes/second_brain]]"
   - "[[1. Wiki/1.2. conceptes/skills]]"
   - "[[1. Wiki/1.2. conceptes/graph_engineering]]"
+  - "[[1. Wiki/1.2. conceptes/agent_harness]]"
+  - "[[1. Wiki/1.2. conceptes/gates_i_guardrails_agents]]"
 status: active
 created: 2026-08-07
-updated: 2026-08-13
+updated: 2026-09-21
 ---
 
 # Eugeniu Ghelbur
@@ -46,6 +49,7 @@ La seva activitat registrada en aquesta wiki combina interfícies de línia d’
 ## Obres i contribucions
 
 - **Graph engineering**, distincio operativa entre grafs de coneixement i grafs de topologia d'agents en sistemes amb LLM.
+- **What Is Jev? The Manual for Agent Harnesses**, síntesi sobre models de decisió ràpida, arnesos d'agents, portes de control i una prova adversària de 300 crides.
 - **GPT Image Cookbook**, una caixa d’eines per sistematitzar la generació i edició d’imatges.
 - **agents-md**, eina per generar i mantenir instruccions de repositori.
 - Desenvolupament d’idees com **The Architect** i la reconstrucció del LLM Wiki de Karpathy en un sistema de coneixement més operatiu.
@@ -60,3 +64,4 @@ Les seves aportacions es relacionen amb [[1. Wiki/1.2. conceptes/skills]], [[1. 
 - [agents-md](https://github.com/eugeniughelbur/agents-md)
 - [Huge update on Obsidian Second Brain](https://theaioperator.io/p/huge-update-on-obsidian-second-brain)
 - [I rebuilt Karpathy’s LLM Wiki](https://theaioperator.io/p/i-rebuilt-karpathys-llm-wiki-heres)
+- [What Is Jev? The Manual for Agent Harnesses](https://substack.com/home/post/p-216615368)

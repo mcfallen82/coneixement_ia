@@ -1,5 +1,5 @@
 {
-  "version": 7,
+  "version": 8,
   "repository": "mcfallen82/coneixement_ia",
   "purpose": "wiki oberta d'aprenentatge d'intel·ligència artificial i laboratori de patrons per a bases de coneixement assistides per IA",
   "source_policy": {
@@ -24,6 +24,47 @@
     ]
   },
   "operations": [
+    {
+      "date": "2026-09-21",
+      "type": "jev_agent_harness_knowledge_update",
+      "status": "completed",
+      "summary": "Codificació contrastada de Jev, arnesos d'agents, portes de control i calibratge de probabilitats, amb fonts oficials, acadèmiques i una avaluació independent.",
+      "sources": [
+        "https://substack.com/home/post/p-216615368",
+        "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+        "https://docs.typesafe.ai/model-jaggedness/jev-1.13",
+        "https://arxiv.org/abs/2606.10106",
+        "https://arxiv.org/abs/2603.30016",
+        "https://proceedings.mlr.press/v70/guo17a.html",
+        "https://github.com/willkelly/jev-evaluation"
+      ],
+      "pages_created": [
+        "1. Wiki/1.2. conceptes/agent_harness.md",
+        "1. Wiki/1.2. conceptes/gates_i_guardrails_agents.md",
+        "1. Wiki/1.2. conceptes/calibratge_de_probabilitats.md",
+        "1. Wiki/1.3. models/Jev.md"
+      ],
+      "pages_updated": [
+        "1. Wiki/1.1. autors/Ghelbur, Eugeniu.md",
+        "1. Wiki/1.2. conceptes/context_engineering.md",
+        "1. Wiki/1.2. conceptes/avaluacio_de_models.md",
+        "3. Dashboards/dashboard_wiki.md",
+        "3. Dashboards/dashboard_aprenentatge.md",
+        "graph/relations.json",
+        "index.md",
+        "log.md",
+        "hot.md",
+        ".manifest.json"
+      ],
+      "checks": [
+        "existing_knowledge_compared",
+        "official_claims_separated_from_independent_evidence",
+        "calibration_and_accuracy_distinguished",
+        "typed_output_not_equated_with_semantic_correctness",
+        "agent_security_layered_controls_documented",
+        "typed_graph_relations_updated"
+      ]
+    },
     {
       "date": "2026-09-18",
       "type": "wiki_relations_audit",

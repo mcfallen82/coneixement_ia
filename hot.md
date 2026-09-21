@@ -1,5 +1,15 @@
 # Hot
 
+## Jev i control d'agents — 2026-09-21
+
+- Noves fitxes canòniques: arnès d'agent, portes de control, calibratge de probabilitats i Jev.
+- Un arnès queda delimitat per quatre peces: bucle adaptatiu, eines, gestió del context i control en temps d'execució.
+- Jev aporta decisions tipades, paral·leles i ràpides; la seva arquitectura i RLCD no estan prou publicats per reproduir-los.
+- La sortida tipada evita errors d'esquema, però no garanteix una decisió correcta ni elimina les al·lucinacions semàntiques.
+- El calibratge s'ha de validar per domini i versió; no s'han de copiar llindars d'una altra aplicació.
+- Per a accions crítiques, les regles deterministes, els permisos i l'escalat humà continuen sent la base del control.
+- Les injeccions amb falsa autoritat poden ser més efectives que les ordres explícites; cal separar intenció, dades externes i proposta d'acció.
+
 ## Auditoria de relacions de la wiki — 2026-09-18
 
 - Les relacions acceptades passen de 9 a 40 i cobreixen 38 de les 76 fitxes permanents.
