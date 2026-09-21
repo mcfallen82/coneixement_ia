@@ -1,5 +1,32 @@
 # Log del projecte
 
+## 2026-09-21 — Jev, arnesos d'agents i portes de control
+
+### Diagnòstic de novetat
+
+L'article *What Is Jev? The Manual for Agent Harnesses* aporta un bloc que no tenia fitxes canòniques a la wiki: la distinció entre model i arnès, els controls previs a l'acció, el calibratge de probabilitats i Jev com a model de decisió tipada. Les fitxes existents sobre `AGENTS.md`, enginyeria del context, alineament i avaluació cobrien antecedents parcials, però no la seva integració operativa.
+
+### Contrast extern
+
+- la definició d'arnès s'ha contrastat amb Macedo, *What makes a harness a harness* (arXiv:2606.10106), que identifica bucle, eines, context i control com a nucli;
+- el calibratge s'ha fonamentat amb Guo et al. (ICML 2017) i s'ha separat de l'exactitud i de la mera sortida tipada;
+- les afirmacions sobre Jev s'han comparat amb la documentació oficial de TypeSafe AI i l'avaluació independent preregistrada de Will Kelly;
+- la seguretat dels controls s'ha contrastat amb Xiang et al. (2026), que defensa una arquitectura sistèmica amb regles, models i límits d'observació i decisió.
+
+### Canvis
+
+- creades les fitxes `agent_harness.md`, `gates_i_guardrails_agents.md`, `calibratge_de_probabilitats.md` i `Jev.md`;
+- ampliades les fitxes d'enginyeria del context, avaluació de models i Eugeniu Ghelbur;
+- incorporada la distinció entre compliment d'esquema i correcció semàntica;
+- actualitzats l'índex, el dashboard de la wiki, la ruta d'aprenentatge, `hot.md`, el graf i el manifest;
+- eliminades del dashboard d'aprenentatge referències residuals a `0. Raw/`, incompatibles amb la política pública actual.
+
+### Criteri operatiu
+
+`model de decisió probabilística ≠ mecanisme de seguretat complet`
+
+Per a accions amb efectes externs: regles deterministes i permisos primer, classificador semàntic després, i escalat humà quan l'impacte o la incertesa ho exigeixin.
+
 ## 2026-09-18 — Auditoria i ampliació de les relacions de `1. Wiki`
 
 ### Diagnòstic

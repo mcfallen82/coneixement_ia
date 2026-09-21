@@ -9,11 +9,14 @@ tags:
   - agents
 sources:
   - https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
-related_concepts: []
+  - https://docs.typesafe.ai/model-jaggedness/jev-1.13
+related_concepts:
+  - "[[1. Wiki/1.2. conceptes/agent_harness]]"
+  - "[[1. Wiki/1.2. conceptes/gates_i_guardrails_agents]]"
 related_models: []
 status: reviewed
 created: 2026-08-07
-updated: 2026-08-07
+updated: 2026-09-21
 ---
 
 # Enginyeria del context
@@ -41,6 +44,8 @@ Els processos principals són:
 
 En una wiki, això implica conservar fonts, consultar l’índex, recuperar fitxes relacionades i evitar duplicats.
 
+En un [[1. Wiki/1.2. conceptes/agent_harness|arnès d'agent]], la gestió del context és una peça constitutiva: decideix quines observacions tornen al bucle. En una porta de control, també és una mesura de seguretat. Cal separar la intenció de l'usuari, la proposta d'acció i les dades externes, perquè el soroll i les instruccions incrustades poden alterar un jutge probabilístic.
+
 ## Exemple
 
 Per analitzar un concepte nou, un agent pot rebre la font original, la fitxa existent, les instruccions d’AGENTS.md i una plantilla. No necessita rebre tota la wiki.
@@ -52,6 +57,8 @@ Per analitzar un concepte nou, un agent pot rebre la font original, la fitxa exi
 - [[RAG]]
 - [[LLM]]
 - [[frontmatter]]
+- [[1. Wiki/1.2. conceptes/agent_harness]]
+- [[1. Wiki/1.2. conceptes/gates_i_guardrails_agents]]
 
 ## Aplicacions
 
@@ -68,7 +75,9 @@ Per analitzar un concepte nou, un agent pot rebre la font original, la fitxa exi
 - comprimir fins a perdre la font;
 - compartir dades entre agents sense necessitat;
 - no controlar l’estat ni la vigència.
+- tractar dades externes potencialment hostils com si fossin instruccions fiables.
 
 ## Fonts
 
 - [Anthropic — Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents).
+- [TypeSafe AI — Jev 1.13 jaggedness](https://docs.typesafe.ai/model-jaggedness/jev-1.13), seccions sobre context irrellevant i contingut adversari.

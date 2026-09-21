@@ -7,8 +7,8 @@ Aquest dashboard és l'entrada estàtica al contingut de `1. Wiki/`. Resumeix le
 | Àrea | Contingut | Fitxes |
 | --- | --- | ---: |
 | [Autors](../1.%20Wiki/1.1.%20autors/) | Investigadors, divulgadors i referents citats per la wiki. | 13 |
-| [Conceptes](../1.%20Wiki/1.2.%20conceptes/) | Idees, tècniques i processos d'IA, aprenentatge i sistemes de coneixement. | 39 |
-| [Models](../1.%20Wiki/1.3.%20models/) | Arquitectures, models i recursos tècnics classificats com a models o marcs. | 21 |
+| [Conceptes](../1.%20Wiki/1.2.%20conceptes/) | Idees, tècniques i processos d'IA, aprenentatge i sistemes de coneixement. | 44 |
+| [Models](../1.%20Wiki/1.3.%20models/) | Arquitectures, models i recursos tècnics classificats com a models o marcs. | 22 |
 | [Llibres](../1.%20Wiki/1.4.%20llibres/) | Fonts bibliogràfiques processades com a suport del coneixement permanent. | 1 |
 
 ## Rutes de lectura
@@ -48,6 +48,15 @@ Aquest dashboard és l'entrada estàtica al contingut de `1. Wiki/`. Resumeix le
 5. [frontmatter](../1.%20Wiki/1.2.%20conceptes/frontmatter.md)
 6. [context_engineering](../1.%20Wiki/1.2.%20conceptes/context_engineering.md)
 
+### Agents, arnesos i control
+
+1. [agent_harness](../1.%20Wiki/1.2.%20conceptes/agent_harness.md)
+2. [gates_i_guardrails_agents](../1.%20Wiki/1.2.%20conceptes/gates_i_guardrails_agents.md)
+3. [calibratge_de_probabilitats](../1.%20Wiki/1.2.%20conceptes/calibratge_de_probabilitats.md)
+4. [avaluacio_de_models](../1.%20Wiki/1.2.%20conceptes/avaluacio_de_models.md)
+5. [context_engineering](../1.%20Wiki/1.2.%20conceptes/context_engineering.md)
+6. [Jev](../1.%20Wiki/1.3.%20models/Jev.md)
+
 ## Autors
 
 - [Appleton, Maggie](../1.%20Wiki/1.1.%20autors/Appleton,%20Maggie.md)
@@ -72,10 +81,12 @@ Aquest dashboard és l'entrada estàtica al contingut de `1. Wiki/`. Resumeix le
 - [ajust_fi](../1.%20Wiki/1.2.%20conceptes/ajust_fi.md)
 - [alineament_dels_llm](../1.%20Wiki/1.2.%20conceptes/alineament_dels_llm.md)
 - [attention](../1.%20Wiki/1.2.%20conceptes/attention.md)
+- [agent_harness](../1.%20Wiki/1.2.%20conceptes/agent_harness.md)
 - [autodiferenciacio](../1.%20Wiki/1.2.%20conceptes/autodiferenciacio.md)
 - [avaluacio_de_models](../1.%20Wiki/1.2.%20conceptes/avaluacio_de_models.md)
 - [backpropagation](../1.%20Wiki/1.2.%20conceptes/backpropagation.md)
 - [batch_normalization](../1.%20Wiki/1.2.%20conceptes/batch_normalization.md)
+- [calibratge_de_probabilitats](../1.%20Wiki/1.2.%20conceptes/calibratge_de_probabilitats.md)
 - [commonplace_book](../1.%20Wiki/1.2.%20conceptes/commonplace_book.md)
 - [context_engineering](../1.%20Wiki/1.2.%20conceptes/context_engineering.md)
 - [embeddings](../1.%20Wiki/1.2.%20conceptes/embeddings.md)
@@ -84,6 +95,7 @@ Aquest dashboard és l'entrada estàtica al contingut de `1. Wiki/`. Resumeix le
 - [frontmatter](../1.%20Wiki/1.2.%20conceptes/frontmatter.md)
 - [grafs_i_models_de_llenguatge](../1.%20Wiki/1.2.%20conceptes/grafs_i_models_de_llenguatge.md)
 - [GraphRAG](../1.%20Wiki/1.2.%20conceptes/GraphRAG.md)
+- [gates_i_guardrails_agents](../1.%20Wiki/1.2.%20conceptes/gates_i_guardrails_agents.md)
 - [graph_of_thoughts](../1.%20Wiki/1.2.%20conceptes/graph_of_thoughts.md)
 - [jardins_digitals](../1.%20Wiki/1.2.%20conceptes/jardins_digitals.md)
 - [LLM](../1.%20Wiki/1.2.%20conceptes/LLM.md)
@@ -117,6 +129,7 @@ Aquest dashboard és l'entrada estàtica al contingut de `1. Wiki/`. Resumeix le
 - [GPT](../1.%20Wiki/1.3.%20models/GPT.md)
 - [gpt_image_cookbook](../1.%20Wiki/1.3.%20models/gpt_image_cookbook.md)
 - [konik_method](../1.%20Wiki/1.3.%20models/konik_method.md)
+- [Jev](../1.%20Wiki/1.3.%20models/Jev.md)
 - [llm_wiki](../1.%20Wiki/1.3.%20models/llm_wiki.md)
 - [LoRA](../1.%20Wiki/1.3.%20models/LoRA.md)
 - [mastering_PKM_with_Obsidian_and_AI](../1.%20Wiki/1.3.%20models/mastering_PKM_with_Obsidian_and_AI.md)

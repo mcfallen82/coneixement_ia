@@ -55,6 +55,15 @@ Criteris:
 
 Font externa destacada sobre *graph engineering*: https://theaioperator.io/p/graph-engineering-decoded-two-definitions
 
+## Agents, arnesos i control
+
+- [Arnès d'agent](1.%20Wiki/1.2.%20conceptes/agent_harness.md)
+- [Portes de control i guardrails d'agents](1.%20Wiki/1.2.%20conceptes/gates_i_guardrails_agents.md)
+- [Calibratge de probabilitats](1.%20Wiki/1.2.%20conceptes/calibratge_de_probabilitats.md)
+- [Jev](1.%20Wiki/1.3.%20models/Jev.md)
+- [Enginyeria del context](1.%20Wiki/1.2.%20conceptes/context_engineering.md)
+- [Avaluació de models](1.%20Wiki/1.2.%20conceptes/avaluacio_de_models.md)
+
 ## Organització
 
 - [2. Skills](2.%20Skills/): procediments reutilitzables del projecte.
