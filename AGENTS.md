@@ -42,6 +42,10 @@ scripts/graph_scan.py
 - Les configuracions personals d'editors, IDE o gestors de coneixement també es mantenen fora del repositori públic.
 - `scripts/wiki_lint.py` és la validació executable; no substitueix la revisió humana.
 
+### Criteri comú per als README
+
+En crear o modificar qualsevol `README.md` del repositori, mantén un format coherent: títol identificable, introducció que n'expliqui el propòsit, subtítols jeràrquics, mapa del contingut amb enllaços a rutes reals i orientacions concretes de lectura, ús o manteniment. Resumeix el contingut de cada subcarpeta quan n'hi hagi i explica com s'insereix en el projecte. Utilitza emojis discrets als títols quan ajudin a navegar. Adapta l'extensió a l'àmbit de cada README, però aporta més informació que una frase o una simple llista de fitxers. Conserva aquest patró en les actualitzacions futures i verifica que els enllaços i les descripcions continuïn sent correctes.
+
 ## 4. Contracte de les fitxes
 
 Tota fitxa permanent Markdown dins de `1. Wiki/`, excepte els README, ha de tenir frontmatter YAML amb:
