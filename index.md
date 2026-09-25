@@ -30,6 +30,9 @@ Criteris:
 ### Conceptes
 
 - [Carpeta de conceptes](1.%20Wiki/1.2.%20conceptes/)
+- [Wiki](1.%20Wiki/1.2.%20conceptes/wiki.md), [frontmatter](1.%20Wiki/1.2.%20conceptes/frontmatter.md) i [gestió personal del coneixement](1.%20Wiki/1.2.%20conceptes/PKM.md): organització i metadades independents de l'editor.
+- [RAG](1.%20Wiki/1.2.%20conceptes/RAG.md) i [ontologies associatives](1.%20Wiki/1.2.%20conceptes/ontologies_associatives.md): recuperació de context i relacions documentades.
+- [Prompt](1.%20Wiki/1.2.%20conceptes/prompt.md), [prompting](1.%20Wiki/1.2.%20conceptes/prompting.md) i [enginyeria de prompts](1.%20Wiki/1.2.%20conceptes/prompt_engineering.md): peça, pràctica i procés de millora.
 
 ### Models
 

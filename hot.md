@@ -1,5 +1,12 @@
 # Hot
 
+## Revisió dels conceptes — 2026-09-25
+
+- 46 fitxes auditades; 10 fitxes revisades per coherència editorial i conceptual després de la integració d'A-MEM.
+- `wiki`, `frontmatter` i `PKM` segueixen el model públic de Markdown i fonts externes; `RAG` ja no exigeix embeddings en tots els casos.
+- `ontologies_associatives` diferencia enllaços candidats, relacions tipades acceptades i ontologies formals; les fitxes de prompts tenen àmbits explícits.
+- Queden set fitxes amb els camps `related_concepts` i `related_models` buits; revisar-les abans d'afegir-hi relacions acceptades.
+
 ## Integració operativa de la revisió de memòria — 2026-09-25
 
 - Nova skill `memory-evolution`: revisió posterior a ingestes significatives, amb lectura de fitxes anteriors i justificació de canvis.

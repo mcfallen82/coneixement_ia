@@ -9,18 +9,26 @@ tags:
   - representacio-del-coneixement
 sources:
   - https://www.w3.org/standards/semanticweb/ontology
-related_concepts: []
+  - https://www.w3.org/TR/skos-reference/
+related_concepts:
+  - "[[wiki]]"
+  - "[[zettelkasten]]"
+  - "[[second_brain]]"
+  - "[[frontmatter]]"
+  - "[[RAG]]"
+  - "[[grafs_i_models_de_llenguatge]]"
+  - "[[GraphRAG]]"
 related_models: []
 status: reviewed
 created: 2026-08-07
-updated: 2026-08-07
+updated: 2026-09-25
 ---
 
 # Ontologies associatives
 
 ## Definició
 
-Una ontologia associativa és una representació del coneixement que descriu conceptes, entitats i relacions entre ells. En aquest projecte, el terme s’utilitza per descriure una xarxa de coneixement que emergeix de les connexions entre notes.
+En aquesta wiki, «ontologia associativa» és un terme de treball per a una xarxa de conceptes i relacions documentades. No implica que la wiki implementi una ontologia formal amb axiomes, inferència o llenguatges com OWL; les relacions tipades es registren en una capa gràfica lleugera.
 
 ## Per què és important?
 
@@ -36,7 +44,7 @@ Cal identificar entitats, tipus de relació i regles mínimes. Les relacions pod
 
 ## Exemple
 
-[[RAG]] depèn d’un [[LLM]], pot utilitzar [[QMD]] per recuperar informació i necessita [[frontmatter]] per filtrar notes.
+[[RAG]] combina recuperació i generació amb un [[LLM]]; una implementació pot utilitzar [[QMD]] per recuperar informació i camps de [[frontmatter]] per filtrar notes.
 
 ## Relacions
 
@@ -50,7 +58,7 @@ Cal identificar entitats, tipus de relació i regles mínimes. Les relacions pod
 
 ## Relació amb els grafs aplicats als LLM
 
-Una ontologia pot servir com a esquema per construir un graf de coneixement. GraphRAG pot utilitzar aquesta estructura per recuperar entitats, relacions i comunitats. La wiki actual és una xarxa de coneixement lleugera: els wikilinks indiquen connexions, però encara no descriuen formalment el tipus, la direcció o la procedència de cada aresta.
+Una ontologia pot servir com a esquema per construir un graf de coneixement. GraphRAG pot utilitzar aquesta estructura per recuperar entitats, relacions i comunitats. En aquesta wiki, els wikilinks assenyalen connexions candidates; `graph/relations.json` recull una selecció de relacions tipades, orientades i revisades manualment amb evidència i fonts. Aquesta capa no és una ontologia formal completa.
 
 ## Aplicacions
 
@@ -70,3 +78,4 @@ Una ontologia pot servir com a esquema per construir un graf de coneixement. Gra
 ## Fonts
 
 - [W3C — Ontology and the Semantic Web](https://www.w3.org/standards/semanticweb/ontology).
+- [W3C — SKOS Simple Knowledge Organization System Reference](https://www.w3.org/TR/skos-reference/).

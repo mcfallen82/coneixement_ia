@@ -9,11 +9,16 @@ tags:
   - gestio-del-coneixement
 sources:
   - https://github.com/tobi/qmd
-related_concepts: []
+related_concepts:
+  - "[[RAG]]"
+  - "[[context_engineering]]"
+  - "[[second_brain]]"
+  - "[[frontmatter]]"
+  - "[[LLM]]"
 related_models: []
 status: reviewed
 created: 2026-08-07
-updated: 2026-08-07
+updated: 2026-09-25
 ---
 
 # QMD
@@ -48,7 +53,7 @@ Una consulta sobre «com donar informació rellevant a un model» pot recuperar 
 
 ## Aplicacions
 
-- cerca local d’Obsidian;
+- cerca local de notes Markdown;
 - recuperació per a sistemes RAG;
 - exploració de wikis;
 - localització de notes relacionades.

@@ -8,11 +8,17 @@ tags:
   - presa-de-notes
 sources:
   - https://zettelkasten.de/introduction/
-related_concepts: []
+related_concepts:
+  - "[[LLM]]"
+  - "[[RAG]]"
+  - "[[zettelkasten]]"
+  - "[[1. Wiki/1.2. conceptes/evergreen_notes]]"
+  - "[[second_brain]]"
+  - "[[jardins_digitals]]"
 related_models: []
 status: reviewed
 created: 2026-08-07
-updated: 2026-08-07
+updated: 2026-09-25
 ---
 
 # Gestió personal del coneixement (PKM)
@@ -35,7 +41,7 @@ El cicle bàsic és: capturar, interpretar, sintetitzar, connectar, recuperar, a
 
 ## Exemple
 
-Una lectura sobre LLM pot convertir-se en una font a 0. Raw, una fitxa de [[LLM]], enllaços a [[RAG]] i una síntesi per a un projecte.
+Una lectura sobre LLM pot conservar-se com a referència externa al camp `sources` d'una fitxa de [[LLM]], donar lloc a enllaços a [[RAG]] i alimentar una síntesi per a un projecte.
 
 ## Relacions
 
