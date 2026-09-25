@@ -61,6 +61,8 @@ Els autors avaluen preguntes sobre converses llargues amb **LoCoMo** i també pr
 
 [[1. Wiki/1.3. models/llm_wiki|LLM Wiki]] descriu una base de pàgines llegibles i revisables que es consolida amb les fonts. A-MEM estudia la **memòria operativa d'un agent** formada a partir d'interaccions. Les dues idees poden complementar-se: una capa automatitzada podria *proposar* enllaços o millores a la wiki, però això és una **aplicació inferida**, no una capacitat demostrada pel paper en aquest repositori. La procedència, la revisió humana i l'historial de les fitxes continuen sent necessaris.
 
+El projecte disposa d'una [adaptació operativa de revisió de notes](../../2.%20Skills/memory-evolution/README.md) i un [script de candidates](../../scripts/memory_candidates.py). El script només ordena fitxes per similitud lèxica; l'agent o la persona que fa la ingesta llegeix les candidates i justifica els canvis abans d'acceptar-los. Aquesta integració **no executa A-MEM** ni reprodueix els seus resultats experimentals.
+
 ## Límits i preguntes obertes
 
 - Una connexió semànticament plausible pot ser falsa, trivial o redundant; cal comprovar-ne el significat i la font.

@@ -1,5 +1,13 @@
 # Log del projecte
 
+## 2026-09-25 — Integració operativa inspirada en A-MEM
+
+- Afegida la skill `memory-evolution` com a revisió opcional de fitxes antigues després d’una ingesta significativa.
+- Afegit `scripts/memory_candidates.py`, rànquing local TF-IDF en mode lectura que retorna candidates i indicis per a la revisió, sense embeddings semàntics ni escriptures automàtiques.
+- Connectat el pas a `wiki-ingest`, `wiki-update`, `cross-linker`, `llm-wiki` i l’índex de skills.
+- Actualitzats la fitxa A-MEM, el README de models, l’índex, el dashboard, hot i el manifest; dues proves comproven les candidates, la desambiguació i la manca de mutacions.
+- Decisió: cap relació ni canvi contextual entra a la wiki només per semblança lèxica; la persona o agent encarregat verifica semàntica i procedència abans d’acceptar-ho.
+
 ## 2026-09-25 — Ingesta d’A-MEM i conceptes de memòria
 
 - Font principal: Xu i col·laboradors, *A-Mem: Agentic Memory for LLM Agents* (NeurIPS 2025); consultats el paper i els repositoris dels autors el 2026-09-25.

@@ -1,5 +1,5 @@
 {
-  "version": 8,
+  "version": 9,
   "repository": "mcfallen82/coneixement_ia",
   "purpose": "wiki oberta d'aprenentatge d'intel·ligència artificial i laboratori de patrons per a bases de coneixement assistides per IA",
   "source_policy": {
@@ -24,6 +24,43 @@
     ]
   },
   "operations": [
+    {
+      "date": "2026-09-25",
+      "type": "a_mem_project_workflow_integration",
+      "status": "completed",
+      "summary": "Adaptació revisable de la fase de connexió i evolució de notes després de la ingesta, amb rànquing lèxic local sense mutacions automàtiques.",
+      "sources": [
+        "https://papers.nips.cc/paper_files/paper/2025/file/19909c36f51abc4856b4560aff3d36d6-Paper-Conference.pdf"
+      ],
+      "pages_created": [
+        "2. Skills/memory-evolution/README.md",
+        "2. Skills/memory-evolution/memory-evolution.md",
+        "scripts/memory_candidates.py",
+        "tests/test_memory_candidates.py"
+      ],
+      "pages_updated": [
+        "2. Skills/wiki-ingest/wiki-ingest.md",
+        "2. Skills/wiki-update/wiki-update.md",
+        "2. Skills/cross-linker/cross-linker.md",
+        "2. Skills/llm-wiki/llm-wiki.md",
+        "2. Skills/README.md",
+        "1. Wiki/1.3. models/A-MEM.md",
+        "1. Wiki/1.3. models/README.md",
+        "3. Dashboards/dashboard_wiki.md",
+        "index.md",
+        "log.md",
+        "hot.md",
+        ".manifest.json"
+      ],
+      "checks": [
+        "read_only_candidate_ranking",
+        "ambiguous_basename_check",
+        "source_review_required",
+        "wiki_lint",
+        "graph_scan_strict",
+        "unit_tests"
+      ]
+    },
     {
       "date": "2026-09-25",
       "type": "a_mem_agentic_memory_ingestion",

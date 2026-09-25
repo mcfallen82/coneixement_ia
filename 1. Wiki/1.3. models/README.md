@@ -2,7 +2,7 @@
 
 ## Del principi tècnic al sistema concret
 
-Aquesta carpeta presenta arquitectures, famílies i models concrets relacionats amb la IA, com [Transformer](transformer.md), [GPT](GPT.md) i [FinBERT](FinBERT.md). També conserva fitxes de propostes i implementacions de sistemes de coneixement, com [Obsidian Wiki](obsidian_wiki.md). Aquesta diversitat fa necessari identificar **què és exactament cada entrada** abans de comparar-ne capacitats.
+Aquesta carpeta presenta arquitectures, famílies i models concrets relacionats amb la IA, com [Transformer](transformer.md), [GPT](GPT.md) i [FinBERT](FinBERT.md). També conserva fitxes de propostes i implementacions de sistemes de coneixement, com [Obsidian Wiki](obsidian_wiki.md) i la memòria agentiva [A-MEM](A-MEM.md). Aquesta diversitat fa necessari identificar **què és exactament cada entrada** abans de comparar-ne capacitats.
 
 Les fitxes expliquen el problema abordat, els components coneguts, les dades i l'objectiu d'entrenament quan es documenten, les entrades i sortides, els usos i els límits. En una arquitectura o un sistema de wiki, alguns d'aquests apartats poden no ser aplicables: cal explicar-ne el motiu, sense omplir camps amb conjectures.
 

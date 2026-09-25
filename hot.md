@@ -1,5 +1,12 @@
 # Hot
 
+## Integració operativa de la revisió de memòria — 2026-09-25
+
+- Nova skill `memory-evolution`: revisió posterior a ingestes significatives, amb lectura de fitxes anteriors i justificació de canvis.
+- `memory_candidates.py` ordena candidates amb TF-IDF lèxic local, sense escriure fitxes ni acceptar relacions.
+- La connexió i les revisions continuen subjectes a la font original, a la revisió semàntica i a les validacions del projecte.
+- L’adaptació no instal·la ni reprodueix el model A-MEM publicat.
+
 ## A-MEM i memòria agentiva — 2026-09-25
 
 - A-MEM té una fitxa de model i s’enllaça amb els conceptes nous de memòria agentiva i evolució de la memòria.

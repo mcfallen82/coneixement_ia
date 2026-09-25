@@ -52,12 +52,14 @@ Criteris:
 - [Guia replicable per crear bases de coneixement amb grafs](4.%20Templates/90.2.%20docs_support/guia_creacio_wikis_amb_grafs.md)
 - [Capa gràfica lleugera del projecte actual](3.%20Dashboards/graf.md)
 - [Contracte i validació de la capa gràfica](graph/README.md)
+- [Candidates de notes relacionades](scripts/memory_candidates.py): lectura local de fitxes amb rànquing lèxic; no valida relacions.
 
 Font externa destacada sobre *graph engineering*: https://theaioperator.io/p/graph-engineering-decoded-two-definitions
 
 ## Memòria d’agents i notes connectades
 
 - [A-MEM — arquitectura de memòria agentiva](1.%20Wiki/1.3.%20models/A-MEM.md)
+- [Revisió assistida de notes després d'una ingesta](2.%20Skills/memory-evolution/README.md)
 - [Memòria agentiva](1.%20Wiki/1.2.%20conceptes/memoria_agentica.md)
 - [Evolució de la memòria](1.%20Wiki/1.2.%20conceptes/evolucio_de_la_memoria.md)
 - [Zettelkasten](1.%20Wiki/1.2.%20conceptes/zettelkasten.md) i [LLM Wiki](1.%20Wiki/1.3.%20models/llm_wiki.md): antecedents i contrast entre notes i wiki persistent.
