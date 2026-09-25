@@ -1,5 +1,11 @@
 # Log del projecte
 
+## 2026-09-25 — Guia d'entrada a la wiki i criteri dels README
+
+- Ampliat `1. Wiki/README.md` amb introducció, descripció de les quatre categories, recorreguts de lectura i pautes per incorporar fitxes.
+- Afegit a `AGENTS.md` un format comú per a futures creacions i modificacions de README, amb explicacions útils i enllaços verificables.
+- Canvi de documentació i governança; no modifica fitxes permanents, fonts ni relacions del graf.
+
 ## 2026-09-21 — Jev, arnesos d'agents i portes de control
 
 ### Diagnòstic de novetat
