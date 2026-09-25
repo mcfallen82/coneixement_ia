@@ -8,11 +8,16 @@ tags:
   - representacio-del-coneixement
 sources:
   - https://www.pcmag.com/how-to/what-is-a-wiki
-related_concepts: []
+  - https://www.mediawiki.org/wiki/Help:Links
+related_concepts:
+  - "[[second_brain]]"
+  - "[[zettelkasten]]"
+  - "[[jardins_digitals]]"
+  - "[[ontologies_associatives]]"
 related_models: []
 status: reviewed
 created: 2026-08-07
-updated: 2026-08-07
+updated: 2026-09-25
 ---
 
 # Wiki
@@ -31,7 +36,7 @@ Facilita la documentació col·lectiva o personal i permet mantenir el coneixeme
 
 ## Funcionament
 
-Una wiki necessita pàgines, enllaços, criteris d’edició, historial i una manera de trobar el contingut. En aquest projecte, Markdown i Obsidian proporcionen la base; l’LLM ajuda a llegir, relacionar i actualitzar.
+Una wiki necessita pàgines, enllaços, criteris d’edició, historial i una manera de trobar el contingut. En aquest projecte, la base compartida són els fitxers Markdown i l'historial de Git, independentment de l'editor; els scripts validen enllaços i metadades, i un LLM pot ajudar a proposar lectures i connexions subjectes a revisió.
 
 ## Exemple
 
@@ -62,3 +67,4 @@ Aquesta wiki connecta [[LLM]], [[RAG]], [[context_engineering]] i [[frontmatter]
 ## Fonts
 
 - [PCMag — What Is a Wiki?](https://www.pcmag.com/how-to/what-is-a-wiki).
+- [MediaWiki — Help:Links](https://www.mediawiki.org/wiki/Help:Links).

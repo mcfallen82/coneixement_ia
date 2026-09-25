@@ -9,11 +9,16 @@ tags:
   - metadades
 sources:
   - https://help.obsidian.md/properties
-related_concepts: []
+  - https://docs.github.com/en/contributing/writing-for-github-docs/using-yaml-frontmatter
+related_concepts:
+  - "[[wiki]]"
+  - "[[RAG]]"
+  - "[[second_brain]]"
+  - "[[context_engineering]]"
 related_models: []
 status: reviewed
 created: 2026-08-07
-updated: 2026-08-07
+updated: 2026-09-25
 ---
 
 # Frontmatter
@@ -24,7 +29,7 @@ El frontmatter és un bloc de metadades situat al principi d’un fitxer Markdow
 
 ## Per què és important?
 
-Permet que Obsidian, Dataview i altres eines filtrin, ordenin i relacionin notes sense haver d’interpretar tot el text.
+Permet que scripts i altres eines filtrin, ordenin i relacionin notes sense haver d’interpretar tot el text. Editors com Obsidian poden mostrar aquests camps, però no són necessaris per llegir-los.
 
 ## Intuïció
 
@@ -38,7 +43,7 @@ Exemple de camps: title, category, tags, sources, status, created i updated.
 
 ## Exemple
 
-Una consulta Dataview pot mostrar totes les fitxes de category: conceptes i ordenar-les per updated.
+Un script pot mostrar totes les fitxes amb `category: conceptes` i ordenar-les pel camp `updated`; les eines que llegeixen YAML també poden fer la mateixa consulta.
 
 ## Relacions
 
@@ -65,3 +70,4 @@ Una consulta Dataview pot mostrar totes les fitxes de category: conceptes i orde
 ## Fonts
 
 - [Obsidian — Properties](https://help.obsidian.md/properties).
+- [GitHub Docs — Using YAML frontmatter](https://docs.github.com/en/contributing/writing-for-github-docs/using-yaml-frontmatter).

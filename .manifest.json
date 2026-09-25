@@ -26,6 +26,36 @@
   "operations": [
     {
       "date": "2026-09-25",
+      "type": "concept_review_after_a_mem",
+      "status": "completed",
+      "summary": "Revisió transversal de 46 conceptes: correcció de deu fitxes, connexions declarades, fonts i explicacions coherents amb el projecte actual.",
+      "sources": [
+        "https://docs.github.com/en/contributing/writing-for-github-docs/using-yaml-frontmatter",
+        "https://www.mediawiki.org/wiki/Help:Links",
+        "https://www.w3.org/TR/skos-reference/",
+        "https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/retrieval-augmented-generation"
+      ],
+      "pages_created": [],
+      "pages_updated": [
+        "1. Wiki/1.2. conceptes/wiki.md",
+        "1. Wiki/1.2. conceptes/frontmatter.md",
+        "1. Wiki/1.2. conceptes/PKM.md",
+        "1. Wiki/1.2. conceptes/ontologies_associatives.md",
+        "1. Wiki/1.2. conceptes/RAG.md",
+        "1. Wiki/1.2. conceptes/second_brain.md",
+        "1. Wiki/1.2. conceptes/QMD.md",
+        "1. Wiki/1.2. conceptes/prompt.md",
+        "1. Wiki/1.2. conceptes/prompting.md",
+        "1. Wiki/1.2. conceptes/prompt_engineering.md",
+        "index.md",
+        "log.md",
+        "hot.md",
+        ".manifest.json"
+      ],
+      "checks": ["wiki_lint", "graph_scan_strict", "markdown_links"]
+    },
+    {
+      "date": "2026-09-25",
       "type": "a_mem_project_workflow_integration",
       "status": "completed",
       "summary": "Adaptació revisable de la fase de connexió i evolució de notes després de la ingesta, amb rànquing lèxic local sense mutacions automàtiques.",

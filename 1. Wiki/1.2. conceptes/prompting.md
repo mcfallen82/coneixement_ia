@@ -8,11 +8,15 @@ tags:
   - models-de-llenguatge
 sources:
   - https://platform.openai.com/docs/guides/prompt-engineering
-related_concepts: []
+related_concepts:
+  - "[[prompt]]"
+  - "[[prompt_engineering]]"
+  - "[[context_engineering]]"
+  - "[[LLM]]"
 related_models: []
 status: reviewed
 created: 2026-08-07
-updated: 2026-08-07
+updated: 2026-09-25
 ---
 
 # Prompting
@@ -20,6 +24,8 @@ updated: 2026-08-07
 ## Definició
 
 El prompting és la pràctica de formular instruccions i preguntes per obtenir un resultat útil d’un model d’intel·ligència artificial.
+
+En aquest vocabulari, [[prompt]] és la instrucció concreta i [[prompt_engineering]] implica provar versions amb criteris explícits per millorar-ne el rendiment.
 
 ## Per què és important?
 

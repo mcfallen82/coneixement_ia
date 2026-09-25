@@ -9,11 +9,16 @@ tags:
   - inteligencia-artificial
 sources:
   - https://fortelabs.com/blog/basboverview/
-related_concepts: []
+related_concepts:
+  - "[[LLM]]"
+  - "[[RAG]]"
+  - "[[zettelkasten]]"
+  - "[[1. Wiki/1.2. conceptes/evergreen_notes]]"
+  - "[[context_engineering]]"
 related_models: []
 status: reviewed
 created: 2026-08-07
-updated: 2026-08-07
+updated: 2026-09-25
 ---
 
 # Segon cervell
@@ -36,7 +41,7 @@ Un sistema pot incloure captura de fonts, notes permanents, metadades, cerques, 
 
 ## Exemple
 
-Una wiki d’Obsidian actua com a segon cervell si conserva fonts, crea fitxes, connecta conceptes i registra actualitzacions.
+Una wiki en Markdown pot actuar com a segon cervell si conserva referències a les fonts, crea fitxes, connecta conceptes i registra actualitzacions.
 
 ## Relacions
 

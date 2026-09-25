@@ -8,11 +8,15 @@ tags:
   - models-de-llenguatge
 sources:
   - https://platform.openai.com/docs/guides/prompt-engineering
-related_concepts: []
+related_concepts:
+  - "[[prompting]]"
+  - "[[prompt_engineering]]"
+  - "[[context_engineering]]"
+  - "[[LLM]]"
 related_models: []
 status: reviewed
 created: 2026-08-07
-updated: 2026-08-07
+updated: 2026-09-25
 ---
 
 # Prompt
@@ -20,6 +24,8 @@ updated: 2026-08-07
 ## Definició
 
 Un prompt és el missatge, la pregunta o el conjunt d’instruccions que rep un model d’intel·ligència artificial.
+
+La fitxa descriu la **peça de contingut**; [[prompting]] n'és la pràctica d'ús i [[prompt_engineering]] el procés de prova i millora sistemàtica.
 
 ## Per què és important?
 

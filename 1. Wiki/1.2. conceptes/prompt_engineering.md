@@ -9,11 +9,15 @@ tags:
   - evaluacio
 sources:
   - https://platform.openai.com/docs/guides/prompt-engineering
-related_concepts: []
+related_concepts:
+  - "[[prompt]]"
+  - "[[prompting]]"
+  - "[[context_engineering]]"
+  - "[[LLM]]"
 related_models: []
 status: reviewed
 created: 2026-08-07
-updated: 2026-08-07
+updated: 2026-09-25
 ---
 
 # Enginyeria de prompts
@@ -21,6 +25,8 @@ updated: 2026-08-07
 ## Definició
 
 És el procés sistemàtic de dissenyar, provar, avaluar i millorar instruccions perquè produeixin resultats útils i consistents.
+
+Un [[prompt]] és el contingut d'una petició; el [[prompting]] és la pràctica de formular-la i iterar-hi. L'enginyeria de prompts afegeix casos de prova, criteris d'èxit i comparació de versions.
 
 ## Per què és important?
 

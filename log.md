@@ -1,5 +1,14 @@
 # Log del projecte
 
+## 2026-09-25 — Revisió transversal de conceptes després d'A-MEM
+
+- Auditades les 46 fitxes de conceptes en l'estat de `main` amb linter i comprovació estricta d'enllaços; sense errors ni advertiments estructurals previs.
+- Revisades i actualitzades 10 fitxes: `wiki`, `frontmatter`, `PKM`, `ontologies_associatives`, `RAG`, `second_brain`, `QMD`, `prompt`, `prompting` i `prompt_engineering`.
+- Corregides les referències a `0. Raw/` i a Obsidian com a base obligatòria; aclarida la diferència entre wikilinks i relacions acceptades a `graph/relations.json`.
+- Descrites les opcions de cerca lèxica, vectorial i híbrida en RAG; diferenciats prompt, prompting i enginyeria de prompts sense fusionar fitxes.
+- Explicitats els enllaços als camps `related_concepts` de les fitxes revisades i afegides fonts oficials de GitHub, MediaWiki, W3C i Microsoft Learn. No s'han acceptat noves arestes tipades al graf.
+- Pendent: set fitxes de conceptes encara tenen buits tots dos camps de relacions; cal revisar-ne les connexions de forma individual. La presència d'un wikilink al cos no significa per si sola una relació semàntica acceptada.
+
 ## 2026-09-25 — Integració operativa inspirada en A-MEM
 
 - Afegida la skill `memory-evolution` com a revisió opcional de fitxes antigues després d’una ingesta significativa.

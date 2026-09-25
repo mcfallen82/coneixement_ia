@@ -10,7 +10,16 @@ tags:
 sources:
   - https://arxiv.org/abs/2005.11401
   - https://papers.nips.cc/paper_files/paper/2025/file/19909c36f51abc4856b4560aff3d36d6-Paper-Conference.pdf
-related_concepts: []
+  - https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/retrieval-augmented-generation
+related_concepts:
+  - "[[LLM]]"
+  - "[[context_engineering]]"
+  - "[[QMD]]"
+  - "[[second_brain]]"
+  - "[[frontmatter]]"
+  - "[[grafs_i_models_de_llenguatge]]"
+  - "[[GraphRAG]]"
+  - "[[memoria_agentica]]"
 related_models:
   - "[[1. Wiki/1.3. models/A-MEM]]"
 status: reviewed
@@ -34,11 +43,10 @@ El model no respon només amb el que ha après. Primer consulta una biblioteca, 
 
 ## Funcionament
 
-1. Les fonts es divideixen en fragments.
-2. Cada fragment es transforma en un embedding.
-3. La pregunta també es transforma en un embedding.
-4. El sistema recupera els fragments més rellevants.
-5. El LLM genera una resposta amb la pregunta i el context recuperat.
+1. Les fonts es preparen i indexen; segons el corpus, es poden dividir en fragments.
+2. Una consulta recupera documents o fragments amb cerca lèxica, vectorial o híbrida. La cerca vectorial fa servir embeddings, però no són un requisit de tot sistema RAG.
+3. El sistema filtra o reordena els resultats i els aporta al context del model.
+4. El LLM genera una resposta amb la pregunta i el context recuperat.
 
 Un sistema complet necessita metadades, filtratge, reordenació i una política per citar fonts.
 
@@ -83,3 +91,4 @@ GraphRAG amplia la RAG amb una representació gràfica de les entitats, les rela
 
 - [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401).
 - [Xu i col·laboradors — A-Mem: Agentic Memory for LLM Agents](https://papers.nips.cc/paper_files/paper/2025/file/19909c36f51abc4856b4560aff3d36d6-Paper-Conference.pdf), NeurIPS 2025.
+- [Microsoft Learn — Retrieval augmented generation](https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/retrieval-augmented-generation).
