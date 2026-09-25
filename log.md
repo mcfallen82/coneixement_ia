@@ -1,5 +1,13 @@
 # Log del projecte
 
+## 2026-09-25 — Ingesta d’A-MEM i conceptes de memòria
+
+- Font principal: Xu i col·laboradors, *A-Mem: Agentic Memory for LLM Agents* (NeurIPS 2025); consultats el paper i els repositoris dels autors el 2026-09-25.
+- Creat `1. Wiki/1.3. models/A-MEM.md` per explicar notes estructurades, generació d’enllaços, evolució i recuperació; separats resultats del paper i aplicació inferida a una wiki.
+- Creat `memoria_agentica.md` i `evolucio_de_la_memoria.md` com a conceptes diferenciats; ampliats LLM Wiki, Zettelkasten, notes permanents, embeddings i RAG amb relacions recíproques i fonts.
+- Afegides cinc relacions tipades documentades al graf i actualitzats índex, hot i manifest.
+- Límit: l’avaluació publicada tracta memòria conversacional, no aquest repositori ni la fiabilitat de les connexions proposades en una wiki pública.
+
 ## 2026-09-25 — Guia d'entrada a la wiki i criteri dels README
 
 - Ampliat `1. Wiki/README.md` amb introducció, descripció de les quatre categories, recorreguts de lectura i pautes per incorporar fitxes.

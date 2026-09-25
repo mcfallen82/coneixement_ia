@@ -55,6 +55,13 @@ Criteris:
 
 Font externa destacada sobre *graph engineering*: https://theaioperator.io/p/graph-engineering-decoded-two-definitions
 
+## Memòria d’agents i notes connectades
+
+- [A-MEM — arquitectura de memòria agentiva](1.%20Wiki/1.3.%20models/A-MEM.md)
+- [Memòria agentiva](1.%20Wiki/1.2.%20conceptes/memoria_agentica.md)
+- [Evolució de la memòria](1.%20Wiki/1.2.%20conceptes/evolucio_de_la_memoria.md)
+- [Zettelkasten](1.%20Wiki/1.2.%20conceptes/zettelkasten.md) i [LLM Wiki](1.%20Wiki/1.3.%20models/llm_wiki.md): antecedents i contrast entre notes i wiki persistent.
+
 ## Agents, arnesos i control
 
 - [Arnès d'agent](1.%20Wiki/1.2.%20conceptes/agent_harness.md)

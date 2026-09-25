@@ -25,6 +25,42 @@
   },
   "operations": [
     {
+      "date": "2026-09-25",
+      "type": "a_mem_agentic_memory_ingestion",
+      "status": "completed",
+      "summary": "Ingesta del model A-MEM i dels conceptes memòria agentiva i evolució de la memòria, amb relacions bidireccionals i graf documentat.",
+      "sources": [
+        "https://papers.nips.cc/paper_files/paper/2025/hash/19909c36f51abc4856b4560aff3d36d6-Abstract-Conference.html",
+        "https://papers.nips.cc/paper_files/paper/2025/file/19909c36f51abc4856b4560aff3d36d6-Paper-Conference.pdf",
+        "https://github.com/WujiangXu/A-mem",
+        "https://github.com/agiresearch/A-mem"
+      ],
+      "pages_created": [
+        "1. Wiki/1.3. models/A-MEM.md",
+        "1. Wiki/1.2. conceptes/memoria_agentica.md",
+        "1. Wiki/1.2. conceptes/evolucio_de_la_memoria.md"
+      ],
+      "pages_updated": [
+        "1. Wiki/1.3. models/llm_wiki.md",
+        "1. Wiki/1.2. conceptes/zettelkasten.md",
+        "1. Wiki/1.2. conceptes/evergreen_notes.md",
+        "1. Wiki/1.2. conceptes/embeddings.md",
+        "1. Wiki/1.2. conceptes/RAG.md",
+        "graph/relations.json",
+        "index.md",
+        "log.md",
+        "hot.md",
+        ".manifest.json"
+      ],
+      "checks": [
+        "source_original_vs_inference_separated",
+        "bidirectional_concept_model_links",
+        "graph_relations_reviewed",
+        "wiki_lint",
+        "graph_scan_strict"
+      ]
+    },
+    {
       "date": "2026-09-21",
       "type": "jev_agent_harness_knowledge_update",
       "status": "completed",
