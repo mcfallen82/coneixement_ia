@@ -13,6 +13,7 @@ Sincronitzar informació nova amb les fitxes permanents de la wiki, tant si prov
 5. Incorpora la informació nova en la secció adequada i actualitza updated.
 6. Afegeix la font al frontmatter i a la secció Fonts.
 7. Revisa els enllaços cap a autors, conceptes i models.
+8. Si la novetat canvia la interpretació de notes anteriors, segueix [memory-evolution](../memory-evolution/memory-evolution.md): cerca candidates en mode lectura, contrasta la font i proposa una precisió concreta abans de modificar-les.
 
 ## Criteri de decisió
 

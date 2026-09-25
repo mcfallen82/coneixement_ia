@@ -59,3 +59,5 @@ Qualsevol skill que escrigui fitxers ha d'actualitzar aquests elements quan el c
 ## Ordre de treball
 
 Font externa → classificació → comprovació de duplicats → creació o actualització → enllaços → índex → registre → auditoria.
+
+En ingressos significatius, [memory-evolution](../memory-evolution/memory-evolution.md) afegeix una revisió opcional de notes antigues entre la creació o actualització i la consolidació dels enllaços. La sortida automàtica és només una proposta: Markdown i les fonts continuen sent la base canònica.

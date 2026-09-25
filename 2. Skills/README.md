@@ -22,6 +22,7 @@ Una *skill* no és un programa autònom ni un plugin: és un protocol de treball
 | Preparar context acotat per a una altra tasca o agent | [wiki-context-pack](wiki-context-pack/README.md) |
 | Detectar fitxes duplicades | [wiki-dedup](wiki-dedup/README.md) |
 | Afegir connexions útils entre fitxes | [cross-linker](cross-linker/README.md) |
+| Revisar notes antigues quan una ingesta aporta context nou | [memory-evolution](memory-evolution/README.md) |
 | Normalitzar etiquetes | [tag-taxonomy](tag-taxonomy/README.md) |
 | Validar si un canvi compleix el seu objectiu | [impl-validator](impl-validator/README.md) |
 | Auditar estructura, YAML i coherència | [wiki-lint](wiki-lint/README.md) |
@@ -41,7 +42,7 @@ Per incorporar o modificar coneixement, l'ordre recomanat és:
 
 1. [llm-wiki](llm-wiki/README.md) — comprovar arquitectura i principis;
 2. [wiki-research](wiki-research/README.md), [wiki-ingest](wiki-ingest/README.md) o [wiki-update](wiki-update/README.md) — investigar i transformar;
-3. [wiki-dedup](wiki-dedup/README.md) i [cross-linker](cross-linker/README.md) — revisar coherència i connexions;
+3. [wiki-dedup](wiki-dedup/README.md), [memory-evolution](memory-evolution/README.md) en ingestes significatives i [cross-linker](cross-linker/README.md) — revisar coherència, context anterior i connexions;
 4. [impl-validator](impl-validator/README.md) — comprovar que s'ha assolit l'objectiu;
 5. [wiki-lint](wiki-lint/README.md) — validació estructural final.
 

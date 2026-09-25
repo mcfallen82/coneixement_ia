@@ -8,11 +8,14 @@ tags:
   - presa-de-notes
 sources:
   - https://notes.andymatuschak.org/Evergreen_notes
-related_concepts: []
-related_models: []
+  - https://papers.nips.cc/paper_files/paper/2025/file/19909c36f51abc4856b4560aff3d36d6-Paper-Conference.pdf
+related_concepts:
+  - "[[1. Wiki/1.2. conceptes/evolucio_de_la_memoria]]"
+related_models:
+  - "[[1. Wiki/1.3. models/A-MEM]]"
 status: reviewed
 created: 2026-08-07
-updated: 2026-08-07
+updated: 2026-09-25
 ---
 
 # Evergreen notes
@@ -43,6 +46,8 @@ En lloc de guardar «els LLM utilitzen context», una nota pot afirmar: «La qua
 - [[zettelkasten]]
 - [[second_brain]]
 - [[LLM]]
+- [[1. Wiki/1.2. conceptes/evolucio_de_la_memoria]]: mecanisme automàtic d'A-MEM; les notes permanents són una pràctica d'escriptura i revisió conscient.
+- [[1. Wiki/1.3. models/A-MEM]]
 
 ## Aplicacions
 
@@ -63,3 +68,4 @@ En lloc de guardar «els LLM utilitzen context», una nota pot afirmar: «La qua
 ## Fonts
 
 - [Andy Matuschak — Evergreen notes](https://notes.andymatuschak.org/Evergreen_notes).
+- [Xu i col·laboradors — A-Mem: Agentic Memory for LLM Agents](https://papers.nips.cc/paper_files/paper/2025/file/19909c36f51abc4856b4560aff3d36d6-Paper-Conference.pdf), NeurIPS 2025.

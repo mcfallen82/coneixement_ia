@@ -33,8 +33,9 @@ Convertir una font d'aprenentatge en coneixement permanent, traçable i connecta
 6. Redacta amb intuïció abans del detall tècnic.
 7. Afegeix `sources` al frontmatter i una secció final de fonts quan sigui útil.
 8. Connecta la fitxa amb wikilinks reals.
-9. Actualitza `index.md`, `log.md`, `hot.md` i `.manifest.json` quan el canvi sigui significatiu.
-10. Executa `wiki-lint` i revisa manualment les pàgines creades.
+9. En una ingesta significativa, utilitza [memory-evolution](../memory-evolution/memory-evolution.md) per cercar notes anteriors que mereixin una connexió o precisió. Revisa les candidates abans d'acceptar-les; la puntuació del script no és una prova.
+10. Actualitza `index.md`, `log.md`, `hot.md` i `.manifest.json` quan el canvi sigui significatiu.
+11. Executa `wiki-lint` i `graph_scan.py --check --strict`; revisa manualment les pàgines creades.
 
 ## Regla de no-duplicació
 

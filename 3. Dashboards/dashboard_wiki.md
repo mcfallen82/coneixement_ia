@@ -7,8 +7,8 @@ Aquest dashboard és l'entrada estàtica al contingut de `1. Wiki/`. Resumeix le
 | Àrea | Contingut | Fitxes |
 | --- | --- | ---: |
 | [Autors](../1.%20Wiki/1.1.%20autors/) | Investigadors, divulgadors i referents citats per la wiki. | 13 |
-| [Conceptes](../1.%20Wiki/1.2.%20conceptes/) | Idees, tècniques i processos d'IA, aprenentatge i sistemes de coneixement. | 44 |
-| [Models](../1.%20Wiki/1.3.%20models/) | Arquitectures, models i recursos tècnics classificats com a models o marcs. | 22 |
+| [Conceptes](../1.%20Wiki/1.2.%20conceptes/) | Idees, tècniques i processos d'IA, aprenentatge i sistemes de coneixement. | 46 |
+| [Models](../1.%20Wiki/1.3.%20models/) | Arquitectures, models i recursos tècnics classificats com a models o marcs. | 23 |
 | [Llibres](../1.%20Wiki/1.4.%20llibres/) | Fonts bibliogràfiques processades com a suport del coneixement permanent. | 1 |
 
 ## Rutes de lectura
@@ -38,6 +38,13 @@ Aquest dashboard és l'entrada estàtica al contingut de `1. Wiki/`. Resumeix le
 4. [graph_of_thoughts](../1.%20Wiki/1.2.%20conceptes/graph_of_thoughts.md)
 5. [xarxes_neuronals_de_graf](../1.%20Wiki/1.2.%20conceptes/xarxes_neuronals_de_graf.md)
 6. [G-Retriever](../1.%20Wiki/1.3.%20models/G-Retriever.md)
+
+### Memòria d'agents i notes relacionades
+
+1. [memoria_agentica](../1.%20Wiki/1.2.%20conceptes/memoria_agentica.md)
+2. [evolucio_de_la_memoria](../1.%20Wiki/1.2.%20conceptes/evolucio_de_la_memoria.md)
+3. [A-MEM](../1.%20Wiki/1.3.%20models/A-MEM.md)
+4. [Procediment de revisió assistida](../2.%20Skills/memory-evolution/README.md)
 
 ### Wiki, PKM i context
 
@@ -90,6 +97,7 @@ Aquest dashboard és l'entrada estàtica al contingut de `1. Wiki/`. Resumeix le
 - [commonplace_book](../1.%20Wiki/1.2.%20conceptes/commonplace_book.md)
 - [context_engineering](../1.%20Wiki/1.2.%20conceptes/context_engineering.md)
 - [embeddings](../1.%20Wiki/1.2.%20conceptes/embeddings.md)
+- [evolucio_de_la_memoria](../1.%20Wiki/1.2.%20conceptes/evolucio_de_la_memoria.md)
 - [entrenament_validacio_i_overfitting](../1.%20Wiki/1.2.%20conceptes/entrenament_validacio_i_overfitting.md)
 - [evergreen_notes](../1.%20Wiki/1.2.%20conceptes/evergreen_notes.md)
 - [frontmatter](../1.%20Wiki/1.2.%20conceptes/frontmatter.md)
@@ -100,6 +108,7 @@ Aquest dashboard és l'entrada estàtica al contingut de `1. Wiki/`. Resumeix le
 - [jardins_digitals](../1.%20Wiki/1.2.%20conceptes/jardins_digitals.md)
 - [LLM](../1.%20Wiki/1.2.%20conceptes/LLM.md)
 - [micrograd](../1.%20Wiki/1.2.%20conceptes/micrograd.md)
+- [memoria_agentica](../1.%20Wiki/1.2.%20conceptes/memoria_agentica.md)
 - [ontologies_associatives](../1.%20Wiki/1.2.%20conceptes/ontologies_associatives.md)
 - [optimitzacio_i_adam](../1.%20Wiki/1.2.%20conceptes/optimitzacio_i_adam.md)
 - [PKM](../1.%20Wiki/1.2.%20conceptes/PKM.md)
@@ -120,6 +129,7 @@ Aquest dashboard és l'entrada estàtica al contingut de `1. Wiki/`. Resumeix le
 
 ## Models
 
+- [A-MEM](../1.%20Wiki/1.3.%20models/A-MEM.md)
 - [digital_gardens](../1.%20Wiki/1.3.%20models/digital_gardens.md)
 - [essence_zettelkasten_method_demystified](../1.%20Wiki/1.3.%20models/essence_zettelkasten_method_demystified.md)
 - [evergreen_notes](../1.%20Wiki/1.3.%20models/evergreen_notes.md)

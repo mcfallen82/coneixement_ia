@@ -9,6 +9,7 @@ tags:
   - recuperacio
 sources:
   - https://karpathy.ai/zero-to-hero.html
+  - https://papers.nips.cc/paper_files/paper/2025/file/19909c36f51abc4856b4560aff3d36d6-Paper-Conference.pdf
 related_concepts:
   - "[[1. Wiki/1.2. conceptes/tokenitzacio_i_bpe]]"
   - "[[1. Wiki/1.2. conceptes/attention]]"
@@ -16,9 +17,10 @@ related_concepts:
 related_models:
   - "[[1. Wiki/1.3. models/transformer]]"
   - "[[1. Wiki/1.3. models/GPT]]"
+  - "[[1. Wiki/1.3. models/A-MEM]]"
 status: reviewed
 created: 2026-08-07
-updated: 2026-08-07
+updated: 2026-09-25
 ---
 
 # Embeddings
@@ -43,6 +45,11 @@ Un sistema [[RAG]] pot trobar fragments sobre «flux de caixa lliure» encara qu
 
 La proximitat vectorial no garanteix rellevància ni exactitud. Cal combinar-la amb metadades, filtres, reordenació i cites de la font original.
 
+## Relació amb A-MEM
+
+[[1. Wiki/1.3. models/A-MEM]] utilitza vectors de les notes enriquides per seleccionar records candidats; després un LLM proposa els enllaços. Recuperar per semblança i validar una connexió conceptual són operacions diferents.
+
 ## Fonts
 
 - [Neural Networks: Zero to Hero](https://karpathy.ai/zero-to-hero.html).
+- [Xu i col·laboradors — A-Mem: Agentic Memory for LLM Agents](https://papers.nips.cc/paper_files/paper/2025/file/19909c36f51abc4856b4560aff3d36d6-Paper-Conference.pdf), NeurIPS 2025.

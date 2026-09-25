@@ -8,11 +8,14 @@ tags:
   - presa-de-notes
 sources:
   - https://zettelkasten.de/introduction/
-related_concepts: []
-related_models: []
+  - https://papers.nips.cc/paper_files/paper/2025/file/19909c36f51abc4856b4560aff3d36d6-Paper-Conference.pdf
+related_concepts:
+  - "[[1. Wiki/1.2. conceptes/memoria_agentica]]"
+related_models:
+  - "[[1. Wiki/1.3. models/A-MEM]]"
 status: reviewed
 created: 2026-08-07
-updated: 2026-08-07
+updated: 2026-09-25
 ---
 
 # Zettelkasten
@@ -48,6 +51,8 @@ Una nota sobre [[RAG]] pot enllaçar amb [[LLM]], [[context_engineering]] i [[fr
 - [[jardins_digitals]]
 - [[second_brain]]
 - [[wiki]]
+- [[1. Wiki/1.2. conceptes/memoria_agentica]]
+- [[1. Wiki/1.3. models/A-MEM]]: adapta les notes connectades a una memòria d'agents generada automàticament; aquesta adaptació no substitueix la reflexió humana del mètode.
 
 ## Aplicacions
 
@@ -67,3 +72,4 @@ Una nota sobre [[RAG]] pot enllaçar amb [[LLM]], [[context_engineering]] i [[fr
 ## Fonts
 
 - [Zettelkasten.de — Introduction](https://zettelkasten.de/introduction/).
+- [Xu i col·laboradors — A-Mem: Agentic Memory for LLM Agents](https://papers.nips.cc/paper_files/paper/2025/file/19909c36f51abc4856b4560aff3d36d6-Paper-Conference.pdf), NeurIPS 2025.

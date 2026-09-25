@@ -12,9 +12,15 @@ tags:
   - wiki
 sources:
   - https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
+  - https://papers.nips.cc/paper_files/paper/2025/file/19909c36f51abc4856b4560aff3d36d6-Paper-Conference.pdf
+related_concepts:
+  - "[[1. Wiki/1.2. conceptes/memoria_agentica]]"
+  - "[[1. Wiki/1.2. conceptes/evolucio_de_la_memoria]]"
+related_models:
+  - "[[1. Wiki/1.3. models/A-MEM]]"
 status: active
 created: 2026-04-30
-updated: 2026-08-13
+updated: 2026-09-25
 ---
 # LLM WIKI
 
@@ -50,6 +56,13 @@ La descripció d'aquests processos és el següent:
 La *wiki* no és només un arxiu, és un organisme viu que es va refinant.
 
 ---
+## Relació amb A-MEM
+
+[[1. Wiki/1.3. models/A-MEM|A-MEM]] és una arquitectura publicada el 2025 per a la [[1. Wiki/1.2. conceptes/memoria_agentica|memòria d'agents]] basada en notes derivades d'interaccions. Hi ha un paral·lelisme amb les pàgines interconnectades d'aquesta wiki: en arribar una nota nova, A-MEM pot generar enllaços i fer [[1. Wiki/1.2. conceptes/evolucio_de_la_memoria|evolucionar]] els atributs contextuals de notes anteriors.
+
+La connexió entre els dos sistemes és **comparativa**, no una derivació documentada del model de Karpathy. El paper d'A-MEM avalua preguntes sobre diàlegs llargs; no demostra que l'actualització automàtica millori la qualitat d'una wiki documental. En aquesta wiki, qualsevol enllaç o revisió proposats per un agent requereixen una font i una revisió abans d'incorporar-se com a coneixement estable.
+
+---
 ## Fitxers especials & Estructura
 
 Perquè el sistema sigui manejable, **Karpathy** recomana dos fitxers especials: `index.md` i `log.md`. L’`index.md` és el mapa de contingut: enumera les pàgines de la *wiki*, amb una breu descripció i organització per categories.
@@ -66,7 +79,7 @@ El problema d’una base de coneixement és guardar informació, mantenir-la con
 ---
 ## Documents de suport
 
-**[Plantilla Creació Wikis](../../4.%20Templates/90.2.%20docs_support/plantilla_creacio_wikis_locals_codex_obsidian.md)** - Plantilla per a la creació d'un fitxer inicial `AGENTS.md` mitjançant **ChatGPT**.
+**[Plantilla canònica de wiki](../../4.%20Templates/90.2.%20docs_support/plantilla_wiki_neutra_replicable.md)** - Patró reutilitzable per estructurar una base de coneixement i les seves instruccions.
 
 ---
 ## Referències
