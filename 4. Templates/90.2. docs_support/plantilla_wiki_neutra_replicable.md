@@ -18,7 +18,7 @@ Relacions, índexs i metadades
 Consulta i manteniment amb IA o agents
 ```
 
-La base de coneixement conserva **síntesis pròpies, estructura, decisions i procedència**. Les fonts originals poden continuar al seu origen extern o, si cal treballar-hi localment, en ubicacions excloses del control de versions.
+La base de coneixement conserva **síntesis pròpies, estructura, decisions i procedència**. Les fonts originals poden continuar al seu origen extern o guardar-se a `raw/` dins del projecte. En projectes locals o privats, `raw/` pot formar part del control de versions quan la llicència i la confidencialitat ho permetin.
 
 ## 2. Principis de disseny
 
@@ -47,6 +47,7 @@ NomDelProjecte/
 │   ├── conceptes/
 │   ├── entitats/
 │   └── fonts/
+├── raw/                    # opcional: originals externs o documents locals
 ├── skills/
 │   ├── ingest.md
 │   ├── update.md
@@ -71,6 +72,7 @@ Els noms es poden adaptar al domini. El que convé preservar és la funció de c
 | `log.md` | Registre dels canvis estructurals i decisions importants. |
 | `.manifest.json` | Traçabilitat tècnica de fonts, operacions i fitxes afectades. |
 | `wiki/` | Coneixement permanent propi del projecte. |
+| `raw/` | Fonts originals incorporades al projecte, si s'activa aquesta opció; els originals es mantenen separats de les fitxes elaborades. |
 | `skills/` | Procediments repetibles per investigar, actualitzar, validar o consultar. |
 | `templates/` | Estructures reutilitzables per crear contingut homogeni. |
 | `graph/` | Representació derivada de nodes i relacions, si és necessària. |
@@ -90,21 +92,13 @@ Per a cada font rellevant convé registrar:
 
 ### Fonts externes
 
-Quan la font és accessible en línia, la base de coneixement ha de conservar-ne la referència i una síntesi pròpia, no una còpia completa per defecte.
+Quan la font és accessible en línia, registra'n l'URL, la data de consulta i una síntesi pròpia. Si convé conservar-ne l'original i se'n tenen els drets, desa'l a `raw/` i vincula-hi la fitxa de font. Si l'original roman al web, conserva'n l'enllaç estable i indica quan es va consultar.
 
-### Materials locals
+### Documents locals i carpeta `raw/`
 
-Si el projecte necessita PDFs, exports, notes privades o altres materials de treball locals, s'han de mantenir en carpetes ignorades per Git o fora del repositori compartit.
+En crear el projecte, decideix si cal conservar les fonts originals. Si és així, **crea `raw/` a l'arrel** i incorpora-hi els PDFs, transcripcions, exportacions o altres documents locals i les còpies permeses de fonts externes. Conserva els noms originals quan siguin útils i assigna un identificador estable a cada font. Registra a `wiki/fonts/` la procedència, la ruta relativa `raw/...`, la data i les fitxes derivades. Una carpeta buida es pot materialitzar amb `raw/.gitkeep`.
 
-Exemple:
-
-```gitignore
-local_sources/
-data/raw/
-*.pdf
-```
-
-La política concreta dependrà de la llicència, privacitat i necessitats del projecte.
+`raw/` **no s'ha d'excloure de Git per defecte**: en projectes locals o privats es pot versionar. Decideix per a cada projecte o fitxer si es comparteix, s'ignora o es manté fora del repositori segons la llicència, la privacitat, les dades sensibles i la mida. No estableixis una regla global com `*.pdf` que amagui fonts autoritzades.
 
 ## 6. Fitxa permanent mínima
 
@@ -172,6 +166,7 @@ Exemple mínim:
       "title": "Títol de la font",
       "type": "article",
       "url": "https://...",
+      "raw_path": null,
       "status": "processed",
       "pages_created": [],
       "pages_updated": []
@@ -186,7 +181,7 @@ No cal començar amb un esquema complex. El manifest ha de créixer quan aparegu
 
 ```text
 1. Identificar la font
-2. Registrar-ne la procedència
+2. Registrar-ne la procedència i, si es conserva l'original, la ruta `raw/...`
 3. Buscar contingut existent
 4. Extreure idees i entitats
 5. Crear o actualitzar fitxes
@@ -197,6 +192,15 @@ No cal començar amb un esquema complex. El manifest ha de créixer quan aparegu
 ```
 
 La regla de no-duplicació és central: **actualitzar una fitxa existent és preferible a crear un segon resum del mateix concepte**.
+
+### Ordres explícites per ingerir documentació
+
+En adaptar `skills/ingest.md` i `AGENTS.md` al projecte, inclou instruccions operatives per als dos casos següents:
+
+1. **Font externa (URL, article, informe o base documental):** obre i llegeix la font original; verifica títol, autor, data, URL i drets de reutilització. Registra-la a `wiki/fonts/` i al manifest. Si el projecte conserva originals i la còpia és permesa, crea `raw/` si encara no existeix, desa-hi el fitxer i registra'n la ruta. Contrasta el contingut amb les fitxes existents, incorpora només les aportacions verificables, enllaça les fitxes afectades i actualitza índex i `log.md`.
+2. **Document local (fitxer aportat, PDF, nota, transcripció o exportació):** llegeix el fitxer proporcionat o la ruta local indicada; no pressuposis que ja és a `raw/`. Si se'n conservarà l'original, crea `raw/` si cal, copia-hi el fitxer amb un nom identificable i registra'n la ruta, l'origen i la data a `wiki/fonts/` i al manifest. Extreu-ne el contingut, comprova duplicitats i contradiccions, crea o actualitza les fitxes pertinents i els seus enllaços, i actualitza índex i `log.md`.
+
+Per a tots dos casos, comprova que cada afirmació rellevant es pugui remuntar a la font (URL o ruta local), registra les limitacions, valida enllaços i metadades i sotmet els canvis semàntics a revisió humana.
 
 ## 10. Consulta amb IA
 
@@ -233,7 +237,7 @@ Abans d'incorporar canvis significatius convé comprovar:
 - enllaços interns resolubles;
 - absència de duplicats evidents;
 - manifest consistent;
-- cap configuració o material local incorporat accidentalment;
+- criteri de versionat de `raw/` aplicat fitxer per fitxer i absència de dades sensibles o material sense drets incorporat accidentalment;
 - revisió humana dels canvis semàntics.
 
 ## 13. Criteri de maduresa
