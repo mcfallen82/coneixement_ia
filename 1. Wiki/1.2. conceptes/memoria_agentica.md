@@ -9,24 +9,26 @@ tags:
   - gestio-del-coneixement
 sources:
   - https://papers.nips.cc/paper_files/paper/2025/file/19909c36f51abc4856b4560aff3d36d6-Paper-Conference.pdf
+  - https://arxiv.org/abs/2605.12493v1
 related_concepts:
   - "[[1. Wiki/1.2. conceptes/evolucio_de_la_memoria]]"
   - "[[1. Wiki/1.2. conceptes/zettelkasten]]"
   - "[[1. Wiki/1.2. conceptes/RAG]]"
   - "[[1. Wiki/1.2. conceptes/embeddings]]"
   - "[[1. Wiki/1.2. conceptes/context_engineering]]"
+  - "[[1. Wiki/1.2. conceptes/avaluacio_de_models]]"
 related_models:
   - "[[1. Wiki/1.3. models/A-MEM]]"
 status: reviewed
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-10-19
 ---
 
 # Memòria agentiva
 
 ## Què és i per què importa?
 
-És una manera de gestionar la memòria externa d'un agent amb LLM perquè **organitzi, vinculi i revisi** records a partir de noves interaccions. A [[1. Wiki/1.3. models/A-MEM|A-MEM]], l'agent participa en la construcció i evolució de les notes, en lloc de limitar-se a emmagatzemar-les i recuperar-les.
+És la gestió de memòria externa perquè un agent conservi i reutilitzi informació entre interaccions, amb operacions de selecció, organització o revisió segons el sistema. No designa una única arquitectura. A [[1. Wiki/1.3. models/A-MEM|A-MEM]], l'agent participa en la construcció i evolució de les notes, en lloc de limitar-se a emmagatzemar-les i recuperar-les.
 
 ## Intuïció i funcionament
 
@@ -47,6 +49,15 @@ Un agent que ajuda a estudiar IA registra primer una pregunta sobre [[1. Wiki/1.
 
 L'automatització pot crear enllaços poc justificats, perdre la procedència o reforçar errors anteriors. Una base documental necessita que les afirmacions importants continuïn vinculades a fonts i siguin revisables per una persona. «Agentiva» descriu l'autonomia en aquestes operacions; no garanteix exactitud ni significa que s'hagin modificat els pesos del LLM.
 
+## De les converses a l'experiència operativa
+
+LongMemEval-V2 (Wu et al., maig de 2026) avalua experiència d'agents web: record d'estats, seguiment de canvis, coneixement de procediments, dificultats de l'entorn i detecció de premisses incorrectes. Els seus mètodes AgentRunbook-R i AgentRunbook-C contrasten recuperació indexada i consulta de fitxers amb un agent. L'estudi també assenyala el cost de latència d'aquesta segona opció.
+
+Per tant, convé distingir memòria conversacional d'experiència operativa. Un resultat en un conjunt no prova transferència a l'altre. La font es presenta com a **treball en curs**; les prestacions depenen de la tasca, el model i el pressupost.
+
+**Exemple inferit per a la wiki:** recordar una preferència d'estil i conservar un procediment validat per actualitzar fitxes són funcions diferents. Se'n podria comprovar la utilitat amb [[1. Wiki/1.2. conceptes/avaluacio_de_models|avaluacions]] separades; aquí no s'ha reproduït LongMemEval-V2.
+
 ## Font
 
 - Xu i col·laboradors, [*A-Mem: Agentic Memory for LLM Agents*](https://papers.nips.cc/paper_files/paper/2025/file/19909c36f51abc4856b4560aff3d36d6-Paper-Conference.pdf), NeurIPS 2025, seccions 1–4. Font primària consultada el 2026-09-25.
+- Wu et al., [LongMemEval-V2: Evaluating Long-Term Agent Memory Toward Experienced Colleagues](https://arxiv.org/abs/2605.12493v1), 2026-05-12, prepublicació i treball en curs; consultada el 2026-10-19.

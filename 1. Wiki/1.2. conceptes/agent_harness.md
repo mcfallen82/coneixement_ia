@@ -10,6 +10,7 @@ tags:
 sources:
   - https://substack.com/home/post/p-216615368
   - https://arxiv.org/abs/2606.10106
+  - https://www.anthropic.com/engineering/harness-design-long-running-apps
 related_concepts:
   - "[[1. Wiki/1.2. conceptes/context_engineering]]"
   - "[[1. Wiki/1.2. conceptes/gates_i_guardrails_agents]]"
@@ -18,7 +19,7 @@ related_models:
   - "[[1. Wiki/1.3. models/Jev]]"
 status: reviewed
 created: 2026-09-21
-updated: 2026-09-21
+updated: 2026-10-19
 ---
 
 # Arnès d'agent
@@ -85,7 +86,14 @@ Un fitxer [[1. Wiki/1.2. conceptes/AGENTS_MD|AGENTS.md]] és una font d'instrucc
 - incorpora [[1. Wiki/1.2. conceptes/gates_i_guardrails_agents|portes de control i guardrails]];
 - pot utilitzar [[1. Wiki/1.3. models/Jev|Jev]] com a classificador o jutge ràpid, però no en depèn.
 
+## Revisar l'arnès quan canvia el model
+
+Els experiments d'Anthropic de març de 2026 mostren que algunes ajudes útils amb un model poden esdevenir sobrecost amb un altre. Proposen retirar components un a un i observar l'efecte, en lloc d'acumular-los. Separar generació i avaluació pot ajudar, però l'avaluador també necessita criteris i contrast; no garanteix independència dels errors.
+
+**Adaptació proposada:** compara la configuració de referència amb canvis aïllats en planificació, traspàs de context o verificació. Mantén constants tasques, model i permisos obligatoris; registra qualitat, cost i latència. Una arquitectura amb més agents només es justifica si aporta un benefici mesurat per a la tasca.
+
 ## Fonts
 
 - [Eugeniu Ghelbur — What Is Jev? The Manual for Agent Harnesses](https://substack.com/home/post/p-216615368), 2026. Font secundària i prova pràctica.
 - [Sanderson Oliveira de Macedo — What makes a harness a harness](https://arxiv.org/abs/2606.10106), 2026. Definició acadèmica i criteris T1–T4.
+- Anthropic / Prithvi Rajasekaran, [Harness design for long-running application development](https://www.anthropic.com/engineering/harness-design-long-running-apps), 2026-03-24; consultada el 2026-10-19. Evidència pràctica del desenvolupador.

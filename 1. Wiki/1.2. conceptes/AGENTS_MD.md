@@ -9,11 +9,15 @@ tags:
   - programació
 sources:
   - https://agents.md/
-related_concepts: []
-related_models: []
+  - https://arxiv.org/abs/2602.11988v3
+related_concepts:
+  - "[[1. Wiki/1.2. conceptes/avaluacio_de_models]]"
+  - "[[1. Wiki/1.2. conceptes/context_engineering]]"
+related_models:
+  - "[[1. Wiki/1.3. models/model_agents_md]]"
 status: reviewed
 created: 2026-08-07
-updated: 2026-08-07
+updated: 2026-10-19
 ---
 
 # AGENTS.md
@@ -70,6 +74,17 @@ Abans d’actualitzar una fitxa, l’agent ha de llegir AGENTS.md, comprovar si 
 - confondre governança amb una fitxa de contingut;
 - descriure intencions sense criteris verificables.
 
+## Evidència i ús proporcionat
+
+Gloaguen i col·laboradors, a *Evaluating AGENTS.md* (versió 3, 2026-09-29), estudien agents de programació en tasques de repositoris. No troben una millora general de l'èxit amb aquests fitxers i observen més d'un 20% de cost d'inferència addicional de mitjana. Els agents segueixen les instruccions, però els resums generals del repositori no aporten necessàriament valor. La revisió més recent destaca la utilitat d'explicitar pràctiques no estàndard i d'avaluar qualsevol pretensió de millora.
+
+**Límit:** el resultat depèn dels agents, repositoris i tasques estudiats; no demostra que aquest document sobri ni que eliminar normes millori aquesta wiki.
+
+## Criteri pràctic per a una wiki
+
+Com a adaptació proposada, concentra aquí les convencions difícils d'inferir, les ordres fiables i els límits imprescindibles. Trasllada les explicacions temàtiques a les fitxes. Abans d'afegir instruccions redundants, compara versions en tasques representatives amb èxit, errors i cost. La fitxa de [[1. Wiki/1.3. models/model_agents_md|generació d'AGENTS.md]] explica una eina; [[1. Wiki/1.2. conceptes/avaluacio_de_models|l'avaluació]] comprova si el document ajuda.
+
 ## Fonts
 
 - [AGENTS.md](https://agents.md/).
+- Gloaguen et al., [Evaluating AGENTS.md](https://arxiv.org/abs/2602.11988v3), prepublicació, v3 del 2026-09-29; consultada el 2026-10-19. Evidència empírica, no validació d’aquesta wiki.
