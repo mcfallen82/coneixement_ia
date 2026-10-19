@@ -1,5 +1,15 @@
 # Hot
 
+## Instruccions, avaluació, memòria i cerca — 2026-10-19
+
+- Revisades nou fitxes amb fonts primàries i separació entre resultats publicats i aplicació proposada.
+- AGENTS.md: s'utilitza la v3 del 29 de setembre; no es deriva que calgui eliminar la governança del projecte.
+- Avaluació: resultat real i traces; pass@k i pass^k amb supòsits explícits.
+- Memòria: converses i experiència operativa són tasques diferents; les regles apreses necessiten abast de reutilització.
+- QMD: cerca BM25, vectorial i híbrida; MCP i requisits específics de metadades. La wiki continua independent de l'eina.
+- Pendents: executar els experiments de qualitat proposats; contrastar independentment els treballs preliminars de memòria.
+
+
 ## Revisió dels conceptes — 2026-09-25
 
 - 46 fitxes auditades; 10 fitxes revisades per coherència editorial i conceptual després de la integració d'A-MEM.

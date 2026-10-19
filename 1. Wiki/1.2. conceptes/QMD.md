@@ -9,39 +9,55 @@ tags:
   - gestio-del-coneixement
 sources:
   - https://github.com/tobi/qmd
+  - https://github.com/tobi/qmd/blob/86d2365d17fc682e491c2c53d1e4a884aee8682a/README.md
 related_concepts:
   - "[[RAG]]"
   - "[[context_engineering]]"
   - "[[second_brain]]"
   - "[[frontmatter]]"
   - "[[LLM]]"
+  - "[[1. Wiki/1.2. conceptes/avaluacio_de_models]]"
 related_models: []
 status: reviewed
 created: 2026-08-07
-updated: 2026-09-25
+updated: 2026-10-19
 ---
 
-# QMD
+# QMD — cerca local híbrida
 
 ## Definició
 
-QMD és una eina local de cerca semàntica per trobar notes i documents relacionats pel significat, no només per coincidència exacta de paraules.
+QMD és un cercador local de documents que combina cerca lèxica BM25, vectors i reordenació. La descripció es basa en el README oficial al commit `86d2365d17fc682e491c2c53d1e4a884aee8682a`, consultat el 2026-10-19.
 
-## Per què és important?
+## Modes i cost
 
-Pot facilitar la recuperació de coneixement dins d’una wiki local quan la pregunta utilitza paraules diferents de les que apareixen en la nota.
+| Ordre | Mecanisme | Criteri d'ús |
+|---|---|---|
+| `qmd search` | BM25 | coincidències lèxiques; cost baix |
+| `qmd vsearch` | vectors | similitud semàntica; necessita embeddings |
+| `qmd query` | expansió, fusió lèxica/vectorial i reordenació | més treball local; qualitat a comprovar |
 
-## Intuïció
+La fusió utilitza RRF (*Reciprocal Rank Fusion*). No pressuposis que el mode més complex sempre millora el resultat.
 
-Una cerca tradicional pregunta si dues expressions comparteixen paraules. Una cerca semàntica intenta estimar si comparteixen significat.
+## Exemple didàctic
 
-## Funcionament
+Amb una col·lecció `wiki` ja indexada:
 
-El sistema indexa documents, crea representacions vectorials i recupera resultats relacionats amb una consulta. La utilitat final depèn de la qualitat de l’índex, de la segmentació i del model d’embeddings.
+```bash
+qmd search "GraphRAG" -c wiki
+qmd vsearch "com conservar experiència entre sessions" -c wiki
+qmd query "com validar revisions de memòria" -c wiki --json
+```
 
-## Exemple
+Compara els documents recuperats i comprova les fonts abans d'utilitzar-los en [[RAG]].
 
-Una consulta sobre «com donar informació rellevant a un model» pot recuperar [[context_engineering]] encara que no contingui exactament aquesta frase.
+## Integració i manteniment
+
+Disposa de servidor MCP per consultar i recuperar documents. Cal actualitzar l'índex després dels canvis i regenerar els vectors quan correspongui. Els filtres tipats requereixen metadades sota `qmd.metadata`; el [[frontmatter]] ordinari d'aquesta wiki no s'hi converteix automàticament.
+
+## Límits i aplicació proposada
+
+Recuperació no equival a veritat. Mesura rellevància, omissions i latència amb preguntes pròpies, incloent català i sinònims. Consulta [[1. Wiki/1.2. conceptes/avaluacio_de_models|avaluació de models]]. QMD és opcional: aquesta actualització no l'instal·la ni acredita el seu rendiment aquí.
 
 ## Relacions
 
@@ -50,22 +66,9 @@ Una consulta sobre «com donar informació rellevant a un model» pot recuperar 
 - [[second_brain]]
 - [[frontmatter]]
 - [[LLM]]
-
-## Aplicacions
-
-- cerca local de notes Markdown;
-- recuperació per a sistemes RAG;
-- exploració de wikis;
-- localització de notes relacionades.
-
-## Limitacions i errors habituals
-
-- recuperar resultats semblants però no útils;
-- no indexar fitxers nous;
-- dependre d’un embedding inadequat;
-- confondre semblança semàntica amb veritat;
-- no mostrar la font original.
+- [[1. Wiki/1.2. conceptes/avaluacio_de_models]]
 
 ## Fonts
 
-- [QMD — Local semantic search](https://github.com/tobi/qmd).
+- [QMD — repositori oficial](https://github.com/tobi/qmd).
+- [README de QMD, versió consultada](https://github.com/tobi/qmd/blob/86d2365d17fc682e491c2c53d1e4a884aee8682a/README.md). Documentació tècnica del projecte, commit del 2026-10-15; consulta del 2026-10-19.

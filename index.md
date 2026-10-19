@@ -10,6 +10,14 @@
 - [Skills](2.%20Skills/).
 - [Plantilles i patrons reutilitzables](4.%20Templates/).
 
+## Actualització de coneixement — 2026-10-19
+
+- [AGENTS.md](1.%20Wiki/1.2.%20conceptes/AGENTS_MD.md) i [generador](1.%20Wiki/1.3.%20models/model_agents_md.md): evidència empírica v3 de setembre de 2026 i comprovació del valor de les instruccions.
+- [Avaluació de models](1.%20Wiki/1.2.%20conceptes/avaluacio_de_models.md): resultats reals, traces, repeticions i protocol proposat per a la wiki.
+- [Memòria agentiva](1.%20Wiki/1.2.%20conceptes/memoria_agentica.md), [evolució](1.%20Wiki/1.2.%20conceptes/evolucio_de_la_memoria.md) i [A-MEM](1.%20Wiki/1.3.%20models/A-MEM.md): experiència operativa, LongMemEval-V2 i abast de reutilització.
+- [QMD](1.%20Wiki/1.2.%20conceptes/QMD.md): modes lèxic, vectorial i híbrid; documentació fixada a una versió.
+- [Enginyeria del context](1.%20Wiki/1.2.%20conceptes/context_engineering.md) i [arnès](1.%20Wiki/1.2.%20conceptes/agent_harness.md): revisió de components segons el model.
+
 ## Fonts externes
 
 Les fonts originals no s'emmagatzemen al repositori públic. La procedència es conserva mitjançant URLs, referències bibliogràfiques i els camps `sources` de les fitxes.

@@ -9,6 +9,7 @@ tags:
   - actualitzacio
 sources:
   - https://papers.nips.cc/paper_files/paper/2025/file/19909c36f51abc4856b4560aff3d36d6-Paper-Conference.pdf
+  - https://arxiv.org/abs/2609.29144v1
 related_concepts:
   - "[[1. Wiki/1.2. conceptes/memoria_agentica]]"
   - "[[1. Wiki/1.2. conceptes/zettelkasten]]"
@@ -18,7 +19,7 @@ related_models:
   - "[[1. Wiki/1.3. models/llm_wiki]]"
 status: reviewed
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-10-19
 ---
 
 # Evolució de la memòria
@@ -41,6 +42,15 @@ Les [[1. Wiki/1.2. conceptes/evergreen_notes|notes permanents]] també es revise
 
 Si una connexió suggerida és incorrecta, actualitzar una nota antiga pot propagar l'error. Fan falta versions, procedència i un criteri per acceptar o rebutjar canvis quan s'aplica a coneixement públic.
 
+## Validar una revisió i delimitar-ne l'abast
+
+*Scope Before You Persist* (Cheng et al., setembre de 2026) estudia actualitzacions persistents de procediments en tasques de reparació de codi. Mostra que una modificació validada per a una família pot interferir en una altra si es recupera globalment. Validar el canvi i decidir on reutilitzar-lo són controls complementaris. És una **prepublicació** sobre un entorn concret, no una garantia per a wikis.
+
+**Adaptació editorial proposada:** documenta font, família de tasques, condicions, versió i evidència d'una regla apresa. Recupera-la només quan el cas compleixi aquest abast i revisa regressions abans d'ampliar-lo. Això no limita la consulta d'un fet general ben documentat: limita la generalització d'un procediment local.
+
+Exemple inferit: una convenció de citació validada per informes financers no s'hauria de convertir automàticament en norma per a totes les notes. La relació amb A-MEM és comparativa: aquest treball tracta procediments persistents, no l'actualització d'atributs de notes d'A-MEM.
+
 ## Font
 
 - Xu i col·laboradors, [*A-Mem: Agentic Memory for LLM Agents*](https://papers.nips.cc/paper_files/paper/2025/file/19909c36f51abc4856b4560aff3d36d6-Paper-Conference.pdf), NeurIPS 2025, secció 3.3 i estudi d'ablació. Consultat el 2026-09-25.
+- Cheng et al., [Scope Before You Persist: Preventing Cross-Family Interference in Agent Memory](https://arxiv.org/abs/2609.29144v1), 2026-09-24, prepublicació; consultada el 2026-10-19.

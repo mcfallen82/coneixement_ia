@@ -10,13 +10,14 @@ tags:
 sources:
   - https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
   - https://docs.typesafe.ai/model-jaggedness/jev-1.13
+  - https://www.anthropic.com/engineering/harness-design-long-running-apps
 related_concepts:
   - "[[1. Wiki/1.2. conceptes/agent_harness]]"
   - "[[1. Wiki/1.2. conceptes/gates_i_guardrails_agents]]"
 related_models: []
 status: reviewed
 created: 2026-08-07
-updated: 2026-09-21
+updated: 2026-10-19
 ---
 
 # Enginyeria del context
@@ -77,7 +78,14 @@ Per analitzar un concepte nou, un agent pot rebre la font original, la fitxa exi
 - no controlar l’estat ni la vigència.
 - tractar dades externes potencialment hostils com si fossin instruccions fiables.
 
+## Compressió, reinici i transmissió de l'estat
+
+Anthropic descriu el març de 2026 dos mecanismes diferents: comprimir l'historial dins de la sessió, o reiniciar el context i transmetre l'estat mitjançant un document estructurat. En els seus experiments, la necessitat d'aquestes peces canviava amb el model. No és una recepta universal per a tots els agents.
+
+**Aplicació proposada a la wiki:** si cal continuar una tasca en un altre context, conserva objectiu, fonts llegides, fitxers afectats, decisions i següent pas. Revisa que el resum permeti tornar a l'evidència. Compara la qualitat i el cost abans d'imposar un resum o reinici periòdic; conservar menys text no implica conservar la informació adequada.
+
 ## Fonts
 
 - [Anthropic — Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents).
 - [TypeSafe AI — Jev 1.13 jaggedness](https://docs.typesafe.ai/model-jaggedness/jev-1.13), seccions sobre context irrellevant i contingut adversari.
+- Anthropic / Prithvi Rajasekaran, [Harness design for long-running application development](https://www.anthropic.com/engineering/harness-design-long-running-apps), 2026-03-24; consultada el 2026-10-19. Experiments d’enginyeria amb models i tasques concrets.

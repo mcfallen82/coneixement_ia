@@ -21,17 +21,19 @@ sources:
   - https://papers.nips.cc/paper_files/paper/2025/file/19909c36f51abc4856b4560aff3d36d6-Paper-Conference.pdf
   - https://github.com/WujiangXu/A-mem
   - https://github.com/agiresearch/A-mem
+  - https://arxiv.org/abs/2605.12493v1
 related_concepts:
   - "[[1. Wiki/1.2. conceptes/memoria_agentica]]"
   - "[[1. Wiki/1.2. conceptes/evolucio_de_la_memoria]]"
   - "[[1. Wiki/1.2. conceptes/zettelkasten]]"
   - "[[1. Wiki/1.2. conceptes/embeddings]]"
   - "[[1. Wiki/1.2. conceptes/RAG]]"
+  - "[[1. Wiki/1.2. conceptes/avaluacio_de_models]]"
 related_models:
   - "[[1. Wiki/1.3. models/llm_wiki]]"
 status: reviewed
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-10-19
 ---
 
 # A-MEM — memòria agentiva basada en notes
@@ -71,7 +73,14 @@ El projecte disposa d'una [adaptació operativa de revisió de notes](../../2.%2
 - La millora en preguntes sobre converses no prova una millora en una wiki de documents ni que A-MEM superi sempre una cerca més simple.
 - El treball no substitueix una ontologia explícita ni una verificació de les relacions proposades.
 
+## Comparació amb avaluacions d'experiència operativa
+
+LongMemEval-V2 amplia el tipus de pregunta sobre memòria cap a experiència d'entorns web. Serveix per contrastar què s'avalua amb converses i què s'avalua amb procediments o estats de l'entorn; no aporta, per si mateix, una comparació experimental directa amb A-MEM. Vegeu [[1. Wiki/1.2. conceptes/memoria_agentica|memòria agentiva]] i [[1. Wiki/1.2. conceptes/avaluacio_de_models|avaluació de models]].
+
+Abans d'adoptar el mecanisme en una wiki, caldria mesurar correcció de les revisions, recuperació d'evidències i cost complet d'escriptura i consulta. Aquesta és una proposta d'avaluació local, encara no executada.
+
 ## Fonts
 
 - Xu, Wujiang, i col·laboradors. [*A-Mem: Agentic Memory for LLM Agents*](https://papers.nips.cc/paper_files/paper/2025/hash/19909c36f51abc4856b4560aff3d36d6-Abstract-Conference.html), NeurIPS 2025; [text complet](https://papers.nips.cc/paper_files/paper/2025/file/19909c36f51abc4856b4560aff3d36d6-Paper-Conference.pdf). Consultat el 2026-09-25. Font primària de l'arquitectura i els experiments.
 - [Codi dels experiments](https://github.com/WujiangXu/A-mem) i [implementació del sistema](https://github.com/agiresearch/A-mem), projectes dels autors. Consultats el 2026-09-25.
+- Wu et al., [LongMemEval-V2](https://arxiv.org/abs/2605.12493v1), 2026-05-12, treball en curs; consultada el 2026-10-19. Contrast de tasques d’avaluació, sense afirmar una superioritat sobre A-MEM.

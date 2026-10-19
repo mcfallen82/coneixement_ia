@@ -1,5 +1,17 @@
 # Log del projecte
 
+## 2026-10-19 — Millores prioritàries de coneixement
+
+- Abast autoritzat: AGENTS.md, avaluació, memòria i QMD, amb les fitxes relacionades de context i arnès. S'actualitzen nou fitxes existents; no es canvia el document arrel de governança ni s'instal·len eines.
+- Comparades les fonts amb el contingut vigent; incorporada la v3 de *Evaluating AGENTS.md* (2026-09-29), que matisa la descripció inicial basada en versions anteriors.
+- Incorporats resultats i traces d'agents, pass@k/pass^k i una proposta de prova específica per a la wiki.
+- Ampliat el concepte de memòria més enllà d'A-MEM, amb LongMemEval-V2 i límits de transferència. Afegit l'abast de recuperació de procediments a partir de *Scope Before You Persist*.
+- QMD queda documentat amb tres modes, servidor MCP, manteniment i limitacions de metadades; es fixa el commit extern consultat.
+- Afegides tres relacions tipades amb evidència; actualitzats index, hot i manifest.
+- Confiança: les descripcions tècniques segueixen fonts primàries; els estudis de memòria són preliminars i les aplicacions a aquesta wiki són inferències no comprovades.
+- Validació: wiki_lint, graph_scan estricte i proves existents del graf; els experiments de rendiment proposats queden pendents i no es confonen amb aquestes comprovacions estructurals.
+
+
 ## 2026-09-25 — Revisió transversal de conceptes després d'A-MEM
 
 - Auditades les 46 fitxes de conceptes en l'estat de `main` amb linter i comprovació estricta d'enllaços; sense errors ni advertiments estructurals previs.

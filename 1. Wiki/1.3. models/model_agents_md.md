@@ -12,9 +12,12 @@ tags:
   - agents
 sources:
   - https://github.com/eugeniughelbur/agents-md
+  - https://arxiv.org/abs/2602.11988v3
+related_concepts:
+  - "[[1. Wiki/1.2. conceptes/AGENTS_MD]]"
 status: active
 created: 2026-05-30
-updated: 2026-08-13
+updated: 2026-10-19
 ---
 # MODEL AGENTS.MD
 
@@ -40,4 +43,15 @@ El repositori recomana utilitzar `AGENTS.md` com a document principal i, si cal 
 
 Per a una vault manual d’**Obsidian** o un projecte personal, la lliçó pràctica és molt bona: el `AGENTS.md` hauria de ser curt, verificable i orientat a acció. 
 
-No hauria de contenir tota la teoria del projecte, sinó les regles que ajuden l’agent a no espatllar res: estructura de carpetes, criteris per crear o modificar notes, format del [[frontmatter]], convencions d’enllaços interns, ordres útils, límits i coses prohibides. El perill és inflar-lo massa: estudis recents sobre fitxers de context per agents indiquen que instruccions innecessàries poden reduir l’eficàcia i augmentar el cost, i que són habituals problemes com excés de context, instruccions conflictives o filtració de normes massa específiques
+No hauria de contenir tota la teoria del projecte, sinó les regles que ajuden l’agent a no espatllar res: estructura de carpetes, criteris per crear o modificar notes, format del [[frontmatter]], convencions d’enllaços interns, ordres útils, límits i coses prohibides. Cal verificar quina informació aporta valor abans d’ampliar-lo: generar un document fidel al repositori i demostrar que millora l’agent són comprovacions diferents.
+
+## Contrast amb l'evidència sobre fitxers de context
+
+L'estudi de Gloaguen et al. (v3, setembre de 2026) no avalua aquest generador concret. Aporta un motiu per provar el document resultant en lloc d'assumir que automatitzar-ne la creació millora l'èxit. Vegeu [[1. Wiki/1.2. conceptes/AGENTS_MD|AGENTS.md]] per als resultats i límits de l'estudi.
+
+Una comparació local pot mantenir model, eines i tasques fixos i variar només les instruccions opcionals. Cal mesurar èxit, errors i cost; mai retirar permisos o límits obligatoris per fer la prova. És una proposta d'avaluació, no un resultat obtingut en aquest projecte.
+
+## Fonts
+
+- [Generador agents-md — repositori de l’autor](https://github.com/eugeniughelbur/agents-md). Font de la descripció funcional existent.
+- Gloaguen et al., [Evaluating AGENTS.md](https://arxiv.org/abs/2602.11988v3), v3 del 2026-09-29; consultada el 2026-10-19. Contrast empíric general.
